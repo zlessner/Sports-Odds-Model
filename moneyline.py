@@ -2,6 +2,7 @@ import requests
 import json
 import os
 from API_Keys.vars import headers
+import datetime
 
 url = "https://odds.p.rapidapi.com/v1/odds"
 
@@ -16,3 +17,5 @@ sportsList = response.text
 gamesList = json.loads(sportsList)
 
 theOddsAPIGames = gamesList['data']
+
+today = datetime.date.today()

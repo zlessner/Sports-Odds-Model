@@ -1,13 +1,16 @@
 from urllib.request import urlretrieve as retrieve
-from moneyline import theOddsAPIGames
+from moneyline import theOddsAPIGames, today
 import csv
-import datetime
+import time
+# import datetime
+from datetime import datetime
 
 
-today = datetime.date.today()
-tomorrow = today + datetime.timedelta(1)
+
+# today = datetime.date.today()
+# tomorrow = today + datetime.timedelta(1)
 stringToday = str(today)
-stringTomorrow = str(tomorrow)
+# stringTomorrow = str(tomorrow)
 
 url = 'https://projects.fivethirtyeight.com/soccer-api/club/spi_matches.csv'
 
@@ -39,7 +42,7 @@ eventsAPI = {}
 
 for i in range(len(theOddsAPIGames)):
     for j in range(len(theOddsAPIGames[i]['sites'])):
-        eventsAPI[i] = [theOddsAPIGames[i]['sport_key']], [theOddsAPIGames[i]['teams']], [theOddsAPIGames[i]['sites'][j]['odds']]
+        eventsAPI[i] = [theOddsAPIGames[i]['sport_key']], [theOddsAPIGames[i]['commence_time']], [theOddsAPIGames[i]['teams']], [theOddsAPIGames[i]['sites'][j]['odds']]
         break
 
 # print(eventsAPI[1][1][0][1])
@@ -48,8 +51,9 @@ HomeAPI=[]
 AwayAPI=[]
 
 for i in eventsAPI:
-        HomeAPI.append(eventsAPI[i][1][0][1])
-        AwayAPI.append(eventsAPI[i][1][0][0])
+    if (datetime.utcfromtimestamp(eventsAPI[i][1][0]).strftime('%Y-%m-%d') == stringToday):
+        HomeAPI.append(eventsAPI[i][2][0][1])
+        AwayAPI.append(eventsAPI[i][2][0][0])
 
 print(HomeAPI)
 print(AwayAPI)
@@ -69,3 +73,4 @@ print(AwayAPI)
     
 #alphabeitical ordering per group and odds
 #use soccer sport codes epl etc. to combine all the ganes
+#home team option for sorting? Not sure if there's an away team field
