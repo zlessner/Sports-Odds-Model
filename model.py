@@ -1,5 +1,5 @@
 from urllib.request import urlretrieve as retrieve
-from moneyline import workingGames
+from moneyline import theOddsAPIGames
 import csv
 import datetime
 
@@ -23,45 +23,49 @@ fullList=[]
 for row in reader:
         fullList.append([row[0], row[2], row[3], row[4], float(row[7]),float(row[8]),float(row[9])])
 
-todayGames=[]
+FiveThirtyEightGames=[]
 
 for game in fullList:
     if game[0] == stringToday:
-        todayGames.append(game)
+        FiveThirtyEightGames.append(game)
 
-# print(todayGames, "\n")
+# print(FiveThirtyEightGames, "\n")
 
-# for odds in todayGames:
+# for odds in FiveThirtyEightGames:
 #     if (odds[4]>.5):
 #         print(odds[2])
 
-events = {}
-# team=[]
-# odds=[]
+eventsAPI = {}
 
-for i in range(len(workingGames)):
-    for j in range(len(workingGames[i]['sites'])):
-        events[i] = [workingGames[i]['sport_nice']], [workingGames[i]['teams']], [workingGames[i]['sites'][j]['odds']]
+for i in range(len(theOddsAPIGames)):
+    for j in range(len(theOddsAPIGames[i]['sites'])):
+        eventsAPI[i] = [theOddsAPIGames[i]['sport_key']], [theOddsAPIGames[i]['teams']], [theOddsAPIGames[i]['sites'][j]['odds']]
         break
 
+# print(eventsAPI[1][1][0][1])
 
-# print(events[1][1][0][1])
+HomeAPI=[]
+AwayAPI=[]
 
-team1=[]
-team2=[]
+for i in eventsAPI:
+        HomeAPI.append(eventsAPI[i][1][0][1])
+        AwayAPI.append(eventsAPI[i][1][0][0])
 
-for i in events:
-        team1.append(events[i][1][0][1])
-        team2.append(events[i][1][0][0])
+print(HomeAPI)
+print(AwayAPI)
+# print (range(len(HomeAPI)))
+# print(FiveThirtyEightGames[0][2])
+# print(FiveThirtyEightGames[0][3])
 
-print(team1)
-print(team2)
-
-for i in range(len(team1)):
-    for j in range(len(todayGames)):
-        # print (todayGames[j])
-        if team1[i] == todayGames[j][2]:
-            print (team1[i])
-        if team2[i] == todayGames[j][2]:
-            print (team2[i])
+# for i in range(len(HomeAPI)):
+#     for j in range(len(FiveThirtyEightGames)):
+#         # print (FiveThirtyEightGames[j][2])
+#         # if HomeAPI[i] == FiveThirtyEightGames[j][2]:
+#         #     print (HomeAPI[i])
+#         #     break
+#         if AwayAPI[i] == FiveThirtyEightGames[j][3]:
+#             print (AwayAPI[i])
+#             break
     
+#alphabeitical ordering per group and odds
+#use soccer sport codes epl etc. to combine all the ganes
