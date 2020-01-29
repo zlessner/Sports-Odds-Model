@@ -2,7 +2,6 @@ from urllib.request import urlretrieve as retrieve
 from moneyline import theOddsAPIGames, today, tomorrow
 import csv
 import time
-# import datetime
 from datetime import datetime
 
 
@@ -25,8 +24,10 @@ for row in reader:
 
 FiveThirtyEightGames=[]
 
+#Can change date
+
 for game in fullList:
-    if game[0] == stringTomorrow:
+    if game[0] == stringToday:
         FiveThirtyEightGames.append(game)
 
 # print(FiveThirtyEightGames, "\n")
@@ -49,8 +50,10 @@ for i in range(len(theOddsAPIGames)):
 AlphaAPI=[]
 BetaAPI=[]
 
+#Can change date
+
 for i in eventsAPI:
-    if (datetime.utcfromtimestamp(eventsAPI[i][1][0]).strftime('%Y-%m-%d') == stringTomorrow):
+    if (datetime.utcfromtimestamp(eventsAPI[i][1][0]).strftime('%Y-%m-%d') == stringToday):
         AlphaAPI.append(eventsAPI[i][2][0][0])
         BetaAPI.append(eventsAPI[i][2][0][1])
 
@@ -101,4 +104,4 @@ for i in range(len(AlphaAPI)):
 #use soccer sport codes epl etc. to combine all the ganes
 #home team option for sorting? Not sure if there's an away team field
 #Because same name is used for multiple teams, teams may repeat twice - see what happens for Man City Man U
-#add in draw option
+#turn into classes?

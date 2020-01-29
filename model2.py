@@ -26,8 +26,10 @@ for row in reader:
 
 FiveThirtyEightGames=[]
 
+#Can change date
+
 for game in fullList:
-    if game[0] == stringTomorrow:
+    if game[0] == stringToday:
         FiveThirtyEightGames.append(game)
 
 # print(FiveThirtyEightGames, "\n")
@@ -50,8 +52,10 @@ for i in range(len(theOddsAPIGames)):
 AlphaAPI=[]
 BetaAPI=[]
 
+#Can change date
+
 for i in eventsAPI:
-    if (datetime.utcfromtimestamp(eventsAPI[i][1][0]).strftime('%Y-%m-%d') == stringTomorrow):
+    if (datetime.utcfromtimestamp(eventsAPI[i][1][0]).strftime('%Y-%m-%d') == stringToday):
         AlphaAPI.append(eventsAPI[i][2][0][0])
         BetaAPI.append(eventsAPI[i][2][0][1])
 
