@@ -70,28 +70,28 @@ teamsToBetNBA=[]
 
 for i in range(len(AlphaAPI)):
     for j in range(len(FiveThirtyEightGames)):
-        if (AlphaAPI[i][:2]).lower() == (FiveThirtyEightGames[j][1][:2].lower() and BetaAPI[i][:2]).lower() == (FiveThirtyEightGames[j][2][:2].lower()):
+        if (AlphaAPI[i]).lower() == (FiveThirtyEightGames[j][1].lower()):
             homeAlphaOdds = int((((eventsAPI[i][3][0]['h2h'][0])-1)*100)*(float(FiveThirtyEightGames[j][3]))-(100*(1-(float(FiveThirtyEightGames[j][3])))))
             if (homeAlphaOdds>0):
                 teamsToBetNBA.append({AlphaAPI[i]: homeAlphaOdds})
             
-        if (BetaAPI[i][:2]).lower() == (FiveThirtyEightGames[j][2][:2].lower() and AlphaAPI[i][:2]).lower() == (FiveThirtyEightGames[j][1][:2].lower()):
+        if (BetaAPI[i]).lower() == (FiveThirtyEightGames[j][2].lower()):
             awayBetaOdds = int((((eventsAPI[i][3][0]['h2h'][1])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
             if (awayBetaOdds>0):
                 teamsToBetNBA.append({BetaAPI[i]: awayBetaOdds})
 
-        if (AlphaAPI[i][:2]).lower() == (FiveThirtyEightGames[j][2][:2].lower() and BetaAPI[i][:2]).lower() == (FiveThirtyEightGames[j][1][:2].lower()):
+        if (AlphaAPI[i]).lower() == (FiveThirtyEightGames[j][2].lower()):
             awayAlphaOdds = int((((eventsAPI[i][3][0]['h2h'][0])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
             if (awayAlphaOdds>0):
                 teamsToBetNBA.append({AlphaAPI[i]: awayAlphaOdds})
             
-        if (BetaAPI[i][:2]).lower() == (FiveThirtyEightGames[j][1][:2].lower() and AlphaAPI[i][:2]).lower() == (FiveThirtyEightGames[j][2][:2].lower()):
+        if (BetaAPI[i]).lower() == (FiveThirtyEightGames[j][1].lower()):
             homeBetaOdds = int((((eventsAPI[i][3][0]['h2h'][1])-1)*100)*(float(FiveThirtyEightGames[j][3]))-(100*(1-(float(FiveThirtyEightGames[j][3])))))
             if (homeBetaOdds>0):
                 teamsToBetNBA.append({BetaAPI[i]: homeBetaOdds})
             
     
-print(teamsToBetNBA)
+# print(teamsToBetNBA)
 
 #alphabeitical ordering per group and odds
 #use soccer sport codes epl etc. to combine all the ganes

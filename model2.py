@@ -1,6 +1,7 @@
 from urllib.request import urlretrieve as retrieve
 from moneyline2 import theOddsAPIGames, today, tomorrow
 from model import teamsToBetScotland
+from modelNBA import teamsToBetNBA
 import csv
 import time
 # import datetime
@@ -100,7 +101,9 @@ for i in range(len(AlphaAPI)):
                 teamsToBet.append({BetaAPI[i]: homeBetaOdds})
 
             
-teamsToBet.append(teamsToBetScotland)   
+teamsToBet.append(teamsToBetScotland)  
+teamsToBet.append(teamsToBetNBA) 
+
 print(teamsToBet)
 
 #alphabeitical ordering per group and odds
