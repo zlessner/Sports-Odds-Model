@@ -11,8 +11,12 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 #soccer_efl_champ
 #soccer_germany_bundesliga2
 #soccer_epl
+#soccer_belgium_first_div
+#soccer_england_league1
+#soccer_england_league2
+#soccer_spl
 
-querystring = {"sport":"soccer_germany_bundesliga2","region":"us","mkt":"h2h"}
+querystring = {"sport":"soccer_spl","region":"us","mkt":"h2h"}
 
 response = requests.request("GET", url, headers=headers, params=querystring)
 

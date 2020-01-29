@@ -48,40 +48,54 @@ for i in range(len(theOddsAPIGames)):
 
 AlphaAPI=[]
 BetaAPI=[]
-AllTeamsAPI=[]
 
 for i in eventsAPI:
     if (datetime.utcfromtimestamp(eventsAPI[i][1][0]).strftime('%Y-%m-%d') == stringTomorrow):
         AlphaAPI.append(eventsAPI[i][2][0][0])
         BetaAPI.append(eventsAPI[i][2][0][1])
-        AllTeamsAPI.append(eventsAPI[i][2][0])
 
 # print(AlphaAPI)
 # print(BetaAPI)
 
-# print(AllTeamsAPI)
 
 # # print (range(len(AlphaAPI)))
 # print(FiveThirtyEightGames)
 # print(FiveThirtyEightGames[0][3])
 
+
+#Adding teams to bet on, whether to win or draw
+teamsToBet=[]
+
 for i in range(len(AlphaAPI)):
     for j in range(len(FiveThirtyEightGames)):
         if AlphaAPI[i][:5] == FiveThirtyEightGames[j][2][:5]:
-            print (AlphaAPI[i],
-             int((((eventsAPI[i][3][0]['h2h'][0])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4]))))))
+            homeAlphaOdds = int((((eventsAPI[i][3][0]['h2h'][0])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
+            homeAlphaDrawOdds = int((((eventsAPI[i][3][0]['h2h'][2])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
+            if (homeAlphaOdds>0):
+                teamsToBet.append({AlphaAPI[i]: homeAlphaOdds})
+            if (homeAlphaDrawOdds>0):
+                teamsToBet.append({AlphaAPI[i]+ " " + BetaAPI[i] + " Draw": homeAlphaDrawOdds})
             
         if BetaAPI[i][:5] == FiveThirtyEightGames[j][3][:5]:
-            print (BetaAPI[i], int((((eventsAPI[i][3][0]['h2h'][1])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5]))))))
-            
+            awayBetaOdds = int((((eventsAPI[i][3][0]['h2h'][1])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
+            if (awayBetaOdds>0):
+                teamsToBet.append({BetaAPI[i]: awayBetaOdds})
+
         if AlphaAPI[i][:5] == FiveThirtyEightGames[j][3][:5]:
-            print (AlphaAPI[i], int((((eventsAPI[i][3][0]['h2h'][0])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5]))))))
+            awayAlphaOdds = int((((eventsAPI[i][3][0]['h2h'][0])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
+            awayAlphaDrawOdds = int((((eventsAPI[i][3][0]['h2h'][2])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
+            if (awayAlphaOdds>0):
+                teamsToBet.append({AlphaAPI[i]: awayAlphaOdds})
+            if (awayAlphaDrawOdds>0):
+                teamsToBet.append({AlphaAPI[i]+ " " + BetaAPI[i] + " Draw": awayAlphaDrawOdds})
             
         if BetaAPI[i][:5] == FiveThirtyEightGames[j][2][:5]:
-            print (BetaAPI[i], int((((eventsAPI[i][3][0]['h2h'][1])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4]))))))
+            homeBetaOdds = int((((eventsAPI[i][3][0]['h2h'][1])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
+            if (homeBetaOdds>0):
+                teamsToBet.append({BetaAPI[i]: homeBetaOdds})
             
     
-
+print(teamsToBet)
 
 #alphabeitical ordering per group and odds
 #use soccer sport codes epl etc. to combine all the ganes
