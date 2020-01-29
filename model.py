@@ -1,16 +1,13 @@
 from urllib.request import urlretrieve as retrieve
-from moneyline import theOddsAPIGames, today
+from moneyline import theOddsAPIGames, today, tomorrow
 import csv
 import time
 # import datetime
 from datetime import datetime
 
 
-
-# today = datetime.date.today()
-# tomorrow = today + datetime.timedelta(1)
 stringToday = str(today)
-# stringTomorrow = str(tomorrow)
+stringTomorrow = str(tomorrow)
 
 url = 'https://projects.fivethirtyeight.com/soccer-api/club/spi_matches.csv'
 
@@ -29,7 +26,7 @@ for row in reader:
 FiveThirtyEightGames=[]
 
 for game in fullList:
-    if game[0] == stringToday:
+    if game[0] == stringTomorrow:
         FiveThirtyEightGames.append(game)
 
 # print(FiveThirtyEightGames, "\n")
@@ -47,30 +44,47 @@ for i in range(len(theOddsAPIGames)):
 
 # print(eventsAPI[1][1][0][1])
 
-HomeAPI=[]
-AwayAPI=[]
+# print (eventsAPI)
+
+AlphaAPI=[]
+BetaAPI=[]
+AllTeamsAPI=[]
 
 for i in eventsAPI:
-    if (datetime.utcfromtimestamp(eventsAPI[i][1][0]).strftime('%Y-%m-%d') == stringToday):
-        HomeAPI.append(eventsAPI[i][2][0][1])
-        AwayAPI.append(eventsAPI[i][2][0][0])
+    if (datetime.utcfromtimestamp(eventsAPI[i][1][0]).strftime('%Y-%m-%d') == stringTomorrow):
+        AlphaAPI.append(eventsAPI[i][2][0][0])
+        BetaAPI.append(eventsAPI[i][2][0][1])
+        AllTeamsAPI.append(eventsAPI[i][2][0])
 
-print(HomeAPI)
-print(AwayAPI)
-# print (range(len(HomeAPI)))
-# print(FiveThirtyEightGames[0][2])
+# print(AlphaAPI)
+# print(BetaAPI)
+
+# print(AllTeamsAPI)
+
+# # print (range(len(AlphaAPI)))
+# print(FiveThirtyEightGames)
 # print(FiveThirtyEightGames[0][3])
 
-# for i in range(len(HomeAPI)):
-#     for j in range(len(FiveThirtyEightGames)):
-#         # print (FiveThirtyEightGames[j][2])
-#         # if HomeAPI[i] == FiveThirtyEightGames[j][2]:
-#         #     print (HomeAPI[i])
-#         #     break
-#         if AwayAPI[i] == FiveThirtyEightGames[j][3]:
-#             print (AwayAPI[i])
-#             break
+for i in range(len(AlphaAPI)):
+    for j in range(len(FiveThirtyEightGames)):
+        if AlphaAPI[i][:5] == FiveThirtyEightGames[j][2][:5]:
+            print (AlphaAPI[i],
+             int((((eventsAPI[i][3][0]['h2h'][0])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4]))))))
+            
+        if BetaAPI[i][:5] == FiveThirtyEightGames[j][3][:5]:
+            print (BetaAPI[i], int((((eventsAPI[i][3][0]['h2h'][1])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5]))))))
+            
+        if AlphaAPI[i][:5] == FiveThirtyEightGames[j][3][:5]:
+            print (AlphaAPI[i], int((((eventsAPI[i][3][0]['h2h'][0])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5]))))))
+            
+        if BetaAPI[i][:5] == FiveThirtyEightGames[j][2][:5]:
+            print (BetaAPI[i], int((((eventsAPI[i][3][0]['h2h'][1])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4]))))))
+            
     
+
+
 #alphabeitical ordering per group and odds
 #use soccer sport codes epl etc. to combine all the ganes
 #home team option for sorting? Not sure if there's an away team field
+#Because same name is used for multiple teams, teams may repeat twice - see what happens for Man City Man U
+#add in draw option
