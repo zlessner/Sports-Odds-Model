@@ -1,5 +1,5 @@
 from urllib.request import urlretrieve as retrieve
-from moneyline2 import theOddsAPIGames, today, tomorrow
+from moneyline2 import theOddsAPIGames, today, tomorrow, nowTime
 from model import teamsToBetScotland
 from modelNBA import teamsToBetNBA
 import csv
@@ -70,7 +70,7 @@ for i in eventsAPI:
 
 
 #Adding teams to bet on, whether to win or draw
-teamsToBet=[]
+teamsToBet=[nowTime]
 
 for i in range(len(AlphaAPI)):
     for j in range(len(FiveThirtyEightGames)):
@@ -106,8 +106,11 @@ teamsToBet.append(teamsToBetNBA)
 
 print(teamsToBet)
 
+with open('bets.csv', 'a', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow([teamsToBet])
+
 #alphabeitical ordering per group and odds
 #use soccer sport codes epl etc. to combine all the ganes
 #home team option for sorting? Not sure if there's an away team field
 #Because same name is used for multiple teams, teams may repeat twice - see what happens for Man City Man U
-#add in draw option

@@ -30,3 +30,7 @@ today = datetime.date.today()
 
 tomorrow = today + datetime.timedelta(1)
 
+now = datetime.datetime.now()
+
+nowTime = (now.strftime("%Y-%m-%d %H:%M:%S"))
+

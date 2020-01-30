@@ -1,5 +1,5 @@
 from urllib.request import urlretrieve as retrieve
-from moneyline import theOddsAPIGames, today, tomorrow
+from moneyline import theOddsAPIGames, today, tomorrow, nowTime
 import csv
 import time
 from datetime import datetime

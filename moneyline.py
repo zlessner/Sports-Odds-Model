@@ -17,7 +17,7 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 #soccer_england_league2
 #soccer_spl
 
-querystring = {"sport":"soccer_spl","region":"us","mkt":"h2h"}
+querystring = {"sport":"soccer_germany_bundesliga2","region":"us","mkt":"h2h"}
 
 response = requests.request("GET", url, headers=headers, params=querystring)
 
@@ -30,5 +30,9 @@ theOddsAPIGames = gamesList['data']
 today = datetime.date.today()
 
 tomorrow = today + datetime.timedelta(1)
+
+now = datetime.datetime.now()
+
+nowTime = (now.strftime("%Y-%m-%d %H:%M:%S"))
 
 #adding multiple sports in querystring params
