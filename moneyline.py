@@ -16,8 +16,16 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 #soccer_england_league1
 #soccer_england_league2
 #soccer_spl
+#soccer_portugal_primeira_liga
+#soccer_argentina_primera_division
+#soccer_mexico_ligamx
+#soccer_australia_aleague
+#soccer_turkey_super_league
+#soccer_spain_la_liga
 
-querystring = {"sport":"soccer_germany_bundesliga2","region":"us","mkt":"h2h"}
+
+
+querystring = {"sport":"soccer_england_league2","region":"us","mkt":"h2h"}
 
 response = requests.request("GET", url, headers=headers, params=querystring)
 
@@ -36,3 +44,4 @@ now = datetime.datetime.now()
 nowTime = (now.strftime("%Y-%m-%d %H:%M:%S"))
 
 #adding multiple sports in querystring params
+#Fix PL, add CBB
