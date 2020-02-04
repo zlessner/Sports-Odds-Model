@@ -1,7 +1,9 @@
 from urllib.request import urlretrieve as retrieve
-from moneyline2 import theOddsAPIGames, today, tomorrow, nowTime
+from moneyline2 import theOddsAPIGames, nowTime
+from moneyline import today
 from model import teamsToBetScotland
 from modelNBA import teamsToBetNBA
+# from modelCBB import teamsToBetCBB
 import csv
 import time
 # import datetime
@@ -9,7 +11,6 @@ from datetime import datetime
 
 
 stringToday = str(today)
-stringTomorrow = str(tomorrow)
 
 url = 'https://projects.fivethirtyeight.com/soccer-api/club/spi_matches.csv'
 
@@ -50,6 +51,8 @@ for i in range(len(theOddsAPIGames)):
 
 # print (eventsAPI)
 
+AlphaAPIx=[]
+BetaAPIx=[]
 AlphaAPI=[]
 BetaAPI=[]
 
@@ -57,8 +60,13 @@ BetaAPI=[]
 
 for i in eventsAPI:
     if (datetime.utcfromtimestamp(eventsAPI[i][1][0]).strftime('%Y-%m-%d') == stringToday):
-        AlphaAPI.append(eventsAPI[i][2][0][0])
-        BetaAPI.append(eventsAPI[i][2][0][1])
+        AlphaAPIx.append(eventsAPI[i][2][0][0])
+        BetaAPIx.append(eventsAPI[i][2][0][1])
+
+
+for i in range(len(AlphaAPIx)):
+    AlphaAPI.append(AlphaAPIx[i].replace(r'Ch\u00e2teauroux', 'Chateauroux').replace("FC Chambly", 'Chambly Thelle FC').replace("Le Mans FC", 'Le Mans').replace("Rodez AF", 'Rodez').replace("Orl\\u00e9ans", 'Orléans').replace("SM Caen", 'Caen').replace("EA Guingamp", 'Guingamp').replace("AC Ajaccio", 'Ajaccio'))
+    BetaAPI.append(BetaAPIx[i].replace(r'Ch\u00e2teauroux', 'Chateauroux').replace("FC Chambly", 'Chambly Thelle FC').replace("Le Mans FC", 'Le Mans').replace("Rodez AF", 'Rodez').replace("Orl\\u00e9ans", 'Orléans').replace("SM Caen", 'Caen').replace("EA Guingamp", 'Guingamp').replace("AC Ajaccio", 'Ajaccio'))
 
 # print(AlphaAPI)
 # print(BetaAPI)
@@ -74,35 +82,36 @@ teamsToBet=[nowTime]
 
 for i in range(len(AlphaAPI)):
     for j in range(len(FiveThirtyEightGames)):
-        if AlphaAPI[i][:5] == FiveThirtyEightGames[j][2][:5]:
+        if AlphaAPI[i] == FiveThirtyEightGames[j][2]:
             homeAlphaOdds = int((((eventsAPI[i][3][0]['h2h'][0])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
             homeAlphaDrawOdds = int((((eventsAPI[i][3][0]['h2h'][2])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
-            if (homeAlphaOdds>0):
+            if (homeAlphaOdds>10):
                 teamsToBet.append({AlphaAPI[i]: homeAlphaOdds})
-            if (homeAlphaDrawOdds>0):
+            if (homeAlphaDrawOdds>10):
                 teamsToBet.append({AlphaAPI[i]+ " " + BetaAPI[i] + " Draw": homeAlphaDrawOdds})
             
-        if BetaAPI[i][:5] == FiveThirtyEightGames[j][3][:5]:
+        if BetaAPI[i] == FiveThirtyEightGames[j][3]:
             awayBetaOdds = int((((eventsAPI[i][3][0]['h2h'][1])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
-            if (awayBetaOdds>0):
+            if (awayBetaOdds>10):
                 teamsToBet.append({BetaAPI[i]: awayBetaOdds})
 
-        if AlphaAPI[i][:5] == FiveThirtyEightGames[j][3][:5]:
+        if AlphaAPI[i] == FiveThirtyEightGames[j][3]:
             awayAlphaOdds = int((((eventsAPI[i][3][0]['h2h'][0])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
             awayAlphaDrawOdds = int((((eventsAPI[i][3][0]['h2h'][2])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
-            if (awayAlphaOdds>0):
+            if (awayAlphaOdds>10):
                 teamsToBet.append({AlphaAPI[i]: awayAlphaOdds})
-            if (awayAlphaDrawOdds>0):
+            if (awayAlphaDrawOdds>10):
                 teamsToBet.append({AlphaAPI[i]+ " " + BetaAPI[i] + " Draw": awayAlphaDrawOdds})
             
-        if BetaAPI[i][:5] == FiveThirtyEightGames[j][2][:5]:
+        if BetaAPI[i] == FiveThirtyEightGames[j][2]:
             homeBetaOdds = int((((eventsAPI[i][3][0]['h2h'][1])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
-            if (homeBetaOdds>0):
+            if (homeBetaOdds>10):
                 teamsToBet.append({BetaAPI[i]: homeBetaOdds})
 
             
 teamsToBet.append(teamsToBetScotland)  
 teamsToBet.append(teamsToBetNBA) 
+# teamsToBet.append(teamsToBetCBB) 
 
 print(teamsToBet)
 

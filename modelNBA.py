@@ -1,12 +1,12 @@
 from urllib.request import urlretrieve as retrieve
-from moneylineNBA import theOddsAPIGames, today, tomorrow
+from moneylineNBA import theOddsAPIGames
+from moneyline import today
 import csv
 import time
 from datetime import datetime
 
 
 stringToday = str(today)
-stringTomorrow = str(tomorrow)
 
 url = 'https://projects.fivethirtyeight.com/nba-model/nba_elo_latest.csv'
 
@@ -72,22 +72,22 @@ for i in range(len(AlphaAPI)):
     for j in range(len(FiveThirtyEightGames)):
         if (AlphaAPI[i]).lower() == (FiveThirtyEightGames[j][1].lower()):
             homeAlphaOdds = int((((eventsAPI[i][3][0]['h2h'][0])-1)*100)*(float(FiveThirtyEightGames[j][3]))-(100*(1-(float(FiveThirtyEightGames[j][3])))))
-            if (homeAlphaOdds>0):
+            if (homeAlphaOdds>10):
                 teamsToBetNBA.append({AlphaAPI[i]: homeAlphaOdds})
             
         if (BetaAPI[i]).lower() == (FiveThirtyEightGames[j][2].lower()):
             awayBetaOdds = int((((eventsAPI[i][3][0]['h2h'][1])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
-            if (awayBetaOdds>0):
+            if (awayBetaOdds>10):
                 teamsToBetNBA.append({BetaAPI[i]: awayBetaOdds})
 
         if (AlphaAPI[i]).lower() == (FiveThirtyEightGames[j][2].lower()):
             awayAlphaOdds = int((((eventsAPI[i][3][0]['h2h'][0])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
-            if (awayAlphaOdds>0):
+            if (awayAlphaOdds>10):
                 teamsToBetNBA.append({AlphaAPI[i]: awayAlphaOdds})
             
         if (BetaAPI[i]).lower() == (FiveThirtyEightGames[j][1].lower()):
             homeBetaOdds = int((((eventsAPI[i][3][0]['h2h'][1])-1)*100)*(float(FiveThirtyEightGames[j][3]))-(100*(1-(float(FiveThirtyEightGames[j][3])))))
-            if (homeBetaOdds>0):
+            if (homeBetaOdds>10):
                 teamsToBetNBA.append({BetaAPI[i]: homeBetaOdds})
             
     

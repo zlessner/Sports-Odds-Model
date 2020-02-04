@@ -1,15 +1,15 @@
-from moneylineCBB import theOddsAPIGames, today, tomorrow
+from moneylineCBB import theOddsAPIGames
+from moneyline import today
 import time
 from datetime import datetime
 from kenpompy.utils import login
 from FanMatch import FanMatch
+from API_Keys.vars import kpUser, kpPass
 
 
 stringToday = str(today)
-stringTomorrow = str(tomorrow)
 
-
-browser = login('testudotimes@gmail.com', 'lenbi@s34')
+browser = login(kpUser, kpPass)
 fm = FanMatch(browser, date = stringToday)
 
 
@@ -104,7 +104,7 @@ for i in range(len(AlphaAPI)):
         try:
             if (AlphaAPI[i]).lower() == (kpWinnersProj[j].lower()):
                 homeAlphaOdds = int(((((eventsAPI[i][3][0]['h2h'][0])-1)*100)*(kpWinProb[j])-(100*(1-(kpWinProb[j])))))
-                if (homeAlphaOdds>0):
+                if (homeAlphaOdds>10):
                     teamsToBetCBB.append({AlphaAPI[i]: homeAlphaOdds})
         except KeyError:
             continue
@@ -112,7 +112,7 @@ for i in range(len(AlphaAPI)):
         try:    
             if (BetaAPI[i]).lower() == (kpLosersProj[j].lower()):
                 awayBetaOdds = int(((((eventsAPI[i][3][0]['h2h'][1])-1)*100)*(1-(kpWinProb[j])))-(100*(kpWinProb[j])))
-                if (awayBetaOdds>0):
+                if (awayBetaOdds>10):
                     teamsToBetCBB.append({BetaAPI[i]: awayBetaOdds})
         except KeyError:
             continue
@@ -120,7 +120,7 @@ for i in range(len(AlphaAPI)):
         try:    
             if (AlphaAPI[i]).lower() == (kpLosersProj[j].lower()):
                 awayAlphaOdds = int(((((eventsAPI[i][3][0]['h2h'][0])-1)*100)*(1-(kpWinProb[j]))-(100*(kpWinProb[j]))))
-                if (awayAlphaOdds>0):
+                if (awayAlphaOdds>10):
                     teamsToBetCBB.append({AlphaAPI[i]: awayAlphaOdds})
         except KeyError:
             continue
@@ -129,7 +129,7 @@ for i in range(len(AlphaAPI)):
         try:
             if (BetaAPI[i]).lower() == (kpWinnersProj[j].lower()):
                 homeBetaOdds = int(((((eventsAPI[i][3][0]['h2h'][1])-1)*100)*((kpWinProb[j])))-(100*(1-(kpWinProb[j]))))
-                if (homeBetaOdds>0):
+                if (homeBetaOdds>10):
                     teamsToBetCBB.append({BetaAPI[i]: homeBetaOdds})
         except KeyError:
             continue

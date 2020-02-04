@@ -22,10 +22,14 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 #soccer_australia_aleague
 #soccer_turkey_super_league
 #soccer_spain_la_liga
+#soccer_france_ligue_one
+#soccer_france_ligue_two
+#soccer_italy_serie_a
+#soccer_italy_serie_b
 
 
 
-querystring = {"sport":"soccer_england_league2","region":"us","mkt":"h2h"}
+querystring = {"sport":"soccer_france_ligue_two","region":"us","mkt":"h2h"}
 
 response = requests.request("GET", url, headers=headers, params=querystring)
 
@@ -37,7 +41,9 @@ theOddsAPIGames = gamesList['data']
 
 today = datetime.date.today()
 
-tomorrow = today + datetime.timedelta(1)
+# change date for all games right here
+
+# today = today + datetime.timedelta(1)
 
 now = datetime.datetime.now()
 

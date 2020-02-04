@@ -16,7 +16,7 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 #soccer_england_league2
 #soccer_spl
 
-querystring = {"sport":"soccer_spl","region":"us","mkt":"h2h"}
+querystring = {"sport":"soccer_france_ligue_one","region":"us","mkt":"h2h"}
 
 response = requests.request("GET", url, headers=headers, params=querystring)
 
