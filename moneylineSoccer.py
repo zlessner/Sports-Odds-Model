@@ -39,11 +39,11 @@ gamesList = json.loads(sportsList)
 
 theOddsAPIGames = gamesList['data']
 
-today = datetime.date.today()
+gameDate = datetime.date.today()
 
 # change date for all games right here
 
-today = today + datetime.timedelta(1)
+# gameDate = gameDate + datetime.timedelta(1)
 
 now = datetime.datetime.now()
 

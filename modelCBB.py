@@ -1,5 +1,5 @@
 from moneylineCBB import theOddsAPIGames
-from moneylineSoccer import today
+from moneylineSoccer import gameDate
 import time
 from datetime import datetime
 from kenpompy.utils import login
@@ -7,10 +7,10 @@ from FanMatch import FanMatch
 from API_Keys.vars import kpUser, kpPass
 
 
-stringToday = str(today)
+stringGameDate = str(gameDate)
 
 browser = login(kpUser, kpPass)
-fm = FanMatch(browser, date = stringToday)
+fm = FanMatch(browser, date = stringGameDate)
 
 
 # print (fm.fm_df['PredictedWinner'], fm.fm_df['PredictedLoser'], fm.fm_df['WinProbability'])
@@ -46,7 +46,7 @@ BetaAPI=[]
 
 
 for i in eventsAPI:
-    if (datetime.utcfromtimestamp((eventsAPI[i][1][0]-30000)).strftime('%Y-%m-%d') == stringToday):
+    if (datetime.utcfromtimestamp((eventsAPI[i][1][0]-30000)).strftime('%Y-%m-%d') == stringGameDate):
         AlphaAPIx.append(eventsAPI[i][2][0][0].rsplit(' ', 1)[0])
         BetaAPIx.append(eventsAPI[i][2][0][1].rsplit(' ', 1)[0])
         

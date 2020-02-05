@@ -1,12 +1,12 @@
 from urllib.request import urlretrieve as retrieve
 from moneylineNBA import theOddsAPIGames
-from moneylineSoccer import today
+from moneylineSoccer import gameDate
 import csv
 import time
 from datetime import datetime
 
 
-stringToday = str(today)
+stringGameDate = str(gameDate)
 
 url = 'https://projects.fivethirtyeight.com/nba-model/nba_elo_latest.csv'
 
@@ -28,7 +28,7 @@ FiveThirtyEightGames=[]
 #Can change date
 
 for game in fullList:
-    if game[0] == stringToday:
+    if game[0] == stringGameDate:
         FiveThirtyEightGames.append(game)
 
 # print (FiveThirtyEightGames)
@@ -56,7 +56,7 @@ BetaAPI=[]
 #Can change date
 
 for i in eventsAPI:
-    if (datetime.utcfromtimestamp((eventsAPI[i][1][0])-30000).strftime('%Y-%m-%d') == stringToday):
+    if (datetime.utcfromtimestamp((eventsAPI[i][1][0])-30000).strftime('%Y-%m-%d') == stringGameDate):
         AlphaAPI.append(eventsAPI[i][2][0][0])
         BetaAPI.append(eventsAPI[i][2][0][1])
 

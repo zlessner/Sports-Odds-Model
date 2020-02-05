@@ -4,10 +4,6 @@ import os
 from API_Keys.vars import headers
 import datetime
 
-today = datetime.date.today()
-
-tomorrow = today + datetime.timedelta(1)
-
 url = "https://odds.p.rapidapi.com/v1/odds"
 
 #basketball_nba
