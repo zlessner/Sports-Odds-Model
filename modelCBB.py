@@ -126,14 +126,6 @@ for i in range(len(AlphaAPI)):
                 awayAlphaOdds = int(((((OddsA[i])-1)*100)*(1-(kpWinProb[j]))-(100*(kpWinProb[j]))))
                 if (awayAlphaOdds>10):
                     teamsToBetCBB.append({AlphaAPI[i]: awayAlphaOdds})
-                    # print(AlphaAPI[i].lower())
-                    # print(kpLosersProj[j].lower())
-                    # print(eventsAPI[i])
-                    # print(eventsAPI[i][3])
-                    # print(eventsAPI[i][3][0])
-                    # print(eventsAPI[i][3][0]['h2h'])
-                    # print(eventsAPI[i][3][0]['h2h'][0])
-                    # print(AlphaAPI[i])
         except KeyError:
             continue
 
@@ -143,18 +135,10 @@ for i in range(len(AlphaAPI)):
                 homeBetaOdds = int(((((OddsB[i])-1)*100)*((kpWinProb[j])))-(100*(1-(kpWinProb[j]))))
                 if (homeBetaOdds>10):
                     teamsToBetCBB.append({BetaAPI[i]: homeBetaOdds})
-                    # print(BetaAPI[i].lower())
-                    # print(kpWinnersProj[j].lower())
-                    # print(eventsAPI[i])
-                    # print(eventsAPI[i][3])
-                    # print(eventsAPI[i][3][0])
-                    # print(eventsAPI[i][3][0]['h2h'])
-                    # print(eventsAPI[i][3][0]['h2h'][1])
-                    # print(BetaAPI[i])
         except KeyError:
             continue
 
-print(teamsToBetCBB)
+# print(teamsToBetCBB)
 
 # print(AlphaAPI[13])
 # print(OddsA[13])
