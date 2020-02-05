@@ -50,4 +50,3 @@ now = datetime.datetime.now()
 nowTime = (now.strftime("%Y-%m-%d %H:%M:%S"))
 
 #adding multiple sports in querystring params
-#Fix PL, add CBB
