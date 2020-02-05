@@ -29,3 +29,8 @@
 "['2020-02-04 10:13:02', {'Nantes': 16}, [{'Paris FC': 26}], [{'NOP': 62}, {'DEN': 21}]]"
 "['2020-02-04 10:21:18', {'Nantes': 11}, [{'Paris FC': 26}], [{'NOP': 62}, {'DEN': 21}]]"
 "['2020-02-04 10:23:33', {'Nantes': 11}, [{'Auxerre': 3}, {'Lens Troyes Draw': 6}, {'Troyes': 5}, {'Lorient': 3}, {'Paris FC': 28}, {'Rodez': 3}, {'Caen': 1}, {'Guingamp': 5}], [{'NOP': 62}, {'DEN': 21}]]"
+"['2020-02-04 11:34:25', {'Nantes': 12}, [{'Auxerre': 4}, {'Lens Troyes Draw': 4}, {'Troyes': 5}, {'Lorient': 3}, {'Paris FC': 24}, {'Rodez': 1}, {'Niort': 1}, {'Guingamp': 5}], [{'NOP': 64}, {'DEN': 21}]]"
+"['2020-02-04 13:31:02', {'Angers': 205}, {'Angers AS Monaco Draw': 45}, {'Lille Rennes Draw': 44}, [{'Paris FC': 23}, {'Rodez': 12}], [{'NOP': 64}, {'DEN': 20}]]"
+"['2020-02-04 15:51:58', {'Nantes': 446}, {'Nantes Paris Saint Germain Draw': 102}, [{'Orléans': 12}, {'Rodez': 22}, {'Guingamp': 11}, {'Valenciennes': 18}, {'Caen': 170}, {'Troyes': 128}, {'Auxerre': 23}, {'Sochaux': 212}, {'Lorient': 32}, {'Paris FC': 23}], [{'NOP': 62}, {'DEN': 19}]]"
+"['2020-02-04 15:54:43', {'Nantes': 473}, {'Nantes Paris Saint Germain Draw': 102}, [{'Orléans': 14}, {'Rodez': 22}, {'Guingamp': 16}, {'Valenciennes': 18}, {'Caen': 212}, {'Troyes': 128}, {'Auxerre': 28}, {'Sochaux': 212}, {'Lorient': 32}, {'Paris FC': 28}], [{'NOP': 59}, {'DEN': 19}]]"
+"['2020-02-04 22:55:19', {'Ross County': 15}, {'Hamilton Academical': 21}, {'Kilmarnock': 23}, [{'Toulouse': 16}], [{'MIN': 522}, {'LAC': 157}], [{'Iowa': 130}, {'Creighton': 207}, {'Saint Louis': 26}, {'Virginia': 34}, {'Southern Illinois': 28}, {'Wofford': 24}, {'East Tennessee St': 16}, {'Furman': 73}, {'Western Carolina': 35}, {'Memphis': 43}, {'Northern Iowa': 41}, {'Louisville': 75}, {'Minnesota': 17}, {'Cal Poly': 12}]]"

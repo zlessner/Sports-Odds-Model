@@ -1,5 +1,5 @@
 from moneylineCBB import theOddsAPIGames
-from moneyline import today
+from moneylineSoccer import today
 import time
 from datetime import datetime
 from kenpompy.utils import login
@@ -134,4 +134,4 @@ for i in range(len(AlphaAPI)):
         except KeyError:
             continue
 
-print(teamsToBetCBB)
+# print(teamsToBetCBB)
