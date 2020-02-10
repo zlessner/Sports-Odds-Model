@@ -6,7 +6,7 @@ import datetime
 
 url = "https://odds.p.rapidapi.com/v1/odds"
 
-#basketball_nba
+#Retrieve API from Odds URL above
 
 querystring = {"sport":"basketball_nba","region":"us","mkt":"h2h"}
 
@@ -14,9 +14,13 @@ response = requests.request("GET", url, headers=headers, params=querystring)
 
 sportsList = response.text
 
+#Put into JSON fomat
+
 gamesList = json.loads(sportsList)
 
 theOddsAPIGames = gamesList['data']
+
+#Slightly alter names so API teams are the same as 538 teams
 
 for i in range(len(theOddsAPIGames)):
     for j in range(len(theOddsAPIGames[i]['sites'])):

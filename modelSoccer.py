@@ -1,5 +1,5 @@
 from urllib.request import urlretrieve as retrieve
-from moneylineSoccer import theOddsAPIGames, gameDate, nowTime
+from moneylineSoccer import theOddsAPIGames, gameDate
 import csv
 import time
 from datetime import datetime
@@ -18,22 +18,21 @@ next(reader)
 
 fullList=[]
 
+
+#Parse CSV file for sport, teams, and odds
+
 for row in reader:
         fullList.append([row[0], row[2], row[3], row[4], float(row[7]),float(row[8]),float(row[9])])
 
 FiveThirtyEightGames=[]
 
-#Can change date
 
 for game in fullList:
     if game[0] == stringGameDate:
         FiveThirtyEightGames.append(game)
 
-# print(FiveThirtyEightGames, "\n")
 
-# for odds in FiveThirtyEightGames:
-#     if (odds[4]>.5):
-#         print(odds[2])
+# Parse Sports Betting API for sport, game time, teams, and odds
 
 eventsAPI = {}
 
@@ -42,9 +41,7 @@ for i in range(len(theOddsAPIGames)):
         eventsAPI[i] = [theOddsAPIGames[i]['sport_key']], [theOddsAPIGames[i]['commence_time']], [theOddsAPIGames[i]['teams']], [theOddsAPIGames[i]['sites'][j]['odds']]
         break
 
-# print(eventsAPI[1][1][0][1])
 
-# print (eventsAPI)
 
 AlphaAPIx=[]
 BetaAPIx=[]
@@ -54,7 +51,7 @@ OddsA=[]
 OddsB=[]
 OddsC=[]
 
-#Can change date
+#Adding first team to AlphaAPI, second team to BetaAPI, first teams odds to OddsA, second team odds to OddsB, and draw odds to OddsC
 
 for i in eventsAPI:
     if (datetime.utcfromtimestamp(eventsAPI[i][1][0]).strftime('%Y-%m-%d') == stringGameDate):
@@ -65,21 +62,17 @@ for i in eventsAPI:
         OddsC.append(eventsAPI[i][3][0]['h2h'][2])
 
 
+#Slightly altering names to match up to 538
+
 for i in range(len(AlphaAPIx)):
     AlphaAPI.append(AlphaAPIx[i].replace("Ch\\u00e2teauroux", 'Chateauroux').replace("FC Chambly", 'Chambly Thelle FC').replace("Le Mans FC", 'Le Mans').replace("Rodez AF", 'Rodez').replace("Orl\\u00e9ans", 'Orléans').replace("SM Caen", 'Caen').replace("EA Guingamp", 'Guingamp').replace("AC Ajaccio", 'Ajaccio').replace("Dijon", 'Dijon FCO').replace("Nîmes Olympique", 'Nimes').replace("Stade de Reims", 'Reims').replace("Saint Etienne", 'St Etienne'))
     BetaAPI.append(BetaAPIx[i].replace("Ch\\u00e2teauroux", 'Chateauroux').replace("FC Chambly", 'Chambly Thelle FC').replace("Le Mans FC", 'Le Mans').replace("Rodez AF", 'Rodez').replace("Orl\\u00e9ans", 'Orléans').replace("SM Caen", 'Caen').replace("EA Guingamp", 'Guingamp').replace("AC Ajaccio", 'Ajaccio').replace("Dijon", 'Dijon FCO').replace("Nîmes Olympique", 'Nimes').replace("Stade de Reims", 'Reims').replace("Saint Etienne", 'St Etienne'))
 
 
-# print(AlphaAPI)
-# print(BetaAPI)
 
+#Matching up 538 teams with sports betting API teams, whether to win, lose or draw
+#Performing calculations to see if expected value of winnings on a $100 dollar bet is over $10 (10% return)
 
-# # print (range(len(AlphaAPI)))
-# print(FiveThirtyEightGames)
-# print(FiveThirtyEightGames[0][3])
-
-
-#Adding teams to bet on, whether to win or draw
 teamsToBet1=[]
 
 for i in range(len(AlphaAPI)):
@@ -109,12 +102,8 @@ for i in range(len(AlphaAPI)):
             homeBetaOdds = int((((OddsB[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
             if (homeBetaOdds>10):
                 teamsToBet1.append({BetaAPI[i]: homeBetaOdds})
-            
+
+
+ #Comment the below in if just want results for this one model          
     
 # print(teamsToBet1)
-
-#alphabeitical ordering per group and odds
-#use soccer sport codes epl etc. to combine all the ganes
-#home team option for sorting? Not sure if there's an away team field
-#Because same name is used for multiple teams, teams may repeat twice - see what happens for Man City Man U
-#turn into classes?

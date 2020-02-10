@@ -19,25 +19,19 @@ next(reader)
 
 fullList=[]
 
-#home team float(row[20])
+#Parse CSV file for sport, teams, and odds
+
 for row in reader:
         fullList.append([row[0], row[4], row[5], float(row[20]),float(row[21])])
 
 FiveThirtyEightGames=[]
 
-#Can change date
-
 for game in fullList:
     if game[0] == stringGameDate:
         FiveThirtyEightGames.append(game)
 
-# print (FiveThirtyEightGames)
 
-# print(FiveThirtyEightGames, "\n")
-
-# for odds in FiveThirtyEightGames:
-#     if (odds[4]>.5):
-#         print(odds[2])
+# Parse Sports Betting API for sport, game time, teams, and odds
 
 eventsAPI = {}
 
@@ -46,16 +40,13 @@ for i in range(len(theOddsAPIGames)):
         eventsAPI[i] = [theOddsAPIGames[i]['sport_key']], [theOddsAPIGames[i]['commence_time']], [theOddsAPIGames[i]['teams']], [theOddsAPIGames[i]['sites'][j]['odds']]
         break
 
-# print(eventsAPI[1][1][0][1])
-
-# print (eventsAPI)
 
 AlphaAPI=[]
 BetaAPI=[]
 OddsA=[]
 OddsB=[]
 
-#Can change date
+#Adding first team to AlphaAPI, second team to BetaAPI, first teams odds to OddsA, and second team odds to OddsB
 
 for i in eventsAPI:
     if (datetime.utcfromtimestamp((eventsAPI[i][1][0])-30000).strftime('%Y-%m-%d') == stringGameDate):
@@ -64,12 +55,11 @@ for i in eventsAPI:
         OddsA.append(eventsAPI[i][3][0]['h2h'][0])
         OddsB.append(eventsAPI[i][3][0]['h2h'][1])
 
-# # print (range(len(AlphaAPI)))
-# print(FiveThirtyEightGames)
-# print(FiveThirtyEightGames[0][3])
 
 
-#Adding teams to bet on
+#Matching up 538 teams with sports betting API teams
+#Performing calculations to see if expected value of winnings on a $100 dollar bet is over $10 (10% return)
+
 teamsToBetNBA=[]
 
 for i in range(len(AlphaAPI)):
@@ -105,11 +95,9 @@ for i in range(len(AlphaAPI)):
                     teamsToBetNBA.append({BetaAPI[i]: homeBetaOdds})
         except KeyError:
             continue
-    
+
+
+ #Comment the below in if just want results for this one model   
+
 # print(teamsToBetNBA)
 
-#alphabeitical ordering per group and odds
-#use soccer sport codes epl etc. to combine all the ganes
-#home team option for sorting? Not sure if there's an away team field
-#Because same name is used for multiple teams, teams may repeat twice - see what happens for Man City Man U
-#turn into classes?

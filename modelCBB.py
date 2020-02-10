@@ -12,21 +12,7 @@ stringGameDate = str(gameDate)
 browser = login(kpUser, kpPass)
 fm = FanMatch(browser, date = stringGameDate)
 
-
-# print (fm.fm_df['PredictedWinner'], fm.fm_df['PredictedLoser'], fm.fm_df['WinProbability'])
-
-# print (float(fm.fm_df['WinProbability'][1][:2]))
-
-# print (range(len(fm.fm_df['PredictedWinner'])))
-
-# fullList = []
-
-# for i in range(len(fm.fm_df['PredictedWinner'])):
-#         fullList.append(fm.fm_df['PredictedWinner'], fm.fm_df['PredictedLoser'], fm.fm_df['WinProbability'])
-
-# print (fullList)
-
-
+# Parse sports betting API for sport, game time, teams, and odds
 
 eventsAPI = {}
 
@@ -43,9 +29,7 @@ BetaAPI=[]
 OddsA=[]
 OddsB=[]
 
-#Can change date
-
-
+#Adding first team to AlphaAPI, second team to BetaAPI, first teams odds to OddsA, and second team odds to OddsB
 
 for i in eventsAPI:
     if (datetime.utcfromtimestamp((eventsAPI[i][1][0]-30000)).strftime('%Y-%m-%d') == stringGameDate):
@@ -53,24 +37,25 @@ for i in eventsAPI:
         BetaAPIx.append(eventsAPI[i][2][0][1].rsplit(' ', 1)[0])
         OddsA.append(eventsAPI[i][3][0]['h2h'][0])
         OddsB.append(eventsAPI[i][3][0]['h2h'][1])
+
+
+#Cleaning up API names strings so that they match KenPom names strings
         
 for i in range(len(AlphaAPIx)):
     AlphaAPI.append(AlphaAPIx[i].replace(' Tar', '').replace(' Bald', '').replace(' Bananna', '').replace(' Big', '').replace(' Black', '').replace(' Blue', '').replace(' Great', '').replace(' River', '').replace(' Green', '').replace(' Golden', '').replace(' Yellow', '').replace(' Fighting', '').replace(' Demon', '').replace(' Red', '').replace(" Runnin'", '').replace(' Nittany', '').replace(' Scarlet', '').replace(' Horned', '').replace(' Rainbow', '').replace(" Fightin'", '').replace(' Thundering', '').replace(' Mean', '').replace(' Purple', '').replace(' Wolf', '').replace(' Mountain', '').replace(' Crimson', '').replace(' Delta', '').replace(' Fighting', '').replace(" Ragin'", '').replace("-", '').replace("Miss ", 'Mississippi '))
     BetaAPI.append(BetaAPIx[i].replace(' Tar', '').replace(' Bald', '').replace(' Bananna', '').replace(' Big', '').replace(' Black', '').replace(' Blue', '').replace(' Great', '').replace(' River', '').replace(' Green', '').replace(' Golden', '').replace(' Yellow', '').replace(' Fighting', '').replace(' Demon', '').replace(' Red', '').replace(" Runnin'", '').replace(' Nittany', '').replace(' Scarlet', '').replace(' Horned', '').replace(' Rainbow', '').replace(" Fightin'", '').replace(' Thundering', '').replace(' Mean', '').replace(' Purple', '').replace(' Wolf', '').replace(' Mountain', '').replace(' Crimson', '').replace(' Delta', '').replace(' Fighting', '').replace(" Ragin'", '').replace("-", '').replace("Miss ", 'Mississippi '))
 
 
-#Adding teams to bet on
-teamsToBetCBB=[]
-# print ((AlphaAPI))
-# print(eventsAPI)
-
-
 kpWinnersProjx=[]
 kpLosersProjx=[]
-kpWinProb=[]
 
 kpWinnersProj=[]
 kpLosersProj=[]
+kpWinProb=[]
+
+teamsToBetCBB=[]
+
+#Adding lists for KenPom projeft winners, projected losers, and win probability
 
 for i in range(len(fm.fm_df['PredictedWinner'])):
     kpWinnersProjx.append(fm.fm_df['PredictedWinner'][i])
@@ -84,27 +69,11 @@ for i in range(len(kpWinnersProjx)):
 
 
 
-# print(kpWinnersProj)
-# print(kpLosersProj)
-# print(kpWinProb)
-
-# print(TeamsAPI)
-# print("break")
-# print(kpWinnersProj)
-# print(kpLosersProj)
-
-
-# print(int((((eventsAPI[4][3][0]['h2h'][0])-1)*100)))
-
-# print(range(len(AlphaAPI)))
-# print(range(len(kpWinnersProj)))
+#Matching up KenPom teams with sports betting API teams
+#Performing calculations to see if expected value of winnings on a $100 dollar bet is over $10 (10% return)
 
 for i in range(len(AlphaAPI)):
     for j in range(len(kpWinnersProj)):
-    # print(fm.fm_df['PredictedWinner'][i].lower())
-    # print("Break Break")
-    # print((AlphaAPI[i]).lower())
-        # print(int((((eventsAPI[j][3][0]['h2h'][0])-1)*100)))
         try:
             if (AlphaAPI[i]).lower() == (kpWinnersProj[j].lower()):
                 homeAlphaOdds = int(((((OddsA[i])-1)*100)*(kpWinProb[j])-(100*(1-(kpWinProb[j])))))
@@ -138,9 +107,7 @@ for i in range(len(AlphaAPI)):
         except KeyError:
             continue
 
-# print(teamsToBetCBB)
 
-# print(AlphaAPI[13])
-# print(OddsA[13])
-# print(len(AlphaAPI))
-# print(len(eventsAPI))
+ #Comment the below in if just want results for this one model   
+
+# print(teamsToBetCBB)

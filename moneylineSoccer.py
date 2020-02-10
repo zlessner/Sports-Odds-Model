@@ -6,13 +6,15 @@ import datetime
 
 url = "https://odds.p.rapidapi.com/v1/odds"
 
-#change sport to just soccer to view other leagues' sport_key to then change to individual league -- unccomment print (eventsAPI) in model.py
+#Retrieve API from Odds URL above
 
-#soccer_efl_champ
+#change sport to just soccer to view other leagues' sport_key to then change to individual league -- uncomment print (eventsAPI) in model.py
+
 #soccer_germany_bundesliga
 #soccer_germany_bundesliga2
-#soccer_epl
 #soccer_belgium_first_div
+#soccer_epl
+#soccer_efl_champ
 #soccer_england_league1
 #soccer_england_league2
 #soccer_spl
@@ -28,12 +30,15 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 #soccer_italy_serie_b
 
 
+#change sport to any of the different soccer leagues above
 
-querystring = {"sport":"soccer_france_ligue_one","region":"us","mkt":"h2h"}
+querystring = {"sport":"soccer_efl_champ","region":"us","mkt":"h2h"}
 
 response = requests.request("GET", url, headers=headers, params=querystring)
 
 sportsList = response.text
+
+#Put into JSON format
 
 gamesList = json.loads(sportsList)
 
@@ -41,7 +46,7 @@ theOddsAPIGames = gamesList['data']
 
 gameDate = datetime.date.today()
 
-# change date for all games right here
+# change date for all games right here -- uncomment below to go to tomorrow's games
 
 # gameDate = gameDate + datetime.timedelta(1)
 
@@ -49,4 +54,3 @@ now = datetime.datetime.now()
 
 nowTime = (now.strftime("%Y-%m-%d %H:%M:%S"))
 
-#adding multiple sports in querystring params
