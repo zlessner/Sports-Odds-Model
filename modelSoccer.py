@@ -106,4 +106,4 @@ for i in range(len(AlphaAPI)):
 
  #Comment the below in if just want results for this one model          
     
-# print(teamsToBet1)
+print(teamsToBet1)

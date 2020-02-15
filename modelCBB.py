@@ -55,12 +55,18 @@ kpWinProb=[]
 
 teamsToBetCBB=[]
 
-#Adding lists for KenPom projeft winners, projected losers, and win probability
+#Adding lists for KenPom projected winners, projected losers, and win probability
 
 for i in range(len(fm.fm_df['PredictedWinner'])):
+    try:
+        kpWinProb.append(float(fm.fm_df['WinProbability'][i][:2])/100)
+
+    except TypeError:
+        continue
+    
     kpWinnersProjx.append(fm.fm_df['PredictedWinner'][i])
     kpLosersProjx.append(fm.fm_df['PredictedLoser'][i])
-    kpWinProb.append(float(fm.fm_df['WinProbability'][i][:2])/100)
+    
 
 
 for i in range(len(kpWinnersProjx)):
@@ -110,4 +116,4 @@ for i in range(len(AlphaAPI)):
 
  #Comment the below in if just want results for this one model   
 
-# print(teamsToBetCBB)
+print(teamsToBetCBB)
