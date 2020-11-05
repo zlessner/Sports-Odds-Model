@@ -28,9 +28,7 @@ fullList=[]
 
 # No date needed to filter in this model because CFB games are on week by week basis
 for row in reader:
-        # fullList.append([row[3], row[2], float(row([42])) ])
         fullList.append([row[3], row[2], float(row[71]), 1-float(row[71])])
-
 
 CFB_weekly_games=[]
 
@@ -38,6 +36,7 @@ for game in fullList:
     # if game[0] == stringGameDate:
     CFB_weekly_games.append(game)
 
+# print(CFB_weekly_games)
 
 # Parse Sports Betting API for sport, game time, teams, and odds
 
@@ -71,8 +70,8 @@ for i in eventsAPI:
 #Cleaning up API names strings so that they match KenPom names strings
         
 for i in range(len(AlphaAPIx)):
-    AlphaAPI.append(AlphaAPIx[i].rsplit(' ', 1)[0].replace(' State', ' St.'))
-    BetaAPI.append(BetaAPIx[i].rsplit(' ', 1)[0].replace(' State', ' St.'))
+    AlphaAPI.append(AlphaAPIx[i].rsplit(' ', 1)[0].replace(' State', ' St.').replace('Northern Illinois', 'Northern Ill.').replace('Central Michigan', 'Central Mich.').replace(' Wolf', '').replace(' Black', '').replace(' Sun', '').replace(' Red', '').replace(' Ragin', '').replace(' Blue', '').replace(' Tar', '').replace(' Green', '').replace('UL Monroe', 'Louisiana-Monroe').replace(' Golden', '').replace(' Thundering', '').replace(' Fighting', '').replace(' Nittany', '').replace('UTSA', 'Texas-San Antonio').replace(' Horned', '').replace(' Mean', '').replace(' Scarlet', '').replace(' Rainbow', '').replace(' Crimson', ''))
+    BetaAPI.append(BetaAPIx[i].rsplit(' ', 1)[0].replace(' State', ' St.').replace('Northern Illinois', 'Northern Ill.').replace('Central Michigan', 'Central Mich.').replace(' Wolf', '').replace(' Black', '').replace(' Sun', '').replace(' Red', '').replace(' Ragin', '').replace(' Blue', '').replace(' Tar', '').replace(' Green', '').replace('UL Monroe', 'Louisiana-Monroe').replace(' Golden', '').replace(' Thundering', '').replace(' Fighting', '').replace(' Nittany', '').replace('UTSA', 'Texas-San Antonio').replace(' Horned', '').replace(' Mean', '').replace(' Scarlet', '').replace(' Rainbow', '').replace(' Crimson', ''))
 
 
 

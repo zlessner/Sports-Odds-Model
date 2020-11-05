@@ -46,6 +46,8 @@ theOddsAPIGames = gamesList['data']
 
 gameDate = datetime.date.today()
 
+gameWeek = gameDate + datetime.timedelta(7)
+
 # change date for all games right here -- uncomment below to go to tomorrow's games
 
 # gameDate = gameDate + datetime.timedelta(1)
