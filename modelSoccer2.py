@@ -4,6 +4,7 @@ from moneylineSoccer import gameDate
 from modelSoccer import teamsToBet1
 from modelNBA import teamsToBetNBA
 from modelCBB import teamsToBetCBB
+from modelNCAAF import teamsToBetCFB
 import csv
 import time
 from datetime import datetime
@@ -114,7 +115,8 @@ for i in range(len(AlphaAPI)):
             
 teamsToBet2.append(teamsToBet1)  
 teamsToBet2.append(teamsToBetNBA) 
-teamsToBet2.append(teamsToBetCBB) 
+teamsToBet2.append(teamsToBetCBB)
+teamsToBet2.append(teamsToBetCFB)  
 
 print(teamsToBet2)
 
