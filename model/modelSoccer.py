@@ -70,8 +70,8 @@ for i in eventsAPI:
 #Slightly altering names to match up to 538
 
 for i in range(len(AlphaAPIx)):
-    AlphaAPI.append(AlphaAPIx[i].replace("Ch\\u00e2teauroux", 'Chateauroux').replace("FC Chambly", 'Chambly Thelle FC').replace("Le Mans FC", 'Le Mans').replace("Rodez AF", 'Rodez').replace("Orl\\u00e9ans", 'Orléans').replace("SM Caen", 'Caen').replace("EA Guingamp", 'Guingamp').replace("AC Ajaccio", 'Ajaccio').replace("Dijon", 'Dijon FCO').replace("Nîmes Olympique", 'Nimes').replace("Stade de Reims", 'Reims').replace("Saint Etienne", 'St Etienne'))
-    BetaAPI.append(BetaAPIx[i].replace("Ch\\u00e2teauroux", 'Chateauroux').replace("FC Chambly", 'Chambly Thelle FC').replace("Le Mans FC", 'Le Mans').replace("Rodez AF", 'Rodez').replace("Orl\\u00e9ans", 'Orléans').replace("SM Caen", 'Caen').replace("EA Guingamp", 'Guingamp').replace("AC Ajaccio", 'Ajaccio').replace("Dijon", 'Dijon FCO').replace("Nîmes Olympique", 'Nimes').replace("Stade de Reims", 'Reims').replace("Saint Etienne", 'St Etienne'))
+    AlphaAPI.append(AlphaAPIx[i].replace("Ch\\u00e2teauroux", 'Chateauroux').replace("FC Chambly", 'Chambly Thelle FC').replace("Le Mans FC", 'Le Mans').replace("Rodez AF", 'Rodez').replace("Orl\\u00e9ans", 'Orléans').replace("SM Caen", 'Caen').replace("EA Guingamp", 'Guingamp').replace("AC Ajaccio", 'Ajaccio').replace("Dijon", 'Dijon FCO').replace("Nîmes Olympique", 'Nimes').replace("Stade de Reims", 'Reims').replace("Saint Etienne", 'St Etienne').replace("Wolverhampton Wanderers", 'Wolverhampton').replace("Newcastle United", 'Newcastle').replace("Bournemouth", 'AFC Bournemouth').replace("Blackburn Rovers", 'Blackburn').replace("Birmingham City", 'Birmingham'))
+    BetaAPI.append(BetaAPIx[i].replace("Ch\\u00e2teauroux", 'Chateauroux').replace("FC Chambly", 'Chambly Thelle FC').replace("Le Mans FC", 'Le Mans').replace("Rodez AF", 'Rodez').replace("Orl\\u00e9ans", 'Orléans').replace("SM Caen", 'Caen').replace("EA Guingamp", 'Guingamp').replace("AC Ajaccio", 'Ajaccio').replace("Dijon", 'Dijon FCO').replace("Nîmes Olympique", 'Nimes').replace("Stade de Reims", 'Reims').replace("Saint Etienne", 'St Etienne').replace("Wolverhampton Wanderers", 'Wolverhampton').replace("Newcastle United", 'Newcastle').replace("Bournmouth", 'AFC Bournmouth').replace("Blackburn Rovers", 'Blackburn').replace("Birmingham City", 'Birmingham'))
 
 
 
@@ -85,27 +85,27 @@ for i in range(len(AlphaAPI)):
         if AlphaAPI[i] == FiveThirtyEightGames[j][2]:
             homeAlphaOdds = int((((OddsA[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
             homeAlphaDrawOdds = int((((OddsC[i])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
-            if (homeAlphaOdds>0):
+            if (homeAlphaOdds>10):
                 teamsToBet1.append({AlphaAPI[i]: homeAlphaOdds})
-            if (homeAlphaDrawOdds>0):
+            if (homeAlphaDrawOdds>10):
                 teamsToBet1.append({AlphaAPI[i]+ " " + BetaAPI[i] + " Draw": homeAlphaDrawOdds})
             
         if BetaAPI[i] == FiveThirtyEightGames[j][3]:
             awayBetaOdds = int((((OddsB[i])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
-            if (awayBetaOdds>0):
+            if (awayBetaOdds>10):
                 teamsToBet1.append({BetaAPI[i]: awayBetaOdds})
 
         if AlphaAPI[i] == FiveThirtyEightGames[j][3]:
             awayAlphaOdds = int((((OddsA[i])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
             awayAlphaDrawOdds = int((((OddsC[i])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
-            if (awayAlphaOdds>0):
+            if (awayAlphaOdds>10):
                 teamsToBet1.append({AlphaAPI[i]: awayAlphaOdds})
-            if (awayAlphaDrawOdds>0):
+            if (awayAlphaDrawOdds>10):
                 teamsToBet1.append({AlphaAPI[i]+ " " + BetaAPI[i] + " Draw": awayAlphaDrawOdds})
             
         if BetaAPI[i] == FiveThirtyEightGames[j][2]:
             homeBetaOdds = int((((OddsB[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
-            if (homeBetaOdds>0):
+            if (homeBetaOdds>10):
                 teamsToBet1.append({BetaAPI[i]: homeBetaOdds})
 
 
@@ -126,20 +126,99 @@ for i in range(len(teamsToBet1)):
 team_num_t =[]
 
 for i in range(len(teams)):
-    if teams[i] == "Burnley":
-        team_num_t.append(1132)
+# Premier League
+    if teams[i] == "Liverpool":
+        team_num_t.append(31)
+    if teams[i] == "Manchester City":
+        team_num_t.append(281)
+    if teams[i] == "Chelsea":
+        team_num_t.append(631)
+    if teams[i] == "Manchester United":
+        team_num_t.append(985)
+    if teams[i] == "Tottenham":
+        team_num_t.append(148)
+    if teams[i] == "Arsenal":
+        team_num_t.append(11)
+    if teams[i] == "Everton":
+        team_num_t.append(29)
+    if teams[i] == "Leicester City":
+        team_num_t.append(1003)
+    if teams[i] == "Wolverhampton":
+        team_num_t.append(543)
+    if teams[i] == "Aston Villa":
+        team_num_t.append(405)
+    if teams[i] == "West Ham":
+        team_num_t.append(379)
+    if teams[i] == "Newcastle United":
+        team_num_t.append(762)
+    if teams[i] == "Brighton and Hove Albion":
+        team_num_t.append(1237)
+    if teams[i] == "Crystal Palace":
+        team_num_t.append(873)
+    if teams[i] == "Southhampton":
+        team_num_t.append(180)
     if teams[i] == "Fulham":
         team_num_t.append(931)
-    if teams[i] == "Barnsley":
-        team_num_t.append(349)
-    if teams[i] == "Wycombe Wanderers":
-        team_num_t.append(2805)
-    if teams[i] == "Bristol City":
-        team_num_t.append(698)
-    if teams[i] == "Stoke City":
-        team_num_t.append(512)
+    if teams[i] == "Leeds United":
+        team_num_t.append(399)
+    if teams[i] == "Sheffield United":
+        team_num_t.append(350)
+    if teams[i] == "Burnley":
+        team_num_t.append(1132)
+    if teams[i] == "West Brom Albion":
+        team_num_t.append(984)
+
+
+# Championship
+    if teams[i] == "AFC Bournemouth":
+        team_num_t.append(989)
+    if teams[i] == "Norwich City":
+        team_num_t.append(1123)
     if teams[i] == "Watford":
         team_num_t.append(1010)
+    if teams[i] == "Brentford":
+        team_num_t.append(1148)
+    if teams[i] == "Cardiff City":
+        team_num_t.append(603)
+    if teams[i] == "Bristol City":
+        team_num_t.append(698)
+    if teams[i] == "Nottingham Forest":
+        team_num_t.append(703)
+    if teams[i] == "Swansea City":
+        team_num_t.append(2288)
+    if teams[i] == "Stoke City":
+        team_num_t.append(512)
+    if teams[i] == "Reading":
+        team_num_t.append(1032)
+    if teams[i] == "Middlesbrough":
+        team_num_t.append(641)
+    if teams[i] == "Derby County":
+        team_num_t.append(22)
+    if teams[i] == "Blackburn":
+        team_num_t.append(164)
+    if teams[i] == "Birmingham":
+        team_num_t.append(337)
+    if teams[i] == "Huddersfield Town":
+        team_num_t.append(1110)
+    if teams[i] == "Millwall":
+        team_num_t.append(1028)
+    if teams[i] == "Sheffield Wednesday":
+        team_num_t.append(1035)
+    if teams[i] == "Preston North End":
+        team_num_t.append(466)
+    if teams[i] == "Queens Park Rangers":
+        team_num_t.append(1039)
+    if teams[i] == "Barnsley":
+        team_num_t.append(349)
+    if teams[i] == "Luton Town":
+        team_num_t.append(1031)
+    if teams[i] == "Coventry City":
+        team_num_t.append(990)
+    if teams[i] == "Rotherham United":
+        team_num_t.append(1194)
+    if teams[i] == "Wycombe Wanderers":
+        team_num_t.append(2805)
+
 
 
 
