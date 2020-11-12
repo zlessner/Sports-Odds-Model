@@ -12,8 +12,12 @@ use the headers variable
 """
 headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'}
 
+team_num = '46'
+
+
+
 # page_address stands for the data page address
-page_address = "https://www.transfermarkt.us/liverpool-fc/sperrenundverletzungen/verein/121/plus/1"
+page_address = "https://www.transfermarkt.us/liverpool-fc/sperrenundverletzungen/verein/{0}/plus/1".format(team_num)
 
 # In the object_response variable we will the download of the web page
 object_response = requests.get(page_address, headers=headers)
@@ -24,6 +28,30 @@ The 'html.parser' parameter represents which parser we will use when creating ou
 a parser is a software responsible for converting an entry to a data structure.
 """
 page_elements = BeautifulSoup(object_response.content, 'html.parser')
+
+
+# Total Value of team
+
+total_team_value = page_elements.find_all("div", {"class": "dataMarktwert"})
+
+for tag in total_team_value:
+    team_value = tag.text
+    team_value = team_value.replace("\n$", "").replace("m Total market value\n", "")
+    if "bn" in team_value:
+            team_value = team_value.split('bn')[0]
+            team_value = team_value[0:]
+            team_value = float(team_value)*1000
+
+    elif "Th." in team_value:
+            team_value = team_value.split('Th.')[0]
+            team_value = team_value[0:]
+            team_value = float(team_value)*.001
+
+    else:
+        team_value = float(team_value)
+
+
+
 
 
 
@@ -122,6 +150,23 @@ df = pd.DataFrame({
     "Age": age,
 "Reason": reason, 
 "Player Value":player_price})
+
+
+
+
+# Adding additional column to adjust current value for age
+
+df.loc[df['Age'] < 27, 'Adjusted Player Value'] = .9 * df['Player Value']
+df.loc[(df['Age'] < 33) & (df['Age'] >= 27), 'Adjusted Player Value'] = df['Player Value']
+df.loc[df['Age'] >= 33, 'Adjusted Player Value'] = 1.1* df['Player Value']
+
+
+
+
+team_value_injured = (df['Adjusted Player Value'].sum() / team_value)
+
+print(team_value_injured)
+
 
 # Printing our gathered data
 print(df)
