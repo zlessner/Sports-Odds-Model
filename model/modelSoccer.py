@@ -85,27 +85,27 @@ for i in range(len(AlphaAPI)):
         if AlphaAPI[i] == FiveThirtyEightGames[j][2]:
             homeAlphaOdds = int((((OddsA[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
             homeAlphaDrawOdds = int((((OddsC[i])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
-            if (homeAlphaOdds>10):
+            if (homeAlphaOdds>0):
                 teamsToBet1.append({AlphaAPI[i]: homeAlphaOdds})
-            if (homeAlphaDrawOdds>10):
+            if (homeAlphaDrawOdds>0):
                 teamsToBet1.append({AlphaAPI[i]+ " " + BetaAPI[i] + " Draw": homeAlphaDrawOdds})
             
         if BetaAPI[i] == FiveThirtyEightGames[j][3]:
             awayBetaOdds = int((((OddsB[i])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
-            if (awayBetaOdds>10):
+            if (awayBetaOdds>0):
                 teamsToBet1.append({BetaAPI[i]: awayBetaOdds})
 
         if AlphaAPI[i] == FiveThirtyEightGames[j][3]:
             awayAlphaOdds = int((((OddsA[i])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
             awayAlphaDrawOdds = int((((OddsC[i])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
-            if (awayAlphaOdds>10):
+            if (awayAlphaOdds>0):
                 teamsToBet1.append({AlphaAPI[i]: awayAlphaOdds})
-            if (awayAlphaDrawOdds>10):
+            if (awayAlphaDrawOdds>0):
                 teamsToBet1.append({AlphaAPI[i]+ " " + BetaAPI[i] + " Draw": awayAlphaDrawOdds})
             
         if BetaAPI[i] == FiveThirtyEightGames[j][2]:
             homeBetaOdds = int((((OddsB[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
-            if (homeBetaOdds>10):
+            if (homeBetaOdds>0):
                 teamsToBet1.append({BetaAPI[i]: homeBetaOdds})
 
 
@@ -130,6 +130,17 @@ for i in range(len(teams)):
         team_num_t.append(1132)
     if teams[i] == "Fulham":
         team_num_t.append(931)
+    if teams[i] == "Barnsley":
+        team_num_t.append(349)
+    if teams[i] == "Wycombe Wanderers":
+        team_num_t.append(2805)
+    if teams[i] == "Bristol City":
+        team_num_t.append(698)
+    if teams[i] == "Stoke City":
+        team_num_t.append(512)
+    if teams[i] == "Watford":
+        team_num_t.append(1010)
+
 
 
 # print(team_num_t)
