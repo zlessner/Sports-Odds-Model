@@ -12,7 +12,7 @@ use the headers variable
 """
 headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'}
 
-team_num = '46'
+team_num = '31'
 
 
 
@@ -170,3 +170,6 @@ print(team_value_injured)
 
 # Printing our gathered data
 print(df)
+
+
+# Manually writing down #'s for all 538 teasm - start off with PL to measure and test
