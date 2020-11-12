@@ -1,6 +1,7 @@
+# pylint: disable=E0401
+
 import requests
 import json
-import os
 from API_Keys.vars import headers
 import datetime
 

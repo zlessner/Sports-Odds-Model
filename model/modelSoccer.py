@@ -1,5 +1,4 @@
 from urllib.request import urlretrieve as retrieve
-# from ./moneyline/moneylineSoccer import theOddsAPIGames, gameDate
 from moneyline.moneylineSoccer import theOddsAPIGames, gameDate
 import csv
 import time
@@ -108,3 +107,5 @@ for i in range(len(AlphaAPI)):
  #Comment the below in if just want results for this one model          
     
 print(teamsToBet1)
+
+

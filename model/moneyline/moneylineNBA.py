@@ -1,7 +1,8 @@
+# pylint: disable=E0401
+
 import requests
 import json
-import os
-from API_Keys.vars import headers
+from API_Keys.vars import headers 
 import datetime
 
 url = "https://odds.p.rapidapi.com/v1/odds"
