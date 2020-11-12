@@ -119,3 +119,16 @@ for i in range(len(AlphaAPI)):
 
 print(teamsToBetCFB)
 
+
+
+# teams = []
+
+# for i in range(len(teamsToBetCFB)):
+#     for key in teamsToBetCFB[i].keys():
+#         teams.append(key)
+
+
+# print(teams)
+
+
+

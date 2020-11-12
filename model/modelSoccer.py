@@ -1,11 +1,13 @@
 from urllib.request import urlretrieve as retrieve
-from moneyline.moneylineSoccer import theOddsAPIGames, gameDate
+from moneyline.moneylineSoccer import theOddsAPIGames, gameDate, futureGame
 import csv
 import time
 from datetime import datetime
 
 
-stringGameDate = str(gameDate)
+stringGameDate = str(futureGame)
+
+
 
 url = 'https://projects.fivethirtyeight.com/soccer-api/club/spi_matches.csv'
 
@@ -22,14 +24,17 @@ fullList=[]
 #Parse CSV file for sport, teams, and odds
 
 for row in reader:
-        fullList.append([row[0], row[2], row[3], row[4], float(row[7]),float(row[8]),float(row[9])])
+        fullList.append([row[1], row[3], row[4], row[5], float(row[8]),float(row[9]),float(row[10])])
 
 FiveThirtyEightGames=[]
+
+
 
 
 for game in fullList:
     if game[0] == stringGameDate:
         FiveThirtyEightGames.append(game)
+
 
 
 # Parse Sports Betting API for sport, game time, teams, and odds
@@ -80,32 +85,51 @@ for i in range(len(AlphaAPI)):
         if AlphaAPI[i] == FiveThirtyEightGames[j][2]:
             homeAlphaOdds = int((((OddsA[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
             homeAlphaDrawOdds = int((((OddsC[i])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
-            if (homeAlphaOdds>0):
+            if (homeAlphaOdds>10):
                 teamsToBet1.append({AlphaAPI[i]: homeAlphaOdds})
             if (homeAlphaDrawOdds>10):
                 teamsToBet1.append({AlphaAPI[i]+ " " + BetaAPI[i] + " Draw": homeAlphaDrawOdds})
             
         if BetaAPI[i] == FiveThirtyEightGames[j][3]:
             awayBetaOdds = int((((OddsB[i])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
-            if (awayBetaOdds>0):
+            if (awayBetaOdds>10):
                 teamsToBet1.append({BetaAPI[i]: awayBetaOdds})
 
         if AlphaAPI[i] == FiveThirtyEightGames[j][3]:
             awayAlphaOdds = int((((OddsA[i])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
             awayAlphaDrawOdds = int((((OddsC[i])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
-            if (awayAlphaOdds>0):
+            if (awayAlphaOdds>10):
                 teamsToBet1.append({AlphaAPI[i]: awayAlphaOdds})
             if (awayAlphaDrawOdds>10):
                 teamsToBet1.append({AlphaAPI[i]+ " " + BetaAPI[i] + " Draw": awayAlphaDrawOdds})
             
         if BetaAPI[i] == FiveThirtyEightGames[j][2]:
             homeBetaOdds = int((((OddsB[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
-            if (homeBetaOdds>0):
+            if (homeBetaOdds>10):
                 teamsToBet1.append({BetaAPI[i]: homeBetaOdds})
 
 
  #Comment the below in if just want results for this one model          
     
-print(teamsToBet1)
+# print(teamsToBet1)
 
 
+teams = []
+
+for i in range(len(teamsToBet1)):
+    for key in teamsToBet1[i].keys():
+        teams.append(key)
+
+
+# print(teams)
+
+team_num_t =[]
+
+for i in range(len(teams)):
+    if teams[i] == "Burnley":
+        team_num_t.append(1132)
+    if teams[i] == "Fulham":
+        team_num_t.append(931)
+
+
+# print(team_num_t)

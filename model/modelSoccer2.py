@@ -27,7 +27,7 @@ fullList=[]
 #Parse CSV file for sport, teams, and odds
 
 for row in reader:
-        fullList.append([row[0], row[2], row[3], row[4], float(row[7]),float(row[8]),float(row[9])])
+        fullList.append([row[1], row[3], row[4], row[5], float(row[8]),float(row[9]),float(row[10])])
 
 FiveThirtyEightGames=[]
 
