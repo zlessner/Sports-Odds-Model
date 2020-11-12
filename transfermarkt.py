@@ -27,65 +27,101 @@ page_elements = BeautifulSoup(object_response.content, 'html.parser')
 
 
 
+# The find_all () method is able to return all tags that meet restrictions within parentheses
+
+injury_table = page_elements.find_all("div", {"id": "yw1"})
+
 
 
 player_names = [] # List that will receive all the players names
 
-# The find_all () method is able to return all tags that meet restrictions within parentheses
-tags_jogadores = page_elements.find_all("a", {"class": "spielprofil_tooltip"})
+
+
+
+for tag in injury_table:
+    names = tag.find_all("a", {"class": "spielprofil_tooltip"})
+    for tag in names:
+        text_name = tag.text
+        player_names.append(text_name)
+
+
+
 # In our case, we are finding all anchors with the class "spielprofil_tooltip"
 
-# Now we will get only the names of all players
-for tag_jogador in tags_jogadores:
-    player_names.append(tag_jogador.text)
 
 
 
 
 
+# Reason for injury
 
-reason = [] # List that will receive all the names of the countries of the players’s previous leagues.
+reason = [] 
 
-# The find_all () method is able to return all tags that meet restrictions within parentheses
-tags_jogadores = page_elements.find_all("td", {"class": "links"})
-# In our case, we are finding all anchors with the class "spielprofil_tooltip"
 
-# Now we will get only the names of all players
-for tag_jogador in tags_jogadores:
+injury_reason = page_elements.find_all("td", {"class": "links"})
+
+for tag_jogador in injury_reason:
     reason.append(tag_jogador.text)
 
 
 
 
+# Market Price
+
 player_price = []
 
-tags_custos = page_elements.find_all("td", {"class": "rechts"})
-
-for tag_custo in tags_custos:
-    texto_preco = tag_custo.text
-    # The price text contains characters that we don’t need like £ (euros) and m (million) so we’ll remove them
-    texto_preco = texto_preco.replace("£", "").replace("m","").replace("$", "")
-    if "Th." in texto_preco:
-        texto_preco = texto_preco.split('Th.')[0]
-        texto_preco = texto_preco[0:]
-        texto_preco = float(texto_preco)*.001
-    # We will now convert the value to a numeric variable (float)
-    preco_numerico = float(texto_preco)
-    player_price.append(preco_numerico)
 
 
-# print(player_price)
+for tag in injury_table:
+    tags_price = tag.find_all("td", {"class": "rechts"})
+    for tag in tags_price:
+        value_text = tag.text
+        # The price text contains characters that we don’t need like £ (euros) and m (million) so we’ll remove them
+        value_text = value_text.replace("£", "").replace("m","").replace("$", "")
+        if "Th." in value_text:
+            value_text = value_text.split('Th.')[0]
+            value_text = value_text[0:]
+            value_text = float(value_text)*.001
+        # We will now convert the value to a numeric variable (float)
+        value_number = float(value_text)
+        player_price.append(value_number)
+
+
+
+
+
+
+
+#Player Age
+
+zentriert = [] 
+
+
+for tag in injury_table:
+    tdTags = tag.find_all("td", {"class": "zentriert"})
+    for tag in tdTags:
+        zentriert.append(tag.text)
+
+
+
+age = []
+
+# zentriert class brigns back many things in table but age comes back every fifth element
+
+for i in range(len(zentriert)):
+    if zentriert.index(zentriert[i]) % 5 == 0:
+        zentriert[i] = int(zentriert[i])
+        age.append(zentriert[i])
+
+
 
 
 # Creating a DataFrame with our data
 df = pd.DataFrame({
     "Player":player_names,
-# "Reason": reason, 
+    "Age": age,
+"Reason": reason, 
 "Player Value":player_price})
 
 # Printing our gathered data
 print(df)
-
-
-
-#Try to use ID and not class so it excludes list of "Risk of Suspension"
