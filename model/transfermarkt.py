@@ -109,7 +109,7 @@ for i in range(len(team_num_t)):
         for tag in tags_price:
             value_text = tag.text
             # The price text contains characters that we don’t need like £ (euros) and m (million) so we’ll remove them
-            value_text = value_text.replace("£", "").replace("m","").replace("$", "")
+            value_text = value_text.replace("£", "").replace("m","").replace("$", "").replace("-", "0")
             if "Th." in value_text:
                 value_text = value_text.split('Th.')[0]
                 value_text = value_text[0:]

@@ -34,7 +34,7 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 
 #change sport to any of the different soccer leagues above
 
-querystring = {"sport":"soccer_efl_champ","region":"us","mkt":"h2h"}
+querystring = {"sport":"soccer_england_league1","region":"us","mkt":"h2h"}
 
 response = requests.request("GET", url, headers=headers, params=querystring)
 
@@ -50,7 +50,7 @@ gameDate = datetime.date.today()
 
 gameWeek = gameDate + datetime.timedelta(7)
 
-futureGame = gameDate + datetime.timedelta(9)
+futureGame = gameDate + datetime.timedelta(7)
 
 # change date for all games right here -- uncomment below to go to tomorrow's games
 

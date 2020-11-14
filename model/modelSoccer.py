@@ -70,8 +70,8 @@ for i in eventsAPI:
 #Slightly altering names to match up to 538
 
 for i in range(len(AlphaAPIx)):
-    AlphaAPI.append(AlphaAPIx[i].replace("Ch\\u00e2teauroux", 'Chateauroux').replace("FC Chambly", 'Chambly Thelle FC').replace("Le Mans FC", 'Le Mans').replace("Rodez AF", 'Rodez').replace("Orl\\u00e9ans", 'Orléans').replace("SM Caen", 'Caen').replace("EA Guingamp", 'Guingamp').replace("AC Ajaccio", 'Ajaccio').replace("Dijon", 'Dijon FCO').replace("Nîmes Olympique", 'Nimes').replace("Stade de Reims", 'Reims').replace("Saint Etienne", 'St Etienne').replace("Wolverhampton Wanderers", 'Wolverhampton').replace("Newcastle United", 'Newcastle').replace("Bournemouth", 'AFC Bournemouth').replace("Blackburn Rovers", 'Blackburn').replace("Birmingham City", 'Birmingham'))
-    BetaAPI.append(BetaAPIx[i].replace("Ch\\u00e2teauroux", 'Chateauroux').replace("FC Chambly", 'Chambly Thelle FC').replace("Le Mans FC", 'Le Mans').replace("Rodez AF", 'Rodez').replace("Orl\\u00e9ans", 'Orléans').replace("SM Caen", 'Caen').replace("EA Guingamp", 'Guingamp').replace("AC Ajaccio", 'Ajaccio').replace("Dijon", 'Dijon FCO').replace("Nîmes Olympique", 'Nimes').replace("Stade de Reims", 'Reims').replace("Saint Etienne", 'St Etienne').replace("Wolverhampton Wanderers", 'Wolverhampton').replace("Newcastle United", 'Newcastle').replace("Bournmouth", 'AFC Bournmouth').replace("Blackburn Rovers", 'Blackburn').replace("Birmingham City", 'Birmingham'))
+    AlphaAPI.append(AlphaAPIx[i].replace("Ch\\u00e2teauroux", 'Chateauroux').replace("FC Chambly", 'Chambly Thelle FC').replace("Le Mans FC", 'Le Mans').replace("Rodez AF", 'Rodez').replace("Orl\\u00e9ans", 'Orléans').replace("SM Caen", 'Caen').replace("EA Guingamp", 'Guingamp').replace("AC Ajaccio", 'Ajaccio').replace("Dijon", 'Dijon FCO').replace("Nîmes Olympique", 'Nimes').replace("Stade de Reims", 'Reims').replace("Saint Etienne", 'St Etienne').replace("Wolverhampton Wanderers", 'Wolverhampton').replace("Newcastle United", 'Newcastle').replace("Bournemouth", 'AFC Bournemouth').replace("Blackburn Rovers", 'Blackburn').replace("Birmingham City", 'Birmingham').replace("Wigan Athletic", 'Wigan').replace("Bolton Wanderers", 'Bolton').replace("Barrow AFC", 'Barrow'))
+    BetaAPI.append(BetaAPIx[i].replace("Ch\\u00e2teauroux", 'Chateauroux').replace("FC Chambly", 'Chambly Thelle FC').replace("Le Mans FC", 'Le Mans').replace("Rodez AF", 'Rodez').replace("Orl\\u00e9ans", 'Orléans').replace("SM Caen", 'Caen').replace("EA Guingamp", 'Guingamp').replace("AC Ajaccio", 'Ajaccio').replace("Dijon", 'Dijon FCO').replace("Nîmes Olympique", 'Nimes').replace("Stade de Reims", 'Reims').replace("Saint Etienne", 'St Etienne').replace("Wolverhampton Wanderers", 'Wolverhampton').replace("Newcastle United", 'Newcastle').replace("Bournmouth", 'AFC Bournmouth').replace("Blackburn Rovers", 'Blackburn').replace("Birmingham City", 'Birmingham').replace("Wigan Athletic", 'Wigan').replace("Bolton Wanderers", 'Bolton').replace("Barrow AFC", 'Barrow'))
 
 
 
@@ -218,6 +218,111 @@ for i in range(len(teams)):
         team_num_t.append(1194)
     if teams[i] == "Wycombe Wanderers":
         team_num_t.append(2805)
+
+
+
+    # League 1
+    if teams[i] == "Hull City":
+        team_num_t.append(3008)
+    if teams[i] == "Ipswich Town":
+        team_num_t.append(677)
+    if teams[i] == "Blackpool":
+        team_num_t.append(1181)
+    if teams[i] == "Sunderland":
+        team_num_t.append(289)
+    if teams[i] == "Shrewsbury Town":
+        team_num_t.append(3054)
+    if teams[i] == "Charlton Athletic":
+        team_num_t.append(358)
+    if teams[i] == "Fleetwood Town":
+        team_num_t.append(11177)
+    if teams[i] == "Oxford United":
+        team_num_t.append(988)
+    if teams[i] == "Milton Keynes Dons":
+        team_num_t.append(991)
+    if teams[i] == "Wigan":
+        team_num_t.append(1071)
+    if teams[i] == "Swindon Town":
+        team_num_t.append(352)
+    if teams[i] == "Doncaster Rovers":
+        team_num_t.append(2454)
+    if teams[i] == "Burton Albion":
+        team_num_t.append(2963)
+    if teams[i] == "Portsmouth":
+        team_num_t.append(1020)
+    if teams[i] == "Gillingham":
+        team_num_t.append(2814)
+    if teams[i] == "Bristol Rovers":
+        team_num_t.append(2455)
+    if teams[i] == "Plymouth Argyle":
+        team_num_t.append(2262)
+    if teams[i] == "Northampton Town":
+        team_num_t.append(1032)
+    if teams[i] == "Lincoln City":
+        team_num_t.append(1198)
+    if teams[i] == "Peterborough United":
+        team_num_t.append(1072)
+    if teams[i] == "Rochdale":
+        team_num_t.append(1088)
+    if teams[i] == "Crewe Alexandra":
+        team_num_t.append(1042)
+    if teams[i] == "AFC Wimbledon":
+        team_num_t.append(3884)
+    if teams[i] == "Accrington Stanley":
+        team_num_t.append(3688)
+
+
+    # League 2
+    if teams[i] == "Salford City":
+        team_num_t.append(34888)
+    if teams[i] == "Southend United":
+        team_num_t.append(2793)
+    if teams[i] == "Bolton":
+        team_num_t.append(355)
+    if teams[i] == "Oldham Athletic":
+        team_num_t.append(1078)
+    if teams[i] == "Tranmere Rovers":
+        team_num_t.append(1074)
+    if teams[i] == "Morecambe":
+        team_num_t.append(3697)
+    if teams[i] == "Colchester United":
+        team_num_t.append(1060)
+    if teams[i] == "Grimsby Town":
+        team_num_t.append(1034)
+    if teams[i] == "Leyton Orient":
+        team_num_t.append(1150)
+    if teams[i] == "Mansfield Town":
+        team_num_t.append(3820)
+    if teams[i] == "Bradford City":
+        team_num_t.append(1027)
+    if teams[i] == "Scunthorpe United":
+        team_num_t.append(2964)
+    if teams[i] == "Barrow":
+        team_num_t.append(6168)
+    if teams[i] == "Port Vale":
+        team_num_t.append(1211)
+    if teams[i] == "Cheltenham Town":
+        team_num_t.append(3371)
+    if teams[i] == "Exeter City":
+        team_num_t.append(6699)
+    if teams[i] == "Carlisle United":
+        team_num_t.append(1220)
+    if teams[i] == "Crawley Town":
+        team_num_t.append(3537)
+    if teams[i] == "Newport County":
+        team_num_t.append(3716)
+    if teams[i] == "Cambridge United":
+        team_num_t.append(986)
+    if teams[i] == "Walsall":
+        team_num_t.append(899)
+    if teams[i] == "Forest Green Rovers":
+        team_num_t.append(3455)
+    if teams[i] == "Stevenage":
+        team_num_t.append(3684)
+    if teams[i] == "Harrogate Town":
+        team_num_t.append(12020)
+
+
 
 
 

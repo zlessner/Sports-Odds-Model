@@ -4,6 +4,8 @@ from transfermarkt import injuredTeams
 # Removed teams due to injuries
 goneTeams= []
 
+print(teamsToBet1)
+
 def removeInjuredTeams(team_num_t):
     i=0
     while i < len(team_num_t):
