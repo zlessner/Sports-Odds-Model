@@ -26,15 +26,19 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 #soccer_australia_aleague
 #soccer_turkey_super_league
 #soccer_spain_la_liga
+#soccer_spain_segunda_division
 #soccer_france_ligue_one
 #soccer_france_ligue_two
 #soccer_italy_serie_a
 #soccer_italy_serie_b
+#soccer_brazil_campeonato
 
 
 #change sport to any of the different soccer leagues above
 
-querystring = {"sport":"soccer_england_league1","region":"us","mkt":"h2h"}
+sport = "soccer_england_league1"
+
+querystring = {"sport":sport,"region":"us","mkt":"h2h"}
 
 response = requests.request("GET", url, headers=headers, params=querystring)
 
@@ -50,7 +54,9 @@ gameDate = datetime.date.today()
 
 gameWeek = gameDate + datetime.timedelta(7)
 
-futureGame = gameDate + datetime.timedelta(7)
+futureGame = gameDate + datetime.timedelta(5)
+
+yesterdayGame = gameDate + datetime.timedelta(-20)
 
 # change date for all games right here -- uncomment below to go to tomorrow's games
 
@@ -59,4 +65,17 @@ futureGame = gameDate + datetime.timedelta(7)
 now = datetime.datetime.now()
 
 nowTime = (now.strftime("%Y-%m-%d %H:%M:%S"))
+
+
+# Change sport to match FiveThirtyEight spelling
+
+if sport == "soccer_epl":
+    sport = 'Barclays Premier League'
+if sport == "soccer_efl_champ":
+    sport = 'English League Championship'
+if sport == "soccer_england_league1":
+    sport = 'English League One'
+if sport == "soccer_england_league2":
+    sport = 'English League Two'
+
 

@@ -1,11 +1,13 @@
 from urllib.request import urlretrieve as retrieve
-from moneyline.moneylineSoccer import theOddsAPIGames, gameDate, futureGame
+from moneyline.moneylineSoccer import theOddsAPIGames, gameDate, futureGame, yesterdayGame
 import csv
 import time
 from datetime import datetime
 
 
 stringGameDate = str(futureGame)
+
+stringYesterdayDate = str(yesterdayGame)
 
 
 
@@ -24,16 +26,52 @@ fullList=[]
 #Parse CSV file for sport, teams, and odds
 
 for row in reader:
-        fullList.append([row[1], row[3], row[4], row[5], float(row[8]),float(row[9]),float(row[10])])
+        fullList.append([row[1], row[3], row[4], row[5], float(row[8]),float(row[9]),float(row[10]),row[15],row[16],row[17]])
+
 
 FiveThirtyEightGames=[]
-
-
 
 
 for game in fullList:
     if game[0] == stringGameDate:
         FiveThirtyEightGames.append(game)
+
+
+
+FiveThirtyEightGamesYesterday=[]
+
+
+
+
+
+
+for game in fullList:
+    if game[0] == stringYesterdayDate:
+        FiveThirtyEightGamesYesterday.append(game)
+
+
+
+for i in range(len(FiveThirtyEightGamesYesterday)):
+    if len(FiveThirtyEightGamesYesterday[i][7])>0:
+        FiveThirtyEightGamesYesterday[i][7] = float(FiveThirtyEightGamesYesterday[i][7])
+    
+    if len(FiveThirtyEightGamesYesterday[i][8])>0:
+        FiveThirtyEightGamesYesterday[i][8] = float(FiveThirtyEightGamesYesterday[i][8])
+
+
+
+for i in range(len(FiveThirtyEightGamesYesterday)):
+
+    if FiveThirtyEightGamesYesterday[i][7] > FiveThirtyEightGamesYesterday[i][8]:
+        FiveThirtyEightGamesYesterday[i][9] = FiveThirtyEightGamesYesterday[i][2]
+
+    elif FiveThirtyEightGamesYesterday[i][7] < FiveThirtyEightGamesYesterday[i][8]:
+        FiveThirtyEightGamesYesterday[i][9] = FiveThirtyEightGamesYesterday[i][3]
+
+    else:
+        FiveThirtyEightGamesYesterday[i][9] = "Draw"
+
+
 
 
 
@@ -116,9 +154,12 @@ for i in range(len(AlphaAPI)):
 
 teams = []
 
+
 for i in range(len(teamsToBet1)):
     for key in teamsToBet1[i].keys():
         teams.append(key)
+
+
 
 
 # print(teams)

@@ -1,1 +1,124 @@
-"['2020-11-12 10:55:07', [], [], [], [{'Army': 23}, {'Illinois': 15}, {'Utah St.': 38}, {'Arizona': 28}, {'Colorado': 23}, {'Louisiana Tech': 17}, {'Baylor': 20}, {'Hawaii': 11}, {'New Mexico': 31}, {'South Carolina': 35}, {'Utah': 31}]]"
+Date,Sport,Team,Bet Amount,Expected Value,Winner,Bet Winnings,Final Amount
+2020-11-21,soccer_england_league1,Hull City,100,32,filler,filler2,filler3
+2020-11-21,soccer_england_league1,Wigan,100,24,filler,filler2,filler3
+2020-11-21,soccer_england_league1,Hull City,100,32,filler,filler2,filler3
+2020-11-21,soccer_england_league1,Wigan,100,24,filler,filler2,filler3
+2020-11-21,soccer_england_league1,Hull City,100,32,filler,filler2,filler3
+2020-11-21,soccer_england_league1,Wigan,100,24,filler,filler2,filler3
+2020-11-21,soccer_england_league1,Hull City,100,32,filler,filler2,filler3
+2020-11-21,soccer_england_league1,Wigan,100,24,filler,filler2,filler3
+2020-11-21,soccer_efl_champ,Wycombe Wanderers,100,16,filler,filler2,filler3
+2020-11-21,soccer_efl_champ,Watford,100,13,filler,filler2,filler3
+2020-11-21,soccer_efl_champ,Wycombe Wanderers,100,16
+2020-11-21,soccer_efl_champ,Watford,100,13
+2020-11-21,soccer_efl_champ,AFC Bournemouth,100,12
+2020-11-21,soccer_efl_champ,Wycombe Wanderers,100,21
+2020-11-21,soccer_efl_champ,Watford,100,12
+2020-11-21,soccer_efl_champ,AFC Bournemouth,100,12
+2020-11-21,soccer_efl_champ,Wycombe Wanderers,100,21
+2020-11-21,soccer_efl_champ,Watford,100,12
+2020-11-21,soccer_efl_champ,AFC Bournemouth,100,12
+2020-11-21,soccer_efl_champ,Wycombe Wanderers,100,21
+2020-11-21,soccer_efl_champ,Watford,100,12
+2020-11-21,English League Championship,AFC Bournemouth,100,12
+2020-11-21,English League Championship,Wycombe Wanderers,100,21
+2020-11-21,English League Championship,Watford,100,12
+2020-11-21,English League Championship,AFC Bournemouth,100,12
+2020-11-21,English League Championship,Wycombe Wanderers,100,21
+2020-11-21,English League Championship,Watford,100,12
+2020-11-21,English League Championship,AFC Bournemouth,100,12
+2020-11-21,English League Championship,Wycombe Wanderers,100,21
+2020-11-21,English League Championship,Watford,100,12
+2020-11-21,English League Championship,AFC Bournemouth,100,12
+2020-11-21,English League Championship,Wycombe Wanderers,100,21
+2020-11-21,English League Championship,Watford,100,12
+2020-11-21,English League Championship,AFC Bournemouth,100,12
+2020-11-21,English League Championship,Wycombe Wanderers,100,21
+2020-11-21,English League Championship,Watford,100,12
+2020-11-21,English League Championship,AFC Bournemouth,100,12
+2020-11-21,English League Championship,Wycombe Wanderers,100,21
+2020-11-21,English League Championship,Watford,100,12
+2020-11-21,English League Championship,AFC Bournemouth,100,12
+2020-11-21,English League Championship,Wycombe Wanderers,100,21
+2020-11-21,English League Championship,Watford,100,12
+2020-11-21,English League Championship,AFC Bournemouth,100,12
+2020-11-21,English League Championship,Wycombe Wanderers,100,21
+2020-11-21,English League Championship,Watford,100,12
+2020-11-21,English League Championship,AFC Bournemouth,100,12
+2020-11-21,English League Championship,Wycombe Wanderers,100,21
+2020-11-21,English League Championship,Watford,100,12
+2020-11-21,English League One,Hull City,100,32
+2020-11-21,English League One,Wigan,100,24
+2020-11-21,English League One,Hull City,100,32
+2020-11-21,English League One,Wigan,100,24
+2020-11-21,English League One,Hull Cityaway,100,32
+2020-11-21,English League One,Ipswich Townhome,100,14
+2020-11-21,English League One,Wiganhome,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Ipswich Town home,100,14
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Ipswich Town home,100,14
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Ipswich Town home,100,14
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Ipswich Town home,100,14
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City away,100,32
+2020-11-21,English League One,Wigan home,100,24
+2020-11-21,English League One,Hull City,100,32
+2020-11-21,English League One,Wigan,100,24
