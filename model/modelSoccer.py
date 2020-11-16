@@ -41,7 +41,7 @@ for game in fullList:
 FiveThirtyEightGamesYesterday=[]
 
 
-
+# List of completed games to get results from
 
 
 
@@ -117,6 +117,7 @@ for i in range(len(AlphaAPIx)):
 #Performing calculations to see if expected value of winnings on a $100 dollar bet is over $10 (10% return)
 
 teamsToBet1=[]
+potential_winnings=[]
 
 for i in range(len(AlphaAPI)):
     for j in range(len(FiveThirtyEightGames)):
@@ -125,6 +126,7 @@ for i in range(len(AlphaAPI)):
             homeAlphaDrawOdds = int((((OddsC[i])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
             if (homeAlphaOdds>10):
                 teamsToBet1.append({AlphaAPI[i]: homeAlphaOdds})
+                potential_winnings.append(int(((OddsA[i])-1)*100))
             if (homeAlphaDrawOdds>10):
                 teamsToBet1.append({AlphaAPI[i]+ " " + BetaAPI[i] + " Draw": homeAlphaDrawOdds})
             
@@ -132,12 +134,14 @@ for i in range(len(AlphaAPI)):
             awayBetaOdds = int((((OddsB[i])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
             if (awayBetaOdds>10):
                 teamsToBet1.append({BetaAPI[i]: awayBetaOdds})
+                potential_winnings.append(int(((OddsB[i])-1)*100))
 
         if AlphaAPI[i] == FiveThirtyEightGames[j][3]:
             awayAlphaOdds = int((((OddsA[i])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
             awayAlphaDrawOdds = int((((OddsC[i])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
             if (awayAlphaOdds>10):
                 teamsToBet1.append({AlphaAPI[i]: awayAlphaOdds})
+                potential_winnings.append(int(((OddsA[i])-1)*100))
             if (awayAlphaDrawOdds>10):
                 teamsToBet1.append({AlphaAPI[i]+ " " + BetaAPI[i] + " Draw": awayAlphaDrawOdds})
             
@@ -145,6 +149,7 @@ for i in range(len(AlphaAPI)):
             homeBetaOdds = int((((OddsB[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
             if (homeBetaOdds>10):
                 teamsToBet1.append({BetaAPI[i]: homeBetaOdds})
+                potential_winnings.append(int(((OddsB[i])-1)*100))
 
 
  #Comment the below in if just want results for this one model          

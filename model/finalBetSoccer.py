@@ -1,4 +1,4 @@
-from modelSoccer import teams, teamsToBet1, team_num_t, FiveThirtyEightGamesYesterday
+from modelSoccer import teams, teamsToBet1, team_num_t, FiveThirtyEightGamesYesterday, potential_winnings
 from transfermarkt import injuredTeams
 import csv
 import pandas as pd
@@ -6,6 +6,7 @@ from moneyline.moneylineSoccer import gameDate, futureGame, yesterdayGame, sport
 
 # Removed teams due to injuries
 goneTeams= []
+goneValues = []
 
 print(teamsToBet1)
 
@@ -14,6 +15,7 @@ def removeInjuredTeams(team_num_t):
     while i < len(team_num_t):
         if any(item == team_num_t[i] for item in injuredTeams):
             goneTeams.append(teamsToBet1[i])
+            goneValues.append(potential_winnings[i])
 
         i+=1
 
@@ -23,6 +25,10 @@ def removeInjuredTeams(team_num_t):
     for j in teamsToBet1[:]:
       if j in goneTeams:
           teamsToBet1.remove(j)
+
+    for j in potential_winnings[:]:
+      if j in goneValues:
+          potential_winnings.remove(j)
     
 
 
@@ -44,20 +50,11 @@ for i in range(len(teamsToBet1)):
 
 # Create CSV file
 
-# f = open("bets.csv", "w")
-# writer = csv.DictWriter(
-#     f, fieldnames=['Date', 'Sport', 'Team', 'Bet Amount', 'Expected Value', "Winner", "Bet Winnings", "Final Amount"] )
-# writer.writeheader()
-# f.close()
-
-
-
-with open('bets.csv', 'a', newline='') as file:
-    i=0
-    while i < len(finalTeams):
-        writer = csv.writer(file)
-        writer.writerow([futureGame, sport, finalTeams[i], 100, finalValues[i]])
-        i+=1
+f = open("bets.csv", "w")
+writer = csv.DictWriter(
+    f, fieldnames=['Date', 'Sport', 'Team', 'Bet Amount', 'Expected Value', "Winner", "Bet Winnings"] )
+writer.writeheader()
+f.close()
 
 
 leagueGames = []
@@ -67,7 +64,40 @@ for i in range(len(FiveThirtyEightGamesYesterday)):
         leagueGames.append(FiveThirtyEightGamesYesterday[i])
 
 
-# print(type(leagueGames[1][8]))
+
+
+with open('bets.csv', 'a', newline='') as file:
+    i=0
+    while i < len(finalTeams):
+        winnersTable ='No Win'
+        betWinnings = -100
+        for j in range(len(leagueGames)):
+            if finalTeams[i] == leagueGames[j][9]:
+                winnersTable = finalTeams[i]
+                betWinnings = potential_winnings[i]
+
+        # if winnersTable == finalTeams[i]:
+        #     betWinnings = 
+
+        writer = csv.writer(file)
+        writer.writerow([futureGame, sport, finalTeams[i], 100, finalValues[i], winnersTable, betWinnings])
+        i+=1
+
+
+print(potential_winnings)
+
+# print(leagueGames)
+
+# winnersTable=[]
+
+# for i in range(len(finalTeams)):
+#     for j in range(len(leagueGames)):
+#         if finalTeams[i] == leagueGames[j][9]:
+#             winnersTable.append(finalTeams[i])
+
+# print(winnersTable)
+
+
 
 # finalTeamNames=[]
 # for i in range(len(finalTeams)):
