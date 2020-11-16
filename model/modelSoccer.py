@@ -118,6 +118,7 @@ for i in range(len(AlphaAPIx)):
 
 teamsToBet1=[]
 potential_winnings=[]
+winning_odds=[]
 
 for i in range(len(AlphaAPI)):
     for j in range(len(FiveThirtyEightGames)):
@@ -127,6 +128,7 @@ for i in range(len(AlphaAPI)):
             if (homeAlphaOdds>10):
                 teamsToBet1.append({AlphaAPI[i]: homeAlphaOdds})
                 potential_winnings.append(int(((OddsA[i])-1)*100))
+                winning_odds.append(float(FiveThirtyEightGames[j][4]))
             if (homeAlphaDrawOdds>10):
                 teamsToBet1.append({AlphaAPI[i]+ " " + BetaAPI[i] + " Draw": homeAlphaDrawOdds})
             
@@ -135,6 +137,7 @@ for i in range(len(AlphaAPI)):
             if (awayBetaOdds>10):
                 teamsToBet1.append({BetaAPI[i]: awayBetaOdds})
                 potential_winnings.append(int(((OddsB[i])-1)*100))
+                winning_odds.append(float(FiveThirtyEightGames[j][5]))
 
         if AlphaAPI[i] == FiveThirtyEightGames[j][3]:
             awayAlphaOdds = int((((OddsA[i])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
@@ -142,6 +145,7 @@ for i in range(len(AlphaAPI)):
             if (awayAlphaOdds>10):
                 teamsToBet1.append({AlphaAPI[i]: awayAlphaOdds})
                 potential_winnings.append(int(((OddsA[i])-1)*100))
+                winning_odds.append(float(FiveThirtyEightGames[j][5]))
             if (awayAlphaDrawOdds>10):
                 teamsToBet1.append({AlphaAPI[i]+ " " + BetaAPI[i] + " Draw": awayAlphaDrawOdds})
             
@@ -150,6 +154,7 @@ for i in range(len(AlphaAPI)):
             if (homeBetaOdds>10):
                 teamsToBet1.append({BetaAPI[i]: homeBetaOdds})
                 potential_winnings.append(int(((OddsB[i])-1)*100))
+                winning_odds.append(float(FiveThirtyEightGames[j][4]))
 
 
  #Comment the below in if just want results for this one model          
