@@ -1,8 +1,8 @@
-from modelSoccer import teams, teamsToBet1, team_num_t, FiveThirtyEightGamesYesterday, potential_winnings, winning_odds
+from modelSoccer import teams, teamsToBet1, team_num_t, FiveThirtyEightGamesYesterday, potential_winnings, winning_odds, stringGameDate, stringYesterdayDate, FiveThirtyEightGames
 from transfermarkt import injuredTeams
 import csv
 import pandas as pd
-from moneyline.moneylineSoccer import gameDate, futureGame, yesterdayGame, sport
+from moneyline.moneylineSoccer import gameDate, sport
 
 # Removed teams due to injuries
 goneTeams= []
@@ -60,7 +60,50 @@ for i in range(len(teamsToBet1)):
 
 # f = open("bets.csv", "w")
 # writer = csv.DictWriter(
-#     f, fieldnames=['Date', 'Sport', 'Team', 'Bet Amount', 'Odds of Winning', 'Potential Winnings', 'Expected Value', "Winner", "Bet Winnings"] )
+#     f, fieldnames=['Date', 'Sport', 'Team', 'Bet Amount', 'Odds of Winning', 'Potential Winnings', 'Expected Value'] )
+# writer.writeheader()
+# f.close()
+
+
+# leagueGamesToday = []
+
+# for i in range(len(FiveThirtyEightGames)):
+#     if FiveThirtyEightGames[i][1] == sport:
+#         leagueGamesToday.append(FiveThirtyEightGames[i])
+
+
+
+# # today's upcoming bets
+# with open('bets.csv', 'a', newline='') as file:
+#     i=0
+#     while i < len(finalTeams):
+#         oddsWinning = ''
+#         for j in range(len(leagueGamesToday)):
+#             if finalTeams[i] == leagueGamesToday[j][9]:
+#                 oddsWinning = winning_odds[i]
+
+
+#         writer = csv.writer(file)
+#         writer.writerow([stringGameDate, sport, finalTeams[i], 100, winning_odds[i], potential_winnings[i], finalValues[i]])
+#         i+=1
+
+
+dfToday = pd.read_csv('bets.csv')
+
+
+print(winning_odds)
+# print(dfToday['Date'][0])
+
+
+
+
+# yesterday's results bets - getting some information for what is stored in above table
+
+# Create CSV file
+
+# f = open("betResults.csv", "w")
+# writer = csv.DictWriter(
+#     f, fieldnames=['Date', 'Sport', 'Team', 'Bet Amount', 'Odds of Winning', 'Potential Winnings', 'Expected Value', "Winner", "Bet Winnings"])
 # writer.writeheader()
 # f.close()
 
@@ -73,28 +116,42 @@ for i in range(len(FiveThirtyEightGamesYesterday)):
 
 
 
+# today's upcoming bets
+with open('betResults.csv', 'a', newline='') as file:
 
-with open('bets.csv', 'a', newline='') as file:
-    i=0
-    while i < len(finalTeams):
+    for i in range(len(dfToday)):
         winnersTable ='No Win'
         betWinnings = -100
-        oddsWinning = ''
-        for j in range(len(leagueGames)):
-            if finalTeams[i] == leagueGames[j][9]:
-                winnersTable = finalTeams[i]
-                betWinnings = potential_winnings[i]
-                oddsWinning = winning_odds[i]
+        # for j in range(len(leagueGames)):
+        #     if dfToday['Team'][i] == leagueGames[j][9]:
+        #         winnersTable = dfToday['Team'][i]
+        #         betWinnings = potential_winnings[i]
+        if dfToday['Date'][i] == stringYesterdayDate:
+            writer = csv.writer(file)
+            writer.writerow([stringYesterdayDate, dfToday['Sport'][i], dfToday['Team'][i], dfToday['Bet Amount'][i], dfToday['Odds of Winning'][i], dfToday['Potential Winnings'][i], dfToday['Expected Value'][i], winnersTable, betWinnings])
+        
 
 
-        writer = csv.writer(file)
-        writer.writerow([yesterdayGame, sport, finalTeams[i], 100, winning_odds[i], potential_winnings[i], finalValues[i], winnersTable, betWinnings])
-        i+=1
+    # i=0
+    # while i < len(finalTeams):
+    #     winnersTable ='No Win'
+    #     betWinnings = -100
+    #     for j in range(len(leagueGames)):
+    #         if finalTeams[i] == leagueGames[j][9]:
+    #             winnersTable = finalTeams[i]
+    #             betWinnings = potential_winnings[i]
 
 
-print(winning_odds)
+        # writer = csv.writer(file)
+        # writer.writerow([yesterdayGame, sport, finalTeams[i], 100, winning_odds[i], potential_winnings[i], finalValues[i], winnersTable, betWinnings])
+        # i+=1
+
+
+
+
+
 
 # print(leagueGames)
 
-# winnersTable=[]
+
 

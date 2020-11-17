@@ -32,6 +32,8 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 #soccer_italy_serie_a
 #soccer_italy_serie_b
 #soccer_brazil_campeonato
+#soccer_usa_mls
+#soccer
 
 
 #change sport to any of the different soccer leagues above
@@ -54,9 +56,9 @@ gameDate = datetime.date.today()
 
 gameWeek = gameDate + datetime.timedelta(7)
 
-futureGame = gameDate + datetime.timedelta(5)
+futureGame = gameDate + datetime.timedelta(0)
 
-yesterdayGame = gameDate + datetime.timedelta(-20)
+yesterdayGame = gameDate + datetime.timedelta(0)
 
 # change date for all games right here -- uncomment below to go to tomorrow's games
 
@@ -77,5 +79,7 @@ if sport == "soccer_england_league1":
     sport = 'English League One'
 if sport == "soccer_england_league2":
     sport = 'English League Two'
+if sport == "soccer_usa_mls":
+    sport = 'Major League Soccer'
 
 

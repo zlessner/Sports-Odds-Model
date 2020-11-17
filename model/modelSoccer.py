@@ -374,6 +374,61 @@ for i in range(len(teams)):
         team_num_t.append(12020)
 
 
+    # MLS
+    if teams[i] == "Los Angeles FC":
+        team_num_t.append(51828)
+    if teams[i] == "Inter Miami CF":
+        team_num_t.append(69261)
+    if teams[i] == "Atlanta United FC":
+        team_num_t.append(51663)
+    if teams[i] == "Toronto FC":
+        team_num_t.append(11141)
+    if teams[i] == "Los Angeles Galaxy":
+        team_num_t.append(1061)
+    if teams[i] == "Seattle Sounders FC":
+        team_num_t.append(9636)
+    if teams[i] == "Sporting Kansas City":
+        team_num_t.append(4284)
+    if teams[i] == "New York City FC":
+        team_num_t.append(40058)
+    if teams[i] == "Columbus Crew SC":
+        team_num_t.append(813)
+    if teams[i] == "Orlando City SC":
+        team_num_t.append(45604)
+    if teams[i] == "Portland Timbers":
+        team_num_t.append(4291)
+    if teams[i] == "Minnesota United FC":
+        team_num_t.append(56089)
+    if teams[i] == "Philadelphia Union":
+        team_num_t.append(25467)
+    if teams[i] == "DC United":
+        team_num_t.append(2440)
+    if teams[i] == "FC Dallas":
+        team_num_t.append(8816)
+    if teams[i] == "New England Revolution":
+        team_num_t.append(626)
+    if teams[i] == "Chicago Fire FC":
+        team_num_t.append(432)
+    if teams[i] == "Colorado Rapids":
+        team_num_t.append(1247)
+    if teams[i] == "New York Red Bulls":
+        team_num_t.append(623)
+    if teams[i] == "FC Cincinnati":
+        team_num_t.append(51772)
+    if teams[i] == "Vancouver Whitecaps FC":
+        team_num_t.append(6321)
+    if teams[i] == "Montreal Impact":
+        team_num_t.append(4078)
+    if teams[i] == "Nashville SC":
+        team_num_t.append(63966)
+    if teams[i] == "Houston Dynamo":
+        team_num_t.append(9168)
+    if teams[i] == "San Jose Earthquakes":
+        team_num_t.append(218)
+    if teams[i] == "Real Salt Lake City":
+        team_num_t.append(6643)
+
+
 
 
 
