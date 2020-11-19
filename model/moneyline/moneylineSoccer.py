@@ -54,9 +54,9 @@ theOddsAPIGames = gamesList['data']
 
 gameDate = datetime.date.today()
 
-gameWeek = gameDate + datetime.timedelta(7)
+gameWeek = gameDate + datetime.timedelta(6)
 
-futureGame = gameDate + datetime.timedelta(0)
+futureGame = gameDate + datetime.timedelta(3)
 
 yesterdayGame = gameDate + datetime.timedelta(0)
 

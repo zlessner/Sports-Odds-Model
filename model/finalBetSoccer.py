@@ -116,35 +116,21 @@ for i in range(len(FiveThirtyEightGamesYesterday)):
 
 
 
-# today's upcoming bets
+# yesterday's results
 with open('betResults.csv', 'a', newline='') as file:
 
     for i in range(len(dfToday)):
         winnersTable ='No Win'
         betWinnings = -100
-        # for j in range(len(leagueGames)):
-        #     if dfToday['Team'][i] == leagueGames[j][9]:
-        #         winnersTable = dfToday['Team'][i]
-        #         betWinnings = potential_winnings[i]
+        for j in range(len(leagueGames)):
+            if dfToday['Team'][i] == leagueGames[j][9]:
+                winnersTable = dfToday['Team'][i]
+                betWinnings = dfToday['Potential Winnings'][i]
         if dfToday['Date'][i] == stringYesterdayDate:
             writer = csv.writer(file)
             writer.writerow([stringYesterdayDate, dfToday['Sport'][i], dfToday['Team'][i], dfToday['Bet Amount'][i], dfToday['Odds of Winning'][i], dfToday['Potential Winnings'][i], dfToday['Expected Value'][i], winnersTable, betWinnings])
         
 
-
-    # i=0
-    # while i < len(finalTeams):
-    #     winnersTable ='No Win'
-    #     betWinnings = -100
-    #     for j in range(len(leagueGames)):
-    #         if finalTeams[i] == leagueGames[j][9]:
-    #             winnersTable = finalTeams[i]
-    #             betWinnings = potential_winnings[i]
-
-
-        # writer = csv.writer(file)
-        # writer.writerow([yesterdayGame, sport, finalTeams[i], 100, winning_odds[i], potential_winnings[i], finalValues[i], winnersTable, betWinnings])
-        # i+=1
 
 
 

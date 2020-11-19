@@ -21,6 +21,8 @@ fullList=[]
 
 #Parse CSV file for sport, teams, and odds
 
+# Eventually bring in thepredictiontracker once season starts
+
 for row in reader:
         fullList.append([row[0], row[4], row[5], float(row[20]),float(row[21])])
 

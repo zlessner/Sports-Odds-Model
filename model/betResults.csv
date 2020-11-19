@@ -1,2 +1,9 @@
-Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnings,Expected Value,Winner,Bet Winnings2020-11-17,English League One,Oxford United,100,0.4775,135,12,No Win,-100
+Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnings,Expected Value,Winner,Bet Winnings
 2020-11-17,English League One,Oxford United,100,0.4775,135,12,No Win,-100
+2020-11-17,English League One,Oxford United,100,0.4775,135,12,No Win,-100
+
+2020-11-03,English League One,Oxford United,100,0.4775,135,12,No Win,-100
+2020-11-03,English League One,Oxford United,100,0.4775,135,12,Oxford United,-100
+2020-11-03,English League One,Oxford United,100,0.4775,135,12,Oxford United,woof
+2020-11-03,English League One,Oxford United,100,0.4775,135,12,Oxford United,135
+2020-11-04,English League One,Oxford United,100,0.4775,135,12,No Win,-100

@@ -14,6 +14,8 @@ fm = FanMatch(browser, date = stringGameDate)
 
 # Parse sports betting API for sport, game time, teams, and odds
 
+# Eventually bring in thepredictiontracker once season starts
+
 eventsAPI = {}
 
 for i in range(len(theOddsAPIGames)):
