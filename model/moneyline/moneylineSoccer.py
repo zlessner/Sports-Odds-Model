@@ -56,7 +56,7 @@ gameDate = datetime.date.today()
 
 gameWeek = gameDate + datetime.timedelta(6)
 
-futureGame = gameDate + datetime.timedelta(3)
+futureGame = gameDate + datetime.timedelta(2)
 
 yesterdayGame = gameDate + datetime.timedelta(0)
 

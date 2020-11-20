@@ -86,6 +86,8 @@ for i in eventsAPI:
 #Performing calculations to see if expected value of winnings on a $100 dollar bet is over $10 (10% return)
 
 teamstobetNFL=[]
+potential_winnings=[]
+winning_odds=[]
 
 for i in range(len(AlphaAPI)):
     for j in range(len(FiveThirtyEightGames)):
@@ -94,6 +96,8 @@ for i in range(len(AlphaAPI)):
                 homeAlphaOdds = int((((OddsA[i])-1)*100)*(float(FiveThirtyEightGames[j][3]))-(100*(1-(float(FiveThirtyEightGames[j][3])))))
                 if (homeAlphaOdds>10):
                     teamstobetNFL.append({AlphaAPI[i]: homeAlphaOdds})
+                    potential_winnings.append(int(((OddsA[i])-1)*100))
+                    winning_odds.append(float(FiveThirtyEightGames[j][3]))
         except KeyError:
             continue
 
@@ -102,6 +106,8 @@ for i in range(len(AlphaAPI)):
                 awayBetaOdds = int((((OddsB[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
                 if (awayBetaOdds>10):
                     teamstobetNFL.append({BetaAPI[i]: awayBetaOdds})
+                    potential_winnings.append(int(((OddsB[i])-1)*100))
+                    winning_odds.append(float(FiveThirtyEightGames[j][4]))
         except KeyError:
             continue
 
@@ -110,6 +116,8 @@ for i in range(len(AlphaAPI)):
                 awayAlphaOdds = int((((OddsA[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
                 if (awayAlphaOdds>10):
                     teamstobetNFL.append({AlphaAPI[i]: awayAlphaOdds})
+                    potential_winnings.append(int(((OddsA[i])-1)*100))
+                    winning_odds.append(float(FiveThirtyEightGames[j][4]))
         except KeyError:
             continue
 
@@ -118,6 +126,8 @@ for i in range(len(AlphaAPI)):
                 homeBetaOdds = int((((OddsB[i])-1)*100)*(float(FiveThirtyEightGames[j][3]))-(100*(1-(float(FiveThirtyEightGames[j][3])))))
                 if (homeBetaOdds>10):
                     teamstobetNFL.append({BetaAPI[i]: homeBetaOdds})
+                    potential_winnings.append(int(((OddsB[i])-1)*100))
+                    winning_odds.append(float(FiveThirtyEightGames[j][3]))
         except KeyError:
             continue
 

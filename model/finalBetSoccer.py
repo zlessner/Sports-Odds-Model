@@ -45,16 +45,17 @@ removeInjuredTeams(team_num_t)
 
 print(teamsToBet1)
 
-
 finalTeams = []
 finalValues = []
 
-for i in range(len(teamsToBet1)):
-    for key in teamsToBet1[i].keys():
-        finalTeams.append(key)
-    for value in teamsToBet1[i].values():
-        finalValues.append(value)
+def teamOdds(teamsToBet1):
+    for i in range(len(teamsToBet1)):
+        for key in teamsToBet1[i].keys():
+            finalTeams.append(key)
+        for value in teamsToBet1[i].values():
+            finalValues.append(value)
 
+# teamOdds(teamsToBet1)
 
 # Create CSV file
 
@@ -65,34 +66,30 @@ for i in range(len(teamsToBet1)):
 # f.close()
 
 
-# leagueGamesToday = []
+leagueGamesToday = []
 
-# for i in range(len(FiveThirtyEightGames)):
-#     if FiveThirtyEightGames[i][1] == sport:
-#         leagueGamesToday.append(FiveThirtyEightGames[i])
-
-
-
-# # today's upcoming bets
-# with open('bets.csv', 'a', newline='') as file:
-#     i=0
-#     while i < len(finalTeams):
-#         oddsWinning = ''
-#         for j in range(len(leagueGamesToday)):
-#             if finalTeams[i] == leagueGamesToday[j][9]:
-#                 oddsWinning = winning_odds[i]
+for i in range(len(FiveThirtyEightGames)):
+    if FiveThirtyEightGames[i][1] == sport:
+        leagueGamesToday.append(FiveThirtyEightGames[i])
 
 
-#         writer = csv.writer(file)
-#         writer.writerow([stringGameDate, sport, finalTeams[i], 100, winning_odds[i], potential_winnings[i], finalValues[i]])
-#         i+=1
+def today_csv(sport, winning_odds, potential_winnings, finalValues):
 
+    # today's upcoming bets
+    with open('bets.csv', 'a', newline='') as file:
+        i=0
+        while i < len(finalTeams):
+            writer = csv.writer(file)
+            writer.writerow([stringGameDate, sport, finalTeams[i], 100, winning_odds[i], potential_winnings[i], finalValues[i]])
+            i+=1
+
+
+# today_csv(sport)
 
 dfToday = pd.read_csv('bets.csv')
 
 
-print(winning_odds)
-# print(dfToday['Date'][0])
+
 
 
 

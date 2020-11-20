@@ -21,11 +21,6 @@ fullList=[]
 
 #Parse CSV file for sport, teams, and odds
 
-# for row in reader:
-#         fullList.append([row[0], row[4], row[5], float(row[20]),float(row[21])])
-
-# float(1-row([42]))
-
 # No date needed to filter in this model because CFB games are on week by week basis
 for row in reader:
         fullList.append([row[3], row[2], float(row[71]), 1-float(row[71])])
