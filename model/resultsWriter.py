@@ -61,7 +61,7 @@ def teamOdds(teamsToBet1):
 
 # f = open("bets.csv", "w")
 # writer = csv.DictWriter(
-#     f, fieldnames=['Time Scipt Ran', 'Date', 'Sport', 'Team', 'Bet Amount', 'Odds of Winning', 'Potential Winnings', 'Expected Value'] )
+#     f, fieldnames=['Time Script Ran', 'Game Date', 'Sport', 'Team', 'Bet Amount', 'Odds of Winning', 'Potential Winnings', 'Expected Value'] )
 # writer.writeheader()
 # f.close()
 
@@ -90,7 +90,7 @@ dfToday = pd.read_csv('bets.csv')
 
 # f = open("betResults.csv", "w")
 # writer = csv.DictWriter(
-#     f, fieldnames=['Time Scipt Ran', 'Date', 'Sport', 'Team', 'Bet Amount', 'Odds of Winning', 'Potential Winnings', 'Expected Value', "Winner", "Bet Winnings"])
+#     f, fieldnames=['Time Script Ran', 'Game Date', 'Sport', 'Team', 'Bet Amount', 'Odds of Winning', 'Potential Winnings', 'Expected Value', "Winner", "Bet Winnings"])
 # writer.writeheader()
 # f.close()
 
@@ -109,7 +109,7 @@ def yesterdayCSV(yesterdayTeam, sports):
                     winnersTable = dfToday['Team'][i]
                     betWinnings = dfToday['Potential Winnings'][i]
                     
-            if dfToday['Date'][i] == stringYesterdayDate and dfToday['Sport'][i][:3] == sports[:3]:
+            if dfToday['Game Date'][i] == stringYesterdayDate and dfToday['Sport'][i][:3] == sports[:3]:
                 writer = csv.writer(file)
                 writer.writerow([dfToday['Time Script Ran'][i], stringYesterdayDate, dfToday['Sport'][i], dfToday['Team'][i], dfToday['Bet Amount'][i], dfToday['Odds of Winning'][i], dfToday['Potential Winnings'][i], dfToday['Expected Value'][i], winnersTable, betWinnings])
             

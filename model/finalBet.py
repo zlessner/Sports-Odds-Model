@@ -39,6 +39,6 @@ teamOdds(teamsToBet1)
 
 today_csv(sport, winning_odds, potential_winnings, finalValues)
 
-yesterdayCSV(FiveThirtyEightGamesYesterday, sport)
+# yesterdayCSV(FiveThirtyEightGamesYesterday, sport)
 
 

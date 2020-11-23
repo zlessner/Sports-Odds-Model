@@ -41,7 +41,7 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 
 #change sport to any of the different soccer leagues above
 
-sport = "soccer_epl"
+sport = "soccer_efl_champ"
 
 querystring = {"sport":sport,"region":"us","mkt":"h2h"}
 
@@ -59,9 +59,9 @@ gameDate = datetime.date.today()
 
 gameWeek = gameDate + datetime.timedelta(6)
 
-futureGame = gameDate + datetime.timedelta(0)
+futureGame = gameDate + datetime.timedelta(1)
 
-yesterdayGame = gameDate + datetime.timedelta(-1)
+yesterdayGame = gameDate + datetime.timedelta(0)
 
 pastNFLGame = gameDate + datetime.timedelta(-3)
 
