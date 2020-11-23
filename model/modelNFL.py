@@ -1,6 +1,6 @@
 from urllib.request import urlretrieve as retrieve
 from moneyline.moneylineNFL import theOddsAPIGames
-from moneyline.moneylineSoccer import gameDate, gameWeek
+from moneyline.moneylineSoccer import gameDate, gameWeek, pastNFLGame, futureNFLGame, yesterdayGame
 import csv
 import time
 from datetime import datetime
@@ -9,7 +9,9 @@ from nflPredictionTracker import predictionTracker
 
 
 stringGameDate = str(gameDate)
-stringGameWeek= str(gameWeek)
+stringGameWeek= str(futureNFLGame)
+stringGamePast = str(pastNFLGame)
+stringYesterdayDate = str(yesterdayGame)
 
 url = 'https://projects.fivethirtyeight.com/nfl-api/nfl_elo_latest.csv'
 
@@ -25,7 +27,7 @@ fullList=[]
 
 #Parse CSV file for sport, teams, and odds for 538
 for row in reader:
-    fullList.append([row[0], row[4], row[5], row[20], row[21]])
+    fullList.append([row[0], row[4], row[5], row[20], row[21], row[22], row[23], row[28], row[29], row[24]])
 
 
 
@@ -36,11 +38,49 @@ FiveThirtyEightGames=[]
 #Making sure the game occurs in that NFL week
 
 for game in fullList:
-    if game[0] >= stringGameDate and game[0] <= stringGameWeek:
+    if game[0] >= stringGamePast and game[0] <= stringGameWeek:
         FiveThirtyEightGames.append(game)
 
 
 
+FiveThirtyEightGamesYesterday=[]
+
+for game in fullList:
+    if game[0] == stringYesterdayDate:
+        FiveThirtyEightGamesYesterday.append(game)
+
+
+
+
+
+for i in range(len(FiveThirtyEightGamesYesterday)):
+    if len(FiveThirtyEightGamesYesterday[i][7])>0:
+        FiveThirtyEightGamesYesterday[i][7] = float(FiveThirtyEightGamesYesterday[i][7])
+    
+    if len(FiveThirtyEightGamesYesterday[i][8])>0:
+        FiveThirtyEightGamesYesterday[i][8] = float(FiveThirtyEightGamesYesterday[i][8])
+
+
+
+for i in range(len(FiveThirtyEightGamesYesterday)):
+
+    if FiveThirtyEightGamesYesterday[i][7] > FiveThirtyEightGamesYesterday[i][8]:
+        FiveThirtyEightGamesYesterday[i][9] = FiveThirtyEightGamesYesterday[i][1]
+
+    elif FiveThirtyEightGamesYesterday[i][7] < FiveThirtyEightGamesYesterday[i][8]:
+        FiveThirtyEightGamesYesterday[i][9] = FiveThirtyEightGamesYesterday[i][2]
+
+    else:
+        FiveThirtyEightGamesYesterday[i][9] = "Draw"
+
+
+
+# print(predictionTracker)
+# print("------------")
+
+
+# print(FiveThirtyEightGames)
+# print("------------")
 
 
 #averging odds between 538 and thepredictiontracker
@@ -53,6 +93,8 @@ for i in range(len(FiveThirtyEightGames)):
             FiveThirtyEightGames[i][4] = (float(FiveThirtyEightGames[i][4])+predictionTracker[j][3])/2
 
 
+
+# print(FiveThirtyEightGames)
 
 
 

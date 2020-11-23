@@ -74,6 +74,8 @@ for i in range(len(AlphaAPIx)):
 #Performing calculations to see if expected value of winnings on a $100 dollar bet is over $10 (10% return)
 
 teamsToBetCFB=[]
+potential_winnings=[]
+winning_odds=[]
 
 for i in range(len(AlphaAPI)):
     for j in range(len(CFB_weekly_games)):
@@ -82,6 +84,8 @@ for i in range(len(AlphaAPI)):
                 homeAlphaOdds = int((((OddsA[i])-1)*100)*(float(CFB_weekly_games[j][2]))-(100*(1-(float(CFB_weekly_games[j][2])))))
                 if (homeAlphaOdds>10):
                     teamsToBetCFB.append({AlphaAPI[i]: homeAlphaOdds})
+                    potential_winnings.append(int(((OddsA[i])-1)*100))
+                    winning_odds.append(float(CFB_weekly_games[j][2]))
         except KeyError:
             continue
 
@@ -90,6 +94,8 @@ for i in range(len(AlphaAPI)):
                 awayBetaOdds = int((((OddsB[i])-1)*100)*(float(CFB_weekly_games[j][3]))-(100*(1-(float(CFB_weekly_games[j][3])))))
                 if (awayBetaOdds>10):
                     teamsToBetCFB.append({BetaAPI[i]: awayBetaOdds})
+                    potential_winnings.append(int(((OddsB[i])-1)*100))
+                    winning_odds.append(float(CFB_weekly_games[j][3]))
         except KeyError:
             continue
 
@@ -98,6 +104,8 @@ for i in range(len(AlphaAPI)):
                 awayAlphaOdds = int((((OddsA[i])-1)*100)*(float(CFB_weekly_games[j][3]))-(100*(1-(float(CFB_weekly_games[j][3])))))
                 if (awayAlphaOdds>10):
                     teamsToBetCFB.append({AlphaAPI[i]: awayAlphaOdds})
+                    potential_winnings.append(int(((OddsA[i])-1)*100))
+                    winning_odds.append(float(CFB_weekly_games[j][3]))
         except KeyError:
             continue
 
@@ -106,6 +114,8 @@ for i in range(len(AlphaAPI)):
                 homeBetaOdds = int((((OddsB[i])-1)*100)*(float(CFB_weekly_games[j][2]))-(100*(1-(float(CFB_weekly_games[j][2])))))
                 if (homeBetaOdds>10):
                     teamsToBetCFB.append({BetaAPI[i]: homeBetaOdds})
+                    potential_winnings.append(int(((OddsB[i])-1)*100))
+                    winning_odds.append(float(CFB_weekly_games[j][2]))
         except KeyError:
             continue
 

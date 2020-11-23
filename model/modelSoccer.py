@@ -37,42 +37,40 @@ for game in fullList:
         FiveThirtyEightGames.append(game)
 
 
-
 FiveThirtyEightGamesYesterday=[]
 
+def pastResults(fullList):
 
-# List of completed games to get results from
+    # List of completed games to get results from
 
-
-
-for game in fullList:
-    if game[0] == stringYesterdayDate:
-        FiveThirtyEightGamesYesterday.append(game)
-
-
-
-for i in range(len(FiveThirtyEightGamesYesterday)):
-    if len(FiveThirtyEightGamesYesterday[i][7])>0:
-        FiveThirtyEightGamesYesterday[i][7] = float(FiveThirtyEightGamesYesterday[i][7])
-    
-    if len(FiveThirtyEightGamesYesterday[i][8])>0:
-        FiveThirtyEightGamesYesterday[i][8] = float(FiveThirtyEightGamesYesterday[i][8])
+    for game in fullList:
+        if game[0] == stringYesterdayDate:
+            FiveThirtyEightGamesYesterday.append(game)
 
 
 
-for i in range(len(FiveThirtyEightGamesYesterday)):
-
-    if FiveThirtyEightGamesYesterday[i][7] > FiveThirtyEightGamesYesterday[i][8]:
-        FiveThirtyEightGamesYesterday[i][9] = FiveThirtyEightGamesYesterday[i][2]
-
-    elif FiveThirtyEightGamesYesterday[i][7] < FiveThirtyEightGamesYesterday[i][8]:
-        FiveThirtyEightGamesYesterday[i][9] = FiveThirtyEightGamesYesterday[i][3]
-
-    else:
-        FiveThirtyEightGamesYesterday[i][9] = "Draw"
+    for i in range(len(FiveThirtyEightGamesYesterday)):
+        if len(FiveThirtyEightGamesYesterday[i][7])>0:
+            FiveThirtyEightGamesYesterday[i][7] = float(FiveThirtyEightGamesYesterday[i][7])
+        
+        if len(FiveThirtyEightGamesYesterday[i][8])>0:
+            FiveThirtyEightGamesYesterday[i][8] = float(FiveThirtyEightGamesYesterday[i][8])
 
 
 
+    for i in range(len(FiveThirtyEightGamesYesterday)):
+
+        if FiveThirtyEightGamesYesterday[i][7] > FiveThirtyEightGamesYesterday[i][8]:
+            FiveThirtyEightGamesYesterday[i][9] = FiveThirtyEightGamesYesterday[i][2]
+
+        elif FiveThirtyEightGamesYesterday[i][7] < FiveThirtyEightGamesYesterday[i][8]:
+            FiveThirtyEightGamesYesterday[i][9] = FiveThirtyEightGamesYesterday[i][3]
+
+        else:
+            FiveThirtyEightGamesYesterday[i][9] = "Draw"
+
+
+pastResults(fullList)
 
 
 # Parse Sports Betting API for sport, game time, teams, and odds
@@ -120,7 +118,7 @@ teamsToBet1=[]
 potential_winnings=[]
 winning_odds=[]
 
-def soccerPrediction():
+def Prediction():
 
     for i in range(len(AlphaAPI)):
         for j in range(len(FiveThirtyEightGames)):
@@ -159,7 +157,7 @@ def soccerPrediction():
                     winning_odds.append(float(FiveThirtyEightGames[j][4]))
 
 
-soccerPrediction()
+Prediction()
 
  #Comment the below in if just want results for this one model          
     

@@ -33,12 +33,15 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 #soccer_italy_serie_b
 #soccer_brazil_campeonato
 #soccer_usa_mls
+#soccer_sweden_allsvenskan
+#soccer_russia_premier_league
 #soccer
+
 
 
 #change sport to any of the different soccer leagues above
 
-sport = "soccer_england_league1"
+sport = "soccer_epl"
 
 querystring = {"sport":sport,"region":"us","mkt":"h2h"}
 
@@ -56,9 +59,13 @@ gameDate = datetime.date.today()
 
 gameWeek = gameDate + datetime.timedelta(6)
 
-futureGame = gameDate + datetime.timedelta(2)
+futureGame = gameDate + datetime.timedelta(0)
 
-yesterdayGame = gameDate + datetime.timedelta(0)
+yesterdayGame = gameDate + datetime.timedelta(-1)
+
+pastNFLGame = gameDate + datetime.timedelta(-3)
+
+futureNFLGame = gameDate + datetime.timedelta(3)
 
 # change date for all games right here -- uncomment below to go to tomorrow's games
 
@@ -72,14 +79,14 @@ nowTime = (now.strftime("%Y-%m-%d %H:%M:%S"))
 # Change sport to match FiveThirtyEight spelling
 
 if sport == "soccer_epl":
-    sport = 'Barclays Premier League'
+    sport = 'Soccer Barclays Premier League'
 if sport == "soccer_efl_champ":
-    sport = 'English League Championship'
+    sport = 'Soccer English League Championship'
 if sport == "soccer_england_league1":
-    sport = 'English League One'
+    sport = 'Soccer English League One'
 if sport == "soccer_england_league2":
-    sport = 'English League Two'
+    sport = 'Soccer English League Two'
 if sport == "soccer_usa_mls":
-    sport = 'Major League Soccer'
+    sport = 'Soccer Major League Soccer'
 
 

@@ -1,4 +1,4 @@
-from modelSoccer import teams, teamsToBet1, team_num_t, FiveThirtyEightGamesYesterday, potential_winnings, winning_odds, stringGameDate, stringYesterdayDate, FiveThirtyEightGames
+from modelSoccer import teams, teamsToBet1, team_num_t, potential_winnings, winning_odds, stringGameDate, stringYesterdayDate
 from transfermarkt import injuredTeams
 import csv
 import pandas as pd
@@ -66,13 +66,6 @@ def teamOdds(teamsToBet1):
 # f.close()
 
 
-leagueGamesToday = []
-
-for i in range(len(FiveThirtyEightGames)):
-    if FiveThirtyEightGames[i][1] == sport:
-        leagueGamesToday.append(FiveThirtyEightGames[i])
-
-
 def today_csv(sport, winning_odds, potential_winnings, finalValues):
 
     # today's upcoming bets
@@ -91,9 +84,6 @@ dfToday = pd.read_csv('bets.csv')
 
 
 
-
-
-
 # yesterday's results bets - getting some information for what is stored in above table
 
 # Create CSV file
@@ -105,28 +95,24 @@ dfToday = pd.read_csv('bets.csv')
 # f.close()
 
 
-leagueGames = []
-
-for i in range(len(FiveThirtyEightGamesYesterday)):
-    if FiveThirtyEightGamesYesterday[i][1] == sport:
-        leagueGames.append(FiveThirtyEightGamesYesterday[i])
-
-
 
 # yesterday's results
-with open('betResults.csv', 'a', newline='') as file:
 
-    for i in range(len(dfToday)):
-        winnersTable ='No Win'
-        betWinnings = -100
-        for j in range(len(leagueGames)):
-            if dfToday['Team'][i] == leagueGames[j][9]:
-                winnersTable = dfToday['Team'][i]
-                betWinnings = dfToday['Potential Winnings'][i]
-        if dfToday['Date'][i] == stringYesterdayDate:
-            writer = csv.writer(file)
-            writer.writerow([stringYesterdayDate, dfToday['Sport'][i], dfToday['Team'][i], dfToday['Bet Amount'][i], dfToday['Odds of Winning'][i], dfToday['Potential Winnings'][i], dfToday['Expected Value'][i], winnersTable, betWinnings])
-        
+def yesterdayCSV(yesterdayTeam, sports):
+    with open('betResults.csv', 'a', newline='') as file:
+
+        for i in range(len(dfToday)):
+            winnersTable ='No Win'
+            betWinnings = -100
+            for j in range(len(yesterdayTeam)):
+                if dfToday['Team'][i] == yesterdayTeam[j][9]:
+                    winnersTable = dfToday['Team'][i]
+                    betWinnings = dfToday['Potential Winnings'][i]
+                    
+            if dfToday['Date'][i] == stringYesterdayDate and dfToday['Sport'][i][:3] == sports[:3]:
+                writer = csv.writer(file)
+                writer.writerow([stringYesterdayDate, dfToday['Sport'][i], dfToday['Team'][i], dfToday['Bet Amount'][i], dfToday['Odds of Winning'][i], dfToday['Potential Winnings'][i], dfToday['Expected Value'][i], winnersTable, betWinnings])
+            
 
 
 

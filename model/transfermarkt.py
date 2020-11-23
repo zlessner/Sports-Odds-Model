@@ -24,7 +24,13 @@ for i in range(len(team_num_t)):
     page_address = "https://www.transfermarkt.us/liverpool-fc/sperrenundverletzungen/verein/{0}/plus/1".format(team_num)
 
     # In the object_response variable we will the download of the web page
+    
     object_response = requests.get(page_address, headers=headers)
+
+    # try:
+    #  page1 = requests.get(ap)
+        #except requests.exceptions.ConnectionError:
+            #r.status_code = "Connection refused"
 
     """
     Now we will create a BeautifulSoup object from our object_response.
