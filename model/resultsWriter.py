@@ -2,7 +2,7 @@ from modelSoccer import teams, teamsToBet1, team_num_t, potential_winnings, winn
 from transfermarkt import injuredTeams
 import csv
 import pandas as pd
-from moneyline.moneylineSoccer import gameDate, sport
+from moneyline.moneylineSoccer import gameDate, sport, datetime
 
 # Removed teams due to injuries
 goneTeams= []
@@ -61,7 +61,7 @@ def teamOdds(teamsToBet1):
 
 # f = open("bets.csv", "w")
 # writer = csv.DictWriter(
-#     f, fieldnames=['Date', 'Sport', 'Team', 'Bet Amount', 'Odds of Winning', 'Potential Winnings', 'Expected Value'] )
+#     f, fieldnames=['Time Scipt Ran', 'Date', 'Sport', 'Team', 'Bet Amount', 'Odds of Winning', 'Potential Winnings', 'Expected Value'] )
 # writer.writeheader()
 # f.close()
 
@@ -73,7 +73,7 @@ def today_csv(sport, winning_odds, potential_winnings, finalValues):
         i=0
         while i < len(finalTeams):
             writer = csv.writer(file)
-            writer.writerow([stringGameDate, sport, finalTeams[i], 100, winning_odds[i], potential_winnings[i], finalValues[i]])
+            writer.writerow([datetime.datetime.now(), stringGameDate, sport, finalTeams[i], 100, winning_odds[i], potential_winnings[i], finalValues[i]])
             i+=1
 
 
@@ -90,7 +90,7 @@ dfToday = pd.read_csv('bets.csv')
 
 # f = open("betResults.csv", "w")
 # writer = csv.DictWriter(
-#     f, fieldnames=['Date', 'Sport', 'Team', 'Bet Amount', 'Odds of Winning', 'Potential Winnings', 'Expected Value', "Winner", "Bet Winnings"])
+#     f, fieldnames=['Time Scipt Ran', 'Date', 'Sport', 'Team', 'Bet Amount', 'Odds of Winning', 'Potential Winnings', 'Expected Value', "Winner", "Bet Winnings"])
 # writer.writeheader()
 # f.close()
 
@@ -111,7 +111,7 @@ def yesterdayCSV(yesterdayTeam, sports):
                     
             if dfToday['Date'][i] == stringYesterdayDate and dfToday['Sport'][i][:3] == sports[:3]:
                 writer = csv.writer(file)
-                writer.writerow([stringYesterdayDate, dfToday['Sport'][i], dfToday['Team'][i], dfToday['Bet Amount'][i], dfToday['Odds of Winning'][i], dfToday['Potential Winnings'][i], dfToday['Expected Value'][i], winnersTable, betWinnings])
+                writer.writerow([dfToday['Time Script Ran'][i], stringYesterdayDate, dfToday['Sport'][i], dfToday['Team'][i], dfToday['Bet Amount'][i], dfToday['Odds of Winning'][i], dfToday['Potential Winnings'][i], dfToday['Expected Value'][i], winnersTable, betWinnings])
             
 
 

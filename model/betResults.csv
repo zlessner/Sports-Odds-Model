@@ -1,18 +1,30 @@
-Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnings,Expected Value,Winner,Bet Winnings
-2020-11-21,Soccer Barclays Premier League,Newcastle,100,0.1655,590,14,No Win,-100
-2020-11-21,Soccer English League Championship,AFC Bournemouth,100,0.6436,74,11,AFC Bournemouth,74
-2020-11-21,Soccer English League Championship,Wycombe Wanderers,100,0.1948,650,46,No Win,-100
-2020-11-21,Soccer English League Championship,Watford,100,0.4935,127,12,No Win,-100
-2020-11-21,Soccer English League One,Burton Albion,100,0.4841,129,11,No Win,-100
-2020-11-21,Soccer English League One,Fleetwood Town,100,0.5314,110,11,Fleetwood Town,110
-2020-11-21,Soccer English League One,Hull City,100,0.5314,154,35,Hull City,154
-2020-11-21,Soccer English League One,Wigan,100,0.3742,245,29,No Win,-100
-2020-11-21,Soccer English League Two,Crawley Town,100,0.4922,170,32,No Win,-100
-2020-11-21,Soccer English League Two,Salford City,100,0.5716,100,14,Salford City,100
-2020-11-21,Soccer English League Two,Southend United,100,0.2545,359,17,No Win,-100
-2020-11-21,Soccer English League Two,Oldham Athletic,100,0.2634,340,15,Oldham Athletic,340
-2020-11-21,Soccer English League Two,Grimsby Town,100,0.3123,270,15,No Win,-100
-2020-11-21,Soccer English League Two,Leyton Orient,100,0.5165,179,44,Leyton Orient,179
-2020-11-21,Soccer English League Two,Port Vale,100,0.3135,280,19,No Win,-100
-2020-11-22,NFL,NYJ,100,0.259236316,350,16,No Win,-100
-2020-11-22,NFL,OAK,100,0.33658215399999997,254,19,No Win,-100
+Time Scipt Ran,Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnings,Expected Value,Winner,Bet Winnings
+11/19/20,11/21/20,CFB,Syracuse,100,0.238757428,600,67,No Win,-100
+11/19/20,11/21/20,CFB,Air Force,100,0.870559083,28,11,No Win,28
+11/19/20,11/21/20,CFB,Appalachian St.,100,0.424750247,168,13,No Win,-100
+11/19/20,11/21/20,CFB,Texas St.,100,0.434181798,172,18,No Win,172
+11/19/20,11/21/20,CFB,Temple,100,0.565550397,142,36,No Win,-100
+11/19/20,11/21/20,CFB,Illinois,100,0.209050428,470,19,No Win,470
+11/19/20,11/21/20,CFB,Indiana,100,0.150040905,700,20,No Win,-100
+11/19/20,11/21/20,CFB,Oregon St.,100,0.50978886,136,20,No Win,136
+11/19/20,11/21/20,CFB,Kansas St.,100,0.334007281,370,56,No Win,-100
+11/19/20,11/21/20,CFB,Mississippi St.,100,0.08448492,1300,18,No Win,-100
+11/19/20,11/21/20,CFB,Rutgers,100,0.28357741,300,13,No Win,-100
+11/19/20,11/21/20,CFB,South Carolina,100,0.44797768,204,36,No Win,-100
+11/19/20,11/21/20,CFB,Utah,100,0.61261246,104,25,No Win,-100
+11/19/20,11/21/20,Soccer Barclays Premier League,Newcastle,100,0.1655,590,14,No Win,-100
+11/19/20,11/21/20,Soccer English League Championship,AFC Bournemouth,100,0.6436,74,11,AFC Bournemouth,74
+11/19/20,11/21/20,Soccer English League Championship,Wycombe Wanderers,100,0.1948,650,46,No Win,-100
+11/19/20,11/21/20,Soccer English League Championship,Watford,100,0.4935,127,12,No Win,-100
+11/19/20,11/21/20,Soccer English League One,Burton Albion,100,0.4841,129,11,No Win,-100
+11/19/20,11/21/20,Soccer English League One,Fleetwood Town,100,0.5314,110,11,Fleetwood Town,110
+11/19/20,11/21/20,Soccer English League One,Hull City,100,0.5314,154,35,Hull City,154
+11/19/20,11/21/20,Soccer English League One,Wigan,100,0.3742,245,29,No Win,-100
+11/19/20,11/21/20,Soccer English League Two,Crawley Town,100,0.4922,170,32,No Win,-100
+11/19/20,11/21/20,Soccer English League Two,Salford City,100,0.5716,100,14,Salford City,100
+11/19/20,11/21/20,Soccer English League Two,Oldham Athletic,100,0.2634,340,15,Oldham Athletic,340
+11/19/20,11/21/20,Soccer English League Two,Grimsby Town,100,0.3123,270,15,No Win,-100
+11/19/20,11/21/20,Soccer English League Two,Leyton Orient,100,0.5165,179,44,Leyton Orient,179
+11/19/20,11/21/20,Soccer English League Two,Port Vale,100,0.3135,280,19,No Win,-100
+11/19/20,11/22/20,NFL,NYJ,100,0.259236316,350,16,No Win,-100
+11/19/20,11/22/20,NFL,OAK,100,0.336582154,254,19,No Win,-100

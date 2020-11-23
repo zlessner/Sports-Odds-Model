@@ -5,7 +5,7 @@ from moneyline.moneylineSoccer import sport
 
 # Comment sport out if soccer
 
-sport = 'NFL'
+# sport = 'NFL'
 
 if sport == 'NFL':
     from modelNFL import teamstobetNFL, potential_winnings, winning_odds, stringGameDate, FiveThirtyEightGames, FiveThirtyEightGamesYesterday
@@ -32,7 +32,7 @@ else:
 
 # change this to particular sport to use
 
-teamOdds(teamstobetNFL)
+teamOdds(teamsToBet1)
 
 
 
