@@ -35,13 +35,14 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 #soccer_usa_mls
 #soccer_sweden_allsvenskan
 #soccer_russia_premier_league
+#soccer_uefa_champs_league
 #soccer
 
 
 
 #change sport to any of the different soccer leagues above
 
-sport = "soccer_efl_champ"
+sport = "soccer_england_league1"
 
 querystring = {"sport":sport,"region":"us","mkt":"h2h"}
 
@@ -61,7 +62,7 @@ gameWeek = gameDate + datetime.timedelta(6)
 
 futureGame = gameDate + datetime.timedelta(1)
 
-yesterdayGame = gameDate + datetime.timedelta(0)
+yesterdayGame = gameDate + datetime.timedelta(-20)
 
 pastNFLGame = gameDate + datetime.timedelta(-3)
 
@@ -88,5 +89,8 @@ if sport == "soccer_england_league2":
     sport = 'Soccer English League Two'
 if sport == "soccer_usa_mls":
     sport = 'Soccer Major League Soccer'
+if sport == "soccer_uefa_champs_league":
+    sport = 'Soccer Champions League'
+    
 
 

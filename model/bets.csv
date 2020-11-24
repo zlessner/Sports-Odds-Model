@@ -1,40 +1,45 @@
 Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnings,Expected Value
-11/19/20,11/21/20,CFB,Syracuse,100,0.238757428,600,67
-11/19/20,11/21/20,CFB,Air Force,100,0.870559083,28,11
-11/19/20,11/21/20,CFB,Appalachian St.,100,0.424750247,168,13
-11/19/20,11/21/20,CFB,Texas St.,100,0.434181798,172,18
-11/19/20,11/21/20,CFB,Temple,100,0.565550397,142,36
-11/19/20,11/21/20,CFB,Illinois,100,0.209050428,470,19
-11/19/20,11/21/20,CFB,Indiana,100,0.150040905,700,20
-11/19/20,11/21/20,CFB,Oregon St.,100,0.50978886,136,20
-11/19/20,11/21/20,CFB,Kansas St.,100,0.334007281,370,56
-11/19/20,11/21/20,CFB,Mississippi St.,100,0.08448492,1300,18
-11/19/20,11/21/20,CFB,Rutgers,100,0.28357741,300,13
-11/19/20,11/21/20,CFB,South Carolina,100,0.44797768,204,36
-11/19/20,11/21/20,CFB,Utah,100,0.61261246,104,25
-11/19/20,11/21/20,Soccer Barclays Premier League,Newcastle,100,0.1655,590,14
-11/19/20,11/21/20,Soccer English League Championship,AFC Bournemouth,100,0.6436,74,11
-11/19/20,11/21/20,Soccer English League Championship,Wycombe Wanderers,100,0.1948,650,46
-11/19/20,11/21/20,Soccer English League Championship,Watford,100,0.4935,127,12
-11/19/20,11/21/20,Soccer English League One,Burton Albion,100,0.4841,129,11
-11/19/20,11/21/20,Soccer English League One,Fleetwood Town,100,0.5314,110,11
-11/19/20,11/21/20,Soccer English League One,Hull City,100,0.5314,154,35
-11/19/20,11/21/20,Soccer English League One,Wigan,100,0.3742,245,29
-11/19/20,11/21/20,Soccer English League Two,Crawley Town,100,0.4922,170,32
-11/19/20,11/21/20,Soccer English League Two,Salford City,100,0.5716,100,14
-11/19/20,11/21/20,Soccer English League Two,Oldham Athletic,100,0.2634,340,15
-11/19/20,11/21/20,Soccer English League Two,Grimsby Town,100,0.3123,270,15
-11/19/20,11/21/20,Soccer English League Two,Leyton Orient,100,0.5165,179,44
-11/19/20,11/21/20,Soccer English League Two,Port Vale,100,0.3135,280,19
-11/19/20,11/22/20,NFL,NYJ,100,0.259236316,350,16
-11/19/20,11/22/20,NFL,OAK,100,0.336582154,254,19
-2020-11-23 12:32:35.249727,2020-11-23,Soccer Barclays Premier League,Burnley,100,0.4344,165,15
-2020-11-23 12:40:00.128000,2020-11-24,Soccer English League One,Wigan,100,0.4526,164,19
-2020-11-23 15:40:37.451030,2020-11-24,Soccer English League Two,Oldham Athletic,100,0.3758,216,18
-2020-11-23 15:40:37.451052,2020-11-24,Soccer English League Two,Leyton Orient,100,0.48,139,14
-2020-11-23 15:40:37.451061,2020-11-24,Soccer English League Two,Tranmere Rovers,100,0.4211,171,14
-2020-11-23 15:40:37.451068,2020-11-24,Soccer English League Two,Colchester United,100,0.3602,277,35
-2020-11-23 15:40:37.451075,2020-11-24,Soccer English League Two,Southend United,100,0.2871,547,85
-2020-11-23 15:40:37.451081,2020-11-24,Soccer English League Two,Mansfield Town,100,0.4833,145,18
-2020-11-23 15:40:37.451088,2020-11-24,Soccer English League Two,Salford City,100,0.701,65,16
-
+11/19/20,2020-11-21,CFB,Syracuse,100,0.238757428,600,67
+11/19/20,2020-11-21,CFB,Air Force,100,0.870559083,28,11
+11/19/20,2020-11-21,CFB,Appalachian St.,100,0.424750247,168,13
+11/19/20,2020-11-21,CFB,Texas St.,100,0.434181798,172,18
+11/19/20,2020-11-21,CFB,Temple,100,0.565550397,142,36
+11/19/20,2020-11-21,CFB,Illinois,100,0.209050428,470,19
+11/19/20,2020-11-21,CFB,Indiana,100,0.150040905,700,20
+11/19/20,2020-11-21,CFB,Oregon St.,100,0.50978886,136,20
+11/19/20,2020-11-21,CFB,Kansas St.,100,0.334007281,370,56
+11/19/20,2020-11-21,CFB,Mississippi St.,100,0.08448492,1300,18
+11/19/20,2020-11-21,CFB,Rutgers,100,0.28357741,300,13
+11/19/20,2020-11-21,CFB,South Carolina,100,0.44797768,204,36
+11/19/20,2020-11-21,CFB,Utah,100,0.61261246,104,25
+11/19/20,2020-11-21,Soccer Barclays Premier League,Newcastle,100,0.1655,590,14
+11/19/20,2020-11-21,Soccer English League Championship,AFC Bournemouth,100,0.6436,74,11
+11/19/20,2020-11-21,Soccer English League Championship,Wycombe Wanderers,100,0.1948,650,46
+11/19/20,2020-11-21,Soccer English League Championship,Watford,100,0.4935,127,12
+11/19/20,2020-11-21,Soccer English League One,Burton Albion,100,0.4841,129,11
+11/19/20,2020-11-21,Soccer English League One,Fleetwood Town,100,0.5314,110,11
+11/19/20,2020-11-21,Soccer English League One,Hull City,100,0.5314,154,35
+11/19/20,2020-11-21,Soccer English League One,Wigan,100,0.3742,245,29
+11/19/20,2020-11-21,Soccer English League Two,Crawley Town,100,0.4922,170,32
+11/19/20,2020-11-21,Soccer English League Two,Salford City,100,0.5716,100,14
+11/19/20,2020-11-21,Soccer English League Two,Oldham Athletic,100,0.2634,340,15
+11/19/20,2020-11-21,Soccer English League Two,Grimsby Town,100,0.3123,270,15
+11/19/20,2020-11-21,Soccer English League Two,Leyton Orient,100,0.5165,179,44
+11/19/20,2020-11-21,Soccer English League Two,Port Vale,100,0.3135,280,19
+11/19/20,2020-11-22,NFL,NYJ,100,0.259236316,350,16
+11/19/20,2020-11-22,NFL,OAK,100,0.336582154,254,19
+32:35.2,2020-11-23,Soccer Barclays Premier League,Burnley,100,0.4344,165,15
+40:37.5,2020-11-24,Soccer English League Two,Oldham Athletic,100,0.3758,216,18
+40:37.5,2020-11-24,Soccer English League Two,Leyton Orient,100,0.48,139,14
+40:37.5,2020-11-24,Soccer English League Two,Tranmere Rovers,100,0.4211,171,14
+40:37.5,2020-11-24,Soccer English League Two,Colchester United,100,0.3602,277,35
+40:37.5,2020-11-24,Soccer English League Two,Southend United,100,0.2871,547,85
+40:37.5,2020-11-24,Soccer English League Two,Mansfield Town,100,0.4833,145,18
+40:37.5,2020-11-24,Soccer English League Two,Salford City,100,0.701,65,16
+27:18.7,2020-11-24,Soccer Champions League,FC Krasnodar,100,0.2102,440,13
+27:18.7,2020-11-24,Soccer Champions League,Zenit St Petersburg,100,0.3183,430,68
+27:18.7,2020-11-24,Soccer Champions League,Borussia Dortmund Club Brugge Draw,100,0.1977,540,26
+27:18.7,2020-11-24,Soccer Champions League,Club Brugge,100,0.1188,1050,36
+27:18.7,2020-11-24,Soccer Champions League,RB Leipzig,100,0.2579,430,36
+2020-11-23 22:18:33.572715,2020-11-24,Soccer English League One,Charlton Athletic,100,0.5446,106,12
+2020-11-23 22:18:33.572715,2020-11-24,Soccer English League One,Wigan,100,0.4526,168,21

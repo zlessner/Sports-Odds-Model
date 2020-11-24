@@ -2,9 +2,12 @@ from modelSoccer import teams, teamsToBet1, team_num_t, potential_winnings, winn
 from transfermarkt import injuredTeams
 import csv
 import pandas as pd
-from moneyline.moneylineSoccer import gameDate, sport, datetime
+from moneyline.moneylineSoccer import gameDate, sport, datetime, yesterdayGame
 
 # Removed teams due to injuries
+
+codeTime = datetime.datetime.now()
+
 goneTeams= []
 goneValues = []
 goneOdds = []
@@ -66,6 +69,7 @@ def teamOdds(teamsToBet1):
 # f.close()
 
 
+
 def today_csv(sport, winning_odds, potential_winnings, finalValues):
 
     # today's upcoming bets
@@ -73,7 +77,7 @@ def today_csv(sport, winning_odds, potential_winnings, finalValues):
         i=0
         while i < len(finalTeams):
             writer = csv.writer(file)
-            writer.writerow([datetime.datetime.now(), stringGameDate, sport, finalTeams[i], 100, winning_odds[i], potential_winnings[i], finalValues[i]])
+            writer.writerow([codeTime, stringGameDate, sport, finalTeams[i], 100, winning_odds[i], potential_winnings[i] , finalValues[i]])
             i+=1
 
 
@@ -108,8 +112,14 @@ def yesterdayCSV(yesterdayTeam, sports):
                 if dfToday['Team'][i] == yesterdayTeam[j][9]:
                     winnersTable = dfToday['Team'][i]
                     betWinnings = dfToday['Potential Winnings'][i]
-                    
+
+                if dfToday['Team'][i][-4:] == 'Draw' and dfToday['Team'][i][-4:] == yesterdayTeam[j][9]:
+                    winnersTable = dfToday['Team'][i][-4:]
+                    betWinnings = dfToday['Potential Winnings'][i]
+            # print(dfToday['Game Date'][i])
+            # print(stringYesterdayDate)        
             if dfToday['Game Date'][i] == stringYesterdayDate and dfToday['Sport'][i][:3] == sports[:3]:
+                # print("woof")
                 writer = csv.writer(file)
                 writer.writerow([dfToday['Time Script Ran'][i], stringYesterdayDate, dfToday['Sport'][i], dfToday['Team'][i], dfToday['Bet Amount'][i], dfToday['Odds of Winning'][i], dfToday['Potential Winnings'][i], dfToday['Expected Value'][i], winnersTable, betWinnings])
             
