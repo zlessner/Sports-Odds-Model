@@ -60,7 +60,7 @@ gameDate = datetime.date.today()
 
 gameWeek = gameDate + datetime.timedelta(6)
 
-futureGame = gameDate + datetime.timedelta(0)
+futureGame = gameDate + datetime.timedelta(1)
 
 yesterdayGame = gameDate + datetime.timedelta(-1)
 
@@ -93,6 +93,18 @@ if sport == "soccer_uefa_champs_league":
     sport = 'Soccer Champions League'
 if sport == "soccer_spain_segunda_division":
     sport = 'Spanish Segunda Division'
+if sport == "soccer_spain_la_liga":
+    sport = 'Spanish Primera Division'
+# Not sure what Greek Super League is listed as
+if sport == "XXX":
+    sport = 'Greek Super League'
+if sport == "soccer_turkey_super_league":
+    sport = 'Turkey Super League'
+
+
+    
+
+    
 
 
 

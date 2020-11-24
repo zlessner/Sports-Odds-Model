@@ -123,6 +123,6 @@ print(teamsToBet2)
 
 #Record results with the run date to the bets.csv file
 
-with open('bets.csv', 'a', newline='') as file:
+with open('oldBets.csv', 'a', newline='') as file:
     writer = csv.writer(file)
     writer.writerow([teamsToBet2])
