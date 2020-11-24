@@ -19,7 +19,7 @@ print(teamsToBet1)
 def removeInjuredTeams(team_num_t):
     i=0
     while i < len(team_num_t):
-        if any(item == team_num_t[i] for item in injuredTeams) or filter(lambda item: any(x in item for x in injuredTeams), teamsToBet1[:]):
+        if any(item == team_num_t[i] for item in injuredTeams):
             goneTeams.append(teamsToBet1[i])
             goneValues.append(potential_winnings[i])
             goneOdds.append(winning_odds[i])
@@ -28,6 +28,7 @@ def removeInjuredTeams(team_num_t):
 
 # might be appending wrong teams into goneTeams - ones that come after the draw because teamsToBet1 and teamNumt are different lengths - check in morning
 # or leipzig shouldn't be included in this group because they are the last element on list
+# or filter(lambda item: any(x in item for x in injuredTeams), teamsToBet1[:])
 
     # Remove injured teams that match up with teams to bet on
 
@@ -118,7 +119,7 @@ def yesterdayCSV(yesterdayTeam, sports):
                     winnersTable = dfToday['Team'][i]
                     betWinnings = dfToday['Potential Winnings'][i]
 
-                if dfToday['Team'][i][-4:] == 'Draw' and dfToday['Team'][i][-4:] == yesterdayTeam[j][9]:
+                if dfToday['Team'][i][-4:] == 'Draw' and dfToday['Team'][i][-4:] == yesterdayTeam[j][9] and dfToday['Sport'][i] == yesterdayTeam[j][1]:
                     winnersTable = dfToday['Team'][i][-4:]
                     betWinnings = dfToday['Potential Winnings'][i]
        

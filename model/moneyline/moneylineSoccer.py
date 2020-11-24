@@ -91,6 +91,8 @@ if sport == "soccer_usa_mls":
     sport = 'Soccer Major League Soccer'
 if sport == "soccer_uefa_champs_league":
     sport = 'Soccer Champions League'
-    
+if sport == "soccer_spain_segunda_division":
+    sport = 'Spanish Segunda Division'
+
 
 
