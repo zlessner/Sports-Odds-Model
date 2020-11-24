@@ -39,8 +39,3 @@ today_csv(sport, winning_odds, potential_winnings, finalValues)
 
 yesterdayCSV(FiveThirtyEightGamesYesterday, sport)
 
-# results table for draw -- fix
-
-# put transfermarkt in for championsleague teams - then run bets csv again
-
-

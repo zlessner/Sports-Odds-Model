@@ -21,7 +21,7 @@ for i in range(len(team_num_t)):
 
 
     # page_address stands for the data page address
-    page_address = "https://www.transfermarkt.us/liverpool-fc/sperrenundverletzungen/verein/{0}/plus/1".format(team_num)
+    page_address = "https://www.transfermarkt.us/tottenham/sperrenundverletzungen/verein/{0}/plus/1".format(team_num)
 
     # In the object_response variable we will the download of the web page
     
