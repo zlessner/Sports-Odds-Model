@@ -35,14 +35,22 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 #soccer_usa_mls
 #soccer_sweden_allsvenskan
 #soccer_russia_premier_league
+#soccer_denmark_superliga
 #soccer_uefa_champs_league
+#soccer_uefa_europa_league
 #soccer
+#soccer_china_superleague
+#soccer_netherlands_eredivisie
+#soccer_norway_eliteserien
+#soccer_switzerland_superleague
 
 
 
 #change sport to any of the different soccer leagues above
 
-sport = "soccer_uefa_champs_league"
+soccer = True
+
+sport = "soccer_netherlands_eredivisie"
 
 querystring = {"sport":sport,"region":"us","mkt":"h2h"}
 
@@ -62,11 +70,11 @@ gameWeek = gameDate + datetime.timedelta(6)
 
 futureGame = gameDate + datetime.timedelta(1)
 
-yesterdayGame = gameDate + datetime.timedelta(-1)
+yesterdayGame = gameDate + datetime.timedelta(0)
 
-pastNFLGame = gameDate + datetime.timedelta(-3)
+pastNFLGame = gameDate + datetime.timedelta(-1)
 
-futureNFLGame = gameDate + datetime.timedelta(3)
+futureNFLGame = gameDate + datetime.timedelta(4)
 
 # change date for all games right here -- uncomment below to go to tomorrow's games
 
@@ -100,6 +108,26 @@ if sport == "XXX":
     sport = 'Greek Super League'
 if sport == "soccer_turkey_super_league":
     sport = 'Turkey Super League'
+if sport == "soccer_italy_serie_a":
+    sport = 'Italy Serie A'
+if sport == "soccer_portugal_primeira_liga":
+    sport = 'Portuguese Liga'
+if sport == "soccer_portugal_primeira_liga":
+    sport = 'Portuguese Liga'
+if sport == "soccer_netherlands_eredivisie":
+    sport = 'Dutch Eredivisie'
+if sport == "soccer_netherlands_eredivisie":
+    sport = 'Dutch Eredivisie'
+if sport == "china_superleague":
+    sport = 'Chinese Super League'
+if sport == "soccer_norway_eliteserien":
+    sport = 'Norwegian Tippeligaen'
+if sport == "soccer_switzerland_superleague":
+    sport = 'Swiss Raiffeisen Super League'
+
+
+    
+    
 
 
     

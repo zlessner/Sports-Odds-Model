@@ -1,5 +1,5 @@
 from moneyline.moneylineCBB import theOddsAPIGames
-from moneyline.moneylineSoccer import gameDate
+from moneyline.moneylineSoccer import futureGame
 import time
 from datetime import datetime
 from kenpompy.utils import login
@@ -7,7 +7,7 @@ from kenpompy.FanMatch import FanMatch
 from API_Keys.vars import kpUser, kpPass
 
 
-stringGameDate = str(gameDate)
+stringGameDate = str(futureGame)
 
 browser = login(kpUser, kpPass)
 fm = FanMatch(browser, date = stringGameDate)
@@ -56,6 +56,8 @@ kpLosersProj=[]
 kpWinProb=[]
 
 teamsToBetCBB=[]
+potential_winnings=[]
+winning_odds=[]
 
 #Adding lists for KenPom projected winners, projected losers, and win probability
 
@@ -87,6 +89,8 @@ for i in range(len(AlphaAPI)):
                 homeAlphaOdds = int(((((OddsA[i])-1)*100)*(kpWinProb[j])-(100*(1-(kpWinProb[j])))))
                 if (homeAlphaOdds>10):
                     teamsToBetCBB.append({AlphaAPI[i]: homeAlphaOdds})
+                    potential_winnings.append(int(((OddsA[i])-1)*100))
+                    winning_odds.append(kpWinProb[j])
         except KeyError:
             continue
 
@@ -95,6 +99,8 @@ for i in range(len(AlphaAPI)):
                 awayBetaOdds = int(((((OddsB[i])-1)*100)*(1-(kpWinProb[j])))-(100*(kpWinProb[j])))
                 if (awayBetaOdds>10):
                     teamsToBetCBB.append({BetaAPI[i]: awayBetaOdds})
+                    potential_winnings.append(int(((OddsB[i])-1)*100))
+                    winning_odds.append(1-kpWinProb[j])
         except KeyError:
             continue
 
@@ -103,6 +109,8 @@ for i in range(len(AlphaAPI)):
                 awayAlphaOdds = int(((((OddsA[i])-1)*100)*(1-(kpWinProb[j]))-(100*(kpWinProb[j]))))
                 if (awayAlphaOdds>10):
                     teamsToBetCBB.append({AlphaAPI[i]: awayAlphaOdds})
+                    potential_winnings.append(int(((OddsA[i])-1)*100))
+                    winning_odds.append(1-kpWinProb[j])
         except KeyError:
             continue
 
@@ -112,6 +120,8 @@ for i in range(len(AlphaAPI)):
                 homeBetaOdds = int(((((OddsB[i])-1)*100)*((kpWinProb[j])))-(100*(1-(kpWinProb[j]))))
                 if (homeBetaOdds>10):
                     teamsToBetCBB.append({BetaAPI[i]: homeBetaOdds})
+                    potential_winnings.append(int(((OddsB[i])-1)*100))
+                    winning_odds.append(kpWinProb[j])
         except KeyError:
             continue
 
