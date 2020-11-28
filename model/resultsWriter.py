@@ -1,7 +1,7 @@
 from modelSoccer import teams, teamsToBet1, team_num_t, potential_winnings, winning_odds, stringGameDate, stringYesterdayDate
 import csv
 import pandas as pd
-from moneyline.moneylineSoccer import gameDate, sport, soccer, datetime, yesterdayGame, nowTime
+from moneyline.moneylineSoccer import gameDate, sport, datetime, yesterdayGame, nowTime
 
 # Removed teams due to injuries
 
@@ -12,8 +12,7 @@ goneOdds = []
 
 
 # also removes injured teams when betting on draws
-
-if soccer == True:
+if sport[:6] == 'Soccer':
     from transfermarkt import injuredTeams
 
     print(teamsToBet1)
@@ -108,10 +107,11 @@ dfToday = pd.read_csv('bets.csv')
 
 def yesterdayCSV(yesterdayTeam, sports):
     with open('betResults.csv', 'a', newline='') as file:
-
         for i in range(len(dfToday)):
             winnersTable ='No Win'
             betWinnings = -100
+            occured = False
+
             for j in range(len(yesterdayTeam)):
                 if dfToday['Team'][i] == yesterdayTeam[j][9]:
                     winnersTable = dfToday['Team'][i]
@@ -124,9 +124,6 @@ def yesterdayCSV(yesterdayTeam, sports):
             if dfToday['Game Date'][i] == stringYesterdayDate and dfToday['Sport'][i][:3] == sports[:3]:
                 writer = csv.writer(file)
                 writer.writerow([dfToday['Time Script Ran'][i], stringYesterdayDate, dfToday['Sport'][i], dfToday['Team'][i], dfToday['Bet Amount'][i], dfToday['Odds of Winning'][i], dfToday['Potential Winnings'][i], dfToday['Expected Value'][i], winnersTable, betWinnings])
-            
-
-
 
 
 

@@ -6,6 +6,7 @@ import mechanicalsoup
 import pandas as pd
 from bs4 import BeautifulSoup
 
+
 class FanMatch:
     """Object to hold FanMatch page scraping results.
     
@@ -33,6 +34,7 @@ class FanMatch:
     def __init__(self, browser, date = None):
         self.url = 'https://kenpom.com/fanmatch.php'
         self.date = date
+        # self.date = "2020-11-26"
         self.lines_o_night = None
         self.ppg = None
         self.avg_eff = None

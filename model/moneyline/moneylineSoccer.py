@@ -50,7 +50,7 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 
 soccer = True
 
-sport = "soccer_netherlands_eredivisie"
+sport = "soccer_spain_segunda_division"
 
 querystring = {"sport":sport,"region":"us","mkt":"h2h"}
 
@@ -99,34 +99,61 @@ if sport == "soccer_usa_mls":
     sport = 'Soccer Major League Soccer'
 if sport == "soccer_uefa_champs_league":
     sport = 'Soccer Champions League'
+if sport == "soccer_uefa_europa_league":
+    sport = 'Soccer UEFA Europa League'
 if sport == "soccer_spain_segunda_division":
-    sport = 'Spanish Segunda Division'
+    sport = 'Soccer Spanish Segunda Division'
 if sport == "soccer_spain_la_liga":
-    sport = 'Spanish Primera Division'
+    sport = 'Soccer Spanish Primera Division'
 # Not sure what Greek Super League is listed as
 if sport == "XXX":
-    sport = 'Greek Super League'
+    sport = 'Soccer Greek Super League'
 if sport == "soccer_turkey_super_league":
-    sport = 'Turkey Super League'
+    sport = 'Soccer Turkey Super League'
 if sport == "soccer_italy_serie_a":
-    sport = 'Italy Serie A'
+    sport = 'Soccer Italy Serie A'
+if sport == "soccer_italy_serie_b":
+    sport = 'Soccer Italy Serie B'
 if sport == "soccer_portugal_primeira_liga":
-    sport = 'Portuguese Liga'
-if sport == "soccer_portugal_primeira_liga":
-    sport = 'Portuguese Liga'
+    sport = 'Soccer Portuguese Liga'
 if sport == "soccer_netherlands_eredivisie":
-    sport = 'Dutch Eredivisie'
-if sport == "soccer_netherlands_eredivisie":
-    sport = 'Dutch Eredivisie'
+    sport = 'Soccer Dutch Eredivisie'
+if sport == "soccer_belgium_first_div":
+    sport = 'Soccer Belgian Jupiler League'
 if sport == "china_superleague":
-    sport = 'Chinese Super League'
+    sport = 'Soccer Chinese Super League'
 if sport == "soccer_norway_eliteserien":
-    sport = 'Norwegian Tippeligaen'
+    sport = 'Soccer Norwegian Tippeligaen'
 if sport == "soccer_switzerland_superleague":
-    sport = 'Swiss Raiffeisen Super League'
-
+    sport = 'Soccer Swiss Raiffeisen Super League'
+if sport == "soccer_denmark_superliga":
+    sport = 'Soccer Danish SAS-Ligaen'
+if sport == "soccer_sweden_allsvenskan":
+    sport = 'Soccer Swedish Allsvenskan'
+if sport == "soccer":
+    sport = 'Soccer'
+if sport == "soccer_germany_bundesliga":
+    sport = 'Soccer German Bundesliga'
+if sport == "soccer_germany_bundesliga2":
+    sport = 'Soccer German Bundesliga 2'
+if sport == "soccer_russia_premier_league":
+    sport = 'Soccer Russian Premier Liga'
+if sport == "soccer_france_ligue_one":
+    sport = 'Soccer French Ligue 1'
+if sport == "soccer_france_ligue_two":
+    sport = 'Soccer French Ligue 2'
+if sport == "soccer_argentina_primera_division":
+    sport = 'Soccer Argentina Primera Division'
+if sport == "soccer_brazil_campeonato":
+    sport = 'Soccer Brasileiro S√©rie A'
+    
 
     
+
+
+
+# Comment sport out if soccer
+# sport = 'CBB'  
     
 
 
