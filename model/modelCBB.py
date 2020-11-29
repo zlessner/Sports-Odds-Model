@@ -1,5 +1,5 @@
 from moneyline.moneylineCBB import theOddsAPIGames
-from moneyline.moneylineSoccer import futureGame
+from moneyline.moneylineSoccer import futureGame, yesterdayGame
 import time
 from datetime import datetime
 from kenpompy.utils import login
@@ -9,8 +9,12 @@ from API_Keys.vars import kpUser, kpPass
 
 stringGameDate = str(futureGame)
 
+stringYesterdayDate = str(yesterdayGame)
+
 browser = login(kpUser, kpPass)
 fm = FanMatch(browser, date = stringGameDate)
+
+fmPast = FanMatch(browser, date = stringYesterdayDate)
 
 # Parse sports betting API for sport, game time, teams, and odds
 
@@ -31,7 +35,9 @@ BetaAPI=[]
 OddsA=[]
 OddsB=[]
 
-print(fm.fm_df['Winner'])
+FiveThirtyEightGamesYesterday = fmPast.fm_df['Winner']
+
+loserTeams = fmPast.fm_df['Loser']
 
 #Adding first team to AlphaAPI, second team to BetaAPI, first teams odds to OddsA, and second team odds to OddsB
 

@@ -43,14 +43,15 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 #soccer_netherlands_eredivisie
 #soccer_norway_eliteserien
 #soccer_switzerland_superleague
+#soccer_japan_j_league
 
 
 
 #change sport to any of the different soccer leagues above
 
-soccer = True
+soccer = False
 
-sport = "soccer_spain_segunda_division"
+sport = "soccer_japan_j_league"
 
 querystring = {"sport":sport,"region":"us","mkt":"h2h"}
 
@@ -70,7 +71,7 @@ gameWeek = gameDate + datetime.timedelta(6)
 
 futureGame = gameDate + datetime.timedelta(1)
 
-yesterdayGame = gameDate + datetime.timedelta(0)
+yesterdayGame = gameDate + datetime.timedelta(-1)
 
 pastNFLGame = gameDate + datetime.timedelta(-1)
 
@@ -146,6 +147,8 @@ if sport == "soccer_argentina_primera_division":
     sport = 'Soccer Argentina Primera Division'
 if sport == "soccer_brazil_campeonato":
     sport = 'Soccer Brasileiro S√©rie A'
+if sport == "soccer_japan_j_league":
+    sport = 'Soccer Japanese J League'
     
 
     
@@ -153,13 +156,6 @@ if sport == "soccer_brazil_campeonato":
 
 
 # Comment sport out if soccer
-# sport = 'CBB'  
+sport = 'CBB'  
     
-
-
-    
-
-    
-
-
 

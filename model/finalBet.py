@@ -19,7 +19,7 @@ elif sport == 'CFB':
     teamOdds(teamsToBetCFB)
 
 elif sport == 'CBB':
-    from modelCBB import teamsToBetCBB, potential_winnings, winning_odds, stringGameDate
+    from modelCBB import teamsToBetCBB, potential_winnings, winning_odds, stringGameDate, FiveThirtyEightGamesYesterday
     winning_odds
     potential_winnings
     teamOdds(teamsToBetCBB)
@@ -36,9 +36,11 @@ else:
 
 
 
-today_csv(sport, winning_odds, potential_winnings, finalValues)
+# today_csv(sport, winning_odds, potential_winnings, finalValues)
 
 yesterdayCSV(FiveThirtyEightGamesYesterday, sport)
 
 
 # why is benefica not getting caught for injuries
+
+# FiveThirtyEightGamesYesterday not workign for CBB for yesterday game because it's called something different

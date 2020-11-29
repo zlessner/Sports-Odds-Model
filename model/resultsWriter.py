@@ -107,25 +107,39 @@ dfToday = pd.read_csv('bets.csv')
 
 def yesterdayCSV(yesterdayTeam, sports):
     with open('betResults.csv', 'a', newline='') as file:
+
         for i in range(len(dfToday)):
             winnersTable ='No Win'
             betWinnings = -100
-            occured = False
-
             for j in range(len(yesterdayTeam)):
-                if dfToday['Team'][i] == yesterdayTeam[j][9]:
-                    winnersTable = dfToday['Team'][i]
-                    betWinnings = dfToday['Potential Winnings'][i]
 
-                if dfToday['Team'][i][-4:] == 'Draw' and dfToday['Team'][i][-4:] == yesterdayTeam[j][9] and dfToday['Sport'][i] == yesterdayTeam[j][1]:
-                    winnersTable = dfToday['Team'][i][-4:]
-                    betWinnings = dfToday['Potential Winnings'][i]
-       
-            if dfToday['Game Date'][i] == stringYesterdayDate and dfToday['Sport'][i][:3] == sports[:3]:
-                writer = csv.writer(file)
-                writer.writerow([dfToday['Time Script Ran'][i], stringYesterdayDate, dfToday['Sport'][i], dfToday['Team'][i], dfToday['Bet Amount'][i], dfToday['Odds of Winning'][i], dfToday['Potential Winnings'][i], dfToday['Expected Value'][i], winnersTable, betWinnings])
+                if sport != 'CBB':
+                    if dfToday['Team'][i] == yesterdayTeam[j][9]:
+                        winnersTable = dfToday['Team'][i]
+                        betWinnings = dfToday['Potential Winnings'][i]
 
+                    if dfToday['Team'][i][-4:] == 'Draw' and dfToday['Team'][i][-4:] == yesterdayTeam[j][9] and dfToday['Sport'][i] == yesterdayTeam[j][1]:
+                        winnersTable = dfToday['Team'][i][-4:]
+                        betWinnings = dfToday['Potential Winnings'][i]
 
+                else:
+                    if dfToday['Team'][i] == yesterdayTeam[j]:
+                        winnersTable = dfToday['Team'][i]
+                        betWinnings = dfToday['Potential Winnings'][i]
+    
+
+            if sport != 'CBB':
+                if dfToday['Game Date'][i] == stringYesterdayDate and dfToday['Sport'][i][:3] == sports[:3]:
+                    writer = csv.writer(file)
+                    writer.writerow([dfToday['Time Script Ran'][i], stringYesterdayDate, dfToday['Sport'][i], dfToday['Team'][i], dfToday['Bet Amount'][i], dfToday['Odds of Winning'][i], dfToday['Potential Winnings'][i], dfToday['Expected Value'][i], winnersTable, betWinnings])
+
+            # adds results for college basketball teams but doesn't add anything if game was canceled   
+            else:
+                from modelCBB import loserTeams
+                if dfToday['Game Date'][i] == stringYesterdayDate and dfToday['Sport'][i][:3] == sports[:3] and (any(item == dfToday['Team'][i] for item in yesterdayTeam) or any(item == dfToday['Team'][i] for item in loserTeams)):
+                    writer = csv.writer(file)
+                    writer.writerow([dfToday['Time Script Ran'][i], stringYesterdayDate, dfToday['Sport'][i], dfToday['Team'][i], dfToday['Bet Amount'][i], dfToday['Odds of Winning'][i], dfToday['Potential Winnings'][i], dfToday['Expected Value'][i], winnersTable, betWinnings])
+                
 
 
 
