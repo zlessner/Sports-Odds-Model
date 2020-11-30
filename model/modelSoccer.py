@@ -511,6 +511,9 @@ for i in range(len(teams)):
     # Italy Serie A
     if teams[i] == "AC Milan":
         team_num_t.append(5)
+    if teams[i] == "Atalanta":
+        team_num_t.append(800)
+    
 
     # Portuguese Liga
     if teams[i] == "Benfica":
@@ -680,6 +683,9 @@ for i in range(len(teams)):
         team_num_t.append(1423)
 
 
+    # Soccer Danish SAS-Ligaen
+    if teams[i] == "FC Midtjylland": 
+        team_num_t.append(865)
 
 
     # Non-538 League but in European Competition

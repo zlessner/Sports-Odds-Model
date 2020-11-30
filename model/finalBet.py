@@ -36,9 +36,9 @@ else:
 
 
 
-today_csv(sport, winning_odds, potential_winnings, finalValues)
+# today_csv(sport, winning_odds, potential_winnings, finalValues)
 
-# yesterdayCSV(FiveThirtyEightGamesYesterday, sport)
+yesterdayCSV(FiveThirtyEightGamesYesterday, sport)
 
 # add french ligue 2 teams to match up with odds api when odds api loads games
 

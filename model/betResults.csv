@@ -87,24 +87,25 @@ Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnin
 11/27/20 18:13,11/28/20,CFB,Kansas,100,0.102273591,1200,32,No Win,-100
 11/27/20 18:13,11/28/20,CFB,Hawaii,100,0.398184329,190,15,Hawaii,190
 11/27/20 18:17,11/28/20,CBB,UTSA,100,0.67,70,13,No Win,-100
-11/27/20 23:31,11/28/20,CBB,Nicholls St,100,0.19,500,13,No Win,-100
-11/28/20 16:09,11/29/20,Soccer French Ligue 1,Lorient,100,0.3755,215,18,No Win,-100
-11/28/20 16:53,11/29/20,Soccer Spanish Segunda Division,Albacete,100,0.3774,220,20,No Win,-100
-11/28/20 16:53,11/29/20,Soccer Spanish Segunda Division,Espanyol,100,0.7772,44,12,Espanyol,44
-11/28/20 18:41,11/29/20,Soccer Spanish Primera Division,Getafe,100,0.4238,179,18,No Win,-100
-11/28/20 18:44,11/29/20,Soccer Portuguese Liga,Gil Vicente,100,0.3883,195,14,Gil Vicente,195
-11/28/20 18:44,11/29/20,Soccer Portuguese Liga,SC Farense,100,0.1317,750,11,No Win,-100
-11/28/20 18:50,11/29/20,Soccer Russian Premier Liga,Ural Sverdlovsk Oblast,100,0.3759,204,14,Ural Sverdlovsk Oblast,204
-11/28/20 18:59,11/29/20,Soccer Italy Serie B,Reggiana,100,0.373,200,11,No Win,-100
-11/28/20 18:59,11/29/20,Soccer Italy Serie B,Cosenza,100,0.412,185,17,No Win,-100
-11/28/20 19:00,11/29/20,Soccer Swedish Allsvenskan,IK Sirius,100,0.3361,245,15,No Win,-100
-11/28/20 19:00,11/29/20,Soccer Swedish Allsvenskan,BK Hacken Draw,100,0.2792,440,50,No Win,-100
-11/28/20 19:00,11/29/20,Soccer Swedish Allsvenskan,Orebro SK,100,0.2859,800,157,No Win,-100
-11/28/20 19:02,11/29/20,Soccer Norwegian Tippeligaen,Haugesund,100,0.2142,540,37,No Win,-100
-11/29/20 11:07,11/29/20,CBB,Florida A&M,100,0.05,2200,15,No Win,-100
-11/28/20 19:09,11/29/20,NFL,CIN,100,0.392016574,225,27,No Win,-100
-11/28/20 19:09,11/29/20,NFL,SF,100,0.348073597,245,20,SF,245
-11/29/20 11:07,11/29/20,CBB,Florida A&M,100,0.05,2200,15,No Win,-100
-11/29/20 11:07,11/29/20,CBB,Northwestern St.,100,0.11,1100,31,No Win,-100
-11/29/20 11:07,11/29/20,CBB,North Dakota St.,100,0.04,3000,24,No Win,-100
-11/29/20 11:07,11/29/20,CBB,South Alabama,100,0.71,57,11,No Win,-100
+11/27/20 23:31,2020-11-28,CBB,Nicholls St,100,0.19,500,13,No Win,-100
+11/28/20 16:09,2020-11-29,Soccer French Ligue 1,Lorient,100,0.3755,215,18,No Win,-100
+11/28/20 16:53,2020-11-29,Soccer Spanish Segunda Division,Albacete,100,0.3774,220,20,No Win,-100
+11/28/20 16:53,2020-11-29,Soccer Spanish Segunda Division,Espanyol,100,0.7772,44,12,Espanyol,44
+11/28/20 18:41,2020-11-29,Soccer Spanish Primera Division,Getafe,100,0.4238,179,18,No Win,-100
+11/28/20 18:44,2020-11-29,Soccer Portuguese Liga,Gil Vicente,100,0.3883,195,14,Gil Vicente,195
+11/28/20 18:44,2020-11-29,Soccer Portuguese Liga,SC Farense,100,0.1317,750,11,No Win,-100
+11/28/20 18:50,2020-11-29,Soccer Russian Premier Liga,Ural Sverdlovsk Oblast,100,0.3759,204,14,Ural Sverdlovsk Oblast,204
+11/28/20 18:59,2020-11-29,Soccer Italy Serie B,Reggiana,100,0.373,200,11,No Win,-100
+11/28/20 18:59,2020-11-29,Soccer Italy Serie B,Cosenza,100,0.412,185,17,No Win,-100
+11/28/20 19:00,2020-11-29,Soccer Swedish Allsvenskan,IK Sirius,100,0.3361,245,15,No Win,-100
+11/28/20 19:00,2020-11-29,Soccer Swedish Allsvenskan,BK Hacken Draw,100,0.2792,440,50,No Win,-100
+11/28/20 19:00,2020-11-29,Soccer Swedish Allsvenskan,Orebro SK,100,0.2859,800,157,No Win,-100
+11/28/20 19:02,2020-11-29,Soccer Norwegian Tippeligaen,Haugesund,100,0.2142,540,37,No Win,-100
+2020-11-29 11:07,2020-11-29,CBB,Florida A&M,100,0.05,2200,15,No Win,-100
+11/28/20 19:09,2020-11-29,NFL,CIN,100,0.392016574,225,27,No Win,-100
+11/28/20 19:09,2020-11-29,NFL,SF,100,0.348073597,245,20,SF,245
+2020-11-29 11:07,2020-11-29,CBB,Florida A&M,100,0.05,2200,15,No Win,-100
+2020-11-29 11:07,2020-11-29,CBB,Northwestern St.,100,0.11,1100,31,No Win,-100
+2020-11-29 11:07,2020-11-29,CBB,North Dakota St.,100,0.04,3000,24,No Win,-100
+2020-11-29 11:07,2020-11-29,CBB,South Alabama,100,0.71,57,11,No Win,-100
+11/28/20 19:09,2020-11-29,NFL,CHI,100,0.311805535,340,37,No Win,-100

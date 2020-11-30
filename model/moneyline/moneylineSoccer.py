@@ -49,9 +49,9 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 
 #change sport to any of the different soccer leagues above
 
-soccer = False
+soccer = True
 
-sport = "soccer_brazil_campeonato"
+sport = "soccer_efl_champ"
 
 querystring = {"sport":sport,"region":"us","mkt":"h2h"}
 
@@ -71,7 +71,7 @@ gameWeek = gameDate + datetime.timedelta(6)
 
 futureGame = gameDate + datetime.timedelta(1)
 
-yesterdayGame = gameDate + datetime.timedelta(0)
+yesterdayGame = gameDate + datetime.timedelta(-1)
 
 pastNFLGame = gameDate + datetime.timedelta(-1)
 
@@ -156,6 +156,6 @@ if sport == "soccer_japan_j_league":
 
 
 # Comment sport out if soccer
-sport = 'CBB'  
+# sport = 'CBB'  
     
 
