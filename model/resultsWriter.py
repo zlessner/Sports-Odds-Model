@@ -53,6 +53,8 @@ if sport[:6] == 'Soccer':
 
 finalTeams = []
 finalValues = []
+rightNow = []
+teamSport = []
 
 def teamOdds(teamsToBet1):
     for i in range(len(teamsToBet1)):
@@ -60,6 +62,10 @@ def teamOdds(teamsToBet1):
             finalTeams.append(key)
         for value in teamsToBet1[i].values():
             finalValues.append(value)
+        for key in teamsToBet1[i].keys():
+            rightNow.append(stringGameDate) 
+        for key in teamsToBet1[i].keys():
+            teamSport.append(sport) 
 
 # teamOdds(teamsToBet1)
 
@@ -67,23 +73,22 @@ def teamOdds(teamsToBet1):
 
 # f = open("bets.csv", "w")
 # writer = csv.DictWriter(
-#     f, fieldnames=['Time Script Ran', 'Game Date', 'Sport', 'Team', 'Bet Amount', 'Odds of Winning', 'Potential Winnings', 'Expected Value'] )
+#     f, fieldnames=['Time Script Ran', 'Game Date', 'Sport', 'Team', 'Bet Amount', 'Odds of Winning', 'Potential Winnings', 'Expected Value', 'Row_Key'] )
 # writer.writeheader()
 # f.close()
 
-
+dfToday = pd.read_csv('bets.csv')
 
 def today_csv(sport, winning_odds, potential_winnings, finalValues):
 
     # today's upcoming bets
     with open('bets.csv', 'a', newline='') as file:
-        i=0
-        while i < len(finalTeams):
-            writer = csv.writer(file)
-            writer.writerow([nowTime, stringGameDate, sport, finalTeams[i], 100, winning_odds[i], potential_winnings[i], finalValues[i]])
-            i+=1
+        for i in range(len(finalTeams)):
+            if (not dfToday['Row_Key'].isin([(stringGameDate + "_" + sport + "_" + finalTeams[i])]).any() ):
+                writer = csv.writer(file)
+                writer.writerow([nowTime, stringGameDate, sport, finalTeams[i], 100, winning_odds[i], potential_winnings[i], finalValues[i], (stringGameDate + "_" + sport + "_" + finalTeams[i])])
 
-
+#or not dfToday['Sport'].isin([teamSport[i]]).any()
 # today_csv(sport)
 
 dfToday = pd.read_csv('bets.csv')
@@ -97,7 +102,7 @@ dfToday = pd.read_csv('bets.csv')
 
 # f = open("betResults.csv", "w")
 # writer = csv.DictWriter(
-#     f, fieldnames=['Time Script Ran', 'Game Date', 'Sport', 'Team', 'Bet Amount', 'Odds of Winning', 'Potential Winnings', 'Expected Value', "Winner", "Bet Winnings"])
+#     f, fieldnames=['Time Script Ran', 'Game Date', 'Sport', 'Team', 'Bet Amount', 'Odds of Winning', 'Potential Winnings', 'Expected Value', "Winner", "Bet Winnings", "Row_Key"])
 # writer.writeheader()
 # f.close()
 
@@ -139,18 +144,14 @@ def yesterdayCSV(yesterdayTeam, sports):
 
 
             if sport != 'CBB':
-                if dfToday['Game Date'][i] == stringYesterdayDate and dfToday['Sport'][i][:3] == sports[:3] and (not dfResults['Team'].isin([dfToday['Team'][i]]).any() or not dfResults['Game Date'].isin([dfToday['Game Date'][i]]).any()):
+                if dfToday['Game Date'][i] == stringYesterdayDate and dfToday['Sport'][i][:3] == sports[:3] and (not dfResults['Row_Key'].isin([dfToday['Row_Key'][i]]).any()):
                     writer = csv.writer(file)
-                    writer.writerow([dfToday['Time Script Ran'][i], stringYesterdayDate, dfToday['Sport'][i], dfToday['Team'][i], dfToday['Bet Amount'][i], dfToday['Odds of Winning'][i], dfToday['Potential Winnings'][i], dfToday['Expected Value'][i], winnersTable, betWinnings])
+                    writer.writerow([dfToday['Time Script Ran'][i], dfToday['Game Date'][i], dfToday['Sport'][i], dfToday['Team'][i], dfToday['Bet Amount'][i], dfToday['Odds of Winning'][i], dfToday['Potential Winnings'][i], dfToday['Expected Value'][i], winnersTable, betWinnings, dfToday['Row_Key'][i]])
 
             # adds results for college basketball teams but doesn't add anything if game was canceled   
             else:
                 from modelCBB import loserTeams
-                if dfToday['Game Date'][i] == stringYesterdayDate and dfToday['Sport'][i][:3] == sports[:3] and (any(item == dfToday['Team'][i] for item in yesterdayTeam) or any(item == dfToday['Team'][i] for item in loserTeams)) and (not dfResults['Team'].isin([dfToday['Team'][i]]).any() or not dfResults['Game Date'].isin([dfToday['Game Date'][i]]).any()):
+                if dfToday['Game Date'][i] == stringYesterdayDate and dfToday['Sport'][i][:3] == sports[:3] and (any(item == dfToday['Team'][i] for item in yesterdayTeam) or any(item == dfToday['Team'][i] for item in loserTeams)) and (not dfResults['Row_Key'].isin([dfToday['Row_Key'][i]]).any()):
                     writer = csv.writer(file)
-                    writer.writerow([dfToday['Time Script Ran'][i], stringYesterdayDate, dfToday['Sport'][i], dfToday['Team'][i], dfToday['Bet Amount'][i], dfToday['Odds of Winning'][i], dfToday['Potential Winnings'][i], dfToday['Expected Value'][i], winnersTable, betWinnings])
+                    writer.writerow([dfToday['Time Script Ran'][i], dfToday['Game Date'][i], dfToday['Sport'][i], dfToday['Team'][i], dfToday['Bet Amount'][i], dfToday['Odds of Winning'][i], dfToday['Potential Winnings'][i], dfToday['Expected Value'][i], winnersTable, betWinnings, dfToday['Row_Key'][i]])
                 
-
-
-
-# print(leagueGames)
