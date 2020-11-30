@@ -43,8 +43,8 @@ loserTeams = fmPast.fm_df['Loser']
 
 for i in eventsAPI:
     if (datetime.utcfromtimestamp((eventsAPI[i][1][0]-30000)).strftime('%Y-%m-%d') == stringGameDate):
-        AlphaAPIx.append(eventsAPI[i][2][0][0].rsplit(' ', 1)[0])
-        BetaAPIx.append(eventsAPI[i][2][0][1].rsplit(' ', 1)[0])
+        AlphaAPIx.append(eventsAPI[i][2][0][0].replace('St ', 'St. ').rsplit(' ', 1)[0])
+        BetaAPIx.append(eventsAPI[i][2][0][1].replace('St ', 'St. ').rsplit(' ', 1)[0])
         OddsA.append(eventsAPI[i][3][0]['h2h'][0])
         OddsB.append(eventsAPI[i][3][0]['h2h'][1])
 
@@ -55,9 +55,6 @@ for i in range(len(AlphaAPIx)):
     AlphaAPI.append(AlphaAPIx[i].replace(' Tar', '').replace(' Bald', '').replace(' Bananna', '').replace(' Big', '').replace(' Black', '').replace(' Blue', '').replace(' Great', '').replace(' River', '').replace(' Green', '').replace(' Golden', '').replace(' Yellow', '').replace(' Fighting', '').replace(' Demon', '').replace(' Red', '').replace(" Runnin'", '').replace(' Nittany', '').replace(' Scarlet', '').replace(' Horned', '').replace(' Rainbow', '').replace(" Fightin'", '').replace(' Thundering', '').replace(' Mean', '').replace(' Purple', '').replace(' Wolf', '').replace(' Mountain', '').replace(' Crimson', '').replace(' Delta', '').replace(' Fighting', '').replace(" Ragin'", '').replace("-", '').replace("Miss ", 'Mississippi '))
     BetaAPI.append(BetaAPIx[i].replace(' Tar', '').replace(' Bald', '').replace(' Bananna', '').replace(' Big', '').replace(' Black', '').replace(' Blue', '').replace(' Great', '').replace(' River', '').replace(' Green', '').replace(' Golden', '').replace(' Yellow', '').replace(' Fighting', '').replace(' Demon', '').replace(' Red', '').replace(" Runnin'", '').replace(' Nittany', '').replace(' Scarlet', '').replace(' Horned', '').replace(' Rainbow', '').replace(" Fightin'", '').replace(' Thundering', '').replace(' Mean', '').replace(' Purple', '').replace(' Wolf', '').replace(' Mountain', '').replace(' Crimson', '').replace(' Delta', '').replace(' Fighting', '').replace(" Ragin'", '').replace("-", '').replace("Miss ", 'Mississippi '))
 
-
-kpWinnersProjx=[]
-kpLosersProjx=[]
 
 kpWinnersProj=[]
 kpLosersProj=[]
@@ -76,14 +73,8 @@ for i in range(len(fm.fm_df['PredictedWinner'])):
     except TypeError:
         continue
     
-    kpWinnersProjx.append(fm.fm_df['PredictedWinner'][i])
-    kpLosersProjx.append(fm.fm_df['PredictedLoser'][i])
-    
-
-
-for i in range(len(kpWinnersProjx)):
-    kpWinnersProj.append(kpWinnersProjx[i].replace('.', ''))
-    kpLosersProj.append(kpLosersProjx[i].replace('.', ''))
+    kpWinnersProj.append(fm.fm_df['PredictedWinner'][i])
+    kpLosersProj.append(fm.fm_df['PredictedLoser'][i])
 
 
 

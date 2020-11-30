@@ -89,21 +89,32 @@ Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnin
 11/27/20 23:22,11/28/20,Soccer French Ligue 2,Amiens,100,0.2898,285,11
 11/27/20 23:22,11/28/20,Soccer French Ligue 2,Valenciennes,100,0.2421,380,16
 11/27/20 23:31,11/28/20,CBB,Nicholls St,100,0.19,500,13
-11/28/20 16:09,11/29/20,Soccer French Ligue 1,Lorient,100,0.3755,215,18
-11/28/20 16:53,11/29/20,Soccer Spanish Segunda Division,Albacete,100,0.3774,220,20
-11/28/20 16:53,11/29/20,Soccer Spanish Segunda Division,Espanyol,100,0.7772,44,12
-11/28/20 18:41,11/29/20,Soccer Spanish Primera Division,Getafe,100,0.4238,179,18
-11/28/20 18:44,11/29/20,Soccer Portuguese Liga,Gil Vicente,100,0.3883,195,14
-11/28/20 18:44,11/29/20,Soccer Portuguese Liga,SC Farense,100,0.1317,750,11
-11/28/20 18:50,11/29/20,Soccer Russian Premier Liga,Ural Sverdlovsk Oblast,100,0.3759,204,14
-11/28/20 18:59,11/29/20,Soccer Italy Serie B,Reggiana,100,0.373,200,11
-11/28/20 18:59,11/29/20,Soccer Italy Serie B,Cosenza,100,0.412,185,17
-11/28/20 19:00,11/29/20,Soccer Swedish Allsvenskan,IK Sirius,100,0.3361,245,15
-11/28/20 19:00,11/29/20,Soccer Swedish Allsvenskan,BK Hacken Draw,100,0.2792,440,50
-11/28/20 19:00,11/29/20,Soccer Swedish Allsvenskan,Orebro SK,100,0.2859,800,157
-11/28/20 19:02,11/29/20,Soccer Norwegian Tippeligaen,Haugesund,100,0.2142,540,37
-11/28/20 19:09,11/29/20,NFL,CIN,100,0.392016574,225,27
-11/28/20 19:09,11/29/20,NFL,SF,100,0.348073597,245,20
-11/28/20 19:09,11/29/20,NFL,CHI,100,0.311805535,340,37
-11/28/20 19:09,11/29/20,NFL,BAL,100,0.297604561,290,16
+11/28/20 16:09,2020-11-29,Soccer French Ligue 1,Lorient,100,0.3755,215,18
+11/28/20 16:53,2020-11-29,Soccer Spanish Segunda Division,Albacete,100,0.3774,220,20
+11/28/20 16:53,2020-11-29,Soccer Spanish Segunda Division,Espanyol,100,0.7772,44,12
+11/28/20 18:41,2020-11-29,Soccer Spanish Primera Division,Getafe,100,0.4238,179,18
+11/28/20 18:44,2020-11-29,Soccer Portuguese Liga,Gil Vicente,100,0.3883,195,14
+11/28/20 18:44,2020-11-29,Soccer Portuguese Liga,SC Farense,100,0.1317,750,11
+11/28/20 18:50,2020-11-29,Soccer Russian Premier Liga,Ural Sverdlovsk Oblast,100,0.3759,204,14
+11/28/20 18:59,2020-11-29,Soccer Italy Serie B,Reggiana,100,0.373,200,11
+11/28/20 18:59,2020-11-29,Soccer Italy Serie B,Cosenza,100,0.412,185,17
+11/28/20 19:00,2020-11-29,Soccer Swedish Allsvenskan,IK Sirius,100,0.3361,245,15
+11/28/20 19:00,2020-11-29,Soccer Swedish Allsvenskan,BK Hacken Draw,100,0.2792,440,50
+11/28/20 19:00,2020-11-29,Soccer Swedish Allsvenskan,Orebro SK,100,0.2859,800,157
+11/28/20 19:02,2020-11-29,Soccer Norwegian Tippeligaen,Haugesund,100,0.2142,540,37
+11/28/20 19:09,2020-11-29,NFL,CIN,100,0.392016574,225,27
+11/28/20 19:09,2020-11-29,NFL,SF,100,0.348073597,245,20
+11/28/20 19:09,2020-11-29,NFL,CHI,100,0.311805535,340,37
+11/28/20 19:09,12/1/20,NFL,BAL,100,0.297604561,290,16
 11/28/20 19:09,11/30/20,NFL,PHI,100,0.358113437,229,18
+2020-11-29 11:07,2020-11-29,CBB,Florida A&M,100,0.05,2200,15
+2020-11-29 11:07,2020-11-29,CBB,Northwestern St.,100,0.11,1100,31
+2020-11-29 11:07,2020-11-29,CBB,North Dakota St.,100,0.04,3000,24
+2020-11-29 11:07,2020-11-29,CBB,South Alabama,100,0.71,57,11
+2020-11-29 18:00,11/30/20,CBB,UMKC,100,0.16,610,13
+2020-11-29 21:28,11/30/20,CBB,Indiana,100,0.59,93,13
+2020-11-29 21:28,11/30/20,CBB,Appalachian St.,100,0.53,114,13
+2020-11-29 21:28,11/30/20,CBB,Auburn,100,0.58,108,20
+2020-11-29 21:28,11/30/20,CBB,Tennessee Tech,100,0.38,260,36
+2020-11-29 21:28,11/30/20,CBB,Stanford,100,0.55,106,13
+2020-11-29 21:34,11/30/20,Soccer German Bundesliga 2,Fortuna Düsseldorf,100,0.4006,220,28

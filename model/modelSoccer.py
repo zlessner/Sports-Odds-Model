@@ -513,7 +513,7 @@ for i in range(len(teams)):
         team_num_t.append(5)
 
     # Portuguese Liga
-    if teams[i] == "Benifica":
+    if teams[i] == "Benfica":
         team_num_t.append(294)
 
     # Dutch Eredivisie
@@ -635,6 +635,50 @@ for i in range(len(teams)):
         team_num_t.append(273)
     if teams[i] == "Strasbourg":
         team_num_t.append(667)
+
+    
+    # French Ligue 2
+    if teams[i] == "AC Ajaccio":
+        team_num_t.append(1147)
+    if teams[i] == "Amiens":
+        team_num_t.append(1416)
+    if teams[i] == "AS Nancy Lorraine":
+        team_num_t.append(1159)
+    if teams[i] == "Auxerre":
+        team_num_t.append(290)
+    if teams[i] == "Caen": 
+        team_num_t.append(1162)
+    if teams[i] == "Chambly Thelle FC": 
+        team_num_t.append(35012)
+    if teams[i] == "Chateauroux":
+        team_num_t.append(1175)
+    if teams[i] == "Clermont Foot":
+        team_num_t.append(3524)
+    if teams[i] == "Dunkerque":
+        team_num_t.append(9202)
+    if teams[i] == "Grenoble":
+        team_num_t.append(1290)
+    if teams[i] == "Guingamp":
+        team_num_t.append(855)
+    if teams[i] == "Le Havre":
+        team_num_t.append(738)
+    if teams[i] == "Niort":
+        team_num_t.append(1161)
+    if teams[i] == "Paris FC":
+        team_num_t.append(10004)
+    if teams[i] == "Pau":
+        team_num_t.append(3166)
+    if teams[i] == "Rodez": 
+        team_num_t.append(11273)
+    if teams[i] == "Sochaux": 
+        team_num_t.append(750)
+    if teams[i] == "Toulouse": 
+        team_num_t.append(415)
+    if teams[i] == "Troyes": 
+        team_num_t.append(1095)
+    if teams[i] == "Valenciennes": 
+        team_num_t.append(1423)
+
 
 
 

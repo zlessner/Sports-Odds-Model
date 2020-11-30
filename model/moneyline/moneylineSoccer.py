@@ -51,7 +51,7 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 
 soccer = False
 
-sport = "soccer_japan_j_league"
+sport = "soccer_brazil_campeonato"
 
 querystring = {"sport":sport,"region":"us","mkt":"h2h"}
 
@@ -71,7 +71,7 @@ gameWeek = gameDate + datetime.timedelta(6)
 
 futureGame = gameDate + datetime.timedelta(1)
 
-yesterdayGame = gameDate + datetime.timedelta(-1)
+yesterdayGame = gameDate + datetime.timedelta(0)
 
 pastNFLGame = gameDate + datetime.timedelta(-1)
 

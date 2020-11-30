@@ -107,25 +107,33 @@ dfToday = pd.read_csv('bets.csv')
 
 def yesterdayCSV(yesterdayTeam, sports):
     with open('betResults.csv', 'a', newline='') as file:
-
         for i in range(len(dfToday)):
             winnersTable ='No Win'
             betWinnings = -100
+            # finish = 1
             for j in range(len(yesterdayTeam)):
 
                 if sport != 'CBB':
                     if dfToday['Team'][i] == yesterdayTeam[j][9]:
                         winnersTable = dfToday['Team'][i]
                         betWinnings = dfToday['Potential Winnings'][i]
+                        break
 
                     if dfToday['Team'][i][-4:] == 'Draw' and dfToday['Team'][i][-4:] == yesterdayTeam[j][9] and dfToday['Sport'][i] == yesterdayTeam[j][1]:
                         winnersTable = dfToday['Team'][i][-4:]
                         betWinnings = dfToday['Potential Winnings'][i]
+                        break
+
+                    # if yesterdayTeam[j][8] == '':
+                    #     finish = False
+                    # else:
+                    #     finish = True
 
                 else:
                     if dfToday['Team'][i] == yesterdayTeam[j]:
                         winnersTable = dfToday['Team'][i]
                         betWinnings = dfToday['Potential Winnings'][i]
+                        break
     
 
             if sport != 'CBB':

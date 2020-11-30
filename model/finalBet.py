@@ -36,11 +36,10 @@ else:
 
 
 
-# today_csv(sport, winning_odds, potential_winnings, finalValues)
+today_csv(sport, winning_odds, potential_winnings, finalValues)
 
-yesterdayCSV(FiveThirtyEightGamesYesterday, sport)
+# yesterdayCSV(FiveThirtyEightGamesYesterday, sport)
 
+# add french ligue 2 teams to match up with odds api when odds api loads games
 
-# why is benefica not getting caught for injuries
-
-# FiveThirtyEightGamesYesterday not workign for CBB for yesterday game because it's called something different
+# run just soccer for sport on days where not many games - only gives back 7 results but coudl be quicker than going through every individual league
