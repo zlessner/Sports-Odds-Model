@@ -1,6 +1,6 @@
 from urllib.request import urlretrieve as retrieve
 from moneyline.moneylineSoccer2 import theOddsAPIGames, nowTime
-from moneyline.moneylineSoccer import gameDate
+from moneyline.moneylineSoccer import stringGameDate
 from modelSoccer import teamsToBet1
 from modelNBA import teamsToBetNBA
 from modelCBB import teamsToBetCBB
@@ -9,8 +9,6 @@ import csv
 import time
 from datetime import datetime
 
-
-stringGameDate = str(gameDate)
 
 url = 'https://projects.fivethirtyeight.com/soccer-api/club/spi_matches.csv'
 

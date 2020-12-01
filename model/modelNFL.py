@@ -1,6 +1,6 @@
 from urllib.request import urlretrieve as retrieve
 from moneyline.moneylineNFL import theOddsAPIGames
-from moneyline.moneylineSoccer import gameDate, gameWeek, pastNFLGame, futureNFLGame, yesterdayGame
+from moneyline.moneylineSoccer import gameWeek, pastNFLGame, futureNFLGame, stringGameDate, stringYesterdayDate 
 import csv
 import time
 from datetime import datetime
@@ -8,10 +8,9 @@ import pandas as pd
 from nflPredictionTracker import predictionTracker
 
 
-stringGameDate = str(gameDate)
 stringGameWeek= str(futureNFLGame)
 stringGamePast = str(pastNFLGame)
-stringYesterdayDate = str(yesterdayGame)
+
 
 url = 'https://projects.fivethirtyeight.com/nfl-api/nfl_elo_latest.csv'
 

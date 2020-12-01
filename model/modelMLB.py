@@ -1,12 +1,10 @@
 from urllib.request import urlretrieve as retrieve
 from moneyline.moneylineMLB import theOddsAPIGames
-from moneyline.moneylineSoccer import gameDate
+from moneyline.moneylineSoccer import stringGameDate
 import csv
 import time
 from datetime import datetime
 
-
-stringGameDate = str(gameDate)
 
 url = 'https://projects.fivethirtyeight.com/mlb-api/mlb_elo_latest.csv'
 

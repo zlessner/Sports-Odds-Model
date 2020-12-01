@@ -1,7 +1,7 @@
-from modelSoccer import teams, teamsToBet1, team_num_t, potential_winnings, winning_odds, stringGameDate, stringYesterdayDate
+from modelSoccer import teams, teamsToBet1, team_num_t, potential_winnings, winning_odds
 import csv
 import pandas as pd
-from moneyline.moneylineSoccer import gameDate, sport, datetime, yesterdayGame, nowTime
+from moneyline.moneylineSoccer import sport, datetime, nowTime, stringGameDate, stringYesterdayDate
 
 # Removed teams due to injuries
 
@@ -84,6 +84,7 @@ def today_csv(sport, winning_odds, potential_winnings, finalValues):
     # today's upcoming bets
     with open('bets.csv', 'a', newline='') as file:
         for i in range(len(finalTeams)):
+            # in order for bet to be recorded, row_key must not already be in bets table
             if (not dfToday['Row_Key'].isin([(stringGameDate + "_" + sport + "_" + finalTeams[i])]).any() ):
                 writer = csv.writer(file)
                 writer.writerow([nowTime, stringGameDate, sport, finalTeams[i], 100, winning_odds[i], potential_winnings[i], finalValues[i], (stringGameDate + "_" + sport + "_" + finalTeams[i])])
@@ -144,6 +145,7 @@ def yesterdayCSV(yesterdayTeam, sports):
 
 
             if sport != 'CBB':
+                # In order for result to be recorded, date and sport must match and row_key must not be already in results table
                 if dfToday['Game Date'][i] == stringYesterdayDate and dfToday['Sport'][i][:3] == sports[:3] and (not dfResults['Row_Key'].isin([dfToday['Row_Key'][i]]).any()):
                     writer = csv.writer(file)
                     writer.writerow([dfToday['Time Script Ran'][i], dfToday['Game Date'][i], dfToday['Sport'][i], dfToday['Team'][i], dfToday['Bet Amount'][i], dfToday['Odds of Winning'][i], dfToday['Potential Winnings'][i], dfToday['Expected Value'][i], winnersTable, betWinnings, dfToday['Row_Key'][i]])

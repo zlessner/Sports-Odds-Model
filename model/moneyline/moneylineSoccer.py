@@ -51,7 +51,7 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 
 soccer = True
 
-sport = "soccer_efl_champ"
+sport = "soccer_england_league1"
 
 querystring = {"sport":sport,"region":"us","mkt":"h2h"}
 
@@ -73,9 +73,14 @@ futureGame = gameDate + datetime.timedelta(0)
 
 yesterdayGame = gameDate + datetime.timedelta(-1)
 
+stringGameDate = str(futureGame)
+
+stringYesterdayDate = str(yesterdayGame)
+
 pastNFLGame = gameDate + datetime.timedelta(-1)
 
 futureNFLGame = gameDate + datetime.timedelta(4)
+
 
 # change date for all games right here -- uncomment below to go to tomorrow's games
 

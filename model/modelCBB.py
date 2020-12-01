@@ -1,15 +1,11 @@
 from moneyline.moneylineCBB import theOddsAPIGames
-from moneyline.moneylineSoccer import futureGame, yesterdayGame
+from moneyline.moneylineSoccer import stringGameDate, stringYesterdayDate
 import time
 from datetime import datetime
 from kenpompy.utils import login
 from kenpompy.FanMatch import FanMatch
 from API_Keys.vars import kpUser, kpPass
 
-
-stringGameDate = str(futureGame)
-
-stringYesterdayDate = str(yesterdayGame)
 
 browser = login(kpUser, kpPass)
 fm = FanMatch(browser, date = stringGameDate)

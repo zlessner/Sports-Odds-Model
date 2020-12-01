@@ -1,11 +1,11 @@
 from resultsWriter import teamOdds, today_csv, finalTeams, finalValues, yesterdayCSV
 import csv
 import pandas as pd
-from moneyline.moneylineSoccer import sport
+from moneyline.moneylineSoccer import sport, stringGameDate
 
 
 if sport == 'NFL':
-    from modelNFL import teamstobetNFL, potential_winnings, winning_odds, stringGameDate, FiveThirtyEightGames, FiveThirtyEightGamesYesterday
+    from modelNFL import teamstobetNFL, potential_winnings, winning_odds, FiveThirtyEightGames, FiveThirtyEightGamesYesterday
     winning_odds
     potential_winnings
     FiveThirtyEightGamesYesterday
@@ -13,13 +13,13 @@ if sport == 'NFL':
     
 
 elif sport == 'CFB':
-    from modelNCAAF import teamsToBetCFB, potential_winnings, winning_odds, stringGameDate, CFB_weekly_games
+    from modelNCAAF import teamsToBetCFB, potential_winnings, winning_odds, CFB_weekly_games
     winning_odds
     potential_winnings
     teamOdds(teamsToBetCFB)
 
 elif sport == 'CBB':
-    from modelCBB import teamsToBetCBB, potential_winnings, winning_odds, stringGameDate, FiveThirtyEightGamesYesterday
+    from modelCBB import teamsToBetCBB, potential_winnings, winning_odds, FiveThirtyEightGamesYesterday
     winning_odds
     potential_winnings
     teamOdds(teamsToBetCBB)
@@ -36,11 +36,9 @@ else:
 
 
 
-# today_csv(sport, winning_odds, potential_winnings, finalValues)
+today_csv(sport, winning_odds, potential_winnings, finalValues)
 
 yesterdayCSV(FiveThirtyEightGamesYesterday, sport)
-
-# add french ligue 2 teams to match up with odds api when odds api loads games
 
 # run just soccer for sport on days where not many games - only gives back 7 results but coudl be quicker than going through every individual league
 
