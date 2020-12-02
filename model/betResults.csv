@@ -110,12 +110,51 @@ Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnin
 11/29/20 11:07,11/29/20,CBB,South Alabama,100,0.71,57,11,No Win,-100,
 11/28/20 19:09,11/29/20,NFL,CHI,100,0.311805535,340,37,No Win,-100,
 11/29/20 21:34,11/30/20,Soccer German Bundesliga 2,Fortuna Düsseldorf,100,0.4006,220,28,No Win,-100,2020-11-30_Soccer German Bundesliga 2_Fortuna Düsseldorf
-11/29/20 18:00,2020-11-30,CBB,UMKC,100,0.16,610,13,No Win,-100,2020-11-30_CBB_UMKC
-11/29/20 21:28,2020-11-30,CBB,Indiana,100,0.59,93,13,Indiana,93,2020-11-30_CBB_Indiana
-11/29/20 21:28,2020-11-30,CBB,Appalachian St.,100,0.53,114,13,No Win,-100,2020-11-30_CBB_Appalachian St.
-11/29/20 21:28,2020-11-30,CBB,Auburn,100,0.58,108,20,No Win,-100,2020-11-30_CBB_Auburn
-11/29/20 21:28,2020-11-30,CBB,Tennessee Tech,100,0.38,260,36,No Win,-100,2020-11-30_CBB_Tennessee Tech
-11/29/20 21:28,2020-11-30,CBB,Stanford,100,0.55,106,13,Stanford,106,2020-11-30_CBB_Stanford
-2020-11-30 12:06,2020-11-30,CBB,Texas Southern,100,0.32,309,31,Texas Southern,309,2020-11-30_CBB_Texas Southern
-2020-11-30 12:06,2020-11-30,CBB,Pacific,100,0.36,210,11,No Win,-100,2020-11-30_CBB_Pacific
-2020-11-30 14:28,2020-11-30,CBB,Fairleigh Dickinson,100,0.22,500,31,No Win,-100,2020-11-30_CBB_Fairleigh Dickinson
+11/29/20 18:00,11/30/20,CBB,UMKC,100,0.16,610,13,No Win,-100,2020-11-30_CBB_UMKC
+11/29/20 21:28,11/30/20,CBB,Indiana,100,0.59,93,13,Indiana,93,2020-11-30_CBB_Indiana
+11/29/20 21:28,11/30/20,CBB,Appalachian St.,100,0.53,114,13,No Win,-100,2020-11-30_CBB_Appalachian St.
+11/29/20 21:28,11/30/20,CBB,Auburn,100,0.58,108,20,No Win,-100,2020-11-30_CBB_Auburn
+11/29/20 21:28,11/30/20,CBB,Tennessee Tech,100,0.38,260,36,No Win,-100,2020-11-30_CBB_Tennessee Tech
+11/29/20 21:28,11/30/20,CBB,Stanford,100,0.55,106,13,Stanford,106,2020-11-30_CBB_Stanford
+11/30/20 12:06,11/30/20,CBB,Texas Southern,100,0.32,309,31,Texas Southern,309,2020-11-30_CBB_Texas Southern
+11/30/20 12:06,11/30/20,CBB,Pacific,100,0.36,210,11,No Win,-100,2020-11-30_CBB_Pacific
+11/30/20 14:28,11/30/20,CBB,Fairleigh Dickinson,100,0.22,500,31,No Win,-100,2020-11-30_CBB_Fairleigh Dickinson
+12/1/20 8:56,12/1/20,CBB,USC,100,0.62,145,51,USC,145,2020-12-01_CBB_USC
+12/1/20 9:58,12/1/20,CBB,Texas,100,0.53,112,12,Texas,112,2020-12-01_CBB_Texas
+11/30/20 14:43,12/1/20,Soccer English League One,Swindon Town,100,0.327,270,20,No Win,-100,2020-12-01_Soccer English League One_Swindon Town
+11/30/20 14:43,12/1/20,Soccer English League One,Portsmouth,100,0.4598,148,14,No Win,-100,2020-12-01_Soccer English League One_Portsmouth
+11/30/20 14:43,12/1/20,Soccer English League One,Lincoln City Draw,100,0.2857,290,11,No Win,-100,2020-12-01_Soccer English League One_Lincoln City Draw
+11/30/20 14:43,12/1/20,Soccer English League One,Wigan,100,0.2494,525,55,No Win,-100,2020-12-01_Soccer English League One_Wigan
+11/30/20 14:43,12/1/20,Soccer English League One,Fleetwood Town,100,0.5439,110,14,No Win,-100,2020-12-01_Soccer English League One_Fleetwood Town
+11/30/20 14:43,12/1/20,Soccer English League One,Rochdale,100,0.293,295,15,Rochdale,295,2020-12-01_Soccer English League One_Rochdale
+11/30/20 14:47,12/1/20,Soccer French Ligue 2,Toulouse,100,0.511,179,43,Toulouse,179,2020-12-01_Soccer French Ligue 2_Toulouse
+11/30/20 14:47,12/1/20,Soccer French Ligue 2,Troyes,100,0.4073,179,14,Troyes,179,2020-12-01_Soccer French Ligue 2_Troyes
+11/30/20 14:47,12/1/20,Soccer French Ligue 2,Valenciennes,100,0.4276,160,11,No Win,-100,2020-12-01_Soccer French Ligue 2_Valenciennes
+11/30/20 14:47,12/1/20,Soccer French Ligue 2,Amiens,100,0.5571,100,11,Amiens,100,2020-12-01_Soccer French Ligue 2_Amiens
+11/30/20 14:50,12/1/20,Soccer Champions League,Ajax,100,0.2633,390,29,No Win,-100,2020-12-01_Soccer Champions League_Ajax
+12/1/20 9:08,12/1/20,CBB,New Hampshire,100,0.73,56,13,No Win,-100,2020-12-01_CBB_New Hampshire
+12/1/20 10:38,12/1/20,CBB,Stanford,100,0.46,160,19,No Win,-100,2020-12-01_CBB_Stanford
+12/1/20 10:38,12/1/20,CBB,Valparaiso,100,0.64,83,17,No Win,-100,2020-12-01_CBB_Valparaiso
+12/1/20 10:38,12/1/20,CBB,Hampton,100,0.15,700,20,Hampton,700,2020-12-01_CBB_Hampton
+12/1/20 14:28,12/1/20,CBB,Eastern Illinois,100,0.11,911,11,No Win,-100,2020-12-01_CBB_Eastern Illinois
+12/1/20 8:56,12/1/20,CBB,South Dakota,100,0.15,700,20,No Win,-100,2020-12-01_CBB_South Dakota
+12/1/20 14:28,12/1/20,CBB,UNLV,100,0.18,570,20,No Win,-100,2020-12-01_CBB_UNLV
+12/1/20 17:11,12/2/20,Soccer Champions League,Manchester United,100,0.4058,190,17,No Win,-100,12/2/20_Soccer Champions League_Manchester United
+12/1/20 17:11,12/2/20,Soccer Champions League,Barcelona,100,0.7524,52,14,Barcelona,52,12/2/20_Soccer Champions League_Barcelona
+12/1/20 23:03,12/2/20,Soccer English League One,Gillingham,100,0.3669,204,11,Gillingham,204,12/2/20_Soccer English League One_Gillingham
+12/1/20 23:03,12/2/20,Soccer English League One,Hull City,100,0.5897,95,14,Hull City,95,12/2/20_Soccer English League One_Hull City
+12/1/20 23:03,12/2/20,Soccer English League One,Charlton Athletic,100,0.5366,125,20,No Win,-100,12/2/20_Soccer English League One_Charlton Athletic
+12/1/20 23:04,12/2/20,Soccer English League Two,Salford City,100,0.5259,195,55,No Win,-100,12/2/20_Soccer English League Two_Salford City
+12/1/20 23:04,12/2/20,Soccer English League Two,Stevenage,100,0.303,309,24,No Win,-100,12/2/20_Soccer English League Two_Stevenage
+12/1/20 23:04,12/2/20,Soccer Swiss Raiffeisen Super League,FC Vaduz,100,0.2583,423,35,No Win,-100,12/2/20_Soccer Swiss Raiffeisen Super League_FC Vaduz
+12/1/20 23:04,12/2/20,Soccer Spanish Segunda Division,Espanyol,100,0.6103,100,22,Espanyol,100,12/2/20_Soccer Spanish Segunda Division_Espanyol
+12/1/20 23:04,12/2/20,Soccer Spanish Segunda Division,Logrones,100,0.4416,152,11,No Win,-100,12/2/20_Soccer Spanish Segunda Division_Logrones
+12/1/20 23:04,12/2/20,Soccer Spanish Segunda Division,Lugo,100,0.4238,173,15,No Win,-100,12/2/20_Soccer Spanish Segunda Division_Lugo
+12/1/20 23:45,12/2/20,Soccer Norwegian Tippeligaen,Bodo/Glimt,100,0.6896,67,15,No Win,-100,12/2/20_Soccer Norwegian Tippeligaen_Bodo/Glimt
+12/1/20 23:45,12/2/20,Soccer Norwegian Tippeligaen,Viking FK,100,0.5019,135,17,Viking FK,135,12/2/20_Soccer Norwegian Tippeligaen_Viking FK
+12/1/20 23:45,12/2/20,Soccer Norwegian Tippeligaen,Stabaek,100,0.3476,235,16,No Win,-100,12/2/20_Soccer Norwegian Tippeligaen_Stabaek
+12/2/20 10:47,12/2/20,Soccer Champions League,Borussia Dortmund,100,0.6818,64,12,No Win,-100,12/2/20_Soccer Champions League_Borussia Dortmund
+12/2/20 10:51,12/2/20,Soccer English League Championship,Norwich City,100,0.5367,108,11,No Win,-100,12/2/20_Soccer English League Championship_Norwich City
+12/2/20 10:51,12/2/20,Soccer English League Championship,Wycombe Wanderers,100,0.2694,330,15,No Win,-100,12/2/20_Soccer English League Championship_Wycombe Wanderers
+12/2/20 14:24,12/2/20,CBB,Army,100,0.05,2400,25,No Win,-100,12/2/20_CBB_Army
+12/2/20 10:21,12/2/20,CBB,Texas,100,0.58,100,15,Texas,100,12/2/20_CBB_Texas

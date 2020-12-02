@@ -49,9 +49,9 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 
 #change sport to any of the different soccer leagues above
 
-soccer = True
+soccer = False
 
-sport = "soccer_england_league1"
+sport = "soccer_uefa_europa_league"
 
 querystring = {"sport":sport,"region":"us","mkt":"h2h"}
 
@@ -69,13 +69,21 @@ gameDate = datetime.date.today()
 
 gameWeek = gameDate + datetime.timedelta(6)
 
-futureGame = gameDate + datetime.timedelta(0)
+futureGame = gameDate + datetime.timedelta(1)
 
-yesterdayGame = gameDate + datetime.timedelta(-1)
+futureGameMDY = (futureGame.strftime("%-m/%-d/%y"))
+
+yesterdayGame = gameDate + datetime.timedelta(0)
+
+yesterdayGameMDY = (yesterdayGame.strftime("%-m/%-d/%y"))
 
 stringGameDate = str(futureGame)
 
 stringYesterdayDate = str(yesterdayGame)
+
+stringGameDateMDY = str(futureGameMDY)
+
+stringYesterdayDateMDY = str(yesterdayGameMDY)
 
 pastNFLGame = gameDate + datetime.timedelta(-1)
 
@@ -154,13 +162,12 @@ if sport == "soccer_brazil_campeonato":
     sport = 'Soccer Brasileiro S√©rie A'
 if sport == "soccer_japan_j_league":
     sport = 'Soccer Japanese J League'
+if sport == "soccer_mexico_ligamx":
+    sport = 'Soccer Mexican Primera Division Torneo Clausura'
     
-
     
-
-
 
 # Comment sport out if soccer
-# sport = 'CBB'  
+sport = 'CBB'  
     
 

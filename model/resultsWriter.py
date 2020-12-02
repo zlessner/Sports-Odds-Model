@@ -1,7 +1,7 @@
 from modelSoccer import teams, teamsToBet1, team_num_t, potential_winnings, winning_odds
 import csv
 import pandas as pd
-from moneyline.moneylineSoccer import sport, datetime, nowTime, stringGameDate, stringYesterdayDate
+from moneyline.moneylineSoccer import sport, datetime, nowTime, stringGameDate, stringGameDateMDY, stringYesterdayDateMDY
 
 # Removed teams due to injuries
 
@@ -85,9 +85,9 @@ def today_csv(sport, winning_odds, potential_winnings, finalValues):
     with open('bets.csv', 'a', newline='') as file:
         for i in range(len(finalTeams)):
             # in order for bet to be recorded, row_key must not already be in bets table
-            if (not dfToday['Row_Key'].isin([(stringGameDate + "_" + sport + "_" + finalTeams[i])]).any() ):
+            if (not dfToday['Row_Key'].isin([(stringGameDateMDY + "_" + sport + "_" + finalTeams[i])]).any()):
                 writer = csv.writer(file)
-                writer.writerow([nowTime, stringGameDate, sport, finalTeams[i], 100, winning_odds[i], potential_winnings[i], finalValues[i], (stringGameDate + "_" + sport + "_" + finalTeams[i])])
+                writer.writerow([nowTime, stringGameDateMDY, sport, finalTeams[i], 100, winning_odds[i], potential_winnings[i], finalValues[i], (stringGameDateMDY + "_" + sport + "_" + finalTeams[i])])
 
 #or not dfToday['Sport'].isin([teamSport[i]]).any()
 # today_csv(sport)
@@ -119,8 +119,8 @@ def yesterdayCSV(yesterdayTeam, sports):
             betWinnings = -100
             # finish = 1
             for j in range(len(yesterdayTeam)):
-
                 if sport != 'CBB':
+                    
                     if dfToday['Team'][i] == yesterdayTeam[j][9]:
                         winnersTable = dfToday['Team'][i]
                         betWinnings = dfToday['Potential Winnings'][i]
@@ -142,18 +142,16 @@ def yesterdayCSV(yesterdayTeam, sports):
                         betWinnings = dfToday['Potential Winnings'][i]
                         break
 
-
-
             if sport != 'CBB':
-                # In order for result to be recorded, date and sport must match and row_key must not be already in results table
-                if dfToday['Game Date'][i] == stringYesterdayDate and dfToday['Sport'][i][:3] == sports[:3] and (not dfResults['Row_Key'].isin([dfToday['Row_Key'][i]]).any()):
+                # In order for result to be recorded, date(day of game and day of day results are run for) and sport must match and row_key must not be already in results table
+                if dfToday['Game Date'][i] == stringYesterdayDateMDY and dfToday['Sport'][i][:3] == sports[:3] and (not dfResults['Row_Key'].isin([dfToday['Row_Key'][i]]).any()):
                     writer = csv.writer(file)
                     writer.writerow([dfToday['Time Script Ran'][i], dfToday['Game Date'][i], dfToday['Sport'][i], dfToday['Team'][i], dfToday['Bet Amount'][i], dfToday['Odds of Winning'][i], dfToday['Potential Winnings'][i], dfToday['Expected Value'][i], winnersTable, betWinnings, dfToday['Row_Key'][i]])
 
             # adds results for college basketball teams but doesn't add anything if game was canceled   
             else:
                 from modelCBB import loserTeams
-                if dfToday['Game Date'][i] == stringYesterdayDate and dfToday['Sport'][i][:3] == sports[:3] and (any(item == dfToday['Team'][i] for item in yesterdayTeam) or any(item == dfToday['Team'][i] for item in loserTeams)) and (not dfResults['Row_Key'].isin([dfToday['Row_Key'][i]]).any()):
+                if dfToday['Game Date'][i] == stringYesterdayDateMDY and dfToday['Sport'][i][:3] == sports[:3] and (any(item == dfToday['Team'][i] for item in yesterdayTeam) or any(item == dfToday['Team'][i] for item in loserTeams)) and (not dfResults['Row_Key'].isin([dfToday['Row_Key'][i]]).any()):
                     writer = csv.writer(file)
                     writer.writerow([dfToday['Time Script Ran'][i], dfToday['Game Date'][i], dfToday['Sport'][i], dfToday['Team'][i], dfToday['Bet Amount'][i], dfToday['Odds of Winning'][i], dfToday['Potential Winnings'][i], dfToday['Expected Value'][i], winnersTable, betWinnings, dfToday['Row_Key'][i]])
                 
