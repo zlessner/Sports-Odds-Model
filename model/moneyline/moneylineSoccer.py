@@ -49,7 +49,7 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 
 #change sport to any of the different soccer leagues above
 
-# soccer = True
+soccer = False
 
 sport = "soccer_efl_champ"
 
