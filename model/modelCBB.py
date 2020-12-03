@@ -1,5 +1,5 @@
 from moneyline.moneylineCBB import theOddsAPIGames
-from moneyline.moneylineSoccer import stringGameDate, stringYesterdayDate
+from moneyline.moneylineSoccer import stringGameDate, stringYesterdayDate, nowTime
 import time
 from datetime import datetime
 from kenpompy.utils import login

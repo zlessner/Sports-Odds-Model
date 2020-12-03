@@ -41,7 +41,3 @@ today_csv(sport, winning_odds, potential_winnings, finalValues)
 yesterdayCSV(FiveThirtyEightGamesYesterday, sport)
 
 # run just soccer for sport on days where not many games - only gives back 7 results but coudl be quicker than going through every individual league
-
-# figure out why dates don't line up or are conistant
-
-# make so can't bet on games that already happened

@@ -182,7 +182,7 @@ for i in range(len(team_num_t)):
     # print(df)
 
 
-    # Manually writing down #'s for all 538 teams - start off with PL to measure and test
+    # Manually writing down #'s for all 538 teams
 
     
 
