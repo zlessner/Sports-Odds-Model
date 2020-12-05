@@ -49,7 +49,7 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 
 #change sport to any of the different soccer leagues above
 
-soccer = False
+soccer = True
 
 sport = "soccer_efl_champ"
 
@@ -69,7 +69,7 @@ gameDate = datetime.date.today()
 
 gameWeek = gameDate + datetime.timedelta(6)
 
-futureGame = gameDate + datetime.timedelta(0)
+futureGame = gameDate + datetime.timedelta(1)
 
 futureGameMDY = (futureGame.strftime("%-m/%-d/%y"))
 
@@ -172,6 +172,6 @@ if sport == "soccer_spl":
     
 
 # Comment sport out if soccer
-sport = 'CBB'  
+# sport = 'CFB'  
     
 

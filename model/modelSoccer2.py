@@ -85,27 +85,27 @@ for i in range(len(AlphaAPI)):
         if AlphaAPI[i] == FiveThirtyEightGames[j][2]:
             homeAlphaOdds = int((((OddsA[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
             homeAlphaDrawOdds = int((((OddsC[i])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
-            if (homeAlphaOdds>10):
+            if (homeAlphaOdds>7):
                 teamsToBet2.append({AlphaAPI[i]: homeAlphaOdds})
-            if (homeAlphaDrawOdds>10):
+            if (homeAlphaDrawOdds>7):
                 teamsToBet2.append({AlphaAPI[i]+ " " + BetaAPI[i] + " Draw": homeAlphaDrawOdds})
             
         if BetaAPI[i] == FiveThirtyEightGames[j][3]:
             awayBetaOdds = int((((OddsB[i])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
-            if (awayBetaOdds>10):
+            if (awayBetaOdds>7):
                 teamsToBet2.append({BetaAPI[i]: awayBetaOdds})
 
         if AlphaAPI[i] == FiveThirtyEightGames[j][3]:
             awayAlphaOdds = int((((OddsA[i])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
             awayAlphaDrawOdds = int((((OddsC[i])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
-            if (awayAlphaOdds>10):
+            if (awayAlphaOdds>7):
                 teamsToBet2.append({AlphaAPI[i]: awayAlphaOdds})
-            if (awayAlphaDrawOdds>10):
+            if (awayAlphaDrawOdds>7):
                 teamsToBet2.append({AlphaAPI[i]+ " " + BetaAPI[i] + " Draw": awayAlphaDrawOdds})
             
         if BetaAPI[i] == FiveThirtyEightGames[j][2]:
             homeBetaOdds = int((((OddsB[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
-            if (homeBetaOdds>10):
+            if (homeBetaOdds>7):
                 teamsToBet2.append({BetaAPI[i]: homeBetaOdds})
 
 

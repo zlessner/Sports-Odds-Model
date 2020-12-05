@@ -129,19 +129,12 @@ def yesterdayCSV(yesterdayTeam, sports, playedTeams):
                         betWinnings = dfToday['Potential Winnings'][i]
                         break
 
-                    # if yesterdayTeam[j][8] == '':
-                    #     finish = False
-                    # else:
-                    #     finish = True
-
-
 
                 else:
                     if dfToday['Team'][i] == yesterdayTeam[j]:
                         winnersTable = dfToday['Team'][i]
                         betWinnings = dfToday['Potential Winnings'][i]
                         break
-
 
             # In order for result to be recorded, date(day of game and day of day results are run for) and sport must match and row_key must not be already in results table
             # adds results of games but doesn't add anything if game wasn't played or was canceled 

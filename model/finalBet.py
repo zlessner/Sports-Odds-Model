@@ -20,7 +20,7 @@ elif sport == 'CBB':
 
 else:
     from resultsWriter import potential_winnings, winning_odds, dfToday, teamsToBet1
-    from modelSoccer import FiveThirtyEightGamesYesterday, playedTeams
+    from modelSoccer import FiveThirtyEightGamesYesterday, playedTeams, winnerTeams
     teamOdds(teamsToBet1)
 
 
@@ -30,3 +30,7 @@ today_csv(sport, winning_odds, potential_winnings, finalValues)
 yesterdayCSV(FiveThirtyEightGamesYesterday, sport, playedTeams)
 
 # run just soccer for sport on days where not many games - only gives back 7 results but coudl be quicker than going through every individual league
+
+# append results tables to each other so only have to run teh results table once across all sports
+
+# print(winnerTeams)

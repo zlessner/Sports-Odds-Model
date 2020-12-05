@@ -35,7 +35,9 @@ FiveThirtyEightGamesYesterday = fmPast.fm_df['Winner']
 
 loserTeams = fmPast.fm_df['Loser']
 
-playedTeams = FiveThirtyEightGamesYesterday + loserTeams
+playedTeams = FiveThirtyEightGamesYesterday.append(loserTeams, ignore_index=True)
+
+print(playedTeams)
 
 #Adding first team to AlphaAPI, second team to BetaAPI, first teams odds to OddsA, and second team odds to OddsB
 
