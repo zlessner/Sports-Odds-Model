@@ -191,7 +191,6 @@ Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnin
 12/4/20 9:46,12/5/20,CFB,Kansas,100,0.105401979,1400,58,12/5/20_CFB_Kansas
 12/4/20 9:46,12/5/20,CFB,Central Mich.,100,0.632022775,87,18,12/5/20_CFB_Central Mich.
 12/4/20 9:46,12/5/20,CFB,South Alabama,100,0.479292891,170,29,12/5/20_CFB_South Alabama
-12/4/20 9:46,12/5/20,CFB,Ohio,100,0.323513691,330,39,12/5/20_CFB_Ohio
 12/4/20 9:46,12/5/20,CFB,Navy,100,0.268004138,350,20,12/5/20_CFB_Navy
 12/4/20 9:46,12/5/20,CFB,Indiana,100,0.292029054,425,53,12/5/20_CFB_Indiana
 12/4/20 9:46,12/5/20,CFB,Coastal Carolina,100,0.341578758,289,32,12/5/20_CFB_Coastal Carolina
@@ -202,42 +201,96 @@ Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnin
 12/4/20 9:46,12/5/20,CFB,LSU,100,0.123170483,1500,97,12/5/20_CFB_LSU
 12/4/20 9:46,12/5/20,CFB,Oregon St.,100,0.351684939,309,44,12/5/20_CFB_Oregon St.
 12/4/20 9:46,12/5/20,CFB,Fresno St.,100,0.403788464,200,21,12/5/20_CFB_Fresno St.
-12/4/20 9:46,12/5/20,CFB,Washington St.,100,0.248615158,355,13,12/5/20_CFB_Washington St.
+12/4/20 9:46,12/6/20,CFB,Washington St.,100,0.248615158,355,13,12/6/20_CFB_Washington St.
 12/4/20 9:50,12/4/20,Soccer Italy Serie B,Ascoli,100,0.425,165,12,12/4/20_Soccer Italy Serie B_Ascoli
 12/4/20 9:50,12/4/20,Soccer German Bundesliga 2,Fortuna Düsseldorf,100,0.4996,145,22,12/4/20_Soccer German Bundesliga 2_Fortuna Düsseldorf
-2020-12-04 13:07:01,12/6/20,Soccer Barclays Premier League,Sheffield United,100,0.2936,276,10,12/6/20_Soccer Barclays Premier League_Sheffield United
-2020-12-04 13:08:11,12/5/20,Soccer Barclays Premier League,Burnley,100,0.3582,309,46,12/5/20_Soccer Barclays Premier League_Burnley
-2020-12-04 13:08:11,12/5/20,Soccer Barclays Premier League,Chelsea,100,0.7112,54,9,12/5/20_Soccer Barclays Premier League_Chelsea
-2020-12-04 15:31:52,12/5/20,Soccer German Bundesliga,Arminia Bielefeld,100,0.3811,185,8,12/5/20_Soccer German Bundesliga_Arminia Bielefeld
-2020-12-04 15:32:07,12/5/20,Soccer English League Championship,Preston North End Draw,100,0.2857,280,8,12/5/20_Soccer English League Championship_Preston North End Draw
-2020-12-04 15:32:07,12/5/20,Soccer English League Championship,Wycombe Wanderers,100,0.2341,390,14,12/5/20_Soccer English League Championship_Wycombe Wanderers
-2020-12-04 15:32:07,12/5/20,Soccer English League Championship,Stoke City,100,0.4268,163,12,12/5/20_Soccer English League Championship_Stoke City
-2020-12-04 15:34:06,12/5/20,Soccer English League One,Gillingham,100,0.4718,129,8,12/5/20_Soccer English League One_Gillingham
-2020-12-04 15:34:06,12/5/20,Soccer English League One,Fleetwood Town,100,0.5032,145,23,12/5/20_Soccer English League One_Fleetwood Town
-2020-12-04 15:34:06,12/5/20,Soccer English League One,Burton Albion,100,0.411,220,31,12/5/20_Soccer English League One_Burton Albion
-2020-12-04 15:34:06,12/5/20,Soccer English League One,Hull City,100,0.5962,110,25,12/5/20_Soccer English League One_Hull City
-2020-12-04 15:34:06,12/5/20,Soccer English League One,Peterborough United,100,0.3369,229,11,12/5/20_Soccer English League One_Peterborough United
-2020-12-04 15:34:06,12/5/20,Soccer English League One,Charlton Athletic,100,0.4769,129,9,12/5/20_Soccer English League One_Charlton Athletic
-2020-12-04 15:34:06,12/5/20,Soccer English League One,Sunderland Draw,100,0.2397,380,15,12/5/20_Soccer English League One_Sunderland Draw
-2020-12-04 15:34:06,12/5/20,Soccer English League One,Wigan,100,0.1473,700,17,12/5/20_Soccer English League One_Wigan
-2020-12-04 15:34:33,12/5/20,Soccer English League Two,Leyton Orient,100,0.4847,145,18,12/5/20_Soccer English League Two_Leyton Orient
-2020-12-04 15:34:33,12/5/20,Soccer English League Two,Crawley Town,100,0.3508,250,22,12/5/20_Soccer English League Two_Crawley Town
-2020-12-04 15:34:33,12/5/20,Soccer English League Two,Salford City,100,0.5484,140,31,12/5/20_Soccer English League Two_Salford City
-2020-12-04 15:34:33,12/5/20,Soccer English League Two,Tranmere Rovers,100,0.5199,135,22,12/5/20_Soccer English League Two_Tranmere Rovers
-2020-12-04 15:34:33,12/5/20,Soccer English League Two,Bradford City,100,0.356,208,9,12/5/20_Soccer English League Two_Bradford City
-2020-12-04 15:34:33,12/5/20,Soccer English League Two,Colchester United,100,0.5276,104,8,12/5/20_Soccer English League Two_Colchester United
-2020-12-04 15:41:00,12/5/20,Soccer Dutch Eredivisie,Fortuna Sittard,100,0.4009,188,15,12/5/20_Soccer Dutch Eredivisie_Fortuna Sittard
-2020-12-04 15:41:00,12/5/20,Soccer Dutch Eredivisie,Ajax,100,0.9041,20,9,12/5/20_Soccer Dutch Eredivisie_Ajax
-2020-12-04 15:41:00,12/5/20,Soccer Dutch Eredivisie,PEC Zwolle,100,0.2998,295,18,12/5/20_Soccer Dutch Eredivisie_PEC Zwolle
-2020-12-04 15:41:00,12/5/20,Soccer Dutch Eredivisie,PEC Zwolle Draw,100,0.2799,290,9,12/5/20_Soccer Dutch Eredivisie_PEC Zwolle Draw
-2020-12-04 15:45:19,12/5/20,Soccer Japanese J League,Cerezo Osaka,100,0.539,177,49,12/5/20_Soccer Japanese J League_Cerezo Osaka
-2020-12-04 15:58:59,12/5/20,Soccer Scottish Premiership,Dundee Utd,100,0.2995,350,34,12/5/20_Soccer Scottish Premiership_Dundee Utd
-2020-12-04 16:37:25,12/5/20,Soccer French Ligue 2,Toulouse,100,0.5728,138,36,12/5/20_Soccer French Ligue 2_Toulouse
-2020-12-04 16:37:25,12/5/20,Soccer French Ligue 2,Amiens,100,0.483,160,25,12/5/20_Soccer French Ligue 2_Amiens
-2020-12-04 16:40:35,12/5/20,Soccer Brasileiro S√©rie A,Santos,100,0.3297,259,18,12/5/20_Soccer Brasileiro S√©rie A_Santos
-2020-12-04 16:43:26,12/5/20,CBB,Baylor,100,0.48,133,11,12/5/20_CBB_Baylor
-2020-12-04 16:43:26,12/5/20,CBB,Lipscomb,100,0.08999999999999997,1300,25,12/5/20_CBB_Lipscomb
-2020-12-04 16:43:26,12/5/20,CBB,Northern Illinois,100,0.10999999999999999,980,18,12/5/20_CBB_Northern Illinois
-2020-12-04 16:43:26,12/5/20,CBB,South Carolina,100,0.19999999999999996,480,15,12/5/20_CBB_South Carolina
-2020-12-04 16:50:20,12/5/20,CFB,Louisiana-Monroe,100,0.14475373830000005,700,15,12/5/20_CFB_Louisiana-Monroe
-2020-12-04 16:50:20,12/5/20,CFB,New Mexico,100,0.1617494389,600,13,12/5/20_CFB_New Mexico
+12/4/20 13:07,12/6/20,Soccer Barclays Premier League,Sheffield United,100,0.2936,276,10,12/6/20_Soccer Barclays Premier League_Sheffield United
+12/4/20 13:08,12/5/20,Soccer Barclays Premier League,Burnley,100,0.3582,309,46,12/5/20_Soccer Barclays Premier League_Burnley
+12/4/20 13:08,12/5/20,Soccer Barclays Premier League,Chelsea,100,0.7112,54,9,12/5/20_Soccer Barclays Premier League_Chelsea
+12/4/20 15:31,12/5/20,Soccer German Bundesliga,Arminia Bielefeld,100,0.3811,185,8,12/5/20_Soccer German Bundesliga_Arminia Bielefeld
+12/4/20 15:32,12/5/20,Soccer English League Championship,Preston North End Draw,100,0.2857,280,8,12/5/20_Soccer English League Championship_Preston North End Draw
+12/4/20 15:32,12/5/20,Soccer English League Championship,Wycombe Wanderers,100,0.2341,390,14,12/5/20_Soccer English League Championship_Wycombe Wanderers
+12/4/20 15:32,12/5/20,Soccer English League Championship,Stoke City,100,0.4268,163,12,12/5/20_Soccer English League Championship_Stoke City
+12/4/20 15:34,12/5/20,Soccer English League One,Gillingham,100,0.4718,129,8,12/5/20_Soccer English League One_Gillingham
+12/4/20 15:34,12/5/20,Soccer English League One,Fleetwood Town,100,0.5032,145,23,12/5/20_Soccer English League One_Fleetwood Town
+12/4/20 15:34,12/5/20,Soccer English League One,Burton Albion,100,0.411,220,31,12/5/20_Soccer English League One_Burton Albion
+12/4/20 15:34,12/5/20,Soccer English League One,Hull City,100,0.5962,110,25,12/5/20_Soccer English League One_Hull City
+12/4/20 15:34,12/5/20,Soccer English League One,Peterborough United,100,0.3369,229,11,12/5/20_Soccer English League One_Peterborough United
+12/4/20 15:34,12/5/20,Soccer English League One,Charlton Athletic,100,0.4769,129,9,12/5/20_Soccer English League One_Charlton Athletic
+12/4/20 15:34,12/5/20,Soccer English League One,Sunderland Draw,100,0.2397,380,15,12/5/20_Soccer English League One_Sunderland Draw
+12/4/20 15:34,12/5/20,Soccer English League One,Wigan,100,0.1473,700,17,12/5/20_Soccer English League One_Wigan
+12/4/20 15:34,12/5/20,Soccer English League Two,Leyton Orient,100,0.4847,145,18,12/5/20_Soccer English League Two_Leyton Orient
+12/4/20 15:34,12/5/20,Soccer English League Two,Crawley Town,100,0.3508,250,22,12/5/20_Soccer English League Two_Crawley Town
+12/4/20 15:34,12/5/20,Soccer English League Two,Salford City,100,0.5484,140,31,12/5/20_Soccer English League Two_Salford City
+12/4/20 15:34,12/5/20,Soccer English League Two,Tranmere Rovers,100,0.5199,135,22,12/5/20_Soccer English League Two_Tranmere Rovers
+12/4/20 15:34,12/5/20,Soccer English League Two,Bradford City,100,0.356,208,9,12/5/20_Soccer English League Two_Bradford City
+12/4/20 15:34,12/5/20,Soccer English League Two,Colchester United,100,0.5276,104,8,12/5/20_Soccer English League Two_Colchester United
+12/4/20 15:41,12/5/20,Soccer Dutch Eredivisie,Fortuna Sittard,100,0.4009,188,15,12/5/20_Soccer Dutch Eredivisie_Fortuna Sittard
+12/4/20 15:41,12/5/20,Soccer Dutch Eredivisie,Ajax,100,0.9041,20,9,12/5/20_Soccer Dutch Eredivisie_Ajax
+12/4/20 15:41,12/5/20,Soccer Dutch Eredivisie,PEC Zwolle,100,0.2998,295,18,12/5/20_Soccer Dutch Eredivisie_PEC Zwolle
+12/4/20 15:41,12/5/20,Soccer Dutch Eredivisie,PEC Zwolle Draw,100,0.2799,290,9,12/5/20_Soccer Dutch Eredivisie_PEC Zwolle Draw
+12/4/20 15:45,12/5/20,Soccer Japanese J League,Cerezo Osaka,100,0.539,177,49,12/5/20_Soccer Japanese J League_Cerezo Osaka
+12/4/20 15:58,12/5/20,Soccer Scottish Premiership,Dundee Utd,100,0.2995,350,34,12/5/20_Soccer Scottish Premiership_Dundee Utd
+12/4/20 16:37,12/5/20,Soccer French Ligue 2,Toulouse,100,0.5728,138,36,12/5/20_Soccer French Ligue 2_Toulouse
+12/4/20 16:37,12/5/20,Soccer French Ligue 2,Amiens,100,0.483,160,25,12/5/20_Soccer French Ligue 2_Amiens
+12/4/20 16:40,12/5/20,Soccer Brasileiro S√©rie A,Santos,100,0.3297,259,18,12/5/20_Soccer Brasileiro S√©rie A_Santos
+12/4/20 16:43,12/5/20,CBB,Lipscomb,100,0.09,1300,25,12/5/20_CBB_Lipscomb
+12/4/20 16:43,12/5/20,CBB,Northern Illinois,100,0.11,980,18,12/5/20_CBB_Northern Illinois
+12/4/20 16:43,12/5/20,CBB,South Carolina,100,0.2,480,15,12/5/20_CBB_South Carolina
+12/4/20 16:50,12/5/20,CFB,Louisiana-Monroe,100,0.144753738,700,15,12/5/20_CFB_Louisiana-Monroe
+12/4/20 16:50,12/5/20,CFB,New Mexico,100,0.161749439,600,13,12/5/20_CFB_New Mexico
+12/5/20 7:48,12/5/20,CBB,Idaho,100,0.15,750,27,12/5/20_CBB_Idaho
+12/5/20 7:48,12/5/20,CBB,Green Bay,100,0.33,240,12,12/5/20_CBB_Green Bay
+12/5/20 7:48,12/5/20,CBB,Illinois St.,100,0.17,580,15,12/5/20_CBB_Illinois St.
+12/5/20 7:49,12/6/20,NFL,HOU,100,0.455567018,146,12,12/6/20_NFL_HOU
+12/5/20 7:49,12/6/20,NFL,NYG,100,0.222381378,400,11,12/6/20_NFL_NYG
+12/5/20 16:57,12/6/20,NFL,CHI,100,0.693671507,57,8,12/6/20_NFL_CHI
+12/5/20 16:57,12/6/20,NFL,ARI,100,0.482920388,124,8,12/6/20_NFL_ARI
+12/5/20 16:57,12/7/20,NFL,PIT,100,0.825951581,33,9,12/7/20_NFL_PIT
+12/5/20 17:06,12/6/20,CBB,Tennessee Tech,100,0.18,660,36,12/6/20_CBB_Tennessee Tech
+12/5/20 17:06,12/6/20,CBB,Cleveland St.,100,0.21,459,17,12/6/20_CBB_Cleveland St.
+12/5/20 17:07,12/6/20,Soccer Barclays Premier League,Tottenham Hotspur,100,0.5422,100,8,12/6/20_Soccer Barclays Premier League_Tottenham Hotspur
+12/5/20 17:10,12/6/20,Soccer Dutch Eredivisie,ADO Den Haag,100,0.1108,1300,55,12/6/20_Soccer Dutch Eredivisie_ADO Den Haag
+12/5/20 17:10,12/6/20,Soccer Dutch Eredivisie,ADO Den Haag Draw,100,0.1963,550,27,12/6/20_Soccer Dutch Eredivisie_ADO Den Haag Draw
+12/5/20 17:11,12/6/20,Soccer Portuguese Liga,Belenenses,100,0.2035,509,23,12/6/20_Soccer Portuguese Liga_Belenenses
+12/5/20 17:12,12/6/20,Soccer Scottish Premiership,Celtic,100,0.8535,31,11,12/6/20_Soccer Scottish Premiership_Celtic
+12/5/20 17:16,12/6/20,Soccer Swiss Raiffeisen Super League,FC Zurich,100,0.4172,159,8,12/6/20_Soccer Swiss Raiffeisen Super League_FC Zurich
+12/5/20 17:17,12/6/20,Soccer Spanish Segunda Division,Espanyol,100,0.6585,83,20,12/6/20_Soccer Spanish Segunda Division_Espanyol
+12/5/20 17:18,12/6/20,Soccer German Bundesliga 2,SC Paderborn,100,0.5075,114,9,12/6/20_Soccer German Bundesliga 2_SC Paderborn
+12/5/20 17:19,12/6/20,Soccer Danish SAS-Ligaen,FC Nordsjaelland,100,0.4552,200,36,12/6/20_Soccer Danish SAS-Ligaen_FC Nordsjaelland
+12/5/20 17:22,12/6/20,Soccer Norwegian Tippeligaen,Sarpsborg,100,0.3152,254,11,12/6/20_Soccer Norwegian Tippeligaen_Sarpsborg
+12/5/20 17:22,12/6/20,Soccer Norwegian Tippeligaen,Bodo/Glimt Draw,100,0.2071,459,15,12/6/20_Soccer Norwegian Tippeligaen_Bodo/Glimt Draw
+12/5/20 17:22,12/6/20,Soccer Norwegian Tippeligaen,Stabaek,100,0.2057,750,74,12/6/20_Soccer Norwegian Tippeligaen_Stabaek
+12/5/20 17:22,12/6/20,Soccer Norwegian Tippeligaen,Viking FK,100,0.4781,135,12,12/6/20_Soccer Norwegian Tippeligaen_Viking FK
+12/5/20 17:22,12/6/20,Soccer Norwegian Tippeligaen,Aalesund,100,0.1451,1300,103,12/6/20_Soccer Norwegian Tippeligaen_Aalesund
+12/5/20 17:22,12/6/20,Soccer Norwegian Tippeligaen,Aalesund Draw,100,0.1562,650,17,12/6/20_Soccer Norwegian Tippeligaen_Aalesund Draw
+12/5/20 17:23,12/6/20,Soccer Brasileiro S√©rie A,Internacional,100,0.2488,500,49,12/6/20_Soccer Brasileiro S√©rie A_Internacional
+12/5/20 18:14,12/6/20,Soccer Swedish Allsvenskan,Djurgardens IF Draw,100,0.2533,330,8,12/6/20_Soccer Swedish Allsvenskan_Djurgardens IF Draw
+12/5/20 18:14,12/6/20,Soccer Swedish Allsvenskan,Varbergs BoIS FC,100,0.2665,575,79,12/6/20_Soccer Swedish Allsvenskan_Varbergs BoIS FC
+12/5/20 18:14,12/6/20,Soccer Swedish Allsvenskan,IK Sirius,100,0.3067,309,25,12/6/20_Soccer Swedish Allsvenskan_IK Sirius
+12/5/20 18:14,12/6/20,Soccer Swedish Allsvenskan,Orebro SK,100,0.3502,240,19,12/6/20_Soccer Swedish Allsvenskan_Orebro SK
+12/5/20 18:14,12/6/20,Soccer Swedish Allsvenskan,Mjallby,100,0.4409,190,27,12/6/20_Soccer Swedish Allsvenskan_Mjallby
+12/5/20 18:14,12/6/20,Soccer Swedish Allsvenskan,AIK,100,0.3214,334,39,12/6/20_Soccer Swedish Allsvenskan_AIK
+12/5/20 18:14,12/6/20,Soccer Swedish Allsvenskan,AIK Draw,100,0.3045,280,15,12/6/20_Soccer Swedish Allsvenskan_AIK Draw
+12/5/20 18:14,12/6/20,Soccer Swedish Allsvenskan,Helsingborgs IF,100,0.2526,1050,190,12/6/20_Soccer Swedish Allsvenskan_Helsingborgs IF
+12/5/20 18:14,12/6/20,Soccer Swedish Allsvenskan,Helsingborgs IF Draw,100,0.2421,550,57,12/6/20_Soccer Swedish Allsvenskan_Helsingborgs IF Draw
+12/5/20 18:15,12/6/20,Soccer Italy Serie A,AC Milan,100,0.6075,80,9,12/6/20_Soccer Italy Serie A_AC Milan
+12/5/20 22:43,12/6/20,CBB,Coppin St.,100,0.1,1040,13,12/6/20_CBB_Coppin St.
+12/5/20 22:43,12/6/20,CBB,Cincinnati,100,0.61,86,13,12/6/20_CBB_Cincinnati
+12/5/20 22:43,12/6/20,CBB,Troy,100,0.09,1400,34,12/6/20_CBB_Troy
+12/5/20 22:43,12/6/20,CBB,Wyoming,100,0.23,384,11,12/6/20_CBB_Wyoming
+12/6/20 14:04,12/6/20,CBB,North Carolina A&T,100,0.05,2200,15,12/6/20_CBB_North Carolina A&T
+12/6/20 14:04,12/6/20,CBB,Stony Brook,100,0.07,1500,11,12/6/20_CBB_Stony Brook
+12/6/20 14:04,12/6/20,CBB,Denver,100,0.38,215,19,12/6/20_CBB_Denver
+12/6/20 14:04,12/6/20,CBB,Central Arkansas,100,0.19,490,12,12/6/20_CBB_Central Arkansas
+12/6/20 14:04,12/6/20,CBB,TCU,100,0.44,165,16,12/6/20_CBB_TCU
+12/6/20 14:04,12/6/20,CBB,Long Beach St.,100,0.67,69,13,12/6/20_CBB_Long Beach St.
+12/6/20 14:04,12/6/20,CBB,La Salle,100,0.53,114,13,12/6/20_CBB_La Salle
+12/6/20 14:04,12/6/20,CBB,Buffalo,100,0.52,121,14,12/6/20_CBB_Buffalo
+2020-12-06 14:11:08,12/7/20,CBB,UNC Wilmington,100,0.18999999999999995,500,13,12/7/20_CBB_UNC Wilmington
+2020-12-06 14:11:08,12/7/20,CBB,South Carolina St.,100,0.050000000000000044,2200,15,12/7/20_CBB_South Carolina St.
+2020-12-06 14:11:08,12/7/20,CBB,Middle Tennessee,100,0.61,85,12,12/7/20_CBB_Middle Tennessee
+2020-12-06 14:11:08,12/7/20,CBB,Morehead St.,100,0.18000000000000005,560,18,12/7/20_CBB_Morehead St.
+2020-12-06 14:34:07,12/7/20,Soccer Portuguese Liga,SC Farense,100,0.4974,125,11,12/7/20_Soccer Portuguese Liga_SC Farense
+2020-12-06 15:25:23,12/7/20,Soccer Brasileiro S√©rie A,Goiás,100,0.2145,450,17,12/7/20_Soccer Brasileiro S√©rie A_Goiás
+2020-12-07 10:07:50,12/7/20,CBB,North Carolina Central,100,0.21999999999999997,420,14,12/7/20_CBB_North Carolina Central

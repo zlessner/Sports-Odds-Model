@@ -112,8 +112,8 @@ for i in eventsAPI:
 #Slightly altering names to match up to 538
 
 for i in range(len(AlphaAPIx)):
-    AlphaAPI.append(AlphaAPIx[i].replace("Ch\\u00e2teauroux", 'Chateauroux').replace("Châteauroux", 'Chateauroux').replace("FC Chambly", 'Chambly Thelle FC').replace("Le Mans FC", 'Le Mans').replace("Rodez AF", 'Rodez').replace("Orl\\u00e9ans", 'Orléans').replace("SM Caen", 'Caen').replace("EA Guingamp", 'Guingamp').replace("AC Ajaccio", 'Ajaccio').replace("Dijon", 'Dijon FCO').replace("Nîmes Olympique", 'Nimes').replace("Stade de Reims", 'Reims').replace("Saint Etienne", 'St Etienne').replace("Wolverhampton Wanderers", 'Wolverhampton').replace("Newcastle United", 'Newcastle').replace("Bournemouth", 'AFC Bournemouth').replace("Blackburn Rovers", 'Blackburn').replace("Birmingham City", 'Birmingham').replace("Wigan Athletic", 'Wigan').replace("Bolton Wanderers", 'Bolton').replace("Barrow AFC", 'Barrow').replace("Olympiakos", 'Olympiacos').replace("RCD Espanyol", 'Espanyol').replace("Leganés", 'Leganes').replace("Zaragoza", 'Real Zaragoza').replace("Málaga", 'M√°laga').replace("Sporting Gijón", 'Sporting Gij√≥n').replace("Oviedo", 'Real Oviedo').replace("CF Fuenlabrada", 'Fuenlabrada').replace("CD Mirandés", 'Mirandes').replace("CD Castellón", 'Castellon').replace("UD Logroñés", 'Logrones').replace("Alcorcón", 'AD Alcorcon').replace("Sabadell FC", 'Sabadell').replace("İstanbul Başakşehir FK", 'Istanbul Basaksehir').replace("AZ Alkmaar", 'AZ').replace("PSV Eindhoven", 'PSV').replace("Vitesse Arnhem", 'Vitesse').replace("FC Twente Enschede", 'FC Twente').replace("PSV Eindhoven", 'PSV').replace("Groningen", 'FC Groningen').replace("FC Zwolle", 'PEC Zwolle').replace("FC Emmen", 'Emmen').replace("Sparta Rotterdam", 'Sparta').replace("Heracles Almelo", 'Heracles').replace("RKC Waalwijk", 'RKC').replace("Union Berlin", '1. FC Union Berlin').replace("FC Koln", 'RKFC CologneC').replace("Augsburg", 'FC Augsburg').replace("FSV Mainz 05", 'Mainz').replace("Dijon", 'Dijon FC').replace("RC Lens", 'Lens').replace("Nîmes Olympique", 'Nimes').replace("Paris Saint Germain", 'Paris Saint-Germain').replace("Stade de Reims", 'Reims').replace("Saint Etienne", 'St Etienne').replace("Rennes", 'Stade Rennes').replace("Nancy", 'AS Nancy Lorraine').replace("USL Dunkerque", 'Dunkerque').replace("Pau FC", 'Pau').replace("Sarpsborg FK", 'Sarpsborg').replace("ø", 'o').replace("Dynamo Kyiv", 'Dynamo Kiev').replace("Sevilla", 'Sevilla FC').replace("SS Lazio", 'Lazio').replace("Hapoel Beer Sheva FC", "Hapoel Be'er").replace("Slavia Praha", "Slavia Prague").replace("Dundee United", "Dundee Utd").replace("Arsenal Tula", "FC Arsenal Tula").replace("Tambov", "FC Tambov").replace("FC Rotor Volgograd", "FK Volgograd").replace("FK Rostov", "Rostov").replace("FC Sochi", "Sochi").replace("FC Akhmat Grozny", "Terek Grozny"))    
-    BetaAPI.append(BetaAPIx[i].replace("Ch\\u00e2teauroux", 'Chateauroux').replace("Châteauroux", 'Chateauroux').replace("FC Chambly", 'Chambly Thelle FC').replace("Le Mans FC", 'Le Mans').replace("Rodez AF", 'Rodez').replace("Orl\\u00e9ans", 'Orléans').replace("SM Caen", 'Caen').replace("EA Guingamp", 'Guingamp').replace("AC Ajaccio", 'Ajaccio').replace("Dijon", 'Dijon FCO').replace("Nîmes Olympique", 'Nimes').replace("Stade de Reims", 'Reims').replace("Saint Etienne", 'St Etienne').replace("Wolverhampton Wanderers", 'Wolverhampton').replace("Newcastle United", 'Newcastle').replace("Bournmouth", 'AFC Bournmouth').replace("Blackburn Rovers", 'Blackburn').replace("Birmingham City", 'Birmingham').replace("Wigan Athletic", 'Wigan').replace("Bolton Wanderers", 'Bolton').replace("Barrow AFC", 'Barrow').replace("Olympiakos", 'Olympiacos').replace("RCD Espanyol", 'Espanyol').replace("Leganés", 'Leganes').replace("Zaragoza", 'Real Zaragoza').replace("Málaga", 'M√°laga').replace("Sporting Gijón", 'Sporting Gij√≥n').replace("Oviedo", 'Real Oviedo').replace("CF Fuenlabrada", 'Fuenlabrada').replace("CD Mirandés", 'Mirandes').replace("CD Castellón", 'Castellon').replace("UD Logroñés", 'Logrones').replace("Alcorcón", 'AD Alcorcon').replace("Sabadell FC", 'Sabadell').replace("İstanbul Başakşehir FK", 'Istanbul Basaksehir').replace("AZ Alkmaar", 'AZ').replace("PSV Eindhoven", 'PSV').replace("Vitesse Arnhem", 'Vitesse').replace("FC Twente Enschede", 'FC Twente').replace("PSV Eindhoven", 'PSV').replace("Groningen", 'FC Groningen').replace("FC Zwolle", 'PEC Zwolle').replace("FC Emmen", 'Emmen').replace("Sparta Rotterdam", 'Sparta').replace("Heracles Almelo", 'Heracles').replace("RKC Waalwijk", 'RKC').replace("Union Berlin", '1. FC Union Berlin').replace("FC Koln", 'RKFC CologneC').replace("Augsburg", 'FC Augsburg').replace("FSV Mainz 05", 'Mainz').replace("Dijon", 'Dijon FC').replace("RC Lens", 'Lens').replace("Nîmes Olympique", 'Nimes').replace("Paris Saint Germain", 'Paris Saint-Germain').replace("Stade de Reims", 'Reims').replace("Saint Etienne", 'St Etienne').replace("Rennes", 'Stade Rennes').replace("Nancy", 'AS Nancy Lorraine').replace("USL Dunkerque", 'Dunkerque').replace("Pau FC", 'Pau').replace("Sarpsborg FK", 'Sarpsborg').replace("ø", 'o').replace("Dynamo Kyiv", 'Dynamo Kiev').replace("Sevilla", 'Sevilla FC').replace("SS Lazio", 'Lazio').replace("Hapoel Beer Sheva FC", "Hapoel Be'er").replace("Slavia Praha", "Slavia Prague").replace("Dundee United", "Dundee Utd").replace("Arsenal Tula", "FC Arsenal Tula").replace("Tambov", "FC Tambov").replace("FC Rotor Volgograd", "FK Volgograd").replace("FK Rostov", "Rostov").replace("FC Sochi", "Sochi").replace("FC Akhmat Grozny", "Terek Grozny")) 
+    AlphaAPI.append(AlphaAPIx[i].replace("Ch\\u00e2teauroux", 'Chateauroux').replace("Châteauroux", 'Chateauroux').replace("FC Chambly", 'Chambly Thelle FC').replace("Le Mans FC", 'Le Mans').replace("Rodez AF", 'Rodez').replace("Orl\\u00e9ans", 'Orléans').replace("SM Caen", 'Caen').replace("EA Guingamp", 'Guingamp').replace("AC Ajaccio", 'Ajaccio').replace("Dijon", 'Dijon FCO').replace("Nîmes Olympique", 'Nimes').replace("Stade de Reims", 'Reims').replace("Saint Etienne", 'St Etienne').replace("Wolverhampton Wanderers", 'Wolverhampton').replace("Newcastle United", 'Newcastle').replace("Bournemouth", 'AFC Bournemouth').replace("Blackburn Rovers", 'Blackburn').replace("Birmingham City", 'Birmingham').replace("Wigan Athletic", 'Wigan').replace("Bolton Wanderers", 'Bolton').replace("Barrow AFC", 'Barrow').replace("Olympiakos", 'Olympiacos').replace("RCD Espanyol", 'Espanyol').replace("Leganés", 'Leganes').replace("Zaragoza", 'Real Zaragoza').replace("Málaga", 'M√°laga').replace("Sporting Gijón", 'Sporting Gij√≥n').replace("Oviedo", 'Real Oviedo').replace("CF Fuenlabrada", 'Fuenlabrada').replace("CD Mirandés", 'Mirandes').replace("CD Castellón", 'Castellon').replace("UD Logroñés", 'Logrones').replace("Alcorcón", 'AD Alcorcon').replace("Sabadell FC", 'Sabadell').replace("İstanbul Başakşehir FK", 'Istanbul Basaksehir').replace("AZ Alkmaar", 'AZ').replace("PSV Eindhoven", 'PSV').replace("Vitesse Arnhem", 'Vitesse').replace("FC Twente Enschede", 'FC Twente').replace("PSV Eindhoven", 'PSV').replace("Groningen", 'FC Groningen').replace("FC Zwolle", 'PEC Zwolle').replace("FC Emmen", 'Emmen').replace("Sparta Rotterdam", 'Sparta').replace("Heracles Almelo", 'Heracles').replace("RKC Waalwijk", 'RKC').replace("Union Berlin", '1. FC Union Berlin').replace("FC Koln", 'RKFC CologneC').replace("Augsburg", 'FC Augsburg').replace("FSV Mainz 05", 'Mainz').replace("Dijon", 'Dijon FC').replace("RC Lens", 'Lens').replace("Nîmes Olympique", 'Nimes').replace("Paris Saint Germain", 'Paris Saint-Germain').replace("Stade de Reims", 'Reims').replace("Saint Etienne", 'St Etienne').replace("Rennes", 'Stade Rennes').replace("Nancy", 'AS Nancy Lorraine').replace("USL Dunkerque", 'Dunkerque').replace("Pau FC", 'Pau').replace("Sarpsborg FK", 'Sarpsborg').replace("ø", 'o').replace("Dynamo Kyiv", 'Dynamo Kiev').replace("Sevilla", 'Sevilla FC').replace("SS Lazio", 'Lazio').replace("Hapoel Beer Sheva FC", "Hapoel Be'er").replace("Slavia Praha", "Slavia Prague").replace("Dundee United", "Dundee Utd").replace("Arsenal Tula", "FC Arsenal Tula").replace("Tambov", "FC Tambov").replace("FC Rotor Volgograd", "FK Volgograd").replace("FK Rostov", "Rostov").replace("FC Sochi", "Sochi").replace("FC Akhmat Grozny", "Terek Grozny").replace("Hellas Verona FC", "Verona").replace("Ostersunds FK", "√ñstersunds FK").replace("Hammarby IF", "Hammarby").replace("Mjällby AIF", "Mjallby").replace("Varbergs BoIS", "Varbergs BoIS FC"))    
+    BetaAPI.append(BetaAPIx[i].replace("Ch\\u00e2teauroux", 'Chateauroux').replace("Châteauroux", 'Chateauroux').replace("FC Chambly", 'Chambly Thelle FC').replace("Le Mans FC", 'Le Mans').replace("Rodez AF", 'Rodez').replace("Orl\\u00e9ans", 'Orléans').replace("SM Caen", 'Caen').replace("EA Guingamp", 'Guingamp').replace("AC Ajaccio", 'Ajaccio').replace("Dijon", 'Dijon FCO').replace("Nîmes Olympique", 'Nimes').replace("Stade de Reims", 'Reims').replace("Saint Etienne", 'St Etienne').replace("Wolverhampton Wanderers", 'Wolverhampton').replace("Newcastle United", 'Newcastle').replace("Bournmouth", 'AFC Bournmouth').replace("Blackburn Rovers", 'Blackburn').replace("Birmingham City", 'Birmingham').replace("Wigan Athletic", 'Wigan').replace("Bolton Wanderers", 'Bolton').replace("Barrow AFC", 'Barrow').replace("Olympiakos", 'Olympiacos').replace("RCD Espanyol", 'Espanyol').replace("Leganés", 'Leganes').replace("Zaragoza", 'Real Zaragoza').replace("Málaga", 'M√°laga').replace("Sporting Gijón", 'Sporting Gij√≥n').replace("Oviedo", 'Real Oviedo').replace("CF Fuenlabrada", 'Fuenlabrada').replace("CD Mirandés", 'Mirandes').replace("CD Castellón", 'Castellon').replace("UD Logroñés", 'Logrones').replace("Alcorcón", 'AD Alcorcon').replace("Sabadell FC", 'Sabadell').replace("İstanbul Başakşehir FK", 'Istanbul Basaksehir').replace("AZ Alkmaar", 'AZ').replace("PSV Eindhoven", 'PSV').replace("Vitesse Arnhem", 'Vitesse').replace("FC Twente Enschede", 'FC Twente').replace("PSV Eindhoven", 'PSV').replace("Groningen", 'FC Groningen').replace("FC Zwolle", 'PEC Zwolle').replace("FC Emmen", 'Emmen').replace("Sparta Rotterdam", 'Sparta').replace("Heracles Almelo", 'Heracles').replace("RKC Waalwijk", 'RKC').replace("Union Berlin", '1. FC Union Berlin').replace("FC Koln", 'RKFC CologneC').replace("Augsburg", 'FC Augsburg').replace("FSV Mainz 05", 'Mainz').replace("Dijon", 'Dijon FC').replace("RC Lens", 'Lens').replace("Nîmes Olympique", 'Nimes').replace("Paris Saint Germain", 'Paris Saint-Germain').replace("Stade de Reims", 'Reims').replace("Saint Etienne", 'St Etienne').replace("Rennes", 'Stade Rennes').replace("Nancy", 'AS Nancy Lorraine').replace("USL Dunkerque", 'Dunkerque').replace("Pau FC", 'Pau').replace("Sarpsborg FK", 'Sarpsborg').replace("ø", 'o').replace("Dynamo Kyiv", 'Dynamo Kiev').replace("Sevilla", 'Sevilla FC').replace("SS Lazio", 'Lazio').replace("Hapoel Beer Sheva FC", "Hapoel Be'er").replace("Slavia Praha", "Slavia Prague").replace("Dundee United", "Dundee Utd").replace("Arsenal Tula", "FC Arsenal Tula").replace("Tambov", "FC Tambov").replace("FC Rotor Volgograd", "FK Volgograd").replace("FK Rostov", "Rostov").replace("FC Sochi", "Sochi").replace("FC Akhmat Grozny", "Terek Grozny").replace("Hellas Verona FC", "Verona").replace("Ostersunds FK", "√ñstersunds FK").replace("Hammarby IF", "Hammarby").replace("Mjällby AIF", "Mjallby").replace("Varbergs BoIS", "Varbergs BoIS FC"))  
 
 
 
@@ -548,7 +548,7 @@ for i in range(len(teams)):
     if teams[i] == "Istanbul Basaksehir":
         team_num_t.append(6890)
 
-    # Italy Serie A
+    # Italy Serie A -- CHECK BACK FOR INTER MILAN NEXT WEEK
     if teams[i] == "AC Milan":
         team_num_t.append(5)
     if teams[i] == "Atalanta":
@@ -557,6 +557,53 @@ for i in range(len(teams)):
         team_num_t.append(398)
     if teams[i] == "Juventes":
         team_num_t.append(506)
+    if teams[i] == "AS Roma":
+        team_num_t.append(12)
+    if teams[i] == "Benevento":
+        team_num_t.append(4171)
+    if teams[i] == "Bologna":
+        team_num_t.append(1025)
+    if teams[i] == "Cagliari":
+        team_num_t.append(1390)
+    if teams[i] == "Crotone":
+        team_num_t.append(4083)
+    if teams[i] == "Fiorentina":
+        team_num_t.append(430)
+    if teams[i] == "Genoa":
+        team_num_t.append(252)
+    if teams[i] == "Internazionale":
+        team_num_t.append(46)
+    if teams[i] == "Napoli":
+        team_num_t.append(6195)
+    if teams[i] == "Parma":
+        team_num_t.append(130)
+    if teams[i] == "Sampdoria":
+        team_num_t.append(1038)
+    if teams[i] == "Sassuolo":
+        team_num_t.append(6574)
+    if teams[i] == "Spezia":
+        team_num_t.append(3522)
+    if teams[i] == "Torino":
+        team_num_t.append(416)
+    if teams[i] == "Udinese":
+        team_num_t.append(410)
+    if teams[i] == "Verona":
+        team_num_t.append(276)
+
+     # Italy Serie B - change names and unccoment once rest of teams are filled in
+    # if teams[i] == "Brescia":
+    #     team_num_t.append(19)
+    # if teams[i] == "Chievo Verona":
+    #     team_num_t.append(862)
+    # if teams[i] == "Empoli":
+    #     team_num_t.append(749)
+    # if teams[i] == "Spal":
+    #     team_num_t.append(2722)
+    # if teams[i] == "US Pescara":
+    #     team_num_t.append(2921)
+    # if teams[i] == "Frosinone":
+    #     team_num_t.append(8970)
+        
     
 
     # Portuguese Liga
@@ -791,6 +838,47 @@ for i in range(len(teams)):
     if teams[i] == "St Mirren": 
         team_num_t.append(465)
 
+    # Soccer Swedish Allsvenskan or second tier
+    if teams[i] == "√ñstersunds FK":
+        team_num_t.append(9614)
+    if teams[i] == "AIK":
+        team_num_t.append(272) 
+    if teams[i] == "BK Hacken":
+        team_num_t.append(1109) 
+    if teams[i] == "Dalkurd FF":
+        team_num_t.append(23302)
+    if teams[i] == "Djurgardens IF":
+        team_num_t.append(1044) 
+    if teams[i] == "Falkenbergs FF":
+        team_num_t.append(5196) 
+    if teams[i] == "Hammarby":
+        team_num_t.append(1059) 
+    if teams[i] == "Helsingborgs IF":
+        team_num_t.append(699) 
+    if teams[i] == "IF Elfsborg": 
+        team_num_t.append(1101) 
+    if teams[i] == "IFK Goteborg":
+        team_num_t.append(801) 
+    if teams[i] == "IFK Norrkoping":
+        team_num_t.append(2844) 
+    if teams[i] == "IK Sirius":
+        team_num_t.append(7945) 
+    if teams[i] == "Jonkopings Sodra IF":
+        team_num_t.append(7411)
+    if teams[i] == "Kalmar FF":
+        team_num_t.append(3654)  
+    if teams[i] == "Malmo FF":
+        team_num_t.append(496) 
+    if teams[i] == "Mjallby":
+        team_num_t.append(2719) 
+    if teams[i] == "Orebro SK": 
+        team_num_t.append(1056) 
+    if teams[i] == "Trelleborgs FF": 
+        team_num_t.append(701)
+    if teams[i] == "Varbergs BoIS FC": 
+        team_num_t.append(10507)
+        
+
 
     # Non-538 League but in European Competition
     if teams[i] == "Shakhtar Donetsk":
@@ -808,6 +896,9 @@ for i in range(len(teams)):
     if teams[i] == "Hapoel Be'er": 
         team_num_t.append(2976)
 
+    # Italy Serie C    
+    if teams[i] == "Palermo":
+        team_num_t.append(458)
         
         
 

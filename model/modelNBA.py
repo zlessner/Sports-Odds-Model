@@ -67,7 +67,7 @@ for i in range(len(AlphaAPI)):
         try:
             if (AlphaAPI[i]).lower() == (FiveThirtyEightGames[j][1].lower()):
                 homeAlphaOdds = int((((OddsA[i])-1)*100)*(float(FiveThirtyEightGames[j][3]))-(100*(1-(float(FiveThirtyEightGames[j][3])))))
-                if (homeAlphaOdds>10):
+                if (homeAlphaOdds>7):
                     teamsToBetNBA.append({AlphaAPI[i]: homeAlphaOdds})
         except KeyError:
             continue
@@ -75,7 +75,7 @@ for i in range(len(AlphaAPI)):
         try:    
             if (BetaAPI[i]).lower() == (FiveThirtyEightGames[j][2].lower()):
                 awayBetaOdds = int((((OddsB[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
-                if (awayBetaOdds>10):
+                if (awayBetaOdds>7):
                     teamsToBetNBA.append({BetaAPI[i]: awayBetaOdds})
         except KeyError:
             continue
@@ -83,7 +83,7 @@ for i in range(len(AlphaAPI)):
         try:
             if (AlphaAPI[i]).lower() == (FiveThirtyEightGames[j][2].lower()):
                 awayAlphaOdds = int((((OddsA[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
-                if (awayAlphaOdds>10):
+                if (awayAlphaOdds>7):
                     teamsToBetNBA.append({AlphaAPI[i]: awayAlphaOdds})
         except KeyError:
             continue
@@ -91,7 +91,7 @@ for i in range(len(AlphaAPI)):
         try:    
             if (BetaAPI[i]).lower() == (FiveThirtyEightGames[j][1].lower()):
                 homeBetaOdds = int((((OddsB[i])-1)*100)*(float(FiveThirtyEightGames[j][3]))-(100*(1-(float(FiveThirtyEightGames[j][3])))))
-                if (homeBetaOdds>10):
+                if (homeBetaOdds>7):
                     teamsToBetNBA.append({BetaAPI[i]: homeBetaOdds})
         except KeyError:
             continue

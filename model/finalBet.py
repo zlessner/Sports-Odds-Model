@@ -33,4 +33,6 @@ yesterdayCSV(FiveThirtyEightGamesYesterday, sport, playedTeams)
 
 # append results tables to each other so only have to run teh results table once across all sports
 
+# Add column to both tables with break point where bet would be over min expected value (right now it is EV of 7) and that's what you'd tell client ot bet if they can get moneyline over that value
+
 # print(winnerTeams)

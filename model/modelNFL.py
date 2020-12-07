@@ -77,12 +77,12 @@ for i in range(len(FiveThirtyEightGamesYesterday)):
 
 
 
-# print(predictionTracker)
-# print("------------")
+print(predictionTracker)
+print("------------")
 
 
-# print(FiveThirtyEightGames)
-# print("------------")
+print(FiveThirtyEightGames)
+print("------------")
 
 
 #averging odds between 538 and thepredictiontracker
@@ -96,7 +96,7 @@ for i in range(len(FiveThirtyEightGames)):
 
 
 
-# print(FiveThirtyEightGames)
+print(FiveThirtyEightGames)
 
 
 
@@ -138,7 +138,7 @@ for i in range(len(AlphaAPI)):
         try:
             if (AlphaAPI[i]).lower() == (FiveThirtyEightGames[j][1].lower()):
                 homeAlphaOdds = int((((OddsA[i])-1)*100)*(float(FiveThirtyEightGames[j][3]))-(100*(1-(float(FiveThirtyEightGames[j][3])))))
-                if (homeAlphaOdds>10):
+                if (homeAlphaOdds>7):
                     teamstobetNFL.append({AlphaAPI[i]: homeAlphaOdds})
                     potential_winnings.append(int(((OddsA[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][3]))
@@ -148,7 +148,7 @@ for i in range(len(AlphaAPI)):
         try:    
             if (BetaAPI[i]).lower() == (FiveThirtyEightGames[j][2].lower()):
                 awayBetaOdds = int((((OddsB[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
-                if (awayBetaOdds>10):
+                if (awayBetaOdds>7):
                     teamstobetNFL.append({BetaAPI[i]: awayBetaOdds})
                     potential_winnings.append(int(((OddsB[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][4]))
@@ -158,7 +158,7 @@ for i in range(len(AlphaAPI)):
         try:
             if (AlphaAPI[i]).lower() == (FiveThirtyEightGames[j][2].lower()):
                 awayAlphaOdds = int((((OddsA[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
-                if (awayAlphaOdds>10):
+                if (awayAlphaOdds>7):
                     teamstobetNFL.append({AlphaAPI[i]: awayAlphaOdds})
                     potential_winnings.append(int(((OddsA[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][4]))
@@ -168,7 +168,7 @@ for i in range(len(AlphaAPI)):
         try:    
             if (BetaAPI[i]).lower() == (FiveThirtyEightGames[j][1].lower()):
                 homeBetaOdds = int((((OddsB[i])-1)*100)*(float(FiveThirtyEightGames[j][3]))-(100*(1-(float(FiveThirtyEightGames[j][3])))))
-                if (homeBetaOdds>10):
+                if (homeBetaOdds>7):
                     teamstobetNFL.append({BetaAPI[i]: homeBetaOdds})
                     potential_winnings.append(int(((OddsB[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][3]))

@@ -49,9 +49,9 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 
 #change sport to any of the different soccer leagues above
 
-soccer = True
+soccer = False
 
-sport = "soccer_efl_champ"
+sport = "soccer_netherlands_eredivisie"
 
 querystring = {"sport":sport,"region":"us","mkt":"h2h"}
 
@@ -69,11 +69,11 @@ gameDate = datetime.date.today()
 
 gameWeek = gameDate + datetime.timedelta(6)
 
-futureGame = gameDate + datetime.timedelta(1)
+futureGame = gameDate + datetime.timedelta(0)
 
 futureGameMDY = (futureGame.strftime("%-m/%-d/%y"))
 
-yesterdayGame = gameDate + datetime.timedelta(0)
+yesterdayGame = gameDate + datetime.timedelta(-1)
 
 yesterdayGameMDY = (yesterdayGame.strftime("%-m/%-d/%y"))
 
@@ -172,6 +172,6 @@ if sport == "soccer_spl":
     
 
 # Comment sport out if soccer
-# sport = 'CFB'  
+sport = 'CBB'  
     
 

@@ -1,0 +1,96 @@
+```{r}
+
+results<-read_csv(file = "./model/betResults.csv")
+
+results
+
+```
+
+```{r}
+
+results$Sport <- substr(results$Sport, 1, 3)
+
+names(results) <- gsub(" ", "_", names(results))
+
+results
+
+
+```
+```{r}
+library(ggplot2)
+
+results %>% 
+  group_by(Sport) %>% 
+  summarise(Bet_Winnings = sum(Bet_Winnings, na.rm = TRUE)) -> resultsSum
+  
+  
+ggplot(resultsSum, aes(x = Sport, y = Bet_Winnings, fill = Sport)) +
+  geom_col() +
+  ggtitle("Bet Winnings by Sport") +
+  theme_bw()
+
+```
+
+```{r}
+
+results %>% 
+  filter(Odds_of_Winning>.5) %>%
+  group_by(Sport) %>% 
+  summarise(Bet_Winnings = sum(Bet_Winnings, na.rm = TRUE)) -> resultsOverHalf
+  
+  
+ggplot(resultsOverHalf, aes(x = Sport, y = Bet_Winnings, fill = Sport)) +
+  geom_col() +
+  ggtitle("Bet Winnings by Sport") +
+  theme_bw()
+
+```
+
+```{r}
+ggplot(results, aes(x = Odds_of_Winning, y = Bet_Winnings, fill = Sport)) +
+  geom_boxplot() +
+  ggtitle("Bet Winnings by Sport") +
+  theme_bw()
+```
+
+
+```{r}
+specie <- c(rep("sorgho" , 3) , rep("poacee" , 3) , rep("banana" , 3) , rep("triticum" , 3) )
+condition <- rep(c("normal" , "stress" , "Nitrogen") , 4)
+value <- abs(rnorm(12 , 0 , 15))
+data <- data.frame(specie,condition,value)
+ 
+# Grouped
+ggplot(results, aes(fill=Sport, y=Bet_Winnings, x=Odds_of_Winning)) + 
+    geom_bar(position="dodge", stat="identity") +
+  theme_bw()
+
+
+```
+
+```{r}
+library(ggallin)
+
+ggplot(data = results, mapping = aes(x = Odds_of_Winning, y = Bet_Winnings)) +
+  geom_point() +
+  scale_y_continuous(trans = pseudolog10_trans) +
+  geom_smooth(colour = '#228B22', se = F) +
+  facet_wrap( ~ Sport) +
+  theme_bw()
+
+ggplot(data = results, mapping = aes(x = Expected_Value, y = Bet_Winnings)) +
+  geom_point() +
+  scale_y_continuous(trans = pseudolog10_trans) +
+  scale_x_log10() +
+  geom_smooth(colour = '#228B22', se = F) +
+  facet_wrap( ~ Sport) +
+  theme_bw()
+
+ggplot(data = results, mapping = aes(x = Odds_of_Winning, y = Expected_Value)) +
+  geom_point() +
+  scale_y_log10() +
+  geom_smooth(colour = '#228B22', se = F) +
+  facet_wrap( ~ Sport) +
+  theme_bw()
+```
+
