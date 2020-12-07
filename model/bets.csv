@@ -75,7 +75,6 @@ Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnin
 11/27/20 18:13,11/28/20,CFB,Syracuse,100,0.274671749,440,48,
 11/27/20 18:13,11/28/20,CFB,Texas-San Antonio,100,0.665565297,70,13,
 11/27/20 18:13,11/28/20,CFB,Auburn,100,0.108087678,1000,18,
-11/27/20 18:13,11/28/20,CFB,San Jose St.,100,0.287486268,309,17,
 11/27/20 18:13,11/28/20,CFB,LSU,100,0.32258002,370,51,
 11/27/20 18:13,11/28/20,CFB,Kansas St.,100,0.423752198,165,12,
 11/27/20 18:13,11/28/20,CFB,Navy,100,0.328974127,330,41,
@@ -287,10 +286,10 @@ Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnin
 12/6/20 14:04,12/6/20,CBB,Long Beach St.,100,0.67,69,13,12/6/20_CBB_Long Beach St.
 12/6/20 14:04,12/6/20,CBB,La Salle,100,0.53,114,13,12/6/20_CBB_La Salle
 12/6/20 14:04,12/6/20,CBB,Buffalo,100,0.52,121,14,12/6/20_CBB_Buffalo
-2020-12-06 14:11:08,12/7/20,CBB,UNC Wilmington,100,0.18999999999999995,500,13,12/7/20_CBB_UNC Wilmington
-2020-12-06 14:11:08,12/7/20,CBB,South Carolina St.,100,0.050000000000000044,2200,15,12/7/20_CBB_South Carolina St.
-2020-12-06 14:11:08,12/7/20,CBB,Middle Tennessee,100,0.61,85,12,12/7/20_CBB_Middle Tennessee
-2020-12-06 14:11:08,12/7/20,CBB,Morehead St.,100,0.18000000000000005,560,18,12/7/20_CBB_Morehead St.
-2020-12-06 14:34:07,12/7/20,Soccer Portuguese Liga,SC Farense,100,0.4974,125,11,12/7/20_Soccer Portuguese Liga_SC Farense
-2020-12-06 15:25:23,12/7/20,Soccer Brasileiro S√©rie A,Goiás,100,0.2145,450,17,12/7/20_Soccer Brasileiro S√©rie A_Goiás
-2020-12-07 10:07:50,12/7/20,CBB,North Carolina Central,100,0.21999999999999997,420,14,12/7/20_CBB_North Carolina Central
+12/6/20 14:11,12/7/20,CBB,UNC Wilmington,100,0.19,500,13,12/7/20_CBB_UNC Wilmington
+12/6/20 14:11,12/7/20,CBB,South Carolina St.,100,0.05,2200,15,12/7/20_CBB_South Carolina St.
+12/6/20 14:11,12/7/20,CBB,Middle Tennessee,100,0.61,85,12,12/7/20_CBB_Middle Tennessee
+12/6/20 14:11,12/7/20,CBB,Morehead St.,100,0.18,560,18,12/7/20_CBB_Morehead St.
+12/6/20 14:34,12/7/20,Soccer Portuguese Liga,SC Farense,100,0.4974,125,11,12/7/20_Soccer Portuguese Liga_SC Farense
+12/6/20 15:25,12/7/20,Soccer Brasileiro S√©rie A,Goiás,100,0.2145,450,17,12/7/20_Soccer Brasileiro S√©rie A_Goiás
+12/7/20 10:07,12/7/20,CBB,North Carolina Central,100,0.22,420,14,12/7/20_CBB_North Carolina Central

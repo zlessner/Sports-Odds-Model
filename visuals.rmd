@@ -73,6 +73,7 @@ library(ggallin)
 
 ggplot(data = results, mapping = aes(x = Odds_of_Winning, y = Bet_Winnings)) +
   geom_point() +
+  ggtitle("Odds of Winning vs Betting Winnings") +
   scale_y_continuous(trans = pseudolog10_trans) +
   geom_smooth(colour = '#228B22', se = F) +
   facet_wrap( ~ Sport) +
@@ -80,6 +81,7 @@ ggplot(data = results, mapping = aes(x = Odds_of_Winning, y = Bet_Winnings)) +
 
 ggplot(data = results, mapping = aes(x = Expected_Value, y = Bet_Winnings)) +
   geom_point() +
+  ggtitle("Expected Value vs Betting Winnings") +
   scale_y_continuous(trans = pseudolog10_trans) +
   scale_x_log10() +
   geom_smooth(colour = '#228B22', se = F) +
@@ -88,6 +90,7 @@ ggplot(data = results, mapping = aes(x = Expected_Value, y = Bet_Winnings)) +
 
 ggplot(data = results, mapping = aes(x = Odds_of_Winning, y = Expected_Value)) +
   geom_point() +
+  ggtitle("Odds of Winning vs Expected Value") +
   scale_y_log10() +
   geom_smooth(colour = '#228B22', se = F) +
   facet_wrap( ~ Sport) +
