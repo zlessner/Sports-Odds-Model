@@ -37,7 +37,7 @@ loserTeams = fmPast.fm_df['Loser']
 
 playedTeams = FiveThirtyEightGamesYesterday.append(loserTeams, ignore_index=True)
 
-print(playedTeams)
+# print(playedTeams)
 
 #Adding first team to AlphaAPI, second team to BetaAPI, first teams odds to OddsA, and second team odds to OddsB
 
@@ -77,7 +77,6 @@ for i in range(len(fm.fm_df['PredictedWinner'])):
     kpLosersProj.append(fm.fm_df['PredictedLoser'][i])
 
 
-
 #Matching up KenPom teams with sports betting API teams
 #Performing calculations to see if expected value of winnings on a $100 dollar bet is over $10 (10% return)
 
@@ -86,7 +85,7 @@ for i in range(len(AlphaAPI)):
         try:
             if (AlphaAPI[i]).lower() == (kpWinnersProj[j].lower()):
                 homeAlphaOdds = int(((((OddsA[i])-1)*100)*(kpWinProb[j])-(100*(1-(kpWinProb[j])))))
-                if (homeAlphaOdds>10):
+                if (homeAlphaOdds>7):
                     teamsToBetCBB.append({AlphaAPI[i]: homeAlphaOdds})
                     potential_winnings.append(int(((OddsA[i])-1)*100))
                     winning_odds.append(kpWinProb[j])
@@ -96,7 +95,7 @@ for i in range(len(AlphaAPI)):
         try:    
             if (BetaAPI[i]).lower() == (kpLosersProj[j].lower()):
                 awayBetaOdds = int(((((OddsB[i])-1)*100)*(1-(kpWinProb[j])))-(100*(kpWinProb[j])))
-                if (awayBetaOdds>10):
+                if (awayBetaOdds>7):
                     teamsToBetCBB.append({BetaAPI[i]: awayBetaOdds})
                     potential_winnings.append(int(((OddsB[i])-1)*100))
                     winning_odds.append(1-kpWinProb[j])
@@ -106,7 +105,7 @@ for i in range(len(AlphaAPI)):
         try:    
             if (AlphaAPI[i]).lower() == (kpLosersProj[j].lower()):
                 awayAlphaOdds = int(((((OddsA[i])-1)*100)*(1-(kpWinProb[j]))-(100*(kpWinProb[j]))))
-                if (awayAlphaOdds>10):
+                if (awayAlphaOdds>7):
                     teamsToBetCBB.append({AlphaAPI[i]: awayAlphaOdds})
                     potential_winnings.append(int(((OddsA[i])-1)*100))
                     winning_odds.append(1-kpWinProb[j])
@@ -117,7 +116,7 @@ for i in range(len(AlphaAPI)):
         try:
             if (BetaAPI[i]).lower() == (kpWinnersProj[j].lower()):
                 homeBetaOdds = int(((((OddsB[i])-1)*100)*((kpWinProb[j])))-(100*(1-(kpWinProb[j]))))
-                if (homeBetaOdds>10):
+                if (homeBetaOdds>7):
                     teamsToBetCBB.append({BetaAPI[i]: homeBetaOdds})
                     potential_winnings.append(int(((OddsB[i])-1)*100))
                     winning_odds.append(kpWinProb[j])

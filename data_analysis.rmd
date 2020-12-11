@@ -1,0 +1,55 @@
+```{r}
+
+results<-read_csv(file = "./model/betResults.csv")
+
+results
+
+```
+
+```{r}
+
+results$Sport <- substr(results$Sport, 1, 3)
+
+names(results) <- gsub(" ", "_", names(results))
+
+results
+
+
+```
+
+```{r}
+fit <- lm(Bet_Winnings ~ Odds_of_Winning + Potential_Winnings + Expected_Value + Sport, data = results)
+
+
+summary(fit)
+
+
+```
+```{r}
+fit_Sport <- lm(Bet_Winnings ~ Sport, data = results)
+
+fit_Odds <- lm(Bet_Winnings ~ Odds_of_Winning, data = results)
+
+fit_EV <- lm(Bet_Winnings ~ Expected_Value, data = results)
+
+fit_Potential <- lm(Bet_Winnings ~ Potential_Winnings, data = results)
+
+
+summary(fit_Sport)
+
+summary(fit_Odds)
+
+summary(fit_EV)
+
+summary(fit_Potential)
+```
+
+
+```{r}
+plot(fit)
+```
+```{r}
+library(olsrr)
+ols_plot_cooksd_bar(fit)
+```
+

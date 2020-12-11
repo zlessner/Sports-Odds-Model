@@ -1,9 +1,12 @@
 from urllib.request import urlretrieve as retrieve
 from moneyline.moneylineNCAAF import theOddsAPIGames
-from moneyline.moneylineSoccer import stringGameDate
+from moneyline.moneylineSoccer import stringGameDate, futureNFLGame, pastNFLGame
 import csv
 import time
 from datetime import datetime
+
+stringGameWeek= str(futureNFLGame)
+stringGamePast = str(pastNFLGame)
 
 
 url = 'https://thepredictiontracker.com/ncaapredictions.csv'
@@ -53,11 +56,12 @@ OddsB=[]
 #Adding first team to AlphaAPI, second team to BetaAPI, first teams odds to OddsA, and second team odds to OddsB
 
 for i in eventsAPI:
+    if (datetime.utcfromtimestamp((eventsAPI[i][1][0])-30000).strftime('%Y-%m-%d') >= stringGameDate and datetime.utcfromtimestamp((eventsAPI[i][1][0])-30000).strftime('%Y-%m-%d') <= stringGameWeek):
     # if (datetime.utcfromtimestamp((eventsAPI[i][1][0])-30000).strftime('%Y-%m-%d') == stringGameDate):
-    AlphaAPIx.append(eventsAPI[i][2][0][0])
-    BetaAPIx.append(eventsAPI[i][2][0][1])
-    OddsA.append(eventsAPI[i][3][0]['h2h'][0])
-    OddsB.append(eventsAPI[i][3][0]['h2h'][1])
+        AlphaAPIx.append(eventsAPI[i][2][0][0])
+        BetaAPIx.append(eventsAPI[i][2][0][1])
+        OddsA.append(eventsAPI[i][3][0]['h2h'][0])
+        OddsB.append(eventsAPI[i][3][0]['h2h'][1])
 
 
 #Cleaning up API names strings so that they match KenPom names strings
@@ -80,7 +84,7 @@ for i in range(len(AlphaAPI)):
         try:
             if (AlphaAPI[i]).lower() == (CFB_weekly_games[j][0].lower()):
                 homeAlphaOdds = int((((OddsA[i])-1)*100)*(float(CFB_weekly_games[j][2]))-(100*(1-(float(CFB_weekly_games[j][2])))))
-                if (homeAlphaOdds>10):
+                if (homeAlphaOdds>7):
                     teamsToBetCFB.append({AlphaAPI[i]: homeAlphaOdds})
                     potential_winnings.append(int(((OddsA[i])-1)*100))
                     winning_odds.append(float(CFB_weekly_games[j][2]))
@@ -90,7 +94,7 @@ for i in range(len(AlphaAPI)):
         try:    
             if (BetaAPI[i]).lower() == (CFB_weekly_games[j][1].lower()):
                 awayBetaOdds = int((((OddsB[i])-1)*100)*(float(CFB_weekly_games[j][3]))-(100*(1-(float(CFB_weekly_games[j][3])))))
-                if (awayBetaOdds>10):
+                if (awayBetaOdds>7):
                     teamsToBetCFB.append({BetaAPI[i]: awayBetaOdds})
                     potential_winnings.append(int(((OddsB[i])-1)*100))
                     winning_odds.append(float(CFB_weekly_games[j][3]))
@@ -100,7 +104,7 @@ for i in range(len(AlphaAPI)):
         try:
             if (AlphaAPI[i]).lower() == (CFB_weekly_games[j][1].lower()):
                 awayAlphaOdds = int((((OddsA[i])-1)*100)*(float(CFB_weekly_games[j][3]))-(100*(1-(float(CFB_weekly_games[j][3])))))
-                if (awayAlphaOdds>10):
+                if (awayAlphaOdds>7):
                     teamsToBetCFB.append({AlphaAPI[i]: awayAlphaOdds})
                     potential_winnings.append(int(((OddsA[i])-1)*100))
                     winning_odds.append(float(CFB_weekly_games[j][3]))
@@ -110,7 +114,7 @@ for i in range(len(AlphaAPI)):
         try:    
             if (BetaAPI[i]).lower() == (CFB_weekly_games[j][0].lower()):
                 homeBetaOdds = int((((OddsB[i])-1)*100)*(float(CFB_weekly_games[j][2]))-(100*(1-(float(CFB_weekly_games[j][2])))))
-                if (homeBetaOdds>10):
+                if (homeBetaOdds>7):
                     teamsToBetCFB.append({BetaAPI[i]: homeBetaOdds})
                     potential_winnings.append(int(((OddsB[i])-1)*100))
                     winning_odds.append(float(CFB_weekly_games[j][2]))

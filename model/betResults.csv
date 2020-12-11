@@ -285,3 +285,51 @@ Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnin
 12/5/20 7:49,12/6/20,NFL,NYG,100,0.222381378,400,11,NYG,400,12/6/20_NFL_NYG
 12/5/20 16:57,12/6/20,NFL,CHI,100,0.693671507,57,8,No Win,-100,12/6/20_NFL_CHI
 12/5/20 16:57,12/6/20,NFL,ARI,100,0.482920388,124,8,No Win,-100,12/6/20_NFL_ARI
+12/5/20 16:57,12/7/20,NFL,PIT,100,0.825951581,33,9,No Win,-100,12/7/20_NFL_PIT
+12/6/20 14:34,12/7/20,Soccer Portuguese Liga,SC Farense,100,0.4974,125,11,SC Farense,125,12/7/20_Soccer Portuguese Liga_SC Farense
+12/6/20 15:25,12/7/20,Soccer Brasileiro S√©rie A,Goiás,100,0.2145,450,17,Goiás,450,12/7/20_Soccer Brasileiro S√©rie A_Goiás
+12/6/20 14:11,12/7/20,CBB,UNC Wilmington,100,0.19,500,13,No Win,-100,12/7/20_CBB_UNC Wilmington
+12/6/20 14:11,12/7/20,CBB,South Carolina St.,100,0.05,2200,15,No Win,-100,12/7/20_CBB_South Carolina St.
+12/6/20 14:11,12/7/20,CBB,Middle Tennessee,100,0.61,85,12,No Win,-100,12/7/20_CBB_Middle Tennessee
+12/6/20 14:11,12/7/20,CBB,Morehead St.,100,0.18,560,18,No Win,-100,12/7/20_CBB_Morehead St.
+12/7/20 10:07,12/7/20,CBB,North Carolina Central,100,0.22,420,14,No Win,-100,12/7/20_CBB_North Carolina Central
+12/7/20 14:22,12/7/20,CBB,North Florida,100,0.39,245,34,No Win,-100,12/7/20_CBB_North Florida
+12/7/20 14:22,12/7/20,CBB,Lipscomb,100,0.73,54,12,No Win,-100,12/7/20_CBB_Lipscomb
+12/7/20 21:29,12/8/20,Soccer Champions League,Zenit St Petersburg,100,0.2454,359,12,No Win,-100,12/8/20_Soccer Champions League_Zenit St Petersburg
+12/7/20 21:29,12/8/20,Soccer Champions League,Club Brugge,100,0.2768,390,35,No Win,-100,12/8/20_Soccer Champions League_Club Brugge
+12/7/20 21:33,12/8/20,Soccer English League Championship,Huddersfield Town,100,0.44,150,9,Huddersfield Town,150,12/8/20_Soccer English League Championship_Huddersfield Town
+12/7/20 21:35,12/8/20,Soccer English League Two,Grimsby Town,100,0.2905,353,31,No Win,-100,12/8/20_Soccer English League Two_Grimsby Town
+12/7/20 21:35,12/8/20,Soccer English League Two,Colchester United,100,0.4436,177,22,Colchester United,177,12/8/20_Soccer English League Two_Colchester United
+12/8/20 14:44,12/8/20,Soccer English League Championship,Stoke City,100,0.3861,190,11,No Win,-100,12/8/20_Soccer English League Championship_Stoke City
+12/8/20 14:44,12/8/20,Soccer English League Championship,Rotherham United,100,0.1616,650,21,No Win,-100,12/8/20_Soccer English League Championship_Rotherham United
+12/8/20 14:44,12/8/20,Soccer English League Championship,Rotherham United Draw,100,0.2535,340,11,No Win,-100,12/8/20_Soccer English League Championship_Rotherham United Draw
+12/7/20 21:41,12/8/20,CBB,Stetson,100,0.14,750,19,No Win,-100,12/8/20_CBB_Stetson
+12/7/20 21:41,12/8/20,CBB,Montana,100,0.22,420,14,No Win,-100,12/8/20_CBB_Montana
+12/8/20 9:47,12/8/20,CBB,Creighton,100,0.39,179,9,No Win,-100,12/8/20_CBB_Creighton
+12/7/20 21:41,12/8/20,CBB,Northern Illinois,100,0.29,290,13,No Win,-100,12/8/20_CBB_Northern Illinois
+12/8/20 9:47,12/8/20,CBB,Campbell,100,0.5,116,8,Campbell,116,12/8/20_CBB_Campbell
+12/8/20 17:36,12/8/20,CBB,Murray St.,100,0.69,62,12,Murray St.,62,12/8/20_CBB_Murray St.
+12/7/20 21:41,12/8/20,CBB,Jackson St.,100,0.07,1500,11,No Win,-100,12/8/20_CBB_Jackson St.
+12/8/20 17:30,12/9/20,Soccer English League Championship,Wycombe Wanderers,100,0.2466,480,43,No Win,-100,12/9/20_Soccer English League Championship_Wycombe Wanderers
+12/8/20 21:31,12/9/20,Soccer Norwegian Tippeligaen,Haugesund,100,0.2691,330,15,No Win,-100,12/9/20_Soccer Norwegian Tippeligaen_Haugesund
+12/8/20 21:31,12/9/20,Soccer Norwegian Tippeligaen,IK Start,100,0.4708,129,8,No Win,-100,12/9/20_Soccer Norwegian Tippeligaen_IK Start
+12/9/20 8:43,12/9/20,Soccer English League Championship,Barnsley Draw,100,0.2978,275,11,No Win,-100,12/9/20_Soccer English League Championship_Barnsley Draw
+12/8/20 17:35,12/9/20,CBB,Toledo,100,0.14,700,12,No Win,-100,12/9/20_CBB_Toledo
+12/8/20 17:35,12/9/20,CBB,Stony Brook,100,0.23,400,15,No Win,-100,12/9/20_CBB_Stony Brook
+12/8/20 17:35,12/9/20,CBB,North Carolina A&T,100,0.05,2400,25,No Win,-100,12/9/20_CBB_North Carolina A&T
+12/8/20 17:35,12/9/20,CBB,Oklahoma,100,0.56,100,12,No Win,-100,12/9/20_CBB_Oklahoma
+12/9/20 8:38,12/9/20,CBB,Abilene Christian,100,0.07,1500,11,No Win,-100,12/9/20_CBB_Abilene Christian
+12/9/20 8:38,12/9/20,CBB,Eastern Illinois,100,0.72,51,8,No Win,-100,12/9/20_CBB_Eastern Illinois
+12/9/20 8:38,12/9/20,CBB,Georgia Tech,100,0.54,104,10,Georgia Tech,104,12/9/20_CBB_Georgia Tech
+12/8/20 17:35,12/9/20,CBB,Liberty,100,0.17,570,13,No Win,-100,12/9/20_CBB_Liberty
+12/8/20 17:35,12/9/20,CBB,Denver,100,0.2,900,99,No Win,-100,12/9/20_CBB_Denver
+12/8/20 17:35,12/9/20,CBB,San Diego,100,0.1,1500,59,No Win,-100,12/9/20_CBB_San Diego
+12/9/20 8:38,12/9/20,CBB,Northwestern,100,0.68,61,9,No Win,-100,12/9/20_CBB_Northwestern
+12/10/20 10:20,12/10/20,Soccer Norwegian Tippeligaen,Viking FK,100,0.398,188,14,No Win,-100,12/10/20_Soccer Norwegian Tippeligaen_Viking FK
+12/9/20 17:21,12/10/20,Soccer UEFA Europa League,Arsenal Draw,100,0.1871,750,59,No Win,-100,12/10/20_Soccer UEFA Europa League_Arsenal Draw
+12/9/20 21:09,12/10/20,CBB,Coppin St.,100,0.09,1400,34,Coppin St.,1400,12/10/20_CBB_Coppin St.
+12/9/20 21:09,12/10/20,CBB,Northern Arizona,100,0.31,295,22,No Win,-100,12/10/20_CBB_Northern Arizona
+12/10/20 9:24,12/10/20,CBB,New Orleans,100,0.37,215,16,No Win,-100,12/10/20_CBB_New Orleans
+12/10/20 9:24,12/10/20,CBB,North Dakota,100,0.45,152,13,North Dakota,152,12/10/20_CBB_North Dakota
+12/9/20 21:09,12/10/20,CBB,Long Beach St.,100,0.09,1300,25,No Win,-100,12/10/20_CBB_Long Beach St.
+12/9/20 22:31,12/10/20,NFL,NE,100,0.355085382,210,10,No Win,-100,12/10/20_NFL_NE

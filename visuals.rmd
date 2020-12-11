@@ -95,5 +95,14 @@ ggplot(data = results, mapping = aes(x = Odds_of_Winning, y = Expected_Value)) +
   geom_smooth(colour = '#228B22', se = F) +
   facet_wrap( ~ Sport) +
   theme_bw()
+
+ggplot(data = results, mapping = aes(x = Potential_Winnings, y = Bet_Winnings)) +
+  geom_point() +
+  ggtitle("Potential Winnings vs Betting Winnings") +
+  scale_y_continuous(trans = pseudolog10_trans) +
+  scale_x_log10() +
+  geom_smooth(colour = '#228B22', se = F) +
+  facet_wrap( ~ Sport) +
+  theme_bw()
 ```
 
