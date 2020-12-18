@@ -20,8 +20,21 @@ eventsAPI = {}
 
 for i in range(len(theOddsAPIGames)):
     for j in range(len(theOddsAPIGames[i]['sites'])):
-        eventsAPI[i] = [theOddsAPIGames[i]['sport_key']], [theOddsAPIGames[i]['commence_time']], [theOddsAPIGames[i]['teams']], [theOddsAPIGames[i]['sites'][j]['odds']]
-        break
+        if theOddsAPIGames[i]['sites'][j]['site_key'] == 'mybookieag':
+            eventsAPI[i] = [theOddsAPIGames[i]['sport_key']], [theOddsAPIGames[i]['commence_time']], [theOddsAPIGames[i]['teams']], [theOddsAPIGames[i]['sites'][j]['odds']], [theOddsAPIGames[i]['sites'][j]['site_key']]
+            break
+
+
+# print(eventsAPI)
+
+
+# sites=[]
+# for i in range(len(theOddsAPIGames)):
+#         sites.append([theOddsAPIGames[i]])
+        
+# for i in range(len(theOddsAPIGames)):
+#     for j in range(len(theOddsAPIGames)):
+#         print(sites[j][j]['sites'][j]['site_key'])
 
 
 AlphaAPIx=[]

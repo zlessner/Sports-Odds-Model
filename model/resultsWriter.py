@@ -116,7 +116,7 @@ def yesterdayCSV(yesterdayTeam, sports, playedTeams):
         dfResults = pd.read_csv('betResults.csv')
         for i in range(len(dfToday)):
             winnersTable ='No Win'
-            betWinnings = -100
+            betWinnings = -1*(dfToday['Bet Amount'][i])
             for j in range(len(yesterdayTeam)):
                 if sport != 'CBB':           
                     if dfToday['Team'][i] == yesterdayTeam[j][9]:
