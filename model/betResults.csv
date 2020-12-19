@@ -504,6 +504,32 @@ Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnin
 12/16/20 21:25,12/17/20,CBB,Wagner,50,0.29,210,25,No Win,-50,12/17/20_CBB_Wagner
 12/17/20 13:31,12/17/20,CBB,Sacred Heart,50,0.39,120,16,Sacred Heart,120,12/17/20_CBB_Sacred Heart
 12/16/20 17:05,12/17/20,CBB,North Dakota,50,0.3,135,5.5,No Win,-50,12/17/20_CBB_North Dakota
-12/17/20 13:46,12/17/20,CBB,North Dakota,50,0.3,150,10.0,No Win,-50,12/17/20_CBB_North Dakota
-2020-12-18 09:40:14,12/18/20,Soccer Russian Premier Liga,FC Tambov,100,0.3567,260,28.0,No Win,-100,12/18/20_Soccer Russian Premier Liga_FC Tambov
-2020-12-18 11:15:49,12/18/20,CBB,VMI,100,0.4,170,8.0,No Win,-100,12/18/20_CBB_VMI
+12/17/20 13:46,12/17/20,CBB,North Dakota,50,0.3,150,10,No Win,-50,12/17/20_CBB_North Dakota
+12/18/20 9:40,12/18/20,Soccer Russian Premier Liga,FC Tambov,100,0.3567,260,28,No Win,-100,12/18/20_Soccer Russian Premier Liga_FC Tambov
+12/18/20 11:15,12/18/20,CBB,VMI,100,0.4,170,8,No Win,-100,12/18/20_CBB_VMI
+12/17/20 17:10,12/18/20,CBB,Howard,100,0.69,85,27,Howard,85,12/18/20_CBB_Howard
+12/17/20 17:10,12/18/20,CBB,Davidson,100,0.38,188,9,Davidson,188,12/18/20_CBB_Davidson
+12/17/20 17:10,12/18/20,CBB,Chicago St.,100,0.1,1300,39,No Win,-100,12/18/20_CBB_Chicago St.
+12/17/20 17:10,12/18/20,CBB,Florida A&M,100,0.06,2000,26,No Win,-100,12/18/20_CBB_Florida A&M
+12/17/20 17:10,12/18/20,CBB,Air Force,100,0.17,660,29,No Win,-100,12/18/20_CBB_Air Force
+12/18/20 9:28,12/18/20,CBB,North Dakota,100,0.25,340,10,No Win,-100,12/18/20_CBB_North Dakota
+12/18/20 9:28,12/18/20,CBB,South Dakota,100,0.35,235,17,No Win,-100,12/18/20_CBB_South Dakota
+12/18/20 9:28,12/18/20,CBB,Northwestern St.,100,0.1,1100,19,No Win,-100,12/18/20_CBB_Northwestern St.
+12/18/20 9:28,12/18/20,CBB,Montana St.,100,0.33,250,15,No Win,-100,12/18/20_CBB_Montana St.
+12/18/20 9:34,12/18/20,CBB,Norfolk St.,100,0.56,93,8,No Win,-100,12/18/20_CBB_Norfolk St.
+12/18/20 11:15,12/18/20,CBB,South Carolina St.,100,0.22,400,9,No Win,-100,12/18/20_CBB_South Carolina St.
+12/18/20 11:15,12/18/20,CBB,Rider,100,0.56,104,14,No Win,-100,12/18/20_CBB_Rider
+12/18/20 15:12,12/18/20,CBB,Portland St.,100,0.55,102,11,No Win,-100,12/18/20_CBB_Portland St.
+12/18/20 15:44,12/18/20,CBB,Florida A&M,100,0.06,2500,56,No Win,-100,12/18/20_CBB_Florida A&M
+12/18/20 15:51,12/18/20,CBB,Chicago St.,100,0.1,1500,59,No Win,-100,12/18/20_CBB_Chicago St.
+12/17/20 17:14,12/18/20,Soccer French Ligue 2,Troyes,100,0.6531,68,9,Troyes,68,12/18/20_Soccer French Ligue 2_Troyes
+12/17/20 17:14,12/18/20,Soccer French Ligue 2,AS Nancy Lorraine,100,0.3001,280,14,No Win,-100,12/18/20_Soccer French Ligue 2_AS Nancy Lorraine
+12/17/20 17:14,12/18/20,Soccer French Ligue 2,Grenoble,100,0.4195,175,15,No Win,-100,12/18/20_Soccer French Ligue 2_Grenoble
+12/18/20 9:42,12/18/20,Soccer English League One,Hull City,100,0.4633,150,15,No Win,-100,12/18/20_Soccer English League One_Hull City
+12/18/20 9:42,12/18/20,Soccer Spanish Segunda Division,SD Ponferradina,100,0.3499,254,24,SD Ponferradina,254,12/18/20_Soccer Spanish Segunda Division_SD Ponferradina
+12/18/20 9:43,12/18/20,Soccer Italy Serie B,Virtus Entella,100,0.3611,220,15,No Win,-100,12/18/20_Soccer Italy Serie B_Virtus Entella
+12/18/20 9:53,12/19/20,Soccer English League Championship,Wycombe Wanderers,100,0.3372,229,11,No Win,-100,12/19/20_Soccer English League Championship_Wycombe Wanderers
+12/18/20 9:53,12/19/20,Soccer English League Championship,Stoke City,100,0.4229,170,14,Stoke City,170,12/19/20_Soccer English League Championship_Stoke City
+12/18/20 9:59,12/19/20,Soccer Japanese J League,Shimizu S-Pulse,100,0.268,390,31,Shimizu S-Pulse,390,12/19/20_Soccer Japanese J League_Shimizu S-Pulse
+12/18/20 9:59,12/19/20,Soccer Japanese J League,Sanfrecce Hiroshima Draw,100,0.2977,280,13,No Win,-100,12/19/20_Soccer Japanese J League_Sanfrecce Hiroshima Draw
+12/18/20 9:59,12/19/20,Soccer Japanese J League,Cerezo Osaka,100,0.3285,290,28,No Win,-100,12/19/20_Soccer Japanese J League_Cerezo Osaka

@@ -20,6 +20,7 @@ eventsAPI = {}
 
 for i in range(len(theOddsAPIGames)):
     for j in range(len(theOddsAPIGames[i]['sites'])):
+        # print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]])
         if theOddsAPIGames[i]['sites'][j]['site_key'] == 'mybookieag':
             eventsAPI[i] = [theOddsAPIGames[i]['sport_key']], [theOddsAPIGames[i]['commence_time']], [theOddsAPIGames[i]['teams']], [theOddsAPIGames[i]['sites'][j]['odds']], [theOddsAPIGames[i]['sites'][j]['site_key']]
             break

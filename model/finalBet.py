@@ -13,6 +13,10 @@ elif sport == 'CFB':
     from modelNCAAF import teamsToBetCFB, potential_winnings, winning_odds, CFB_weekly_games
     teamOdds(teamsToBetCFB)
 
+elif sport == 'NBA':
+    from modelNBA import teamsToBetNBA, potential_winnings, winning_odds, FiveThirtyEightGamesYesterday, playedTeams
+    teamOdds(teamsToBetNBA)
+
 elif sport == 'CBB':
     from modelCBB import teamsToBetCBB, potential_winnings, winning_odds, FiveThirtyEightGamesYesterday, playedTeams
     teamOdds(teamsToBetCBB)

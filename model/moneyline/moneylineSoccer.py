@@ -51,7 +51,7 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 
 soccer = False
 
-sport = "soccer_epl"
+sport = "soccer_brazil_campeonato"
 
 querystring = {"sport":sport,"region":"us","mkt":"h2h"}
 
@@ -69,7 +69,7 @@ gameDate = datetime.date.today()
 
 gameWeek = gameDate + datetime.timedelta(6)
 
-futureGame = gameDate + datetime.timedelta(0)
+futureGame = gameDate + datetime.timedelta(4)
 
 # so that date is same format in csv and excel
 
@@ -174,6 +174,6 @@ if sport == "soccer_spl":
     
 
 # Comment sport out if soccer
-sport = 'CBB'  
+sport = 'NBA'  
     
 
