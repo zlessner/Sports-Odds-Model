@@ -18,18 +18,18 @@ elif sport == 'NBA':
     teamOdds(teamsToBetNBA)
 
 elif sport == 'CBB':
-    from modelCBB import teamsToBetCBB, potential_winnings, winning_odds, FiveThirtyEightGamesYesterday, playedTeams
+    from modelCBB import teamsToBetCBB, potential_winnings, winning_odds, FiveThirtyEightGamesYesterday, playedTeams, winning_book
     teamOdds(teamsToBetCBB)
     
 
 else:
-    from resultsWriter import potential_winnings, winning_odds, dfToday, teamsToBet1
+    from resultsWriter import potential_winnings, winning_odds, dfToday, teamsToBet1, winning_book
     from modelSoccer import FiveThirtyEightGamesYesterday, playedTeams, winnerTeams
     teamOdds(teamsToBet1)
 
 
 
-today_csv(sport, winning_odds, potential_winnings, finalValues)
+today_csv(sport, winning_odds, potential_winnings, finalValues, winning_book)
 
 yesterdayCSV(FiveThirtyEightGamesYesterday, sport, playedTeams)
 

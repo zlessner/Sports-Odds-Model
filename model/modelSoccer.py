@@ -38,6 +38,8 @@ playedTeams = []
 
 winnerTeams = []
 
+winning_book = []
+
 def pastResults(fullList):
 
     # List of completed games to get results from

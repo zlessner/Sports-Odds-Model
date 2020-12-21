@@ -441,6 +441,8 @@ Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnin
 12/12/20 21:20,12/13/20,CBB,Georgia Southern,100,0.39,190,13,No Win,-100,12/13/20_CBB_Georgia Southern
 12/12/20 21:20,12/13/20,CBB,South Carolina St.,100,0.17,570,13,No Win,-100,12/13/20_CBB_South Carolina St.
 12/13/20 20:19,12/14/20,CBB,William & Mary,100,0.33,265,20,William & Mary,265,12/14/20_CBB_William & Mary
+12/13/20 20:19,12/14/20,CBB,Marquette,100,0.3,265,9,Marquette,265,12/14/20_CBB_Marquette
+12/13/20 15:40,12/14/20,CBB,San Diego,100,0.47,158,21,No Win,-100,12/14/20_CBB_San Diego
 12/14/20 15:58,12/14/20,CBB,Longwood,100,0.39,188,12,No Win,-100,12/14/20_CBB_Longwood
 12/13/20 20:35,12/14/20,Soccer Italy Serie B,Reggina,100,0.3963,179,10,No Win,-100,12/14/20_Soccer Italy Serie B_Reggina
 12/13/20 22:32,12/14/20,Soccer Spanish Segunda Division,Girona FC,100,0.4166,192,21,No Win,-100,12/14/20_Soccer Spanish Segunda Division_Girona FC
@@ -520,6 +522,7 @@ Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnin
 12/18/20 11:15,12/18/20,CBB,South Carolina St.,100,0.22,400,9,No Win,-100,12/18/20_CBB_South Carolina St.
 12/18/20 11:15,12/18/20,CBB,Rider,100,0.56,104,14,No Win,-100,12/18/20_CBB_Rider
 12/18/20 15:12,12/18/20,CBB,Portland St.,100,0.55,102,11,No Win,-100,12/18/20_CBB_Portland St.
+12/17/20 17:10,12/18/20,CBB,Northern Arizona,100,0.17,730,41,No Win,-100,12/18/20_CBB_Northern Arizona
 12/18/20 15:44,12/18/20,CBB,Florida A&M,100,0.06,2500,56,No Win,-100,12/18/20_CBB_Florida A&M
 12/18/20 15:51,12/18/20,CBB,Chicago St.,100,0.1,1500,59,No Win,-100,12/18/20_CBB_Chicago St.
 12/17/20 17:14,12/18/20,Soccer French Ligue 2,Troyes,100,0.6531,68,9,Troyes,68,12/18/20_Soccer French Ligue 2_Troyes
@@ -533,3 +536,54 @@ Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnin
 12/18/20 9:59,12/19/20,Soccer Japanese J League,Shimizu S-Pulse,100,0.268,390,31,Shimizu S-Pulse,390,12/19/20_Soccer Japanese J League_Shimizu S-Pulse
 12/18/20 9:59,12/19/20,Soccer Japanese J League,Sanfrecce Hiroshima Draw,100,0.2977,280,13,No Win,-100,12/19/20_Soccer Japanese J League_Sanfrecce Hiroshima Draw
 12/18/20 9:59,12/19/20,Soccer Japanese J League,Cerezo Osaka,100,0.3285,290,28,No Win,-100,12/19/20_Soccer Japanese J League_Cerezo Osaka
+12/18/20 15:03,12/19/20,CBB,Green Bay,100,0.55,98,8,No Win,-100,12/19/20_CBB_Green Bay
+12/18/20 15:03,12/19/20,CBB,Hofstra,100,0.18,590,24,No Win,-100,12/19/20_CBB_Hofstra
+12/18/20 15:03,12/19/20,CBB,Notre Dame,100,0.3,300,20,No Win,-100,12/19/20_CBB_Notre Dame
+12/18/20 15:03,12/19/20,CBB,Dayton,100,0.48,131,11,Dayton,131,12/19/20_CBB_Dayton
+12/18/20 15:03,12/19/20,CBB,Buffalo,100,0.12,810,9,No Win,-100,12/19/20_CBB_Buffalo
+12/18/20 15:03,12/19/20,CBB,Cal Poly,100,0.11,1100,31,No Win,-100,12/19/20_CBB_Cal Poly
+12/19/20 15:34,12/19/20,CBB,La Salle,100,0.69,61,11,La Salle,61,12/19/20_CBB_La Salle
+12/19/20 15:34,12/19/20,CBB,Rider,100,0.49,140,17,No Win,-100,12/19/20_CBB_Rider
+12/18/20 9:49,12/19/20,CFB,Northwestern,100,0.156435648,650,17,No Win,-100,12/19/20_CFB_Northwestern
+12/18/20 9:49,12/19/20,CFB,Tennessee,100,0.223437489,430,18,No Win,-100,12/19/20_CFB_Tennessee
+12/18/20 9:49,12/19/20,CFB,Washington St.,100,0.266332842,309,9,No Win,-100,12/19/20_CFB_Washington St.
+12/18/20 9:49,12/19/20,CFB,LSU,100,0.646543715,110,35,LSU,110,12/19/20_CFB_LSU
+12/18/20 9:49,12/19/20,CFB,Notre Dame,100,0.351590601,265,28,No Win,-100,12/19/20_CFB_Notre Dame
+12/18/20 9:49,12/19/20,CFB,San Jose St.,100,0.373245372,200,11,San Jose St.,200,12/19/20_CFB_San Jose St.
+12/18/20 9:49,12/19/20,CFB,Illinois,100,0.196789695,475,13,No Win,-100,12/19/20_CFB_Illinois
+12/18/20 9:49,12/19/20,CFB,Stanford,100,0.351293428,220,12,Stanford,220,12/19/20_CFB_Stanford
+12/18/20 9:49,12/19/20,CFB,Oregon St.,100,0.343611429,229,13,No Win,-100,12/19/20_CFB_Oregon St.
+12/18/20 13:59,12/20/20,Soccer Barclays Premier League,Sheffield United,100,0.2212,428,16,No Win,-100,12/20/20_Soccer Barclays Premier League_Sheffield United
+12/19/20 15:39,12/20/20,Soccer French Ligue 1,Brest,100,0.4064,204,23,No Win,-100,12/20/20_Soccer French Ligue 1_Brest
+12/19/20 15:39,12/20/20,Soccer French Ligue 1,Nimes,100,0.2189,475,25,No Win,-100,12/20/20_Soccer French Ligue 1_Nimes
+12/19/20 15:39,12/20/20,Soccer French Ligue 1,Nimes Draw,100,0.2805,330,20,Draw,330,12/20/20_Soccer French Ligue 1_Nimes Draw
+12/19/20 15:39,12/20/20,Soccer French Ligue 1,Lorient,100,0.2903,320,21,No Win,-100,12/20/20_Soccer French Ligue 1_Lorient
+12/19/20 15:40,12/20/20,Soccer Dutch Eredivisie,Heerenveen Draw,100,0.2644,320,11,No Win,-100,12/20/20_Soccer Dutch Eredivisie_Heerenveen Draw
+12/19/20 15:40,12/20/20,Soccer Dutch Eredivisie,ADO Den Haag,100,0.0563,3300,91,No Win,-100,12/20/20_Soccer Dutch Eredivisie_ADO Den Haag
+12/19/20 15:40,12/20/20,Soccer Dutch Eredivisie,ADO Den Haag Draw,100,0.1189,1100,42,No Win,-100,12/20/20_Soccer Dutch Eredivisie_ADO Den Haag Draw
+12/19/20 15:45,12/20/20,Soccer Portuguese Liga,Gil Vicente,100,0.164,660,24,No Win,-100,12/20/20_Soccer Portuguese Liga_Gil Vicente
+12/19/20 15:46,12/20/20,Soccer Scottish Premiership,Kilmarnock,100,0.3325,227,8,No Win,-100,12/20/20_Soccer Scottish Premiership_Kilmarnock
+12/19/20 15:46,12/20/20,Soccer Belgian Jupiler League,Club Brugge,100,0.7263,58,14,No Win,-100,12/20/20_Soccer Belgian Jupiler League_Club Brugge
+12/19/20 15:48,12/20/20,Soccer Spanish Segunda Division,Espanyol,100,0.5968,83,9,Espanyol,83,12/20/20_Soccer Spanish Segunda Division_Espanyol
+12/19/20 15:48,12/20/20,Soccer Spanish Segunda Division,Las Palmas,100,0.2191,490,29,No Win,-100,12/20/20_Soccer Spanish Segunda Division_Las Palmas
+12/19/20 15:48,12/20/20,Soccer German Bundesliga 2,Fortuna Düsseldorf,100,0.4407,170,18,Fortuna Düsseldorf,170,12/20/20_Soccer German Bundesliga 2_Fortuna Düsseldorf
+12/19/20 15:48,12/20/20,Soccer Danish SAS-Ligaen,AGF Aarhus,100,0.53,104,8,AGF Aarhus,104,12/20/20_Soccer Danish SAS-Ligaen_AGF Aarhus
+12/20/20 9:05,12/20/20,Soccer Barclays Premier League,Tottenham Hotspur,100,0.5233,110,9,No Win,-100,12/20/20_Soccer Barclays Premier League_Tottenham Hotspur
+12/20/20 11:14,12/20/20,CBB,Rutgers,100,0.53,114,13,Rutgers,114,12/20/20_CBB_Rutgers
+12/19/20 15:56,12/20/20,CBB,Oral Roberts,100,0.06,2000,26,No Win,-100,12/20/20_CBB_Oral Roberts
+12/19/20 15:56,12/20/20,CBB,Robert Morris,100,0.09,1400,34,No Win,-100,12/20/20_CBB_Robert Morris
+12/20/20 11:14,12/20/20,CBB,Marist,100,0.6,120,32,Marist,120,12/20/20_CBB_Marist
+12/19/20 15:56,12/20/20,CBB,Oklahoma St.,100,0.25,340,10,No Win,-100,12/20/20_CBB_Oklahoma St.
+12/19/20 15:56,12/20/20,CBB,Minnesota,100,0.48,138,14,Minnesota,138,12/20/20_CBB_Minnesota
+12/19/20 15:56,12/20/20,CBB,Washington,100,0.23,459,28,No Win,-100,12/20/20_CBB_Washington
+12/20/20 11:14,12/20/20,CBB,Portland St.,100,0.42,165,11,Portland St.,165,12/20/20_CBB_Portland St.
+12/20/20 16:48,12/20/20,CBB,Northwestern,100,0.36,265,31,Northwestern,265,12/20/20_CBB_Northwestern
+12/19/20 15:38,12/20/20,Soccer Spanish Primera Division,Eibar,100,0.1893,575,27,No Win,-100,12/20/20_Soccer Spanish Primera Division_Eibar
+12/19/20 15:46,12/20/20,Soccer Belgian Jupiler League,Waasland-Beveren,100,0.2708,300,8,No Win,-100,12/20/20_Soccer Belgian Jupiler League_Waasland-Beveren
+12/19/20 15:49,12/20/20,Soccer Brasileiro S√©rie A,Vasco da Gama,100,0.3992,177,10,Vasco da Gama,177,12/20/20_Soccer Brasileiro S√©rie A_Vasco da Gama
+12/19/20 15:49,12/20/20,Soccer Brasileiro S√©rie A,Fortaleza,100,0.4547,159,17,No Win,-100,12/20/20_Soccer Brasileiro S√©rie A_Fortaleza
+12/19/20 15:36,12/20/20,NFL,ATL,100,0.325697021,235,9,No Win,-100,12/20/20_NFL_ATL
+12/19/20 15:36,12/20/20,NFL,WSH,100,0.428504478,240,45,No Win,-100,12/20/20_NFL_WSH
+12/19/20 15:36,12/20/20,NFL,PHI,100,0.331872797,229,9,No Win,-100,12/20/20_NFL_PHI
+12/19/20 15:36,12/20/20,NFL,NO,100,0.503808619,129,15,No Win,-100,12/20/20_NFL_NO
+12/19/20 15:36,12/20/20,NFL,NYG,100,0.394976064,240,34,No Win,-100,12/20/20_NFL_NYG
