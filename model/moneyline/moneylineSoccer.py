@@ -49,9 +49,9 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 
 #change sport to any of the different soccer leagues above
 
-soccer = False
+soccer = True
 
-sport = "soccer_portugal_primeira_liga"
+sport = "soccer_brazil_campeonato"
 
 querystring = {"sport":sport,"region":"us","mkt":"h2h"}
 
@@ -174,6 +174,6 @@ if sport == "soccer_spl":
     
 
 # Comment sport out if soccer
-sport = 'CBB'  
+# sport = 'NBA'  
     
 

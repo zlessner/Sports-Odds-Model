@@ -38,8 +38,6 @@ playedTeams = []
 
 winnerTeams = []
 
-winning_book = []
-
 def pastResults(fullList):
 
     # List of completed games to get results from
@@ -85,10 +83,60 @@ pastResults(fullList)
 
 eventsAPI = {}
 
+First = []
+Second = []
+draw = []
+bestFirst = 0
+bestSecond = 0
+bestDraw = []
+bookFirst = []
+bookSecond = []
+bookDraw = []
+bestBookFirst = ''
+bestBookSecond = ''
+bestBookDraw = ''
+bestFirst = 0
+bestSecond = 0
+bestDraw = 0
+
+
+# Extracting best odds and sportbook names with best odds
 for i in range(len(theOddsAPIGames)):
+    
     for j in range(len(theOddsAPIGames[i]['sites'])):
-        eventsAPI[i] = [theOddsAPIGames[i]['sport_key']], [theOddsAPIGames[i]['commence_time']], [theOddsAPIGames[i]['teams']], [theOddsAPIGames[i]['sites'][j]['odds']]
-        break
+
+        # if I wanted to use just one specific sports book use the below code
+        # if theOddsAPIGames[i]['sites'][j]['site_key'] == 'mybookieag':
+            # print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]])
+            # First.append(([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]))
+
+        # if theOddsAPIGames[i]['sites'][j]['site_key'] == 'gtbets':
+        #     print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]])
+
+
+        eventsAPI[i] = [theOddsAPIGames[i]['sport_key']], [theOddsAPIGames[i]['commence_time']], [theOddsAPIGames[i]['teams']], [theOddsAPIGames[i]['sites'][j]['odds']], [theOddsAPIGames[i]['sites'][j]['site_key']]
+        # break
+
+        if (datetime.utcfromtimestamp((eventsAPI[i][1][0]-30000)).strftime('%Y-%m-%d') == stringGameDate):
+            if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0] > bestFirst:
+                bestFirst = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]
+                bestBookFirst = theOddsAPIGames[i]['sites'][j]['site_key']
+            if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0] > bestSecond:
+                bestSecond = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0]
+                bestBookSecond = theOddsAPIGames[i]['sites'][j]['site_key']
+            if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][2]][0] > bestDraw:
+                bestDraw = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][2]][0]
+                bestBookDraw = theOddsAPIGames[i]['sites'][j]['site_key']
+
+    First.append(bestFirst)
+    Second.append(bestSecond)
+    draw.append(bestDraw)
+    bookFirst.append(bestBookFirst)
+    bookSecond.append(bestBookSecond)
+    bookDraw.append(bestBookDraw)
+    bestFirst = 0
+    bestSecond = 0
+    bestDraw = 0
 
 
 
@@ -96,9 +144,6 @@ AlphaAPIx=[]
 BetaAPIx=[]
 AlphaAPI=[]
 BetaAPI=[]
-OddsA=[]
-OddsB=[]
-OddsC=[]
 
 #Adding first team to AlphaAPI, second team to BetaAPI, first teams odds to OddsA, second team odds to OddsB, and draw odds to OddsC
 
@@ -106,9 +151,9 @@ for i in eventsAPI:
     if (datetime.utcfromtimestamp(eventsAPI[i][1][0]).strftime('%Y-%m-%d') == stringGameDate):
         AlphaAPIx.append(eventsAPI[i][2][0][0])
         BetaAPIx.append(eventsAPI[i][2][0][1])
-        OddsA.append(eventsAPI[i][3][0]['h2h'][0])
-        OddsB.append(eventsAPI[i][3][0]['h2h'][1])
-        OddsC.append(eventsAPI[i][3][0]['h2h'][2])
+        # OddsA.append(eventsAPI[i][3][0]['h2h'][0])
+        # OddsB.append(eventsAPI[i][3][0]['h2h'][1])
+        # OddsC.append(eventsAPI[i][3][0]['h2h'][2])
 
 
 #Slightly altering names to match up to 538
@@ -126,48 +171,55 @@ for i in range(len(AlphaAPIx)):
 teamsToBet1=[]
 potential_winnings=[]
 winning_odds=[]
+winning_book=[]
 
 def Prediction():
 
     for i in range(len(AlphaAPI)):
         for j in range(len(FiveThirtyEightGames)):
             if AlphaAPI[i] == FiveThirtyEightGames[j][2]:
-                homeAlphaOdds = int((((OddsA[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
-                homeAlphaDrawOdds = int((((OddsC[i])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
-                if (homeAlphaOdds>7):
-                    teamsToBet1.append({AlphaAPI[i]: homeAlphaOdds})
-                    potential_winnings.append(int(((OddsA[i])-1)*100))
+                FirstAlphaOdds = int((((Second[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
+                FirstAlphaDrawOdds = int((((draw[i])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
+                if (FirstAlphaOdds>7):
+                    teamsToBet1.append({AlphaAPI[i]: FirstAlphaOdds})
+                    potential_winnings.append(int(((Second[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][4]))
-                if (homeAlphaDrawOdds>7):
-                    teamsToBet1.append({AlphaAPI[i] + " Draw": homeAlphaDrawOdds})
+                    winning_book.append(bookSecond[i])
+                if (FirstAlphaDrawOdds>7):
+                    teamsToBet1.append({AlphaAPI[i] + " Draw": FirstAlphaDrawOdds})
                     winning_odds.append(float(FiveThirtyEightGames[j][6]))
-                    potential_winnings.append(int(((OddsC[i])-1)*100))
+                    potential_winnings.append(int(((draw[i])-1)*100))
+                    winning_book.append(bookDraw[i])
                 
             if BetaAPI[i] == FiveThirtyEightGames[j][3]:
-                awayBetaOdds = int((((OddsB[i])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
-                if (awayBetaOdds>7):
-                    teamsToBet1.append({BetaAPI[i]: awayBetaOdds})
-                    potential_winnings.append(int(((OddsB[i])-1)*100))
+                SecondBetaOdds = int((((First[i])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
+                if (SecondBetaOdds>7):
+                    teamsToBet1.append({BetaAPI[i]: SecondBetaOdds})
+                    potential_winnings.append(int(((First[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][5]))
+                    winning_book.append(bookFirst[i])
 
             if AlphaAPI[i] == FiveThirtyEightGames[j][3]:
-                awayAlphaOdds = int((((OddsA[i])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
-                awayAlphaDrawOdds = int((((OddsC[i])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
-                if (awayAlphaOdds>7):
-                    teamsToBet1.append({AlphaAPI[i]: awayAlphaOdds})
-                    potential_winnings.append(int(((OddsA[i])-1)*100))
+                SecondAlphaOdds = int((((Second[i])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
+                SecondAlphaDrawOdds = int((((draw[i])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
+                if (SecondAlphaOdds>7):
+                    teamsToBet1.append({AlphaAPI[i]: SecondAlphaOdds})
+                    potential_winnings.append(int(((Second[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][5]))
-                if (awayAlphaDrawOdds>7):
-                    teamsToBet1.append({AlphaAPI[i] + " Draw": awayAlphaDrawOdds})
+                    winning_book.append(bookSecond[i])
+                if (SecondAlphaDrawOdds>7):
+                    teamsToBet1.append({AlphaAPI[i] + " Draw": SecondAlphaDrawOdds})
                     winning_odds.append(float(FiveThirtyEightGames[j][6]))
-                    potential_winnings.append(int(((OddsC[i])-1)*100))
+                    potential_winnings.append(int(((draw[i])-1)*100))
+                    winning_book.append(bookDraw[i])
                 
             if BetaAPI[i] == FiveThirtyEightGames[j][2]:
-                homeBetaOdds = int((((OddsB[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
-                if (homeBetaOdds>7):
-                    teamsToBet1.append({BetaAPI[i]: homeBetaOdds})
-                    potential_winnings.append(int(((OddsB[i])-1)*100))
+                FirstBetaOdds = int((((First[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
+                if (FirstBetaOdds>7):
+                    teamsToBet1.append({BetaAPI[i]: FirstBetaOdds})
+                    potential_winnings.append(int(((First[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][4]))
+                    winning_book.append(bookFirst[i])
 
 
 Prediction()
@@ -175,6 +227,9 @@ Prediction()
  #Comment the below in if just want results for this one model          
     
 # print(teamsToBet1)
+
+# print(potential_winnings)
+# print(winning_book)
 
 
 teams = []

@@ -14,7 +14,7 @@ elif sport == 'CFB':
     teamOdds(teamsToBetCFB)
 
 elif sport == 'NBA':
-    from modelNBA import teamsToBetNBA, potential_winnings, winning_odds, FiveThirtyEightGamesYesterday, playedTeams
+    from modelNBA import teamsToBetNBA, potential_winnings, winning_odds, FiveThirtyEightGamesYesterday, playedTeams, winning_book
     teamOdds(teamsToBetNBA)
 
 elif sport == 'CBB':

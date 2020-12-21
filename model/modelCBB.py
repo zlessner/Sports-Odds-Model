@@ -18,69 +18,58 @@ fmPast = FanMatch(browser, date = stringYesterdayDate)
 
 eventsAPI = {}
 
-home = []
-away = []
-bestHome = 0
-bestAway = 0
-bookHome = []
-bookAway =[]
-# put all home and away odds (from all books) per game into array
+First = []
+Second = []
+bestFirst = 0
+bestSecond = 0
+bookFirst = []
+bookSecond = []
+bestBookFirst = ''
+bestBookSecond = ''
+bestFirst = 0
+bestSecond = 0
 
+
+# Extracting best odds and sportbook names with best odds
 for i in range(len(theOddsAPIGames)):
+    
     for j in range(len(theOddsAPIGames[i]['sites'])):
-        
+
+        # if I wanted to use just one specific sports book use the below code
         # if theOddsAPIGames[i]['sites'][j]['site_key'] == 'mybookieag':
             # print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]])
-            # home.append(([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]))
+            # First.append(([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]))
 
         # if theOddsAPIGames[i]['sites'][j]['site_key'] == 'gtbets':
         #     print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]])
 
 
         eventsAPI[i] = [theOddsAPIGames[i]['sport_key']], [theOddsAPIGames[i]['commence_time']], [theOddsAPIGames[i]['teams']], [theOddsAPIGames[i]['sites'][j]['odds']], [theOddsAPIGames[i]['sites'][j]['site_key']]
-        break
+        # break
 
-# print(home)
+        if (datetime.utcfromtimestamp((eventsAPI[i][1][0]-30000)).strftime('%Y-%m-%d') == stringGameDate):
+            if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0] > bestFirst:
+                bestFirst = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]
+                bestBookFirst = theOddsAPIGames[i]['sites'][j]['site_key']
+            if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0] > bestSecond:
+                bestSecond = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0]
+                bestBookSecond = theOddsAPIGames[i]['sites'][j]['site_key']
 
-# print(eventsAPI)
-
-for i in range(len(theOddsAPIGames)):
-    if (datetime.utcfromtimestamp((eventsAPI[i][1][0]-30000)).strftime('%Y-%m-%d') == stringGameDate):
-        for j in range(len(theOddsAPIGames[i]['sites'])):
-            # print(theOddsAPIGames[i]['sites'][j]['site_key'])
-            # print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0])
-            if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0] > bestHome:
-                bestHome = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]
-                bestBookHome = theOddsAPIGames[i]['sites'][j]['site_key']
-            if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0] > bestAway:
-                bestAway = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0]
-                bestBookAway = theOddsAPIGames[i]['sites'][j]['site_key']
-        # print("----")
-        home.append(bestHome)
-        away.append(bestAway)
-        bookHome.append(bestBookHome)
-        bookAway.append(bestBookAway)
-        bestHome = 0
-        bestAway = 0
+    First.append(bestFirst)
+    Second.append(bestSecond)
+    bookFirst.append(bestBookFirst)
+    bookSecond.append(bestBookSecond)
+    bestFirst = 0
+    bestSecond = 0
 
 
 
-
-# sites=[]
-# for i in range(len(theOddsAPIGames)):
-#         sites.append([theOddsAPIGames[i]])
-        
-# for i in range(len(theOddsAPIGames)):
-#     for j in range(len(theOddsAPIGames)):
-#         print(sites[j][j]['sites'][j]['site_key'])
 
 
 AlphaAPIx=[]
 BetaAPIx=[]
 AlphaAPI=[]
 BetaAPI=[]
-# OddsA=[]
-# OddsB=[]
 
 FiveThirtyEightGamesYesterday = fmPast.fm_df['Winner']
 
@@ -100,12 +89,12 @@ for i in eventsAPI:
         # OddsB.append(eventsAPI[i][3][0]['h2h'][1])
 
 
-# print(home)
-# print(away)
+# print(First)
+# print(Second)
 # print(OddsB)
 # print(OddsA)
-# print(bookHome)
-# print(bookAway)
+# print(bookFirst)
+# print(bookSecond)
 
 
 #Cleaning up API names strings so that they match KenPom names strings
@@ -138,53 +127,53 @@ for i in range(len(fm.fm_df['PredictedWinner'])):
     kpLosersProj.append(fm.fm_df['PredictedLoser'][i])
 
 
-#Matching up KenPom teams with sports betting API teams
-#Performing calculations to see if expected value of winnings on a $100 dollar bet is over $10 (10% return)
+#Matching up KenPom teams with sports betting API teams - from best odds for sportsbooks available
+#Performing calculations to see if expected value of winnings on a $100 dollar bet is over $20 (20% return)
 
 for i in range(len(AlphaAPI)):
     for j in range(len(kpWinnersProj)):
         try:
             if (AlphaAPI[i]).lower() == (kpWinnersProj[j].lower()):
-                homeAlphaOdds = int(((((away[i])-1)*100)*(kpWinProb[j])-(100*(1-(kpWinProb[j])))))
-                if (homeAlphaOdds>7):
-                    teamsToBetCBB.append({AlphaAPI[i]: homeAlphaOdds})
-                    potential_winnings.append(int(((away[i])-1)*100))
+                FirstAlphaOdds = int(((((Second[i])-1)*100)*(kpWinProb[j])-(100*(1-(kpWinProb[j])))))
+                if (FirstAlphaOdds>7):
+                    teamsToBetCBB.append({AlphaAPI[i]: FirstAlphaOdds})
+                    potential_winnings.append(int(((Second[i])-1)*100))
                     winning_odds.append(kpWinProb[j])
-                    winning_book.append(bookAway[i])
+                    winning_book.append(bookSecond[i])
         except KeyError:
             continue
 
         try:    
             if (BetaAPI[i]).lower() == (kpLosersProj[j].lower()):
-                awayBetaOdds = int(((((home[i])-1)*100)*(1-(kpWinProb[j])))-(100*(kpWinProb[j])))
-                if (awayBetaOdds>7):
-                    teamsToBetCBB.append({BetaAPI[i]: awayBetaOdds})
-                    potential_winnings.append(int(((home[i])-1)*100))
+                SecondBetaOdds = int(((((First[i])-1)*100)*(1-(kpWinProb[j])))-(100*(kpWinProb[j])))
+                if (SecondBetaOdds>7):
+                    teamsToBetCBB.append({BetaAPI[i]: SecondBetaOdds})
+                    potential_winnings.append(int(((First[i])-1)*100))
                     winning_odds.append(1-kpWinProb[j])
-                    winning_book.append(bookHome[i])
+                    winning_book.append(bookFirst[i])
         except KeyError:
             continue
 
         try:    
             if (AlphaAPI[i]).lower() == (kpLosersProj[j].lower()):
-                awayAlphaOdds = int(((((away[i])-1)*100)*(1-(kpWinProb[j]))-(100*(kpWinProb[j]))))
-                if (awayAlphaOdds>7):
-                    teamsToBetCBB.append({AlphaAPI[i]: awayAlphaOdds})
-                    potential_winnings.append(int(((away[i])-1)*100))
+                SecondAlphaOdds = int(((((Second[i])-1)*100)*(1-(kpWinProb[j]))-(100*(kpWinProb[j]))))
+                if (SecondAlphaOdds>7):
+                    teamsToBetCBB.append({AlphaAPI[i]: SecondAlphaOdds})
+                    potential_winnings.append(int(((Second[i])-1)*100))
                     winning_odds.append(1-kpWinProb[j])
-                    winning_book.append(bookAway[i])
+                    winning_book.append(bookSecond[i])
         except KeyError:
             continue
 
 
         try:
             if (BetaAPI[i]).lower() == (kpWinnersProj[j].lower()):
-                homeBetaOdds = int(((((home[i])-1)*100)*((kpWinProb[j])))-(100*(1-(kpWinProb[j]))))
-                if (homeBetaOdds>7):
-                    teamsToBetCBB.append({BetaAPI[i]: homeBetaOdds})
-                    potential_winnings.append(int(((home[i])-1)*100))
+                FirstBetaOdds = int(((((First[i])-1)*100)*((kpWinProb[j])))-(100*(1-(kpWinProb[j]))))
+                if (FirstBetaOdds>7):
+                    teamsToBetCBB.append({BetaAPI[i]: FirstBetaOdds})
+                    potential_winnings.append(int(((First[i])-1)*100))
                     winning_odds.append(kpWinProb[j])
-                    winning_book.append(bookHome[i])
+                    winning_book.append(bookFirst[i])
         except KeyError:
             continue
 
