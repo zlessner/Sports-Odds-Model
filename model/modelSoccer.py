@@ -114,19 +114,22 @@ for i in range(len(theOddsAPIGames)):
         #     print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]])
 
 
+        # print([theOddsAPIGames[0]['sites'][0]['odds']['h2h'][2]][0])
         eventsAPI[i] = [theOddsAPIGames[i]['sport_key']], [theOddsAPIGames[i]['commence_time']], [theOddsAPIGames[i]['teams']], [theOddsAPIGames[i]['sites'][j]['odds']], [theOddsAPIGames[i]['sites'][j]['site_key']]
         # break
+   
 
         if (datetime.utcfromtimestamp((eventsAPI[i][1][0]-30000)).strftime('%Y-%m-%d') == stringGameDate):
-            if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0] > bestFirst:
-                bestFirst = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]
-                bestBookFirst = theOddsAPIGames[i]['sites'][j]['site_key']
-            if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0] > bestSecond:
-                bestSecond = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0]
-                bestBookSecond = theOddsAPIGames[i]['sites'][j]['site_key']
-            if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][2]][0] > bestDraw:
-                bestDraw = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][2]][0]
-                bestBookDraw = theOddsAPIGames[i]['sites'][j]['site_key']
+            if theOddsAPIGames[i]['sites'][j]['site_key'] != 'betfair':
+                if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0] > bestFirst:
+                    bestFirst = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]
+                    bestBookFirst = theOddsAPIGames[i]['sites'][j]['site_key']
+                if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0] > bestSecond:
+                    bestSecond = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0]
+                    bestBookSecond = theOddsAPIGames[i]['sites'][j]['site_key']
+                if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][2]][0] > bestDraw:
+                    bestDraw = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][2]][0]
+                    bestBookDraw = theOddsAPIGames[i]['sites'][j]['site_key']
 
     First.append(bestFirst)
     Second.append(bestSecond)

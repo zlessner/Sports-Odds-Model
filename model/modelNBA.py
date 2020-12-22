@@ -96,12 +96,13 @@ for i in range(len(theOddsAPIGames)):
         # break
 
         if (datetime.utcfromtimestamp((eventsAPI[i][1][0]-30000)).strftime('%Y-%m-%d') == stringGameDate):
-            if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0] > bestFirst:
-                bestFirst = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]
-                bestBookFirst = theOddsAPIGames[i]['sites'][j]['site_key']
-            if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0] > bestSecond:
-                bestSecond = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0]
-                bestBookSecond = theOddsAPIGames[i]['sites'][j]['site_key']
+            if theOddsAPIGames[i]['sites'][j]['site_key'] != 'betfair':
+                if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0] > bestFirst:
+                    bestFirst = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]
+                    bestBookFirst = theOddsAPIGames[i]['sites'][j]['site_key']
+                if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0] > bestSecond:
+                    bestSecond = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0]
+                    bestBookSecond = theOddsAPIGames[i]['sites'][j]['site_key']
 
     First.append(bestFirst)
     Second.append(bestSecond)
@@ -117,9 +118,9 @@ BetaAPI=[]
 #Adding first team to AlphaAPI, second team to BetaAPI, first teams odds to OddsA, and second team odds to OddsB
 
 for i in eventsAPI:
-    if (datetime.utcfromtimestamp((eventsAPI[i][1][0])-30000).strftime('%Y-%m-%d') == stringGameDate):
-        AlphaAPI.append(eventsAPI[i][2][0][0])
-        BetaAPI.append(eventsAPI[i][2][0][1])
+    # if (datetime.utcfromtimestamp((eventsAPI[i][1][0])-30000).strftime('%Y-%m-%d') == stringGameDate):
+    AlphaAPI.append(eventsAPI[i][2][0][0])
+    BetaAPI.append(eventsAPI[i][2][0][1])
         # OddsA.append(eventsAPI[i][3][0]['h2h'][0])
         # OddsB.append(eventsAPI[i][3][0]['h2h'][1])
 

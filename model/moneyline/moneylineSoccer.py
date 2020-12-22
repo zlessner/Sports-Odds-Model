@@ -51,7 +51,7 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 
 soccer = True
 
-sport = "soccer_brazil_campeonato"
+sport = "soccer_spain_la_liga"
 
 querystring = {"sport":sport,"region":"us","mkt":"h2h"}
 
@@ -174,6 +174,6 @@ if sport == "soccer_spl":
     
 
 # Comment sport out if soccer
-# sport = 'NBA'  
+# sport = 'CBB'  
     
 
