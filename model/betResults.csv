@@ -588,7 +588,6 @@ Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnin
 12/19/20 15:36,12/20/20,NFL,NO,100,0.503808619,129,15,No Win,-100,12/20/20_NFL_NO,
 12/19/20 15:36,12/20/20,NFL,NYG,100,0.394976064,240,34,No Win,-100,12/20/20_NFL_NYG,
 12/20/20 16:17,12/21/20,Soccer Barclays Premier League,Burnley,100,0.335,268,23,Burnley,268,12/21/20_Soccer Barclays Premier League_Burnley,
-12/21/20 14:49,12/21/20,Soccer Italy Serie B,Salernitana Draw,100,0.2936,275,10,No Win,-100,12/21/20_Soccer Italy Serie B_Salernitana Draw,betfair
 12/21/20 14:49,12/21/20,Soccer Italy Serie B,Virtus Entella,100,0.2183,500,30,No Win,-100,12/21/20_Soccer Italy Serie B_Virtus Entella,betfair
 12/21/20 15:11,12/21/20,Soccer Portuguese Liga,Santa Clara,100,0.3986,215,25,No Win,-100,12/21/20_Soccer Portuguese Liga_Santa Clara,betfair
 12/21/20 15:12,12/21/20,Soccer Spanish Segunda Division,Girona FC,100,0.3297,245,13,No Win,-100,12/21/20_Soccer Spanish Segunda Division_Girona FC,betfair
@@ -602,3 +601,67 @@ Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnin
 12/21/20 12:34,12/21/20,CBB,Tulsa,100,0.25,400,25,Tulsa,400,12/21/20_CBB_Tulsa,betmgm
 12/21/20 12:34,12/21/20,CBB,Texas Southern,100,0.1,1400,49,No Win,-100,12/21/20_CBB_Texas Southern,betmgm
 12/21/20 10:14,12/21/20,NFL,CIN,100,0.173672708,840,63,CIN,840,12/21/20_NFL_CIN,
+12/22/20 10:14,12/22/20,Soccer Norwegian Tippeligaen,Haugesund,100,0.2916,440,57,Haugesund,440,12/22/20_Soccer Norwegian Tippeligaen_Haugesund,betonlineag
+12/22/20 10:14,12/22/20,Soccer Norwegian Tippeligaen,Haugesund Draw,100,0.2351,366,9,No Win,-100,12/22/20_Soccer Norwegian Tippeligaen_Haugesund Draw,gtbets
+12/22/20 10:14,12/22/20,Soccer Norwegian Tippeligaen,Aalesund,100,0.1953,800,75,No Win,-100,12/22/20_Soccer Norwegian Tippeligaen_Aalesund,betonlineag
+12/22/20 10:14,12/22/20,Soccer Norwegian Tippeligaen,Aalesund Draw,100,0.2472,500,48,No Win,-100,12/22/20_Soccer Norwegian Tippeligaen_Aalesund Draw,unibet
+12/22/20 10:14,12/22/20,Soccer Norwegian Tippeligaen,Stabaek,100,0.3541,229,16,Stabaek,229,12/22/20_Soccer Norwegian Tippeligaen_Stabaek,williamhill_us
+12/22/20 10:14,12/22/20,Soccer Norwegian Tippeligaen,Sandefjord,100,0.2924,534,85,No Win,-100,12/22/20_Soccer Norwegian Tippeligaen_Sandefjord,gtbets
+12/22/20 10:30,12/22/20,Soccer Spanish Primera Division,Elche,100,0.3444,240,17,No Win,-100,12/22/20_Soccer Spanish Primera Division_Elche,sugarhouse
+12/22/20 8:08,12/22/20,CBB,Alcorn St.,100,0.05,3000,55,No Win,-100,12/22/20_CBB_Alcorn St.,fanduel
+12/22/20 8:08,12/22/20,CBB,Western Michigan,100,0.35,210,8,No Win,-100,12/22/20_CBB_Western Michigan,betmgm
+12/22/20 8:08,12/22/20,CBB,Hofstra,100,0.12,869,16,Hofstra,869,12/22/20_CBB_Hofstra,fanduel
+12/22/20 8:08,12/22/20,CBB,Kennesaw St.,100,0.11,980,18,No Win,-100,12/22/20_CBB_Kennesaw St.,fanduel
+12/22/20 10:24,12/22/20,Soccer French Ligue 2,Caen,100,0.4439,150,10,No Win,-100,12/22/20_Soccer French Ligue 2_Caen,unibet
+12/22/20 10:24,12/22/20,Soccer French Ligue 2,Chateauroux,100,0.2073,475,19,No Win,-100,12/22/20_Soccer French Ligue 2_Chateauroux,bovada
+12/22/20 10:24,12/22/20,Soccer French Ligue 2,Chateauroux Draw,100,0.2972,275,11,No Win,-100,12/22/20_Soccer French Ligue 2_Chateauroux Draw,unibet
+12/22/20 10:24,12/22/20,Soccer French Ligue 2,Guingamp,100,0.296,345,31,No Win,-100,12/22/20_Soccer French Ligue 2_Guingamp,bovada
+12/22/20 10:24,12/22/20,Soccer French Ligue 2,Toulouse,100,0.5849,112,23,Toulouse,112,12/22/20_Soccer French Ligue 2_Toulouse,unibet
+12/22/20 10:24,12/22/20,Soccer French Ligue 2,Amiens,100,0.5525,125,24,No Win,-100,12/22/20_Soccer French Ligue 2_Amiens,bovada
+12/22/20 10:27,12/22/20,Soccer Italy Serie B,Monza,100,0.7871,37,8,Monza,37,12/22/20_Soccer Italy Serie B_Monza,sugarhouse
+12/22/20 10:27,12/22/20,Soccer Italy Serie B,Cosenza,100,0.3974,200,19,No Win,-100,12/22/20_Soccer Italy Serie B_Cosenza,unibet
+12/22/20 10:27,12/22/20,Soccer Italy Serie B,Cittadella,100,0.4793,129,10,Cittadella,129,12/22/20_Soccer Italy Serie B_Cittadella,unibet
+12/22/20 10:27,12/22/20,Soccer Italy Serie B,Spal,100,0.4397,185,25,Spal,185,12/22/20_Soccer Italy Serie B_Spal,bovada
+12/22/20 10:29,12/22/20,Soccer Dutch Eredivisie,Emmen,100,0.3065,390,50,No Win,-100,12/22/20_Soccer Dutch Eredivisie_Emmen,lowvig
+12/22/20 10:29,12/22/20,Soccer Dutch Eredivisie,Emmen Draw,100,0.276,320,15,No Win,-100,12/22/20_Soccer Dutch Eredivisie_Emmen Draw,unibet
+12/22/20 10:28,12/22/20,Soccer English League One,Doncaster Rovers,100,0.5689,95,10,No Win,-100,12/22/20_Soccer English League One_Doncaster Rovers,unibet
+12/22/20 10:30,12/22/20,Soccer Spanish Primera Division,Villarreal,100,0.5943,102,20,No Win,-100,12/22/20_Soccer Spanish Primera Division_Villarreal,sugarhouse
+12/22/20 8:08,12/22/20,CBB,Appalachian St.,100,0.12,1100,44,No Win,-100,12/22/20_CBB_Appalachian St.,fanduel
+12/22/20 8:08,12/22/20,CBB,Portland,100,0.46,150,15,Portland,150,12/22/20_CBB_Portland,fanduel
+12/22/20 8:08,12/22/20,CBB,Niagara,100,0.53,108,10,Niagara,108,12/22/20_CBB_Niagara,fanduel
+12/22/20 8:08,12/22/20,CBB,UMass Lowell,100,0.31,375,47,No Win,-100,12/22/20_CBB_UMass Lowell,bovada
+12/22/20 8:08,12/22/20,CBB,The Citadel,100,0.73,54,12,The Citadel,54,12/22/20_CBB_The Citadel,draftkings
+12/22/20 8:08,12/22/20,CBB,UCF,100,0.5,125,12,UCF,125,12/22/20_CBB_UCF,williamhill_us
+12/22/20 8:08,12/22/20,CBB,Seattle,100,0.14,750,19,No Win,-100,12/22/20_CBB_Seattle,fanduel
+12/22/20 8:08,12/22/20,CBB,Abilene Christian,100,0.15,830,39,No Win,-100,12/22/20_CBB_Abilene Christian,fanduel
+12/22/20 8:08,12/22/20,CBB,UNC Asheville,100,0.13,810,18,No Win,-100,12/22/20_CBB_UNC Asheville,fanduel
+12/22/20 8:08,12/22/20,CBB,North Carolina A&T,100,0.17,600,19,No Win,-100,12/22/20_CBB_North Carolina A&T,bovada
+12/22/20 8:08,12/22/20,CBB,Montana,100,0.12,810,9,No Win,-100,12/22/20_CBB_Montana,fanduel
+12/22/20 8:08,12/22/20,CBB,North Dakota,100,0.13,1100,56,No Win,-100,12/22/20_CBB_North Dakota,fanduel
+12/22/20 8:08,12/22/20,CBB,Florida Gulf Coast,100,0.54,100,8,Florida Gulf Coast,100,12/22/20_CBB_Florida Gulf Coast,fanduel
+12/22/20 8:08,12/22/20,CBB,High Point,100,0.32,245,10,No Win,-100,12/22/20_CBB_High Point,fanduel
+12/22/20 8:08,12/22/20,CBB,East Tennessee St.,100,0.1,1100,19,No Win,-100,12/22/20_CBB_East Tennessee St.,fanduel
+12/22/20 8:58,12/22/20,CBB,Bradley,100,0.16,590,10,No Win,-100,12/22/20_CBB_Bradley,fanduel
+12/23/20 8:09,12/23/20,CBB,Delaware St.,100,0.06,2000,26,No Win,-100,12/23/20_CBB_Delaware St.,fanduel
+12/22/20 14:40,12/23/20,Soccer French Ligue 1,Lorient,100,0.2656,325,12,No Win,-100,12/23/20_Soccer French Ligue 1_Lorient,unibet
+12/22/20 16:50,12/23/20,Soccer Dutch Eredivisie,Ajax Draw,100,0.1474,653,11,Ajax Draw,653,12/23/20_Soccer Dutch Eredivisie_Ajax Draw,unibet
+12/22/20 16:50,12/23/20,Soccer Dutch Eredivisie,Willem II,100,0.0852,1400,27,No Win,-100,12/23/20_Soccer Dutch Eredivisie_Willem II,unibet
+12/22/20 16:56,12/23/20,Soccer Scottish Premiership,Hamilton Academical,100,0.3359,421,75,No Win,-100,12/23/20_Soccer Scottish Premiership_Hamilton Academical,mybookieag
+12/23/20 8:36,12/23/20,Soccer French Ligue 1,Nimes,100,0.4041,171,9,No Win,-100,12/23/20_Soccer French Ligue 1_Nimes,bookmaker
+12/22/20 14:40,12/23/20,Soccer French Ligue 1,Lyon Draw,100,0.1825,500,9.0,No Win,-100,12/23/20_Soccer French Ligue 1_Lyon Draw,gtbets
+12/22/20 14:40,12/23/20,Soccer French Ligue 1,Lille,100,0.5478,120,20.0,Lille,120,12/23/20_Soccer French Ligue 1_Lille,unibet
+12/22/20 16:50,12/23/20,Soccer Dutch Eredivisie,ADO Den Haag,100,0.3518,325,49.0,No Win,-100,12/23/20_Soccer Dutch Eredivisie_ADO Den Haag,unibet
+12/22/20 16:50,12/23/20,Soccer Dutch Eredivisie,ADO Den Haag Draw,100,0.2784,309,14.0,No Win,-100,12/23/20_Soccer Dutch Eredivisie_ADO Den Haag Draw,unibet
+12/22/20 16:58,12/23/20,Soccer Swiss Raiffeisen Super League,FC Lugano,100,0.498,160,29.0,No Win,-100,12/23/20_Soccer Swiss Raiffeisen Super League_FC Lugano,betonlineag
+12/23/20 8:09,12/23/20,CBB,Northwestern St.,100,0.12,1500,92.0,No Win,-100,12/23/20_CBB_Northwestern St.,fanduel
+12/23/20 8:09,12/23/20,CBB,Coppin St.,100,0.2,650,49.0,No Win,-100,12/23/20_CBB_Coppin St.,sugarhouse
+12/23/20 8:09,12/23/20,CBB,Northwestern,100,0.26,359,19.0,Northwestern,359,12/23/20_CBB_Northwestern,lowvig
+12/23/20 10:54,12/23/20,CBB,NJIT,100,0.59,100,18.0,NJIT,100,12/23/20_CBB_NJIT,bovada
+12/22/20 8:50,12/23/20,NBA,CLE,100,0.5752611,96,12.0,CLE,96,12/23/20_NBA_CLE,fanduel
+12/22/20 8:50,12/23/20,NBA,ORL,100,0.490723776,131,13.0,ORL,131,12/23/20_NBA_ORL,fanduel
+12/22/20 8:50,12/23/20,NBA,BOS,100,0.558929537,129,28.0,BOS,129,12/23/20_NBA_BOS,fanduel
+12/22/20 8:50,12/23/20,NBA,MEM,100,0.669277165,72,15.0,No Win,-100,12/23/20_NBA_MEM,fanduel
+12/22/20 8:50,12/23/20,NBA,MIN,100,0.77370848,53,18.0,MIN,53,12/23/20_NBA_MIN,fanduel
+12/22/20 8:50,12/23/20,NBA,PHO,100,0.635362037,100,27.0,PHO,100,12/23/20_NBA_PHO,williamhill_us
+12/23/20 8:16,12/23/20,NBA,PHI,100,0.815854959,34,9.0,PHI,34,12/23/20_NBA_PHI,fanduel
+12/23/20 8:16,12/23/20,NBA,TOR,100,0.681008532,62,11.0,No Win,-100,12/23/20_NBA_TOR,sugarhouse

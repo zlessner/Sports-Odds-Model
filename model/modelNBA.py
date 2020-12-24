@@ -45,7 +45,7 @@ for game in fullList:
 for i in range(len(FiveThirtyEightGamesYesterday)):
     if len(FiveThirtyEightGamesYesterday[i][7])>0:
         FiveThirtyEightGamesYesterday[i][7] = float(FiveThirtyEightGamesYesterday[i][7])
-        playedTeams.append(FiveThirtyEightGamesYesterday[i][3])
+        playedTeams.append(FiveThirtyEightGamesYesterday[i][1])
         playedTeams.append(FiveThirtyEightGamesYesterday[i][2])
 
     if len(FiveThirtyEightGamesYesterday[i][8])>0:
