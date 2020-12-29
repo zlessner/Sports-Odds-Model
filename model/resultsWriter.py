@@ -50,6 +50,10 @@ if sport[:6] == 'Soccer':
 
 
     print(teamsToBet1)
+    print(potential_winnings)
+    print(winning_book)
+    print(winning_odds)
+
 
 finalTeams = []
 finalValues = []

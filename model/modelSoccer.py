@@ -233,6 +233,9 @@ Prediction()
 
 # print(potential_winnings)
 # print(winning_book)
+# print(winning_odds)
+# print(len(AlphaAPI))
+# print(len(bookFirst))
 
 
 teams = []

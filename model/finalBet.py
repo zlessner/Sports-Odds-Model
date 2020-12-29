@@ -5,7 +5,7 @@ from moneyline.moneylineSoccer import sport, stringGameDate
 
 
 if sport == 'NFL':
-    from modelNFL import teamstobetNFL, potential_winnings, winning_odds, FiveThirtyEightGames, FiveThirtyEightGamesYesterday, playedTeams
+    from modelNFL import teamstobetNFL, potential_winnings, winning_odds, FiveThirtyEightGames, FiveThirtyEightGamesYesterday, playedTeams, winning_book
     teamOdds(teamstobetNFL)
     
 
