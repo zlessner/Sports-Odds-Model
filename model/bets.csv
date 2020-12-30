@@ -669,107 +669,125 @@ Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnin
 12/23/20 11:01,12/25/20,NBA,BOS,100,0.639910393,110,34,12/25/20_NBA_BOS,fanduel
 12/23/20 11:01,12/25/20,NBA,DAL,100,0.316441538,250,10,12/25/20_NBA_DAL,williamhill_us
 12/23/20 11:01,12/25/20,NBA,DEN,100,0.623261043,114,34,12/25/20_NBA_DEN,williamhill_us
-2020-12-25 08:00:09,12/25/20,CBB,Wisconsin,100,0.6,94,16,12/25/20_CBB_Wisconsin,sugarhouse
-2020-12-25 08:00:09,12/25/20,CBB,Maryland,100,0.37,220,18,12/25/20_CBB_Maryland,betmgm
-2020-12-25 08:00:09,12/25/20,CBB,Minnesota,100,0.31999999999999995,285,23,12/25/20_CBB_Minnesota,fanduel
-2020-12-25 08:00:46,12/25/20,NBA,GSW,100,0.1945327434436359,505,17,12/25/20_NBA_GSW,bookmaker
-2020-12-25 08:09:11,12/26/20,Soccer English League Championship,Wycombe Wanderers,100,0.2874,350,29,12/26/20_Soccer English League Championship_Wycombe Wanderers,unibet
-2020-12-25 08:09:11,12/26/20,Soccer English League Championship,Stoke City,100,0.3998,175,9,12/26/20_Soccer English League Championship_Stoke City,unibet
-2020-12-25 08:09:35,12/26/20,Soccer Barclays Premier League,Aston Villa,100,0.559,95,9,12/26/20_Soccer Barclays Premier League_Aston Villa,betmgm
-2020-12-25 08:09:35,12/26/20,Soccer Barclays Premier League,Sheffield United,100,0.2909,333,25,12/26/20_Soccer Barclays Premier League_Sheffield United,betmgm
-2020-12-25 08:10:06,12/26/20,Soccer Scottish Premiership,Dundee Utd,100,0.3722,192,8,12/26/20_Soccer Scottish Premiership_Dundee Utd,unibet
-2020-12-25 08:12:48,12/26/20,Soccer English League One,Fleetwood Town,100,0.4272,229,40,12/26/20_Soccer English League One_Fleetwood Town,fanduel
-2020-12-25 08:12:48,12/26/20,Soccer English League One,Rochdale,100,0.2433,500,45,12/26/20_Soccer English League One_Rochdale,fanduel
-2020-12-25 08:12:48,12/26/20,Soccer English League One,Charlton Athletic,100,0.6209,95,21,12/26/20_Soccer English League One_Charlton Athletic,unibet
-2020-12-25 08:12:48,12/26/20,Soccer English League One,Burton Albion,100,0.2485,359,14,12/26/20_Soccer English League One_Burton Albion,unibet
-2020-12-25 08:12:48,12/26/20,Soccer English League One,Bristol Rovers,100,0.2679,350,20,12/26/20_Soccer English League One_Bristol Rovers,fanduel
-2020-12-25 08:12:48,12/26/20,Soccer English League One,Wigan,100,0.3762,213,17,12/26/20_Soccer English League One_Wigan,bookmaker
-2020-12-25 08:13:02,12/26/20,Soccer English League Two,Leyton Orient,100,0.3522,215,10,12/26/20_Soccer English League Two_Leyton Orient,williamhill_us
-2020-12-25 08:13:02,12/26/20,Soccer English League Two,Colchester United,100,0.4422,170,19,12/26/20_Soccer English League Two_Colchester United,bovada
-2020-12-25 08:13:02,12/26/20,Soccer English League Two,Bolton,100,0.2488,400,24,12/26/20_Soccer English League Two_Bolton,bovada
-2020-12-25 08:13:02,12/26/20,Soccer English League Two,Crawley Town,100,0.397,185,13,12/26/20_Soccer English League Two_Crawley Town,bovada
-2020-12-25 08:13:02,12/26/20,Soccer English League Two,Grimsby Town,100,0.2921,340,28,12/26/20_Soccer English League Two_Grimsby Town,bovada
-2020-12-25 08:13:02,12/26/20,Soccer English League Two,Oldham Athletic,100,0.5769,114,24,12/26/20_Soccer English League Two_Oldham Athletic,bovada
-2020-12-25 08:13:02,12/26/20,Soccer English League Two,Salford City,100,0.6008,135,41,12/26/20_Soccer English League Two_Salford City,fanduel
-2020-12-25 08:13:38,12/26/20,Soccer Brasileiro S√©rie A,Coritiba,100,0.1269,788,12,12/26/20_Soccer Brasileiro S√©rie A_Coritiba,bookmaker
-2020-12-25 08:13:38,12/26/20,Soccer Brasileiro S√©rie A,Fortaleza,100,0.1931,462,8,12/26/20_Soccer Brasileiro S√©rie A_Fortaleza,mybookieag
-2020-12-26 08:45:57,12/26/20,NBA,MEM,100,0.6604123365490953,83,20,12/26/20_NBA_MEM,fanduel
-2020-12-26 08:45:57,12/26/20,NBA,OKC,100,0.46840765996651534,140,12,12/26/20_NBA_OKC,williamhill_us
-2020-12-26 08:45:57,12/26/20,NBA,CHI,100,0.42283429959572877,170,14,12/26/20_NBA_CHI,williamhill_us
-2020-12-26 08:45:57,12/26/20,NBA,SAC,100,0.45632252091114095,145,11,12/26/20_NBA_SAC,lowvig
-2020-12-26 08:47:14,12/26/20,CBB,Northwestern,100,0.43999999999999995,148,9,12/26/20_CBB_Northwestern,bookmaker
-2020-12-26 08:47:14,12/26/20,CBB,Coppin St.,100,0.18000000000000005,750,53,12/26/20_CBB_Coppin St.,fanduel
-2020-12-26 08:47:14,12/26/20,CBB,Indiana,100,0.32999999999999996,295,30,12/26/20_CBB_Indiana,fanduel
-2020-12-26 08:47:14,12/26/20,CBB,Virginia,100,0.31000000000000005,370,45,12/26/20_CBB_Virginia,fanduel
-2020-12-26 08:50:43,12/26/20,Soccer Scottish Premiership,Celtic Draw,100,0.1133,1100,35,12/26/20_Soccer Scottish Premiership_Celtic Draw,unibet
-2020-12-26 08:52:43,12/26/20,Soccer Scottish Premiership,Hamilton Academical,100,0.0703,2487,81,12/26/20_Soccer Scottish Premiership_Hamilton Academical,williamhill_us
-2020-12-26 08:53:39,12/26/20,Soccer Belgian Jupiler League,KV Kortrijk,100,0.3358,280,27,12/26/20_Soccer Belgian Jupiler League_KV Kortrijk,unibet
-2020-12-26 08:55:09,12/26/20,Soccer English League One,Doncaster Rovers,100,0.5254,118,14,12/26/20_Soccer English League One_Doncaster Rovers,williamhill_us
-2020-12-26 08:57:47,12/27/20,Soccer Barclays Premier League,Burnley,100,0.2911,380,39,12/27/20_Soccer Barclays Premier League_Burnley,sugarhouse
-2020-12-26 12:02:30,12/26/20,Soccer Barclays Premier League,Arsenal,100,0.2594,409,32,12/26/20_Soccer Barclays Premier League_Arsenal,unibet
-2020-12-26 23:42:00,12/27/20,Soccer Portuguese Liga,SC Farense,100,0.4224,179,18,12/27/20_Soccer Portuguese Liga_SC Farense,williamhill_us
-2020-12-26 23:44:43,12/27/20,Soccer Turkey Super League,Gazisehir Gaziantep,100,0.3917,179,9,12/27/20_Soccer Turkey Super League_Gazisehir Gaziantep,williamhill_us
-2020-12-26 23:45:02,12/27/20,Soccer Italy Serie B,Virtus Entella,100,0.393,195,15,12/27/20_Soccer Italy Serie B_Virtus Entella,fanduel
-2020-12-26 23:45:24,12/27/20,Soccer Brasileiro S√©rie A,Botafogo,100,0.434,173,18,12/27/20_Soccer Brasileiro S√©rie A_Botafogo,mybookieag
-2020-12-26 23:47:54,12/27/20,CBB,Indiana St.,100,0.42000000000000004,170,13,12/27/20_CBB_Indiana St.,betmgm
-2020-12-26 23:48:03,12/27/20,NBA,NOP,100,0.7576025628545778,52,15,12/27/20_NBA_NOP,unibet
-2020-12-26 23:48:03,12/27/20,NBA,CHO,100,0.30680060656008606,320,28,12/27/20_NBA_CHO,williamhill_us
-2020-12-26 23:48:03,12/27/20,NBA,ORL,100,0.5270560588171704,104,8,12/27/20_NBA_ORL,caesars
-2020-12-26 23:48:03,12/27/20,NBA,NYK,100,0.19965031215120949,650,49,12/27/20_NBA_NYK,sugarhouse
-2020-12-26 23:48:03,12/27/20,NBA,MIN,100,0.18128240620002067,500,8,12/27/20_NBA_MIN,williamhill_us
-2020-12-27 08:53:59,12/27/20,CBB,NJIT,100,0.19999999999999996,550,29,12/27/20_CBB_NJIT,betrivers
-2020-12-27 08:54:58,12/27/20,CBB,DePaul,100,0.33999999999999997,240,15,12/27/20_CBB_DePaul,lowvig
-2020-12-27 08:59:51,12/27/20,NBA,CHI,100,0.45840980027015127,145,12,12/27/20_NBA_CHI,lowvig
-2020-12-27 09:01:10,12/27/20,Soccer Barclays Premier League,West Ham United,100,0.433,150,8,12/27/20_Soccer Barclays Premier League_West Ham United,unibet
-2020-12-27 10:36:57,12/27/20,CBB,New Hampshire,100,0.67,62,8,12/27/20_CBB_New Hampshire,lowvig
-2020-12-27 10:36:57,12/27/20,CBB,Cleveland St.,100,0.59,95,15,12/27/20_CBB_Cleveland St.,pointsbetus
-2020-12-27 10:36:57,12/27/20,CBB,Alcorn St.,100,0.050000000000000044,2500,30,12/27/20_CBB_Alcorn St.,fanduel
-2020-12-27 10:36:57,12/27/20,CBB,UC Irvine,100,0.5,125,12,12/27/20_CBB_UC Irvine,fanduel
-2020-12-28 08:53:10,12/28/20,CBB,Binghamton,100,0.10999999999999999,900,9,12/28/20_CBB_Binghamton,fanduel
-2020-12-28 08:53:10,12/28/20,CBB,NJIT,100,0.18999999999999995,575,28,12/28/20_CBB_NJIT,betrivers
-2020-12-28 08:53:10,12/28/20,CBB,Fresno St.,100,0.30000000000000004,309,23,12/28/20_CBB_Fresno St.,williamhill_us
-2020-12-28 08:53:10,12/28/20,CBB,Minnesota,100,0.54,140,29,12/28/20_CBB_Minnesota,williamhill_us
-2020-12-28 08:53:10,12/28/20,CBB,Colorado,100,0.49,129,12,12/28/20_CBB_Colorado,fanduel
-2020-12-28 08:56:43,12/28/20,NBA,MEM,100,0.3259992778164059,260,17,12/28/20_NBA_MEM,betmgm
-2020-12-28 08:56:43,12/28/20,NBA,OKC,100,0.43380093642876205,309,77,12/28/20_NBA_OKC,williamhill_us
-2020-12-28 08:56:43,12/28/20,NBA,HOU,100,0.31866246514316277,260,14,12/28/20_NBA_HOU,caesars
-2020-12-28 08:56:43,12/28/20,NBA,POR,100,0.4391799004247421,154,11,12/28/20_NBA_POR,betmgm
-2020-12-28 09:01:12,12/28/20,Soccer Barclays Premier League,Leicester City,100,0.4857,127,10,12/28/20_Soccer Barclays Premier League_Leicester City,unibet
-2020-12-28 09:53:44,12/28/20,CBB,UC Irvine,100,0.58,87,8,12/28/20_CBB_UC Irvine,sugarhouse
-2020-12-28 10:59:05,12/28/20,CBB,UMass Lowell,100,0.43999999999999995,154,12,12/28/20_CBB_UMass Lowell,sugarhouse
-2020-12-28 14:44:59,12/29/20,Soccer Barclays Premier League,Brighton and Hove Albion,100,0.3563,225,15,12/29/20_Soccer Barclays Premier League_Brighton and Hove Albion,sugarhouse
-2020-12-28 14:44:59,12/29/20,Soccer Barclays Premier League,West Bromwich Albion,100,0.2998,285,15,12/29/20_Soccer Barclays Premier League_West Bromwich Albion,sugarhouse
-2020-12-28 14:44:59,12/29/20,Soccer Barclays Premier League,Burnley,100,0.464,150,16,12/29/20_Soccer Barclays Premier League_Burnley,betonlineag
-2020-12-29 07:33:52,12/29/20,CBB,Towson,100,0.4,270,48,12/29/20_CBB_Towson,fanduel
-2020-12-29 07:33:52,12/29/20,CBB,Clemson,100,0.61,83,11,12/29/20_CBB_Clemson,lowvig
-2020-12-29 07:33:52,12/29/20,CBB,Rider,100,0.68,62,10,12/29/20_CBB_Rider,bovada
-2020-12-29 07:33:52,12/29/20,CBB,Northwestern,100,0.20999999999999996,530,32,12/29/20_CBB_Northwestern,fanduel
-2020-12-29 07:35:12,12/29/20,NBA,MIA,100,0.5416198338882949,190,57,12/29/20_NBA_MIA,betonlineag
-2020-12-29 07:35:12,12/29/20,NBA,OKC,100,0.46732684755270254,175,28,12/29/20_NBA_OKC,williamhill_us
-2020-12-29 07:35:12,12/29/20,NBA,PHO,100,0.6797351973248312,68,14,12/29/20_NBA_PHO,bookmaker
-2020-12-29 07:35:12,12/29/20,NBA,LAC,100,0.8512939301722231,27,8,12/29/20_NBA_LAC,fanduel
-2020-12-29 07:35:12,12/29/20,NBA,SAC,100,0.5332654442108908,122,18,12/29/20_NBA_SAC,bookmaker
-2020-12-29 07:37:26,12/29/20,Soccer Barclays Premier League,Southampton,100,0.4497,141,8,12/29/20_Soccer Barclays Premier League_Southampton,unibet
-2020-12-29 07:38:01,12/29/20,Soccer Spanish Primera Division,Levante,100,0.4502,145,10,12/29/20_Soccer Spanish Primera Division_Levante,bovada
-2020-12-29 07:38:20,12/29/20,Soccer English League Championship,Huddersfield Town,100,0.3254,235,9,12/29/20_Soccer English League Championship_Huddersfield Town,betonlineag
-2020-12-29 07:38:20,12/29/20,Soccer English League Championship,Rotherham United,100,0.3871,295,52,12/29/20_Soccer English League Championship_Rotherham United,unibet
-2020-12-29 07:38:20,12/29/20,Soccer English League Championship,Wycombe Wanderers,100,0.2748,321,15,12/29/20_Soccer English League Championship_Wycombe Wanderers,gtbets
-2020-12-29 07:38:20,12/29/20,Soccer English League Championship,Stoke City,100,0.461,154,17,12/29/20_Soccer English League Championship_Stoke City,lowvig
-2020-12-29 07:40:55,12/29/20,Soccer English League One,Wigan,100,0.3627,250,26,12/29/20_Soccer English League One_Wigan,williamhill_us
-2020-12-29 07:40:55,12/29/20,Soccer English League One,Swindon Town,100,0.3424,250,19,12/29/20_Soccer English League One_Swindon Town,fanduel
-2020-12-29 07:40:55,12/29/20,Soccer English League One,Gillingham,100,0.4908,145,20,12/29/20_Soccer English League One_Gillingham,unibet
-2020-12-29 07:40:55,12/29/20,Soccer English League One,Oxford United,100,0.4569,154,16,12/29/20_Soccer English League One_Oxford United,fanduel
-2020-12-29 07:41:06,12/29/20,Soccer English League Two,Crawley Town,100,0.2605,325,10,12/29/20_Soccer English League Two_Crawley Town,bovada
-2020-12-29 07:41:06,12/29/20,Soccer English League Two,Oldham Athletic,100,0.4862,135,14,12/29/20_Soccer English League Two_Oldham Athletic,unibet
-2020-12-29 07:41:06,12/29/20,Soccer English League Two,Southend United,100,0.2518,355,14,12/29/20_Soccer English League Two_Southend United,williamhill_us
-2020-12-29 07:41:06,12/29/20,Soccer English League Two,Salford City,100,0.5458,179,52,12/29/20_Soccer English League Two_Salford City,bovada
-2020-12-29 07:41:06,12/29/20,Soccer English League Two,Colchester United,100,0.2944,325,25,12/29/20_Soccer English League Two_Colchester United,intertops
-2020-12-29 07:41:06,12/29/20,Soccer English League Two,Carlisle United,100,0.4953,120,8,12/29/20_Soccer English League Two_Carlisle United,unibet
-2020-12-29 17:19:52,12/30/20,Soccer Barclays Premier League,Newcastle,100,0.1267,950,33,12/30/20_Soccer Barclays Premier League_Newcastle,bovada
-2020-12-29 17:20:05,12/29/20,NBA,CHI,100,0.3256247012268363,235,9,12/29/20_NBA_CHI,fanduel
-2020-12-29 17:20:24,12/29/20,CBB,South Florida,100,0.26,400,30,12/29/20_CBB_South Florida,betmgm
-2020-12-29 17:20:24,12/29/20,CBB,Tulsa,100,0.26,359,19,12/29/20_CBB_Tulsa,lowvig
-2020-12-29 17:22:48,12/30/20,Soccer Barclays Premier League,Liverpool Draw,100,0.1859,509,13,12/30/20_Soccer Barclays Premier League_Liverpool Draw,sugarhouse
-2020-12-29 17:49:27,1/3/21,NFL,NYG,100,0.4813896950186689,140,15,1/3/21_NFL_NYG,bovada
-2020-12-29 17:49:27,1/3/21,NFL,CHI,100,0.36626662032946383,204,11,1/3/21_NFL_CHI,gtbets
-
+12/25/20 8:00,12/25/20,CBB,Wisconsin,100,0.6,94,16,12/25/20_CBB_Wisconsin,sugarhouse
+12/25/20 8:00,12/25/20,CBB,Maryland,100,0.37,220,18,12/25/20_CBB_Maryland,betmgm
+12/25/20 8:00,12/25/20,CBB,Minnesota,100,0.32,285,23,12/25/20_CBB_Minnesota,fanduel
+12/25/20 8:00,12/25/20,NBA,GSW,100,0.194532743,505,17,12/25/20_NBA_GSW,bookmaker
+12/25/20 8:09,12/26/20,Soccer English League Championship,Wycombe Wanderers,100,0.2874,350,29,12/26/20_Soccer English League Championship_Wycombe Wanderers,unibet
+12/25/20 8:09,12/26/20,Soccer English League Championship,Stoke City,100,0.3998,175,9,12/26/20_Soccer English League Championship_Stoke City,unibet
+12/25/20 8:09,12/26/20,Soccer Barclays Premier League,Aston Villa,100,0.559,95,9,12/26/20_Soccer Barclays Premier League_Aston Villa,betmgm
+12/25/20 8:09,12/26/20,Soccer Barclays Premier League,Sheffield United,100,0.2909,333,25,12/26/20_Soccer Barclays Premier League_Sheffield United,betmgm
+12/25/20 8:10,12/26/20,Soccer Scottish Premiership,Dundee Utd,100,0.3722,192,8,12/26/20_Soccer Scottish Premiership_Dundee Utd,unibet
+12/25/20 8:12,12/26/20,Soccer English League One,Fleetwood Town,100,0.4272,229,40,12/26/20_Soccer English League One_Fleetwood Town,fanduel
+12/25/20 8:12,12/26/20,Soccer English League One,Charlton Athletic,100,0.6209,95,21,12/26/20_Soccer English League One_Charlton Athletic,unibet
+12/25/20 8:12,12/26/20,Soccer English League One,Burton Albion,100,0.2485,359,14,12/26/20_Soccer English League One_Burton Albion,unibet
+12/25/20 8:12,12/26/20,Soccer English League One,Bristol Rovers,100,0.2679,350,20,12/26/20_Soccer English League One_Bristol Rovers,fanduel
+12/25/20 8:12,12/26/20,Soccer English League One,Wigan,100,0.3762,213,17,12/26/20_Soccer English League One_Wigan,bookmaker
+12/25/20 8:13,12/26/20,Soccer English League Two,Leyton Orient,100,0.3522,215,10,12/26/20_Soccer English League Two_Leyton Orient,williamhill_us
+12/25/20 8:13,12/26/20,Soccer English League Two,Colchester United,100,0.4422,170,19,12/26/20_Soccer English League Two_Colchester United,bovada
+12/25/20 8:13,12/26/20,Soccer English League Two,Bolton,100,0.2488,400,24,12/26/20_Soccer English League Two_Bolton,bovada
+12/25/20 8:13,12/26/20,Soccer English League Two,Crawley Town,100,0.397,185,13,12/26/20_Soccer English League Two_Crawley Town,bovada
+12/25/20 8:13,12/26/20,Soccer English League Two,Grimsby Town,100,0.2921,340,28,12/26/20_Soccer English League Two_Grimsby Town,bovada
+12/25/20 8:13,12/26/20,Soccer English League Two,Oldham Athletic,100,0.5769,114,24,12/26/20_Soccer English League Two_Oldham Athletic,bovada
+12/25/20 8:13,12/26/20,Soccer English League Two,Salford City,100,0.6008,135,41,12/26/20_Soccer English League Two_Salford City,fanduel
+12/25/20 8:13,12/26/20,Soccer Brasileiro S√©rie A,Coritiba,100,0.1269,788,12,12/26/20_Soccer Brasileiro S√©rie A_Coritiba,bookmaker
+12/25/20 8:13,12/26/20,Soccer Brasileiro S√©rie A,Fortaleza,100,0.1931,462,8,12/26/20_Soccer Brasileiro S√©rie A_Fortaleza,mybookieag
+12/26/20 8:45,12/26/20,NBA,MEM,100,0.660412337,83,20,12/26/20_NBA_MEM,fanduel
+12/26/20 8:45,12/26/20,NBA,OKC,100,0.46840766,140,12,12/26/20_NBA_OKC,williamhill_us
+12/26/20 8:45,12/26/20,NBA,CHI,100,0.4228343,170,14,12/26/20_NBA_CHI,williamhill_us
+12/26/20 8:45,12/26/20,NBA,SAC,100,0.456322521,145,11,12/26/20_NBA_SAC,lowvig
+12/26/20 8:47,12/26/20,CBB,Northwestern,100,0.44,148,9,12/26/20_CBB_Northwestern,bookmaker
+12/26/20 8:47,12/26/20,CBB,Coppin St.,100,0.18,750,53,12/26/20_CBB_Coppin St.,fanduel
+12/26/20 8:47,12/26/20,CBB,Indiana,100,0.33,295,30,12/26/20_CBB_Indiana,fanduel
+12/26/20 8:47,12/26/20,CBB,Virginia,100,0.31,370,45,12/26/20_CBB_Virginia,fanduel
+12/26/20 8:50,12/26/20,Soccer Scottish Premiership,Celtic Draw,100,0.1133,1100,35,12/26/20_Soccer Scottish Premiership_Celtic Draw,unibet
+12/26/20 8:52,12/26/20,Soccer Scottish Premiership,Hamilton Academical,100,0.0703,2487,81,12/26/20_Soccer Scottish Premiership_Hamilton Academical,williamhill_us
+12/26/20 8:53,12/26/20,Soccer Belgian Jupiler League,KV Kortrijk,100,0.3358,280,27,12/26/20_Soccer Belgian Jupiler League_KV Kortrijk,unibet
+12/26/20 8:57,12/27/20,Soccer Barclays Premier League,Burnley,100,0.2911,380,39,12/27/20_Soccer Barclays Premier League_Burnley,sugarhouse
+12/26/20 12:02,12/26/20,Soccer Barclays Premier League,Arsenal,100,0.2594,409,32,12/26/20_Soccer Barclays Premier League_Arsenal,unibet
+12/26/20 23:42,12/27/20,Soccer Portuguese Liga,SC Farense,100,0.4224,179,18,12/27/20_Soccer Portuguese Liga_SC Farense,williamhill_us
+12/26/20 23:44,12/27/20,Soccer Turkey Super League,Gazisehir Gaziantep,100,0.3917,179,9,12/27/20_Soccer Turkey Super League_Gazisehir Gaziantep,williamhill_us
+12/26/20 23:45,12/27/20,Soccer Italy Serie B,Virtus Entella,100,0.393,195,15,12/27/20_Soccer Italy Serie B_Virtus Entella,fanduel
+12/26/20 23:45,12/27/20,Soccer Brasileiro S√©rie A,Botafogo,100,0.434,173,18,12/27/20_Soccer Brasileiro S√©rie A_Botafogo,mybookieag
+12/26/20 23:47,12/27/20,CBB,Indiana St.,100,0.42,170,13,12/27/20_CBB_Indiana St.,betmgm
+12/26/20 23:48,12/27/20,NBA,NOP,100,0.757602563,52,15,12/27/20_NBA_NOP,unibet
+12/26/20 23:48,12/27/20,NBA,CHO,100,0.306800607,320,28,12/27/20_NBA_CHO,williamhill_us
+12/26/20 23:48,12/27/20,NBA,ORL,100,0.527056059,104,8,12/27/20_NBA_ORL,caesars
+12/26/20 23:48,12/27/20,NBA,NYK,100,0.199650312,650,49,12/27/20_NBA_NYK,sugarhouse
+12/26/20 23:48,12/27/20,NBA,MIN,100,0.181282406,500,8,12/27/20_NBA_MIN,williamhill_us
+12/27/20 8:53,12/27/20,CBB,NJIT,100,0.2,550,29,12/27/20_CBB_NJIT,betrivers
+12/27/20 8:54,12/27/20,CBB,DePaul,100,0.34,240,15,12/27/20_CBB_DePaul,lowvig
+12/27/20 8:59,12/27/20,NBA,CHI,100,0.4584098,145,12,12/27/20_NBA_CHI,lowvig
+12/27/20 9:01,12/27/20,Soccer Barclays Premier League,West Ham United,100,0.433,150,8,12/27/20_Soccer Barclays Premier League_West Ham United,unibet
+12/27/20 10:36,12/27/20,CBB,New Hampshire,100,0.67,62,8,12/27/20_CBB_New Hampshire,lowvig
+12/27/20 10:36,12/27/20,CBB,Cleveland St.,100,0.59,95,15,12/27/20_CBB_Cleveland St.,pointsbetus
+12/27/20 10:36,12/27/20,CBB,Alcorn St.,100,0.05,2500,30,12/27/20_CBB_Alcorn St.,fanduel
+12/27/20 10:36,12/27/20,CBB,UC Irvine,100,0.5,125,12,12/27/20_CBB_UC Irvine,fanduel
+12/28/20 8:53,12/28/20,CBB,Binghamton,100,0.11,900,9,12/28/20_CBB_Binghamton,fanduel
+12/28/20 8:53,12/28/20,CBB,NJIT,100,0.19,575,28,12/28/20_CBB_NJIT,betrivers
+12/28/20 8:53,12/28/20,CBB,Fresno St.,100,0.3,309,23,12/28/20_CBB_Fresno St.,williamhill_us
+12/28/20 8:53,12/28/20,CBB,Minnesota,100,0.54,140,29,12/28/20_CBB_Minnesota,williamhill_us
+12/28/20 8:53,12/28/20,CBB,Colorado,100,0.49,129,12,12/28/20_CBB_Colorado,fanduel
+12/28/20 8:56,12/28/20,NBA,MEM,100,0.325999278,260,17,12/28/20_NBA_MEM,betmgm
+12/28/20 8:56,12/28/20,NBA,OKC,100,0.433800936,309,77,12/28/20_NBA_OKC,williamhill_us
+12/28/20 8:56,12/28/20,NBA,HOU,100,0.318662465,260,14,12/28/20_NBA_HOU,caesars
+12/28/20 8:56,12/28/20,NBA,POR,100,0.4391799,154,11,12/28/20_NBA_POR,betmgm
+12/28/20 9:01,12/28/20,Soccer Barclays Premier League,Leicester City,100,0.4857,127,10,12/28/20_Soccer Barclays Premier League_Leicester City,unibet
+12/28/20 9:53,12/28/20,CBB,UC Irvine,100,0.58,87,8,12/28/20_CBB_UC Irvine,sugarhouse
+12/28/20 10:59,12/28/20,CBB,UMass Lowell,100,0.44,154,12,12/28/20_CBB_UMass Lowell,sugarhouse
+12/28/20 14:44,12/29/20,Soccer Barclays Premier League,Brighton and Hove Albion,100,0.3563,225,15,12/29/20_Soccer Barclays Premier League_Brighton and Hove Albion,sugarhouse
+12/28/20 14:44,12/29/20,Soccer Barclays Premier League,West Bromwich Albion,100,0.2998,285,15,12/29/20_Soccer Barclays Premier League_West Bromwich Albion,sugarhouse
+12/28/20 14:44,12/29/20,Soccer Barclays Premier League,Burnley,100,0.464,150,16,12/29/20_Soccer Barclays Premier League_Burnley,betonlineag
+12/29/20 7:33,12/29/20,CBB,Towson,100,0.4,270,48,12/29/20_CBB_Towson,fanduel
+12/29/20 7:33,12/29/20,CBB,Clemson,100,0.61,83,11,12/29/20_CBB_Clemson,lowvig
+12/29/20 7:33,12/29/20,CBB,Rider,100,0.68,62,10,12/29/20_CBB_Rider,bovada
+12/29/20 7:33,12/29/20,CBB,Northwestern,100,0.21,530,32,12/29/20_CBB_Northwestern,fanduel
+12/29/20 7:35,12/29/20,NBA,MIA,100,0.541619834,190,57,12/29/20_NBA_MIA,betonlineag
+12/29/20 7:35,12/29/20,NBA,OKC,100,0.467326848,175,28,12/29/20_NBA_OKC,williamhill_us
+12/29/20 7:35,12/29/20,NBA,PHO,100,0.679735197,68,14,12/29/20_NBA_PHO,bookmaker
+12/29/20 7:35,12/29/20,NBA,LAC,100,0.85129393,27,8,12/29/20_NBA_LAC,fanduel
+12/29/20 7:35,12/29/20,NBA,SAC,100,0.533265444,122,18,12/29/20_NBA_SAC,bookmaker
+12/29/20 7:37,12/29/20,Soccer Barclays Premier League,Southampton,100,0.4497,141,8,12/29/20_Soccer Barclays Premier League_Southampton,unibet
+12/29/20 7:38,12/29/20,Soccer Spanish Primera Division,Levante,100,0.4502,145,10,12/29/20_Soccer Spanish Primera Division_Levante,bovada
+12/29/20 7:38,12/29/20,Soccer English League Championship,Huddersfield Town,100,0.3254,235,9,12/29/20_Soccer English League Championship_Huddersfield Town,betonlineag
+12/29/20 7:38,12/29/20,Soccer English League Championship,Rotherham United,100,0.3871,295,52,12/29/20_Soccer English League Championship_Rotherham United,unibet
+12/29/20 7:38,12/29/20,Soccer English League Championship,Wycombe Wanderers,100,0.2748,321,15,12/29/20_Soccer English League Championship_Wycombe Wanderers,gtbets
+12/29/20 7:38,12/29/20,Soccer English League Championship,Stoke City,100,0.461,154,17,12/29/20_Soccer English League Championship_Stoke City,lowvig
+12/29/20 7:40,12/29/20,Soccer English League One,Wigan,100,0.3627,250,26,12/29/20_Soccer English League One_Wigan,williamhill_us
+12/29/20 7:40,12/29/20,Soccer English League One,Swindon Town,100,0.3424,250,19,12/29/20_Soccer English League One_Swindon Town,fanduel
+12/29/20 7:40,12/29/20,Soccer English League One,Gillingham,100,0.4908,145,20,12/29/20_Soccer English League One_Gillingham,unibet
+12/29/20 7:40,12/29/20,Soccer English League One,Oxford United,100,0.4569,154,16,12/29/20_Soccer English League One_Oxford United,fanduel
+12/29/20 7:41,12/29/20,Soccer English League Two,Crawley Town,100,0.2605,325,10,12/29/20_Soccer English League Two_Crawley Town,bovada
+12/29/20 7:41,12/29/20,Soccer English League Two,Oldham Athletic,100,0.4862,135,14,12/29/20_Soccer English League Two_Oldham Athletic,unibet
+12/29/20 7:41,12/29/20,Soccer English League Two,Southend United,100,0.2518,355,14,12/29/20_Soccer English League Two_Southend United,williamhill_us
+12/29/20 7:41,12/29/20,Soccer English League Two,Salford City,100,0.5458,179,52,12/29/20_Soccer English League Two_Salford City,bovada
+12/29/20 7:41,12/29/20,Soccer English League Two,Colchester United,100,0.2944,325,25,12/29/20_Soccer English League Two_Colchester United,intertops
+12/29/20 7:41,12/29/20,Soccer English League Two,Carlisle United,100,0.4953,120,8,12/29/20_Soccer English League Two_Carlisle United,unibet
+12/29/20 17:19,12/30/20,Soccer Barclays Premier League,Newcastle,100,0.1267,950,33,12/30/20_Soccer Barclays Premier League_Newcastle,bovada
+12/29/20 17:20,12/29/20,NBA,CHI,100,0.325624701,235,9,12/29/20_NBA_CHI,fanduel
+12/29/20 17:20,12/29/20,CBB,South Florida,100,0.26,400,30,12/29/20_CBB_South Florida,betmgm
+12/29/20 17:20,12/29/20,CBB,Tulsa,100,0.26,359,19,12/29/20_CBB_Tulsa,lowvig
+12/29/20 17:22,12/30/20,Soccer Barclays Premier League,Liverpool Draw,100,0.1859,509,13,12/30/20_Soccer Barclays Premier League_Liverpool Draw,sugarhouse
+12/29/20 18:02,12/30/20,Soccer Spanish Primera Division,Elche,100,0.1213,1100,45,12/30/20_Soccer Spanish Primera Division_Elche,betonlineag
+12/29/20 18:02,12/30/20,Soccer Spanish Primera Division,Elche Draw,100,0.1962,509,19,12/30/20_Soccer Spanish Primera Division_Elche Draw,unibet
+12/30/20 7:38,12/30/20,NBA,ATL,100,0.382931261,260,37,12/30/20_NBA_ATL,betmgm
+12/30/20 7:38,12/30/20,NBA,MEM,100,0.306806647,330,31,12/30/20_NBA_MEM,fanduel
+12/30/20 7:38,12/30/20,NBA,MIA,100,0.487041064,215,53,12/30/20_NBA_MIA,fanduel
+12/30/20 7:38,12/30/20,NBA,SAS,100,0.409782802,220,31,12/30/20_NBA_SAS,pointsbetus
+12/30/20 7:40,12/30/20,CBB,Fordham,100,0.69,57,8,12/30/20_CBB_Fordham,lowvig
+12/30/20 7:40,12/30/20,CBB,Campbell,100,0.1,1150,24,12/30/20_CBB_Campbell,betmgm
+12/30/20 7:40,12/30/20,CBB,Fresno St.,100,0.24,500,44,12/30/20_CBB_Fresno St.,betmgm
+12/30/20 7:40,12/30/20,CBB,Butler,100,0.38,185,8,12/30/20_CBB_Butler,gtbets
+12/30/20 7:40,12/30/20,CBB,Duquesne,100,0.22,400,9,12/30/20_CBB_Duquesne,gtbets
+12/30/20 7:40,12/30/20,CBB,Auburn,100,0.44,154,12,12/30/20_CBB_Auburn,bovada
+12/30/20 7:40,12/30/20,CBB,Eastern Illinois,100,0.44,150,9,12/30/20_CBB_Eastern Illinois,bovada
+12/30/20 7:40,12/30/20,CBB,Tennessee St.,100,0.34,220,8,12/30/20_CBB_Tennessee St.,bovada
+12/30/20 7:40,12/30/20,CBB,DePaul,100,0.26,340,14,12/30/20_CBB_DePaul,betmgm
+12/30/20 7:40,12/30/20,CBB,Missouri,100,0.43,160,11,12/30/20_CBB_Missouri,williamhill_us
+12/30/20 7:40,12/30/20,CBB,Florida,100,0.81,37,10,12/30/20_CBB_Florida,bovada
+12/30/20 7:40,12/30/20,CBB,Portland,100,0.45,154,14,12/30/20_CBB_Portland,betmgm
+12/30/20 7:40,12/30/20,CBB,Sacramento St.,100,0.13,800,17,12/30/20_CBB_Sacramento St.,draftkings
+12/30/20 7:47,12/30/20,Soccer Spanish Primera Division,Atletico Madrid,100,0.6903,63,13,12/30/20_Soccer Spanish Primera Division_Atletico Madrid,betonlineag
+12/30/20 7:50,12/30/20,Soccer Scottish Premiership,Hamilton Academical,100,0.2762,850,162,12/30/20_Soccer Scottish Premiership_Hamilton Academical,unibet
+12/30/20 7:50,12/30/20,Soccer Scottish Premiership,Hamilton Academical Draw,100,0.2472,370,16,12/30/20_Soccer Scottish Premiership_Hamilton Academical Draw,unibet
+12/30/20 7:54,12/30/20,Soccer Italy Serie B,Cittadella,100,0.4188,195,23,12/30/20_Soccer Italy Serie B_Cittadella,bovada

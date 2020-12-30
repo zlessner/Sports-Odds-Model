@@ -49,9 +49,9 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 
 #change sport to any of the different soccer leagues above
 
-soccer = False
+soccer = True
 
-sport = "soccer_epl"
+sport = "soccer_spain_la_liga"
 
 querystring = {"sport":sport,"region":"us","mkt":"h2h"}
 
@@ -69,7 +69,7 @@ gameDate = datetime.date.today()
 
 gameWeek = gameDate + datetime.timedelta(6)
 
-futureGame = gameDate + datetime.timedelta(5)
+futureGame = gameDate + datetime.timedelta(1)
 
 # so that date is same format in csv and excel
 
@@ -89,7 +89,7 @@ stringYesterdayDateMDY = str(yesterdayGameMDY)
 
 pastNFLGame = gameDate + datetime.timedelta(0)
 
-futureNFLGame = gameDate + datetime.timedelta(5)
+futureNFLGame = gameDate + datetime.timedelta(4)
 
 
 # change date for all games right here -- uncomment below to go to tomorrow's games
@@ -174,6 +174,6 @@ if sport == "soccer_spl":
     
 
 # Comment sport out if soccer
-sport = 'NFL'  
+# sport = 'NFL'  
     
 

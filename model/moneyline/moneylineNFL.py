@@ -216,3 +216,99 @@ for i in range(len(theOddsAPIGames)):
 
         if (theOddsAPIGames[i]['teams'][1] == 'Washington Football Team'):
             theOddsAPIGames[i]['teams'][1] = 'WSH'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Arizona Cardinals'):
+            theOddsAPIGames[i]['home_team'] = 'ARI'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Atlanta Falcons'):
+            theOddsAPIGames[i]['home_team'] = 'ATL'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Baltimore Ravens'):
+            theOddsAPIGames[i]['home_team'] = 'BAL'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Buffalo Bills'):
+            theOddsAPIGames[i]['home_team'] = 'BUF'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Carolina Panthers'):
+            theOddsAPIGames[i]['home_team'] = 'CAR'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Chicago Bears'):
+            theOddsAPIGames[i]['home_team'] = 'CHI'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Cincinnati Bengals'):
+            theOddsAPIGames[i]['home_team'] = 'CIN'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Cleveland Browns'):
+            theOddsAPIGames[i]['home_team'] = 'CLE'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Dallas Cowboys'):
+            theOddsAPIGames[i]['home_team'] = 'DAL'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Denver Broncos'):
+            theOddsAPIGames[i]['home_team'] = 'DEN'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Detroit Lions'):
+            theOddsAPIGames[i]['home_team'] = 'DET'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Green Bay Packers'):
+            theOddsAPIGames[i]['home_team'] = 'GB'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Houston Texans'):
+            theOddsAPIGames[i]['home_team'] = 'HOU'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Indianapolis Colts'):
+            theOddsAPIGames[i]['home_team'] = 'IND'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Jacksonville Jaguars'):
+            theOddsAPIGames[i]['home_team'] = 'JAX'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Kansas City Chiefs'):
+            theOddsAPIGames[i]['home_team'] = 'KC'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Los Angeles Chargers'):
+            theOddsAPIGames[i]['home_team'] = 'LAC'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Los Angeles Rams'):
+            theOddsAPIGames[i]['home_team'] = 'LAR'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Miami Dolphins'):
+            theOddsAPIGames[i]['home_team'] = 'MIA'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Minnesota Vikings'):
+            theOddsAPIGames[i]['home_team'] = 'MIN'
+
+        if (theOddsAPIGames[i]['home_team'] == 'New England Patriots'):
+            theOddsAPIGames[i]['home_team'] = 'NE'
+
+        if (theOddsAPIGames[i]['home_team'] == 'New Orleans Saints'):
+            theOddsAPIGames[i]['home_team'] = 'NO'
+
+        if (theOddsAPIGames[i]['home_team'] == 'New York Giants'):
+            theOddsAPIGames[i]['home_team'] = 'NYG'
+
+        if (theOddsAPIGames[i]['home_team'] == 'New York Jets'):
+            theOddsAPIGames[i]['home_team'] = 'NYJ'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Las Vegas Raiders'):
+            theOddsAPIGames[i]['home_team'] = 'OAK'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Philadelphia Eagles'):
+            theOddsAPIGames[i]['home_team'] = 'PHI'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Pittsburgh Steelers'):
+            theOddsAPIGames[i]['home_team'] = 'PIT'
+
+        if (theOddsAPIGames[i]['home_team'] == 'San Francisco 49ers'):
+            theOddsAPIGames[i]['home_team'] = 'SF'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Seattle Seahawks'):
+            theOddsAPIGames[i]['home_team'] = 'SEA'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Tampa Bay Buccaneers'):
+            theOddsAPIGames[i]['home_team'] = 'TB'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Tennessee Titans'):
+            theOddsAPIGames[i]['home_team'] = 'TEN'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Washington Football Team'):
+            theOddsAPIGames[i]['home_team'] = 'WSH'
