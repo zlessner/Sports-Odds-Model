@@ -108,6 +108,11 @@ for i in range(len(theOddsAPIGames)):
                             bestBookAway = theOddsAPIGames[i]['sites'][j]['site_key']
 
 
+        print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0])
+        print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0])
+        print(totalHome)
+        print(siteCount)
+        print('hteu')
         Home.append(bestHome)
         Away.append(bestAway)
         bookHome.append(bestBookHome)

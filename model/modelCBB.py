@@ -68,24 +68,23 @@ siteCount = 0
 
 # Extracting best odds and sportbook names with best odds
 for i in range(len(theOddsAPIGames)):
+    if (datetime.utcfromtimestamp(([theOddsAPIGames[i]['commence_time']][0]-30000)).strftime('%Y-%m-%d') == stringGameDate):
 
-    if len(theOddsAPIGames[i]['sites']) > 0:
-        siteCount = len(theOddsAPIGames[i]['sites'])
-    
-        for j in range(siteCount):
+        if len(theOddsAPIGames[i]['sites']) > 0:
+            siteCount = len(theOddsAPIGames[i]['sites'])
+        
+            for j in range(siteCount):
 
-            # if I wanted to use just one specific sports book use the below code
-            # if theOddsAPIGames[i]['sites'][j]['site_key'] == 'mybookieag':
-                # print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]])
-                # First.append(([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]))
+                # if I wanted to use just one specific sports book use the below code
+                # if theOddsAPIGames[i]['sites'][j]['site_key'] == 'mybookieag':
+                    # print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]])
+                    # First.append(([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]))
 
-            # if theOddsAPIGames[i]['sites'][j]['site_key'] == 'gtbets':
-            #     print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]])
+                # if theOddsAPIGames[i]['sites'][j]['site_key'] == 'gtbets':
+                #     print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]])
 
 
-            
-
-            if (datetime.utcfromtimestamp(([theOddsAPIGames[i]['commence_time']][0]-30000)).strftime('%Y-%m-%d') == stringGameDate):
+                
                 eventsAPI[i] = [theOddsAPIGames[i]['sport_key']], [theOddsAPIGames[i]['commence_time']], [theOddsAPIGames[i]['teams']], [theOddsAPIGames[i]['sites'][j]['odds']], [theOddsAPIGames[i]['sites'][j]['site_key']]
                 # break
                 if theOddsAPIGames[i]['sites'][j]['site_key'] == 'betfair':
@@ -101,19 +100,19 @@ for i in range(len(theOddsAPIGames)):
                         bestSecond = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0]
                         bestBookSecond = theOddsAPIGames[i]['sites'][j]['site_key']
 
-        First.append(bestFirst)
-        Second.append(bestSecond)
-        bookFirst.append(bestBookFirst)
-        bookSecond.append(bestBookSecond)
-        # if siteCount == 0:
-        #     siteCount = 1
-        totalLeft.append((totalFirst-siteCount)/siteCount)
-        # print(totalFirst)
-        totalRight.append((totalSecond-siteCount)/siteCount)
-        bestFirst = 0
-        bestSecond = 0
-        totalFirst = 0
-        totalSecond = 0
+            First.append(bestFirst)
+            Second.append(bestSecond)
+            bookFirst.append(bestBookFirst)
+            bookSecond.append(bestBookSecond)
+            # if siteCount == 0:
+            #     siteCount = 1
+            totalLeft.append((totalFirst-siteCount)/siteCount)
+            # print(totalFirst)
+            totalRight.append((totalSecond-siteCount)/siteCount)
+            bestFirst = 0
+            bestSecond = 0
+            totalFirst = 0
+            totalSecond = 0
 
 
 
@@ -166,8 +165,8 @@ for i in eventsAPI:
 #Cleaning up API names strings so that they match KenPom names strings
         
 for i in range(len(AlphaAPIx)):
-    AlphaAPI.append(AlphaAPIx[i].replace(' Tar', '').replace(' Bald', '').replace(' Bananna', '').replace(' Big', '').replace(' Black', '').replace(' Blue', '').replace(' Great', '').replace(' River', '').replace(' Green', '').replace(' Golden', '').replace(' Yellow', '').replace(' Fighting', '').replace(' Demon', '').replace(' Red', '').replace(" Runnin'", '').replace(' Nittany', '').replace(' Scarlet', '').replace(' Horned', '').replace(' Rainbow', '').replace(" Fightin'", '').replace(' Thundering', '').replace(' Mean', '').replace(' Purple', '').replace(' Wolf', '').replace(' Mountain', '').replace(' Crimson', '').replace(' Delta', '').replace(' Fighting', '').replace(" Ragin'", '').replace("-", '').replace("Miss ", 'Mississippi ').replace(' Demons', '').replace(' Anteaters', ''))
-    BetaAPI.append(BetaAPIx[i].replace(' Tar', '').replace(' Bald', '').replace(' Bananna', '').replace(' Big', '').replace(' Black', '').replace(' Blue', '').replace(' Great', '').replace(' River', '').replace(' Green', '').replace(' Golden', '').replace(' Yellow', '').replace(' Fighting', '').replace(' Demon', '').replace(' Red', '').replace(" Runnin'", '').replace(' Nittany', '').replace(' Scarlet', '').replace(' Horned', '').replace(' Rainbow', '').replace(" Fightin'", '').replace(' Thundering', '').replace(' Mean', '').replace(' Purple', '').replace(' Wolf', '').replace(' Mountain', '').replace(' Crimson', '').replace(' Delta', '').replace(' Fighting', '').replace(" Ragin'", '').replace("-", '').replace("Miss ", 'Mississippi ').replace(' Demons', '').replace(' Anteaters', ''))
+    AlphaAPI.append(AlphaAPIx[i].replace(' Tar', '').replace(' Bald', '').replace(' Bananna', '').replace(' Big', '').replace(' Black', '').replace(' Blue', '').replace(' Great', '').replace(' River', '').replace(' Green', '').replace(' Golden', '').replace(' Yellow', '').replace(' Fighting', '').replace(' Demon', '').replace(' Red', '').replace(" Runnin'", '').replace(' Nittany', '').replace(' Scarlet', '').replace(' Horned', '').replace(' Rainbow', '').replace(" Fightin'", '').replace(' Thundering', '').replace(' Mean', '').replace(' Purple', '').replace(' Wolf', '').replace(' Mountain', '').replace(' Crimson', '').replace(' Delta', '').replace(' Fighting', '').replace(" Ragin'", '').replace("-", '').replace("Miss ", 'Mississippi ').replace(' Demons', '').replace(' Anteaters', '').replace('Arkansas-Little', 'Little').replace('ArkansasLittle', 'Little'))
+    BetaAPI.append(BetaAPIx[i].replace(' Tar', '').replace(' Bald', '').replace(' Bananna', '').replace(' Big', '').replace(' Black', '').replace(' Blue', '').replace(' Great', '').replace(' River', '').replace(' Green', '').replace(' Golden', '').replace(' Yellow', '').replace(' Fighting', '').replace(' Demon', '').replace(' Red', '').replace(" Runnin'", '').replace(' Nittany', '').replace(' Scarlet', '').replace(' Horned', '').replace(' Rainbow', '').replace(" Fightin'", '').replace(' Thundering', '').replace(' Mean', '').replace(' Purple', '').replace(' Wolf', '').replace(' Mountain', '').replace(' Crimson', '').replace(' Delta', '').replace(' Fighting', '').replace(" Ragin'", '').replace("-", '').replace("Miss ", 'Mississippi ').replace(' Demons', '').replace(' Anteaters', '').replace('Arkansas-Little', 'Little').replace('ArkansasLittle', 'Little'))
 
 
 
@@ -274,6 +273,7 @@ print(potential_winnings)
 print(winning_book)
 print(winning_odds)
 print(len(AlphaAPI))
+print(BetaAPI)
 print(len(kpWinnersProj))
 print(len(noVigRight))
 # print(noVigLeft)

@@ -752,16 +752,35 @@ Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnin
 12/29/20 7:41,12/29/20,Soccer English League Two,Southend United,100,0.2518,355,14,No Win,-100,12/29/20_Soccer English League Two_Southend United,williamhill_us
 12/29/20 7:41,12/29/20,Soccer English League Two,Colchester United,100,0.2944,325,25,No Win,-100,12/29/20_Soccer English League Two_Colchester United,intertops
 12/29/20 7:38,12/29/20,Soccer Spanish Primera Division,Levante,100,0.4502,145,10,Levante,145,12/29/20_Soccer Spanish Primera Division_Levante,bovada
-12/29/20 7:35,12/29/20,NBA,MIA,100,0.541619834,190,57.0,No Win,-100,12/29/20_NBA_MIA,betonlineag
-12/29/20 7:35,12/29/20,NBA,OKC,100,0.46732684799999996,175,28.0,No Win,-100,12/29/20_NBA_OKC,williamhill_us
-12/29/20 7:35,12/29/20,NBA,PHO,100,0.6797351970000001,68,14.0,PHO,68,12/29/20_NBA_PHO,bookmaker
-12/29/20 7:35,12/29/20,NBA,LAC,100,0.85129393,27,8.0,LAC,27,12/29/20_NBA_LAC,fanduel
-12/29/20 7:35,12/29/20,NBA,SAC,100,0.533265444,122,18.0,SAC,122,12/29/20_NBA_SAC,bookmaker
-12/29/20 17:20,12/29/20,NBA,CHI,100,0.325624701,235,9.0,CHI,235,12/29/20_NBA_CHI,fanduel
-12/29/20 7:33,12/29/20,CBB,Clemson,100,0.61,83,11.0,Clemson,83,12/29/20_CBB_Clemson,lowvig
-12/29/20 7:33,12/29/20,CBB,Northwestern,100,0.21,530,32.0,No Win,-100,12/29/20_CBB_Northwestern,fanduel
-12/29/20 17:20,12/29/20,CBB,South Florida,100,0.26,400,30.0,No Win,-100,12/29/20_CBB_South Florida,betmgm
-12/29/20 17:20,12/29/20,CBB,Tulsa,100,0.26,359,19.0,Tulsa,359,12/29/20_CBB_Tulsa,lowvig
-12/30/20 7:50,12/30/20,Soccer Scottish Premiership,Hamilton Academical,100,0.2762,850,162.0,No Win,-100,12/30/20_Soccer Scottish Premiership_Hamilton Academical,unibet
-12/30/20 7:50,12/30/20,Soccer Scottish Premiership,Hamilton Academical Draw,100,0.2472,370,16.0,Draw,370,12/30/20_Soccer Scottish Premiership_Hamilton Academical Draw,unibet
-12/30/20 7:54,12/30/20,Soccer Italy Serie B,Cittadella,100,0.4188,195,23.0,No Win,-100,12/30/20_Soccer Italy Serie B_Cittadella,bovada
+12/29/20 7:35,12/29/20,NBA,MIA,100,0.541619834,190,57,No Win,-100,12/29/20_NBA_MIA,betonlineag
+12/29/20 7:35,12/29/20,NBA,OKC,100,0.467326848,175,28,No Win,-100,12/29/20_NBA_OKC,williamhill_us
+12/29/20 7:35,12/29/20,NBA,PHO,100,0.679735197,68,14,PHO,68,12/29/20_NBA_PHO,bookmaker
+12/29/20 7:35,12/29/20,NBA,LAC,100,0.85129393,27,8,LAC,27,12/29/20_NBA_LAC,fanduel
+12/29/20 7:35,12/29/20,NBA,SAC,100,0.533265444,122,18,SAC,122,12/29/20_NBA_SAC,bookmaker
+12/29/20 17:20,12/29/20,NBA,CHI,100,0.325624701,235,9,CHI,235,12/29/20_NBA_CHI,fanduel
+12/29/20 7:33,12/29/20,CBB,Clemson,100,0.61,83,11,Clemson,83,12/29/20_CBB_Clemson,lowvig
+12/29/20 7:33,12/29/20,CBB,Northwestern,100,0.21,530,32,No Win,-100,12/29/20_CBB_Northwestern,fanduel
+12/29/20 17:20,12/29/20,CBB,South Florida,100,0.26,400,30,No Win,-100,12/29/20_CBB_South Florida,betmgm
+12/29/20 17:20,12/29/20,CBB,Tulsa,100,0.26,359,19,Tulsa,359,12/29/20_CBB_Tulsa,lowvig
+12/30/20 7:50,12/30/20,Soccer Scottish Premiership,Hamilton Academical,100,0.2762,850,162,No Win,-100,12/30/20_Soccer Scottish Premiership_Hamilton Academical,unibet
+12/30/20 7:50,12/30/20,Soccer Scottish Premiership,Hamilton Academical Draw,100,0.2472,370,16,Draw,370,12/30/20_Soccer Scottish Premiership_Hamilton Academical Draw,unibet
+12/30/20 7:54,12/30/20,Soccer Italy Serie B,Cittadella,100,0.4188,195,23,No Win,-100,12/30/20_Soccer Italy Serie B_Cittadella,bovada
+12/30/20 7:47,12/30/20,Soccer Spanish Primera Division,Atletico Madrid,100,0.6903,63,13,Atletico Madrid,63,12/30/20_Soccer Spanish Primera Division_Atletico Madrid,betonlineag
+12/29/20 17:19,12/30/20,Soccer Barclays Premier League,Newcastle,100,0.1267,950,33,No Win,-100,12/30/20_Soccer Barclays Premier League_Newcastle,bovada
+12/29/20 17:22,12/30/20,Soccer Barclays Premier League,Liverpool Draw,100,0.1859,509,13,Draw,509,12/30/20_Soccer Barclays Premier League_Liverpool Draw,sugarhouse
+12/29/20 18:02,12/30/20,Soccer Spanish Primera Division,Elche,100,0.1213,1100,45,No Win,-100,12/30/20_Soccer Spanish Primera Division_Elche,betonlineag
+12/29/20 18:02,12/30/20,Soccer Spanish Primera Division,Elche Draw,100,0.1962,509,19,Draw,509,12/30/20_Soccer Spanish Primera Division_Elche Draw,unibet
+12/30/20 7:40,12/30/20,CBB,Campbell,100,0.1,1150,24,No Win,-100,12/30/20_CBB_Campbell,betmgm
+12/30/20 7:40,12/30/20,CBB,Fresno St.,100,0.24,500,44,No Win,-100,12/30/20_CBB_Fresno St.,betmgm
+12/30/20 13:34,12/30/20,CBB,Notre Dame,100,0.34,240,15,No Win,-100,12/30/20_CBB_Notre Dame,fanduel
+12/30/20 7:38,12/30/20,NBA,ATL,100,0.382931261,260,37.0,No Win,-100,12/30/20_NBA_ATL,betmgm
+12/30/20 7:38,12/30/20,NBA,MEM,100,0.306806647,330,31.0,No Win,-100,12/30/20_NBA_MEM,fanduel
+12/30/20 7:38,12/30/20,NBA,MIA,100,0.48704106399999997,215,53.0,MIA,215,12/30/20_NBA_MIA,fanduel
+12/30/20 7:38,12/30/20,NBA,SAS,100,0.40978280200000006,220,31.0,No Win,-100,12/30/20_NBA_SAS,pointsbetus
+12/30/20 7:40,12/30/20,CBB,Auburn,100,0.44,154,12.0,No Win,-100,12/30/20_CBB_Auburn,bovada
+12/30/20 7:40,12/30/20,CBB,Eastern Illinois,100,0.44,150,9.0,No Win,-100,12/30/20_CBB_Eastern Illinois,bovada
+12/30/20 7:40,12/30/20,CBB,Tennessee St.,100,0.34,220,8.0,No Win,-100,12/30/20_CBB_Tennessee St.,bovada
+12/30/20 7:40,12/30/20,CBB,Missouri,100,0.43,160,11.0,No Win,-100,12/30/20_CBB_Missouri,williamhill_us
+12/30/20 7:40,12/30/20,CBB,Portland,100,0.45,154,14.0,No Win,-100,12/30/20_CBB_Portland,betmgm
+12/30/20 7:40,12/30/20,CBB,Sacramento St.,100,0.13,800,17.0,No Win,-100,12/30/20_CBB_Sacramento St.,draftkings
+12/30/20 13:34,12/30/20,CBB,Tennessee Tech,100,0.56,104,14.0,Tennessee Tech,104,12/30/20_CBB_Tennessee Tech,draftkings

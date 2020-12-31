@@ -774,20 +774,37 @@ Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnin
 12/30/20 7:38,12/30/20,NBA,MEM,100,0.306806647,330,31,12/30/20_NBA_MEM,fanduel
 12/30/20 7:38,12/30/20,NBA,MIA,100,0.487041064,215,53,12/30/20_NBA_MIA,fanduel
 12/30/20 7:38,12/30/20,NBA,SAS,100,0.409782802,220,31,12/30/20_NBA_SAS,pointsbetus
-12/30/20 7:40,12/30/20,CBB,Fordham,100,0.69,57,8,12/30/20_CBB_Fordham,lowvig
 12/30/20 7:40,12/30/20,CBB,Campbell,100,0.1,1150,24,12/30/20_CBB_Campbell,betmgm
 12/30/20 7:40,12/30/20,CBB,Fresno St.,100,0.24,500,44,12/30/20_CBB_Fresno St.,betmgm
-12/30/20 7:40,12/30/20,CBB,Butler,100,0.38,185,8,12/30/20_CBB_Butler,gtbets
-12/30/20 7:40,12/30/20,CBB,Duquesne,100,0.22,400,9,12/30/20_CBB_Duquesne,gtbets
 12/30/20 7:40,12/30/20,CBB,Auburn,100,0.44,154,12,12/30/20_CBB_Auburn,bovada
 12/30/20 7:40,12/30/20,CBB,Eastern Illinois,100,0.44,150,9,12/30/20_CBB_Eastern Illinois,bovada
 12/30/20 7:40,12/30/20,CBB,Tennessee St.,100,0.34,220,8,12/30/20_CBB_Tennessee St.,bovada
-12/30/20 7:40,12/30/20,CBB,DePaul,100,0.26,340,14,12/30/20_CBB_DePaul,betmgm
 12/30/20 7:40,12/30/20,CBB,Missouri,100,0.43,160,11,12/30/20_CBB_Missouri,williamhill_us
-12/30/20 7:40,12/30/20,CBB,Florida,100,0.81,37,10,12/30/20_CBB_Florida,bovada
 12/30/20 7:40,12/30/20,CBB,Portland,100,0.45,154,14,12/30/20_CBB_Portland,betmgm
 12/30/20 7:40,12/30/20,CBB,Sacramento St.,100,0.13,800,17,12/30/20_CBB_Sacramento St.,draftkings
 12/30/20 7:47,12/30/20,Soccer Spanish Primera Division,Atletico Madrid,100,0.6903,63,13,12/30/20_Soccer Spanish Primera Division_Atletico Madrid,betonlineag
 12/30/20 7:50,12/30/20,Soccer Scottish Premiership,Hamilton Academical,100,0.2762,850,162,12/30/20_Soccer Scottish Premiership_Hamilton Academical,unibet
 12/30/20 7:50,12/30/20,Soccer Scottish Premiership,Hamilton Academical Draw,100,0.2472,370,16,12/30/20_Soccer Scottish Premiership_Hamilton Academical Draw,unibet
 12/30/20 7:54,12/30/20,Soccer Italy Serie B,Cittadella,100,0.4188,195,23,12/30/20_Soccer Italy Serie B_Cittadella,bovada
+12/30/20 13:34,12/30/20,CBB,Notre Dame,100,0.34,240,15,12/30/20_CBB_Notre Dame,fanduel
+12/30/20 13:34,12/30/20,CBB,Tennessee Tech,100,0.56,104,14,12/30/20_CBB_Tennessee Tech,draftkings
+12/30/20 21:38,12/31/20,CBB,Colorado,100,0.41,290,59,12/31/20_CBB_Colorado,fanduel
+12/30/20 21:39,12/31/20,NBA,HOU,100,0.728772814,58,15,12/31/20_NBA_HOU,lowvig
+12/30/20 21:39,12/31/20,NBA,OKC,100,0.464687884,179,30,12/31/20_NBA_OKC,gtbets
+2020-12-31 07:07:06,12/31/20,NBA,ORL,100,0.4876711520484506,129,12,12/31/20_NBA_ORL,williamhill_us
+2020-12-31 07:07:52,12/31/20,CBB,Air Force,100,0.20999999999999996,610,49,12/31/20_CBB_Air Force,fanduel
+2020-12-31 07:07:52,12/31/20,CBB,Minnesota,100,0.26,325,10,12/31/20_CBB_Minnesota,bovada
+2020-12-31 07:07:52,12/31/20,CBB,San Diego,100,0.14,830,30,12/31/20_CBB_San Diego,fanduel
+2020-12-31 07:07:52,12/31/20,CBB,Utah,100,0.30000000000000004,280,14,12/31/20_CBB_Utah,fanduel
+2020-12-31 07:07:52,12/31/20,CBB,Washington,100,0.29000000000000004,320,21,12/31/20_CBB_Washington,lowvig
+2020-12-31 07:07:52,12/31/20,CBB,New Mexico,100,0.32999999999999996,245,13,12/31/20_CBB_New Mexico,fanduel
+2020-12-31 07:07:52,12/31/20,CBB,Idaho,100,0.52,140,24,12/31/20_CBB_Idaho,lowvig
+2020-12-31 14:11:07,12/31/20,CBB,Presbyterian,100,0.36,200,8,12/31/20_CBB_Presbyterian,betmgm
+2020-12-31 14:11:53,12/31/20,NBA,CHI,100,0.3325693320406695,229,9,12/31/20_NBA_CHI,williamhill_us
+2020-12-31 14:41:02,12/31/20,CFB,Army,100,0.3505489438,350,57,12/31/20_CFB_Army,betmgm
+2020-12-31 15:00:56,1/1/21,CFB,Cincinnati,100,0.37992223869999997,229,25,1/1/21_CFB_Cincinnati,gtbets
+2020-12-31 15:00:56,1/1/21,CFB,Auburn,100,0.5418987202000001,165,43,1/1/21_CFB_Auburn,lowvig
+2020-12-31 15:00:56,1/1/21,CFB,Notre Dame,100,0.16958902929999997,840,59,1/1/21_CFB_Notre Dame,gtbets
+2020-12-31 15:00:56,1/1/21,CFB,Ohio St.,100,0.46480291250000005,250,62,1/1/21_CFB_Ohio St.,lowvig
+2020-12-31 15:10:45,1/1/21,CBB,Green Bay,100,0.28,290,9,1/1/21_CBB_Green Bay,fanduel
+2020-12-31 15:10:45,1/1/21,CBB,Long Beach St.,100,0.39,179,9,1/1/21_CBB_Long Beach St.,fanduel
