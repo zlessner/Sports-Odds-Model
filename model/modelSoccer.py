@@ -291,35 +291,18 @@ def Prediction():
                 
             if BetaAPI[i] == FiveThirtyEightGames[j][3]:
                 AwayBetaOdds = int((((Home[i])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
+                AwayAlphaDrawOdds = int((((draw[i])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
                 if (AwayBetaOdds>7):
                     teamsToBet1.append({BetaAPI[i]: AwayBetaOdds})
                     potential_winnings.append(int(((Home[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][5]))
                     winning_book.append(bookHome[i])
-
-
-# may be able to delete these last two if statements because they're not grabbing everything since home and away are organized now
-            if AlphaAPI[i] == FiveThirtyEightGames[j][3]:
-                AwayAlphaOdds = int((((Away[i])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
-                AwayAlphaDrawOdds = int((((draw[i])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
-                if (AwayAlphaOdds>7):
-                    teamsToBet1.append({AlphaAPI[i]: AwayAlphaOdds})
-                    potential_winnings.append(int(((Away[i])-1)*100))
-                    winning_odds.append(float(FiveThirtyEightGames[j][5]))
-                    winning_book.append(bookAway[i])
                 if (AwayAlphaDrawOdds>7):
                     teamsToBet1.append({AlphaAPI[i] + " Draw": AwayAlphaDrawOdds})
                     winning_odds.append(float(FiveThirtyEightGames[j][6]))
                     potential_winnings.append(int(((draw[i])-1)*100))
                     winning_book.append(bookDraw[i])
-                
-            if BetaAPI[i] == FiveThirtyEightGames[j][2]:
-                HomeBetaOdds = int((((Home[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
-                if (HomeBetaOdds>7):
-                    teamsToBet1.append({BetaAPI[i]: HomeBetaOdds})
-                    potential_winnings.append(int(((Home[i])-1)*100))
-                    winning_odds.append(float(FiveThirtyEightGames[j][4]))
-                    winning_book.append(bookHome[i])
+
 
 
 Prediction()

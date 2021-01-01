@@ -51,7 +51,7 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 
 soccer = True
 
-sport = "soccer_efl_champ"
+sport = "soccer_england_league2"
 
 querystring = {"sport":sport,"region":"us","mkt":"h2h"}
 
@@ -75,7 +75,7 @@ futureGame = gameDate + datetime.timedelta(1)
 
 futureGameMDY = (futureGame.strftime("%-m/%-d/%y"))
 
-yesterdayGame = gameDate + datetime.timedelta(-1)
+yesterdayGame = gameDate + datetime.timedelta(0)
 
 yesterdayGameMDY = (yesterdayGame.strftime("%-m/%-d/%y"))
 
@@ -174,6 +174,6 @@ if sport == "soccer_spl":
     
 
 # Comment sport out if soccer
-# sport = 'CBB'  
+# sport = 'NBA'  
     
 

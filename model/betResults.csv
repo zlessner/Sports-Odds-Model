@@ -773,14 +773,28 @@ Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnin
 12/30/20 7:40,12/30/20,CBB,Campbell,100,0.1,1150,24,No Win,-100,12/30/20_CBB_Campbell,betmgm
 12/30/20 7:40,12/30/20,CBB,Fresno St.,100,0.24,500,44,No Win,-100,12/30/20_CBB_Fresno St.,betmgm
 12/30/20 13:34,12/30/20,CBB,Notre Dame,100,0.34,240,15,No Win,-100,12/30/20_CBB_Notre Dame,fanduel
-12/30/20 7:38,12/30/20,NBA,ATL,100,0.382931261,260,37.0,No Win,-100,12/30/20_NBA_ATL,betmgm
-12/30/20 7:38,12/30/20,NBA,MEM,100,0.306806647,330,31.0,No Win,-100,12/30/20_NBA_MEM,fanduel
-12/30/20 7:38,12/30/20,NBA,MIA,100,0.48704106399999997,215,53.0,MIA,215,12/30/20_NBA_MIA,fanduel
-12/30/20 7:38,12/30/20,NBA,SAS,100,0.40978280200000006,220,31.0,No Win,-100,12/30/20_NBA_SAS,pointsbetus
-12/30/20 7:40,12/30/20,CBB,Auburn,100,0.44,154,12.0,No Win,-100,12/30/20_CBB_Auburn,bovada
-12/30/20 7:40,12/30/20,CBB,Eastern Illinois,100,0.44,150,9.0,No Win,-100,12/30/20_CBB_Eastern Illinois,bovada
-12/30/20 7:40,12/30/20,CBB,Tennessee St.,100,0.34,220,8.0,No Win,-100,12/30/20_CBB_Tennessee St.,bovada
-12/30/20 7:40,12/30/20,CBB,Missouri,100,0.43,160,11.0,No Win,-100,12/30/20_CBB_Missouri,williamhill_us
-12/30/20 7:40,12/30/20,CBB,Portland,100,0.45,154,14.0,No Win,-100,12/30/20_CBB_Portland,betmgm
-12/30/20 7:40,12/30/20,CBB,Sacramento St.,100,0.13,800,17.0,No Win,-100,12/30/20_CBB_Sacramento St.,draftkings
-12/30/20 13:34,12/30/20,CBB,Tennessee Tech,100,0.56,104,14.0,Tennessee Tech,104,12/30/20_CBB_Tennessee Tech,draftkings
+12/30/20 7:38,12/30/20,NBA,ATL,100,0.382931261,260,37,No Win,-100,12/30/20_NBA_ATL,betmgm
+12/30/20 7:38,12/30/20,NBA,MEM,100,0.306806647,330,31,No Win,-100,12/30/20_NBA_MEM,fanduel
+12/30/20 7:38,12/30/20,NBA,MIA,100,0.487041064,215,53,MIA,215,12/30/20_NBA_MIA,fanduel
+12/30/20 7:38,12/30/20,NBA,SAS,100,0.409782802,220,31,No Win,-100,12/30/20_NBA_SAS,pointsbetus
+12/30/20 7:40,12/30/20,CBB,Auburn,100,0.44,154,12,No Win,-100,12/30/20_CBB_Auburn,bovada
+12/30/20 7:40,12/30/20,CBB,Eastern Illinois,100,0.44,150,9,No Win,-100,12/30/20_CBB_Eastern Illinois,bovada
+12/30/20 7:40,12/30/20,CBB,Tennessee St.,100,0.34,220,8,No Win,-100,12/30/20_CBB_Tennessee St.,bovada
+12/30/20 7:40,12/30/20,CBB,Missouri,100,0.43,160,11,No Win,-100,12/30/20_CBB_Missouri,williamhill_us
+12/30/20 7:40,12/30/20,CBB,Portland,100,0.45,154,14,No Win,-100,12/30/20_CBB_Portland,betmgm
+12/30/20 7:40,12/30/20,CBB,Sacramento St.,100,0.13,800,17,No Win,-100,12/30/20_CBB_Sacramento St.,draftkings
+12/30/20 13:34,12/30/20,CBB,Tennessee Tech,100,0.56,104,14,Tennessee Tech,104,12/30/20_CBB_Tennessee Tech,draftkings
+12/30/20 21:39,12/31/20,NBA,HOU,100,0.728772814,58,15,HOU,58,12/31/20_NBA_HOU,lowvig
+12/30/20 21:39,12/31/20,NBA,OKC,100,0.464687884,179,30,No Win,-100,12/31/20_NBA_OKC,gtbets
+12/31/20 7:07,12/31/20,NBA,ORL,100,0.487671152,129,12,No Win,-100,12/31/20_NBA_ORL,williamhill_us
+12/31/20 14:11,12/31/20,NBA,CHI,100,0.332569332,229,9,CHI,229,12/31/20_NBA_CHI,williamhill_us
+12/30/20 21:38,12/31/20,CBB,Colorado,100,0.41,290,59,Colorado,290,12/31/20_CBB_Colorado,fanduel
+12/31/20 7:07,12/31/20,CBB,Air Force,100,0.21,610,49,No Win,-100,12/31/20_CBB_Air Force,fanduel
+12/31/20 7:07,12/31/20,CBB,Minnesota,100,0.26,325,10,No Win,-100,12/31/20_CBB_Minnesota,bovada
+12/31/20 7:07,12/31/20,CBB,San Diego,100,0.14,830,30,No Win,-100,12/31/20_CBB_San Diego,fanduel
+12/31/20 7:07,12/31/20,CBB,Utah,100,0.3,280,14,No Win,-100,12/31/20_CBB_Utah,fanduel
+12/31/20 7:07,12/31/20,CBB,Washington,100,0.29,320,21,No Win,-100,12/31/20_CBB_Washington,lowvig
+12/31/20 7:07,12/31/20,CBB,New Mexico,100,0.33,245,13,No Win,-100,12/31/20_CBB_New Mexico,fanduel
+12/31/20 7:07,12/31/20,CBB,Idaho,100,0.52,140,24,No Win,-100,12/31/20_CBB_Idaho,lowvig
+12/31/20 14:11,12/31/20,CBB,Presbyterian,100,0.36,200,8,Presbyterian,200,12/31/20_CBB_Presbyterian,betmgm
+12/31/20 14:41,12/31/20,CFB,Army,100,0.350548944,350,57,No Win,-100,12/31/20_CFB_Army,betmgm

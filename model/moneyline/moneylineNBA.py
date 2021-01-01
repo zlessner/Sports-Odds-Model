@@ -204,3 +204,94 @@ for i in range(len(theOddsAPIGames)):
 
         if (theOddsAPIGames[i]['teams'][1] == 'Washington Wizards'):
             theOddsAPIGames[i]['teams'][1] = 'WAS'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Chicago Bulls'):
+            theOddsAPIGames[i]['home_team'] = 'CHI'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Charlotte Hornets'):
+            theOddsAPIGames[i]['home_team'] = 'CHO'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Denver Nuggets'):
+            theOddsAPIGames[i]['home_team'] = 'DEN'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Detroit Pistons'):
+            theOddsAPIGames[i]['home_team'] = 'DET'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Golden State Warriors'):
+            theOddsAPIGames[i]['home_team'] = 'GSW'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Los Angeles Clippers'):
+            theOddsAPIGames[i]['home_team'] = 'LAC'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Los Angeles Lakers'):
+            theOddsAPIGames[i]['home_team'] = 'LAL'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Miami Heat'):
+            theOddsAPIGames[i]['home_team'] = 'MIA'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Milwaukee Bucks'):
+            theOddsAPIGames[i]['home_team'] = 'MIL'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Minnesota Timberwolves'):
+            theOddsAPIGames[i]['home_team'] = 'MIN'
+
+        if (theOddsAPIGames[i]['home_team'] == 'New Orleans Pelicans'):
+            theOddsAPIGames[i]['home_team'] = 'NOP'
+
+        if (theOddsAPIGames[i]['home_team'] == 'New York Knicks'):
+            theOddsAPIGames[i]['home_team'] = 'NYK'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Oklahoma City Thunder'):
+            theOddsAPIGames[i]['home_team'] = 'OKC'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Philadelphia 76ers'):
+            theOddsAPIGames[i]['home_team'] = 'PHI'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Phoenix Suns'):
+            theOddsAPIGames[i]['home_team'] = 'PHO'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Sacramento Kings'):
+            theOddsAPIGames[i]['home_team'] = 'SAC'
+
+        if (theOddsAPIGames[i]['home_team'] == 'San Antonio Spurs'):
+            theOddsAPIGames[i]['home_team'] = 'SAS'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Atlanta Hawks'):
+            theOddsAPIGames[i]['home_team'] = 'ATL'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Boston Celtics'):
+            theOddsAPIGames[i]['home_team'] = 'BOS'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Brooklyn Nets'):
+            theOddsAPIGames[i]['home_team'] = 'BRK'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Cleveland Cavaliers'):
+            theOddsAPIGames[i]['home_team'] = 'CLE'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Dallas Mavericks'):
+            theOddsAPIGames[i]['home_team'] = 'DAL'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Houston Rockets'):
+            theOddsAPIGames[i]['home_team'] = 'HOU'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Indiana Pacers'):
+            theOddsAPIGames[i]['home_team'] = 'IND'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Memphis Grizzlies'):
+            theOddsAPIGames[i]['home_team'] = 'MEM'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Orlando Magic'):
+            theOddsAPIGames[i]['home_team'] = 'ORL'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Portland Trail Blazers'):
+            theOddsAPIGames[i]['home_team'] = 'POR'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Toronto Raptors'):
+            theOddsAPIGames[i]['home_team'] = 'TOR'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Utah Jazz'):
+            theOddsAPIGames[i]['home_team'] = 'UTA'
+
+        if (theOddsAPIGames[i]['home_team'] == 'Washington Wizards'):
+            theOddsAPIGames[i]['home_team'] = 'WAS'
+

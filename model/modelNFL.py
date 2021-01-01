@@ -52,22 +52,23 @@ siteCount = 0
 
 # Extracting best odds and sportbook names with best odds
 for i in range(len(theOddsAPIGames)):
+    if (datetime.utcfromtimestamp(([theOddsAPIGames[i]['commence_time']][0]-30000)).strftime('%Y-%m-%d') == stringGameDate):
 
-    if len(theOddsAPIGames[i]['sites']) > 0:
-        siteCount = len(theOddsAPIGames[i]['sites'])
-    
-        for j in range(len(theOddsAPIGames[i]['sites'])):
+        if len(theOddsAPIGames[i]['sites']) > 0:
+            siteCount = len(theOddsAPIGames[i]['sites'])
+        
+            for j in range(len(theOddsAPIGames[i]['sites'])):
 
-            # if I wanted to use just one specific sports book use the below code
-            # if theOddsAPIGames[i]['sites'][j]['site_key'] == 'mybookieag':
-                # print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]])
-                # Home.append(([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]))
+                # if I wanted to use just one specific sports book use the below code
+                # if theOddsAPIGames[i]['sites'][j]['site_key'] == 'mybookieag':
+                    # print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]])
+                    # Home.append(([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]))
 
-            # if theOddsAPIGames[i]['sites'][j]['site_key'] == 'gtbets':
-            #     print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]])
+                # if theOddsAPIGames[i]['sites'][j]['site_key'] == 'gtbets':
+                #     print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]])
 
 
-            if (datetime.utcfromtimestamp(([theOddsAPIGames[i]['commence_time']][0]-30000)).strftime('%Y-%m-%d') == stringGameDate):
+                
                 eventsAPI[i] = [theOddsAPIGames[i]['sport_key']], [theOddsAPIGames[i]['commence_time']], [theOddsAPIGames[i]['teams']], [theOddsAPIGames[i]['sites'][j]['odds']], [theOddsAPIGames[i]['sites'][j]['site_key']], [theOddsAPIGames[i]['home_team']]
                 # break
                 if theOddsAPIGames[i]['sites'][j]['site_key'] == 'betfair':
@@ -246,6 +247,8 @@ for i in range(len(AlphaAPI)):
                     potential_winnings.append(int(((Away[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][3]))
                     winning_book.append(bookAway[i])
+                    print("11111")
+                    print(teamstobetNFL)
         except KeyError:
             continue
 
@@ -257,6 +260,8 @@ for i in range(len(AlphaAPI)):
                     potential_winnings.append(int(((Home[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][4]))
                     winning_book.append(bookHome[i])
+                    print("22222")
+                    print(teamstobetNFL)
         except KeyError:
             continue
 
@@ -268,6 +273,8 @@ for i in range(len(AlphaAPI)):
                     potential_winnings.append(int(((Away[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][4]))
                     winning_book.append(bookAway[i])
+                    print("33333")
+                    print(teamstobetNFL)
         except KeyError:
             continue
 
@@ -279,6 +286,8 @@ for i in range(len(AlphaAPI)):
                     potential_winnings.append(int(((Home[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][3]))
                     winning_book.append(bookHome[i])
+                    print("44444")
+                    print(teamstobetNFL)
         except KeyError:
             continue
 
