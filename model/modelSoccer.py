@@ -109,22 +109,23 @@ siteCount = 0
 
 # Extracting best odds and sportbook names with best odds
 for i in range(len(theOddsAPIGames)):
+    if (datetime.utcfromtimestamp(([theOddsAPIGames[i]['commence_time']][0]-30000)).strftime('%Y-%m-%d') == stringGameDate):
 
-    if len(theOddsAPIGames[i]['sites']) > 0:
-        siteCount = len(theOddsAPIGames[i]['sites'])
-    
-        for j in range(len(theOddsAPIGames[i]['sites'])):
+        if len(theOddsAPIGames[i]['sites']) > 0:
+            siteCount = len(theOddsAPIGames[i]['sites'])
+        
+            for j in range(len(theOddsAPIGames[i]['sites'])):
 
-            # if I wanted to use just one specific sports book use the below code
-            # if theOddsAPIGames[i]['sites'][j]['site_key'] == 'mybookieag':
-                # print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]])
-                # Home.append(([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]))
+                # if I wanted to use just one specific sports book use the below code
+                # if theOddsAPIGames[i]['sites'][j]['site_key'] == 'mybookieag':
+                    # print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]])
+                    # Home.append(([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]))
 
-            # if theOddsAPIGames[i]['sites'][j]['site_key'] == 'gtbets':
-            #     print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]])
+                # if theOddsAPIGames[i]['sites'][j]['site_key'] == 'gtbets':
+                #     print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]])
 
 
-            if (datetime.utcfromtimestamp(([theOddsAPIGames[i]['commence_time']][0]-30000)).strftime('%Y-%m-%d') == stringGameDate):
+                
                 eventsAPI[i] = [theOddsAPIGames[i]['sport_key']], [theOddsAPIGames[i]['commence_time']], [theOddsAPIGames[i]['teams']], [theOddsAPIGames[i]['sites'][j]['odds']], [theOddsAPIGames[i]['sites'][j]['site_key']], [theOddsAPIGames[i]['home_team']]
                 # break
                 if theOddsAPIGames[i]['sites'][j]['site_key'] == 'betfair':
@@ -133,25 +134,20 @@ for i in range(len(theOddsAPIGames)):
 
                 #putting home team first, away team second
                 if theOddsAPIGames[i]['sites'][j]['site_key'] != 'betfair':
-                    totalDraw = totalDraw + [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][2]][0]
-                    print(totalDraw)
-                    print("mooo")
+                    if len(theOddsAPIGames[i]['sites'][j]['odds']['h2h']) == 3:
+                        totalDraw = totalDraw + [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][2]][0]
 
-                    if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][2]][0] > bestDraw:
-                        bestDraw = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][2]][0]
-                        bestBookDraw = theOddsAPIGames[i]['sites'][j]['site_key']
+                        if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][2]][0] > bestDraw:
+                            bestDraw = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][2]][0]
+                            bestBookDraw = theOddsAPIGames[i]['sites'][j]['site_key']
 
                     if eventsAPI[i][2][0][1] == eventsAPI[i][5][0]:
-                        # print(totalHome)
-                        # print("joe")
                         totalHome = totalHome + [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]
                         totalAway = totalAway + [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0]
 
                     else:
                         totalHome = totalHome + [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0]
                         totalAway = totalAway + [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]
-                        # print(totalHome)
-                        # print("matt")
 
 
                     if eventsAPI[i][2][0][1] == eventsAPI[i][5][0]:
@@ -177,11 +173,11 @@ for i in range(len(theOddsAPIGames)):
                             bestBookAway = theOddsAPIGames[i]['sites'][j]['site_key']
         
         
-        print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0])
-        print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0])
-        print(totalHome)
-        print(siteCount)
-        print(totalDraw)
+        # print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0])
+        # print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0])
+        # print(totalHome)
+        # print(siteCount)
+        # print(totalDraw)
         Home.append(bestHome)
         Away.append(bestAway)
         draw.append(bestDraw)
@@ -199,9 +195,9 @@ for i in range(len(theOddsAPIGames)):
         totalDraw = 0
 
 
-print(totalAwayAvg)
-print(totalHomeAvg)
-print("lllll")
+# print(totalAwayAvg)
+# print(totalHomeAvg)
+
 
 
 for i in range(len(totalHomeAvg)):
@@ -247,10 +243,10 @@ for i in range(len(AlphaAPIx)):
     AlphaAPI.append(AlphaAPIx[i].replace("Ch\\u00e2teauroux", 'Chateauroux').replace("Châteauroux", 'Chateauroux').replace("FC Chambly", 'Chambly Thelle FC').replace("Le Mans FC", 'Le Mans').replace("Rodez AF", 'Rodez').replace("Orl\\u00e9ans", 'Orléans').replace("SM Caen", 'Caen').replace("EA Guingamp", 'Guingamp').replace("AC Ajaccio", 'Ajaccio').replace("Dijon", 'Dijon FCO').replace("Nîmes Olympique", 'Nimes').replace("Stade de Reims", 'Reims').replace("Saint Etienne", 'St Etienne').replace("Wolverhampton Wanderers", 'Wolverhampton').replace("Newcastle United", 'Newcastle').replace("Bournemouth", 'AFC Bournemouth').replace("Blackburn Rovers", 'Blackburn').replace("Birmingham City", 'Birmingham').replace("Wigan Athletic", 'Wigan').replace("Bolton Wanderers", 'Bolton').replace("Barrow AFC", 'Barrow').replace("Olympiakos", 'Olympiacos').replace("RCD Espanyol", 'Espanyol').replace("Leganés", 'Leganes').replace("Zaragoza", 'Real Zaragoza').replace("Málaga", 'M√°laga').replace("Sporting Gijón", 'Sporting Gij√≥n').replace("Oviedo", 'Real Oviedo').replace("CF Fuenlabrada", 'Fuenlabrada').replace("CD Mirandés", 'Mirandes').replace("CD Castellón", 'Castellon').replace("UD Logroñés", 'Logrones').replace("Alcorcón", 'AD Alcorcon').replace("Sabadell FC", 'Sabadell').replace("İstanbul Başakşehir FK", 'Istanbul Basaksehir').replace("AZ Alkmaar", 'AZ').replace("PSV Eindhoven", 'PSV').replace("Vitesse Arnhem", 'Vitesse').replace("FC Twente Enschede", 'FC Twente').replace("PSV Eindhoven", 'PSV').replace("Groningen", 'FC Groningen').replace("FC Zwolle", 'PEC Zwolle').replace("FC Emmen", 'Emmen').replace("Sparta Rotterdam", 'Sparta').replace("Heracles Almelo", 'Heracles').replace("RKC Waalwijk", 'RKC').replace("Union Berlin", '1. FC Union Berlin').replace("FC Koln", 'RKFC CologneC').replace("Augsburg", 'FC Augsburg').replace("FSV Mainz 05", 'Mainz').replace("Dijon", 'Dijon FC').replace("RC Lens", 'Lens').replace("Nîmes Olympique", 'Nimes').replace("Paris Saint Germain", 'Paris Saint-Germain').replace("Stade de Reims", 'Reims').replace("Saint Etienne", 'St Etienne').replace("Rennes", 'Stade Rennes').replace("Nancy", 'AS Nancy Lorraine').replace("USL Dunkerque", 'Dunkerque').replace("Pau FC", 'Pau').replace("Sarpsborg FK", 'Sarpsborg').replace("ø", 'o').replace("Dynamo Kyiv", 'Dynamo Kiev').replace("Sevilla", 'Sevilla FC').replace("SS Lazio", 'Lazio').replace("Hapoel Beer Sheva FC", "Hapoel Be'er").replace("Slavia Praha", "Slavia Prague").replace("Dundee United", "Dundee Utd").replace("Arsenal Tula", "FC Arsenal Tula").replace("Tambov", "FC Tambov").replace("FC Rotor Volgograd", "FK Volgograd").replace("FK Rostov", "Rostov").replace("FC Sochi", "Sochi").replace("FC Akhmat Grozny", "Terek Grozny").replace("Hellas Verona FC", "Verona").replace("Ostersunds FK", "√ñstersunds FK").replace("Hammarby IF", "Hammarby").replace("Mjällby AIF", "Mjallby").replace("Varbergs BoIS", "Varbergs BoIS FC").replace("FC Internazionale", "Internazionale").replace("SPAL", "Spal").replace("Pescara", "US Pescara").replace("Venezia", "F.B.C Unione Venezia").replace("Pordenone", "Pordenone Calcio").replace("Ferencváros TC", "Ferencvaros").replace("Alavés", "Alav√©s").replace("Atlético Madrid", "Atletico Madrid").replace("Cadiz", "Cadiz CF").replace("Elche CF", "Elche").replace("Grenada CF", "Grenada").replace("CA Osasuna", "Osasuna").replace("Valladolid", "Real Valladolid").replace("Huesca", "SD Huesca").replace("Hiroshima Sanfrecce FC", "Sanfrecce Hiroshima").replace("Shimizu S Pulse", "Shimizu S-Pulse").replace("Basaksehir", "Istanbul Basaksehir").replace("Ankaragücü", "Ankaragucu").replace("Besiktas JK", "Besiktas").replace("Çaykur Rizespor", "Caykur Rizespor").replace("Erzurum BB", "Erzurumspor").replace("Gazişehir Gaziantep", "Gazisehir Gaziantep").replace("Genclerbirligi SK", "Genclerbirligi").replace("Kasimpasa SK", "Kasimpasa").replace("Torku Konyaspor", "Konyaspor"))
     BetaAPI.append(BetaAPIx[i].replace("Ch\\u00e2teauroux", 'Chateauroux').replace("Châteauroux", 'Chateauroux').replace("FC Chambly", 'Chambly Thelle FC').replace("Le Mans FC", 'Le Mans').replace("Rodez AF", 'Rodez').replace("Orl\\u00e9ans", 'Orléans').replace("SM Caen", 'Caen').replace("EA Guingamp", 'Guingamp').replace("AC Ajaccio", 'Ajaccio').replace("Dijon", 'Dijon FCO').replace("Nîmes Olympique", 'Nimes').replace("Stade de Reims", 'Reims').replace("Saint Etienne", 'St Etienne').replace("Wolverhampton Wanderers", 'Wolverhampton').replace("Newcastle United", 'Newcastle').replace("Bournmouth", 'AFC Bournmouth').replace("Blackburn Rovers", 'Blackburn').replace("Birmingham City", 'Birmingham').replace("Wigan Athletic", 'Wigan').replace("Bolton Wanderers", 'Bolton').replace("Barrow AFC", 'Barrow').replace("Olympiakos", 'Olympiacos').replace("RCD Espanyol", 'Espanyol').replace("Leganés", 'Leganes').replace("Zaragoza", 'Real Zaragoza').replace("Málaga", 'M√°laga').replace("Sporting Gijón", 'Sporting Gij√≥n').replace("Oviedo", 'Real Oviedo').replace("CF Fuenlabrada", 'Fuenlabrada').replace("CD Mirandés", 'Mirandes').replace("CD Castellón", 'Castellon').replace("UD Logroñés", 'Logrones').replace("Alcorcón", 'AD Alcorcon').replace("Sabadell FC", 'Sabadell').replace("İstanbul Başakşehir FK", 'Istanbul Basaksehir').replace("AZ Alkmaar", 'AZ').replace("PSV Eindhoven", 'PSV').replace("Vitesse Arnhem", 'Vitesse').replace("FC Twente Enschede", 'FC Twente').replace("PSV Eindhoven", 'PSV').replace("Groningen", 'FC Groningen').replace("FC Zwolle", 'PEC Zwolle').replace("FC Emmen", 'Emmen').replace("Sparta Rotterdam", 'Sparta').replace("Heracles Almelo", 'Heracles').replace("RKC Waalwijk", 'RKC').replace("Union Berlin", '1. FC Union Berlin').replace("FC Koln", 'RKFC CologneC').replace("Augsburg", 'FC Augsburg').replace("FSV Mainz 05", 'Mainz').replace("Dijon", 'Dijon FC').replace("RC Lens", 'Lens').replace("Nîmes Olympique", 'Nimes').replace("Paris Saint Germain", 'Paris Saint-Germain').replace("Stade de Reims", 'Reims').replace("Saint Etienne", 'St Etienne').replace("Rennes", 'Stade Rennes').replace("Nancy", 'AS Nancy Lorraine').replace("USL Dunkerque", 'Dunkerque').replace("Pau FC", 'Pau').replace("Sarpsborg FK", 'Sarpsborg').replace("ø", 'o').replace("Dynamo Kyiv", 'Dynamo Kiev').replace("Sevilla", 'Sevilla FC').replace("SS Lazio", 'Lazio').replace("Hapoel Beer Sheva FC", "Hapoel Be'er").replace("Slavia Praha", "Slavia Prague").replace("Dundee United", "Dundee Utd").replace("Arsenal Tula", "FC Arsenal Tula").replace("Tambov", "FC Tambov").replace("FC Rotor Volgograd", "FK Volgograd").replace("FK Rostov", "Rostov").replace("FC Sochi", "Sochi").replace("FC Akhmat Grozny", "Terek Grozny").replace("Hellas Verona FC", "Verona").replace("Ostersunds FK", "√ñstersunds FK").replace("Hammarby IF", "Hammarby").replace("Mjällby AIF", "Mjallby").replace("Varbergs BoIS", "Varbergs BoIS FC").replace("FC Internazionale", "Internazionale").replace("SPAL", "Spal").replace("Pescara", "US Pescara").replace("Venezia", "F.B.C Unione Venezia").replace("Pordenone", "Pordenone Calcio").replace("Ferencváros TC", "Ferencvaros").replace("Alavés", "Alav√©s").replace("Atlético Madrid", "Atletico Madrid").replace("Cadiz", "Cadiz CF").replace("Elche CF", "Elche").replace("Grenada CF", "Grenada").replace("CA Osasuna", "Osasuna").replace("Valladolid", "Real Valladolid").replace("Huesca", "SD Huesca").replace("Hiroshima Sanfrecce FC", "Sanfrecce Hiroshima").replace("Shimizu S Pulse", "Shimizu S-Pulse").replace("Basaksehir", "Istanbul Basaksehir").replace("Ankaragücü", "Ankaragucu").replace("Besiktas JK", "Besiktas").replace("Çaykur Rizespor", "Caykur Rizespor").replace("Erzurum BB", "Erzurumspor").replace("Gazişehir Gaziantep", "Gazisehir Gaziantep").replace("Genclerbirligi SK", "Genclerbirligi").replace("Kasimpasa SK", "Kasimpasa").replace("Torku Konyaspor", "Konyaspor"))    
 
-print(AlphaAPI)
-print(FiveThirtyEightGames)
-print(BetaAPI)
-print(awayNoVig)
+# print(AlphaAPI)
+# print(FiveThirtyEightGames)
+# print(BetaAPI)
+# print(awayNoVig)
 # print(drawNoVig)
 
 #averging odds between 538 and average book odds - draw odds only have to be in one if statement because would be redundant to do it twice for same game
@@ -265,7 +261,7 @@ for i in range(len(FiveThirtyEightGames)):
 
 
 
-print(FiveThirtyEightGames)
+# print(FiveThirtyEightGames)
 
 #Matching up 538 teams with sports betting API teams, whether to win, lose or draw
 #Performing calculations to see if expected value of winnings on a $100 dollar bet is over $10 (10% return)
@@ -282,7 +278,7 @@ def Prediction():
             if AlphaAPI[i] == FiveThirtyEightGames[j][2]:
                 HomeAlphaOdds = int((((Away[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
                 HomeAlphaDrawOdds = int((((draw[i])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
-                if (HomeAlphaOdds>-10):
+                if (HomeAlphaOdds>7):
                     teamsToBet1.append({AlphaAPI[i]: HomeAlphaOdds})
                     potential_winnings.append(int(((Away[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][4]))
@@ -295,7 +291,7 @@ def Prediction():
                 
             if BetaAPI[i] == FiveThirtyEightGames[j][3]:
                 AwayBetaOdds = int((((Home[i])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
-                if (AwayBetaOdds>-10):
+                if (AwayBetaOdds>7):
                     teamsToBet1.append({BetaAPI[i]: AwayBetaOdds})
                     potential_winnings.append(int(((Home[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][5]))
@@ -306,7 +302,7 @@ def Prediction():
             if AlphaAPI[i] == FiveThirtyEightGames[j][3]:
                 AwayAlphaOdds = int((((Away[i])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
                 AwayAlphaDrawOdds = int((((draw[i])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
-                if (AwayAlphaOdds>-10):
+                if (AwayAlphaOdds>7):
                     teamsToBet1.append({AlphaAPI[i]: AwayAlphaOdds})
                     potential_winnings.append(int(((Away[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][5]))
@@ -319,7 +315,7 @@ def Prediction():
                 
             if BetaAPI[i] == FiveThirtyEightGames[j][2]:
                 HomeBetaOdds = int((((Home[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
-                if (HomeBetaOdds>-10):
+                if (HomeBetaOdds>7):
                     teamsToBet1.append({BetaAPI[i]: HomeBetaOdds})
                     potential_winnings.append(int(((Home[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][4]))
