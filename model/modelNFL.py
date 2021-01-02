@@ -247,8 +247,6 @@ for i in range(len(AlphaAPI)):
                     potential_winnings.append(int(((Away[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][3]))
                     winning_book.append(bookAway[i])
-                    print("11111")
-                    print(teamstobetNFL)
         except KeyError:
             continue
 
@@ -260,36 +258,9 @@ for i in range(len(AlphaAPI)):
                     potential_winnings.append(int(((Home[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][4]))
                     winning_book.append(bookHome[i])
-                    print("22222")
-                    print(teamstobetNFL)
         except KeyError:
             continue
 
-        try:
-            if (AlphaAPI[i]).lower() == (FiveThirtyEightGames[j][2].lower()):
-                AwayBetaOddshaOdds = int((((Away[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
-                if (AwayBetaOddshaOdds>7):
-                    teamstobetNFL.append({AlphaAPI[i]: AwayBetaOddshaOdds})
-                    potential_winnings.append(int(((Away[i])-1)*100))
-                    winning_odds.append(float(FiveThirtyEightGames[j][4]))
-                    winning_book.append(bookAway[i])
-                    print("33333")
-                    print(teamstobetNFL)
-        except KeyError:
-            continue
-
-        try:    
-            if (BetaAPI[i]).lower() == (FiveThirtyEightGames[j][1].lower()):
-                HomeBetaOdds = int((((Home[i])-1)*100)*(float(FiveThirtyEightGames[j][3]))-(100*(1-(float(FiveThirtyEightGames[j][3])))))
-                if (HomeBetaOdds>7):
-                    teamstobetNFL.append({BetaAPI[i]: HomeBetaOdds})
-                    potential_winnings.append(int(((Home[i])-1)*100))
-                    winning_odds.append(float(FiveThirtyEightGames[j][3]))
-                    winning_book.append(bookHome[i])
-                    print("44444")
-                    print(teamstobetNFL)
-        except KeyError:
-            continue
 
 
  #Comment the below in if just want results for this one model   

@@ -49,20 +49,20 @@ for i in range(len(kpWinProb)):
 
 eventsAPI = {}
 
-First = []
-Second = []
-bestFirst = 0
-bestSecond = 0
-bookFirst = []
-bookSecond = []
+Home = []
+Away = []
+bestHome = 0
+bestAway = 0
+bookHome = []
+bookAway = []
 totalLeft = []
 totalRight = []
-bestBookFirst = ''
-bestBookSecond = ''
-bestFirst = 0
-bestSecond = 0
-totalFirst = 0
-totalSecond = 0
+bestBookHome = ''
+bestBookAway = ''
+bestHome = 0
+bestAway = 0
+totalHome = 0
+totalAway = 0
 siteCount = 0
 
 
@@ -78,41 +78,41 @@ for i in range(len(theOddsAPIGames)):
                 # if I wanted to use just one specific sports book use the below code
                 # if theOddsAPIGames[i]['sites'][j]['site_key'] == 'mybookieag':
                     # print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]])
-                    # First.append(([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]))
+                    # Home.append(([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]))
 
                 # if theOddsAPIGames[i]['sites'][j]['site_key'] == 'gtbets':
                 #     print([theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]])
 
 
                 
-                eventsAPI[i] = [theOddsAPIGames[i]['sport_key']], [theOddsAPIGames[i]['commence_time']], [theOddsAPIGames[i]['teams']], [theOddsAPIGames[i]['sites'][j]['odds']], [theOddsAPIGames[i]['sites'][j]['site_key']]
+                eventsAPI[i] = [theOddsAPIGames[i]['sport_key']], [theOddsAPIGames[i]['commence_time']], [theOddsAPIGames[i]['teams']], [theOddsAPIGames[i]['sites'][j]['odds']], [theOddsAPIGames[i]['sites'][j]['site_key']], [theOddsAPIGames[i]['home_team']]
                 # break
                 if theOddsAPIGames[i]['sites'][j]['site_key'] == 'betfair':
                     if siteCount != 1:
                         siteCount = siteCount - 1
                 if theOddsAPIGames[i]['sites'][j]['site_key'] != 'betfair':
-                    totalFirst = totalFirst + [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0]
-                    totalSecond = totalSecond + [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]
-                    if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0] > bestFirst:
-                        bestFirst = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]
-                        bestBookFirst = theOddsAPIGames[i]['sites'][j]['site_key']
-                    if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0] > bestSecond:
-                        bestSecond = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0]
-                        bestBookSecond = theOddsAPIGames[i]['sites'][j]['site_key']
+                    totalHome = totalHome + [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0]
+                    totalAway = totalAway + [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]
+                    if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0] > bestHome:
+                        bestHome = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]
+                        bestBookHome = theOddsAPIGames[i]['sites'][j]['site_key']
+                    if [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0] > bestAway:
+                        bestAway = [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0]
+                        bestBookAway = theOddsAPIGames[i]['sites'][j]['site_key']
 
-            First.append(bestFirst)
-            Second.append(bestSecond)
-            bookFirst.append(bestBookFirst)
-            bookSecond.append(bestBookSecond)
+            Home.append(bestHome)
+            Away.append(bestAway)
+            bookHome.append(bestBookHome)
+            bookAway.append(bestBookAway)
             # if siteCount == 0:
             #     siteCount = 1
-            totalLeft.append((totalFirst-siteCount)/siteCount)
-            # print(totalFirst)
-            totalRight.append((totalSecond-siteCount)/siteCount)
-            bestFirst = 0
-            bestSecond = 0
-            totalFirst = 0
-            totalSecond = 0
+            totalLeft.append((totalHome-siteCount)/siteCount)
+            # print(totalHome)
+            totalRight.append((totalAway-siteCount)/siteCount)
+            bestHome = 0
+            bestAway = 0
+            totalHome = 0
+            totalAway = 0
 
 
 
@@ -144,7 +144,23 @@ playedTeams = FiveThirtyEightGamesYesterday.append(loserTeams, ignore_index=True
 
 # print(playedTeams)
 
-#Adding first team to AlphaAPI, second team to BetaAPI, first teams odds to OddsA, and second team odds to OddsB
+#Adding Home team to AlphaAPI, Away team to BetaAPI, Home teams odds to OddsA, and Away team odds to OddsB
+
+# for i in eventsAPI:
+#     if (datetime.utcfromtimestamp((eventsAPI[i][1][0]-30000)).strftime('%Y-%m-%d') == stringGameDate):
+#         if eventsAPI[i][2][0][1] == eventsAPI[i][5][0]:
+#             print(eventsAPI[i][2][0][1])
+#             print(eventsAPI[i][5][0])
+#             AlphaAPIx.append(eventsAPI[i][2][0][1].replace('St ', 'St. ').rsplit(' ', 1)[0])
+#             BetaAPIx.append(eventsAPI[i][2][0][0].replace('St ', 'St. ').rsplit(' ', 1)[0])
+#         # OddsA.append(eventsAPI[i][3][0]['h2h'][0])
+#         # OddsB.append(eventsAPI[i][3][0]['h2h'][1])
+#         # else:
+#         #     AlphaAPIx.append(eventsAPI[i][2][0][0].replace('St ', 'St. ').rsplit(' ', 1)[0])
+#         #     BetaAPIx.append(eventsAPI[i][2][0][1].replace('St ', 'St. ').rsplit(' ', 1)[0])
+
+
+
 
 for i in eventsAPI:
     if (datetime.utcfromtimestamp((eventsAPI[i][1][0]-30000)).strftime('%Y-%m-%d') == stringGameDate):
@@ -154,12 +170,13 @@ for i in eventsAPI:
         # OddsB.append(eventsAPI[i][3][0]['h2h'][1])
 
 
-# print(First)
-# print(Second)
+
+# print(Home)
+# print(Away)
 # print(OddsB)
 # print(OddsA)
-# print(bookFirst)
-# print(bookSecond)
+# print(bookHome)
+# print(bookAway)
 
 
 #Cleaning up API names strings so that they match KenPom names strings
@@ -215,12 +232,12 @@ for i in range(len(AlphaAPI)):
             if (AlphaAPI[i]).lower() == (kpWinnersProj[j].lower()):
                 # kpWinProb[j] = (kpWinProb[j] + noVigLeft[i])/2
                 # kpLoseProb[j] = 1-kpWinProb[j]
-                FirstAlphaOdds = int(((((Second[i])-1)*100)*(kpWinProb[j])-(100*(kpLoseProb[j]))))
-                if (FirstAlphaOdds>7):
-                    teamsToBetCBB.append({AlphaAPI[i]: round(FirstAlphaOdds)})
-                    potential_winnings.append(int(((Second[i])-1)*100))
+                HomeAlphaOdds = int(((((Away[i])-1)*100)*(kpWinProb[j])-(100*(kpLoseProb[j]))))
+                if (HomeAlphaOdds>7):
+                    teamsToBetCBB.append({AlphaAPI[i]: round(HomeAlphaOdds)})
+                    potential_winnings.append(int(((Away[i])-1)*100))
                     winning_odds.append(kpWinProb[j])
-                    winning_book.append(bookSecond[i])
+                    winning_book.append(bookAway[i])
         except KeyError:
             continue
 
@@ -228,12 +245,12 @@ for i in range(len(AlphaAPI)):
             if (BetaAPI[i]).lower() == (kpLosersProj[j].lower()):
                 # kpLoseProb[j] = (kpLoseProb[j] + noVigRight[i])/2
                 # kpWinProb[j] = 1-kpLoseProb[j]
-                SecondBetaOdds = int(((((First[i])-1)*100)*(kpLoseProb[j])))-(100*(kpWinProb[j]))
-                if (SecondBetaOdds>7):
-                    teamsToBetCBB.append({BetaAPI[i]: round(SecondBetaOdds)})
-                    potential_winnings.append(int(((First[i])-1)*100))
+                AwayBetaOdds = int(((((Home[i])-1)*100)*(kpLoseProb[j])))-(100*(kpWinProb[j]))
+                if (AwayBetaOdds>7):
+                    teamsToBetCBB.append({BetaAPI[i]: round(AwayBetaOdds)})
+                    potential_winnings.append(int(((Home[i])-1)*100))
                     winning_odds.append(kpLoseProb[j])
-                    winning_book.append(bookFirst[i])
+                    winning_book.append(bookHome[i])
         except KeyError:
             continue
 
@@ -241,12 +258,12 @@ for i in range(len(AlphaAPI)):
             if (AlphaAPI[i]).lower() == (kpLosersProj[j].lower()):
                 # kpLoseProb[j] = (kpLoseProb[j] + noVigLeft[i])/2
                 # kpWinProb[j] = 1-kpLoseProb[j]
-                SecondAlphaOdds = int(((((Second[i])-1)*100)*(kpLoseProb[j]))-(100*(kpWinProb[j])))
-                if (SecondAlphaOdds>7):
-                    teamsToBetCBB.append({AlphaAPI[i]: round(SecondAlphaOdds)})
-                    potential_winnings.append(int(((Second[i])-1)*100))
+                AwayAlphaOdds = int(((((Away[i])-1)*100)*(kpLoseProb[j]))-(100*(kpWinProb[j])))
+                if (AwayAlphaOdds>7):
+                    teamsToBetCBB.append({AlphaAPI[i]: round(AwayAlphaOdds)})
+                    potential_winnings.append(int(((Away[i])-1)*100))
                     winning_odds.append(kpLoseProb[j])
-                    winning_book.append(bookSecond[i])
+                    winning_book.append(bookAway[i])
         except KeyError:
             continue
 
@@ -255,12 +272,12 @@ for i in range(len(AlphaAPI)):
             if (BetaAPI[i]).lower() == (kpWinnersProj[j].lower()):
                 # kpWinProb[j] = (kpWinProb[j] + noVigRight[i])/2
                 # kpLoseProb[j] = 1-kpWinProb[j]
-                FirstBetaOdds = int(((((First[i])-1)*100)*((kpWinProb[j])))-(100*(kpLoseProb[j])))
-                if (FirstBetaOdds>7):
-                    teamsToBetCBB.append({BetaAPI[i]: round(FirstBetaOdds)})
-                    potential_winnings.append(int(((First[i])-1)*100))
+                HomeBetaOdds = int(((((Home[i])-1)*100)*((kpWinProb[j])))-(100*(kpLoseProb[j])))
+                if (HomeBetaOdds>7):
+                    teamsToBetCBB.append({BetaAPI[i]: round(HomeBetaOdds)})
+                    potential_winnings.append(int(((Home[i])-1)*100))
                     winning_odds.append(kpWinProb[j])
-                    winning_book.append(bookFirst[i])
+                    winning_book.append(bookHome[i])
         except KeyError:
             continue
 
