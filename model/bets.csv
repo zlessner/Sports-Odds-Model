@@ -738,9 +738,7 @@ Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnin
 12/28/20 14:44,12/29/20,Soccer Barclays Premier League,Brighton and Hove Albion,100,0.3563,225,15,12/29/20_Soccer Barclays Premier League_Brighton and Hove Albion,sugarhouse
 12/28/20 14:44,12/29/20,Soccer Barclays Premier League,West Bromwich Albion,100,0.2998,285,15,12/29/20_Soccer Barclays Premier League_West Bromwich Albion,sugarhouse
 12/28/20 14:44,12/29/20,Soccer Barclays Premier League,Burnley,100,0.464,150,16,12/29/20_Soccer Barclays Premier League_Burnley,betonlineag
-12/29/20 7:33,12/29/20,CBB,Towson,100,0.4,270,48,12/29/20_CBB_Towson,fanduel
 12/29/20 7:33,12/29/20,CBB,Clemson,100,0.61,83,11,12/29/20_CBB_Clemson,lowvig
-12/29/20 7:33,12/29/20,CBB,Rider,100,0.68,62,10,12/29/20_CBB_Rider,bovada
 12/29/20 7:33,12/29/20,CBB,Northwestern,100,0.21,530,32,12/29/20_CBB_Northwestern,fanduel
 12/29/20 7:35,12/29/20,NBA,MIA,100,0.541619834,190,57,12/29/20_NBA_MIA,betonlineag
 12/29/20 7:35,12/29/20,NBA,OKC,100,0.467326848,175,28,12/29/20_NBA_OKC,williamhill_us
@@ -760,9 +758,7 @@ Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnin
 12/29/20 7:41,12/29/20,Soccer English League Two,Crawley Town,100,0.2605,325,10,12/29/20_Soccer English League Two_Crawley Town,bovada
 12/29/20 7:41,12/29/20,Soccer English League Two,Oldham Athletic,100,0.4862,135,14,12/29/20_Soccer English League Two_Oldham Athletic,unibet
 12/29/20 7:41,12/29/20,Soccer English League Two,Southend United,100,0.2518,355,14,12/29/20_Soccer English League Two_Southend United,williamhill_us
-12/29/20 7:41,12/29/20,Soccer English League Two,Salford City,100,0.5458,179,52,12/29/20_Soccer English League Two_Salford City,bovada
 12/29/20 7:41,12/29/20,Soccer English League Two,Colchester United,100,0.2944,325,25,12/29/20_Soccer English League Two_Colchester United,intertops
-12/29/20 7:41,12/29/20,Soccer English League Two,Carlisle United,100,0.4953,120,8,12/29/20_Soccer English League Two_Carlisle United,unibet
 12/29/20 17:19,12/30/20,Soccer Barclays Premier League,Newcastle,100,0.1267,950,33,12/30/20_Soccer Barclays Premier League_Newcastle,bovada
 12/29/20 17:20,12/29/20,NBA,CHI,100,0.325624701,235,9,12/29/20_NBA_CHI,fanduel
 12/29/20 17:20,12/29/20,CBB,South Florida,100,0.26,400,30,12/29/20_CBB_South Florida,betmgm
@@ -791,96 +787,125 @@ Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnin
 12/30/20 21:38,12/31/20,CBB,Colorado,100,0.41,290,59,12/31/20_CBB_Colorado,fanduel
 12/30/20 21:39,12/31/20,NBA,HOU,100,0.728772814,58,15,12/31/20_NBA_HOU,lowvig
 12/30/20 21:39,12/31/20,NBA,OKC,100,0.464687884,179,30,12/31/20_NBA_OKC,gtbets
-2020-12-31 07:07:06,12/31/20,NBA,ORL,100,0.4876711520484506,129,12,12/31/20_NBA_ORL,williamhill_us
-2020-12-31 07:07:52,12/31/20,CBB,Air Force,100,0.20999999999999996,610,49,12/31/20_CBB_Air Force,fanduel
-2020-12-31 07:07:52,12/31/20,CBB,Minnesota,100,0.26,325,10,12/31/20_CBB_Minnesota,bovada
-2020-12-31 07:07:52,12/31/20,CBB,San Diego,100,0.14,830,30,12/31/20_CBB_San Diego,fanduel
-2020-12-31 07:07:52,12/31/20,CBB,Utah,100,0.30000000000000004,280,14,12/31/20_CBB_Utah,fanduel
-2020-12-31 07:07:52,12/31/20,CBB,Washington,100,0.29000000000000004,320,21,12/31/20_CBB_Washington,lowvig
-2020-12-31 07:07:52,12/31/20,CBB,New Mexico,100,0.32999999999999996,245,13,12/31/20_CBB_New Mexico,fanduel
-2020-12-31 07:07:52,12/31/20,CBB,Idaho,100,0.52,140,24,12/31/20_CBB_Idaho,lowvig
-2020-12-31 14:11:07,12/31/20,CBB,Presbyterian,100,0.36,200,8,12/31/20_CBB_Presbyterian,betmgm
-2020-12-31 14:11:53,12/31/20,NBA,CHI,100,0.3325693320406695,229,9,12/31/20_NBA_CHI,williamhill_us
-2020-12-31 14:41:02,12/31/20,CFB,Army,100,0.3505489438,350,57,12/31/20_CFB_Army,betmgm
-2020-12-31 15:00:56,1/1/21,CFB,Cincinnati,100,0.37992223869999997,229,25,1/1/21_CFB_Cincinnati,gtbets
-2020-12-31 15:00:56,1/1/21,CFB,Auburn,100,0.5418987202000001,165,43,1/1/21_CFB_Auburn,lowvig
-2020-12-31 15:00:56,1/1/21,CFB,Notre Dame,100,0.16958902929999997,840,59,1/1/21_CFB_Notre Dame,gtbets
-2020-12-31 15:00:56,1/1/21,CFB,Ohio St.,100,0.46480291250000005,250,62,1/1/21_CFB_Ohio St.,lowvig
-2020-12-31 15:10:45,1/1/21,CBB,Green Bay,100,0.28,290,9,1/1/21_CBB_Green Bay,fanduel
-2020-12-31 15:10:45,1/1/21,CBB,Long Beach St.,100,0.39,179,9,1/1/21_CBB_Long Beach St.,fanduel
-2021-01-01 10:02:43,1/1/21,Soccer Barclays Premier League,Aston Villa,100,0.23229072730099537,365,8,1/1/21_Soccer Barclays Premier League_Aston Villa,unibet
-2021-01-01 10:12:32,1/2/21,Soccer German Bundesliga,Arminia Bielefeld,100,0.19784068530869148,480,14,1/2/21_Soccer German Bundesliga_Arminia Bielefeld,lowvig
-2021-01-01 10:14:53,1/2/21,Soccer English League Championship,Wycombe Wanderers,100,0.2635670547967382,336,14,1/2/21_Soccer English League Championship_Wycombe Wanderers,gtbets
-2021-01-01 10:18:30,1/2/21,Soccer Scottish Premiership,Hamilton Academical,100,0.27419258030041016,330,17,1/2/21_Soccer Scottish Premiership_Hamilton Academical,mybookieag
-2021-01-01 10:18:57,1/2/21,Soccer Turkey Super League,Alanyaspor,100,0.4490282829682133,144,9,1/2/21_Soccer Turkey Super League_Alanyaspor,williamhill_us
-2021-01-01 10:19:09,1/2/21,Soccer English League One,Gillingham,100,0.34732132907484115,225,12,1/2/21_Soccer English League One_Gillingham,bovada
-2021-01-01 10:46:08,1/2/21,Soccer English League Two,Southend United,100,0.18474802069588603,525,15,1/2/21_Soccer English League Two_Southend United,draftkings
-2021-01-01 10:46:08,1/2/21,Soccer English League Two,Salford City,100,0.4318927212068435,156,10,1/2/21_Soccer English League Two_Salford City,lowvig
-2021-01-01 10:46:08,1/2/21,Soccer English League Two,Mansfield Town,100,0.39191431547127686,210,21,1/2/21_Soccer English League Two_Mansfield Town,unibet
-2021-01-01 10:50:17,1/1/21,NBA,MEM,100,0.49116317881692295,170,32,1/1/21_NBA_MEM,caesars
-2021-01-01 10:50:17,1/1/21,NBA,DAL,100,0.6892167618131346,85,27,1/1/21_NBA_DAL,fanduel
-2021-01-01 10:50:17,1/1/21,NBA,DET,100,0.25851909857813343,350,16,1/1/21_NBA_DET,williamhill_us
-2021-01-01 10:50:17,1/1/21,NBA,ATL,100,0.36427724615906887,229,20,1/1/21_NBA_ATL,fanduel
-2021-01-01 10:50:17,1/1/21,NBA,SAS,100,0.3976580802390901,200,19,1/1/21_NBA_SAS,bovada
-2021-01-01 10:50:17,1/1/21,NBA,MIN,100,0.5924183333452697,90,13,1/1/21_NBA_MIN,fanduel
-2021-01-01 10:50:17,1/1/21,NBA,UTA,100,0.5538096271118551,145,35,1/1/21_NBA_UTA,williamhill_us
-2021-01-01 10:50:17,1/1/21,NBA,DEN,100,0.6941326684729551,62,12,1/1/21_NBA_DEN,fanduel
-2021-01-01 10:50:17,1/1/21,NBA,GSW,100,0.4632510144216195,140,11,1/1/21_NBA_GSW,williamhill_us
-2021-01-01 10:50:45,1/1/21,CBB,Marist,100,0.58,114,24,1/1/21_CBB_Marist,caesars
-2021-01-01 10:50:45,1/1/21,CBB,Stetson,100,0.68,59,8,1/1/21_CBB_Stetson,williamhill_us
-2021-01-01 10:50:45,1/1/21,CBB,Lipscomb,100,0.31999999999999995,270,18,1/1/21_CBB_Lipscomb,williamhill_us
-2021-01-01 10:50:45,1/1/21,CBB,Charlotte,100,0.32999999999999996,250,15,1/1/21_CBB_Charlotte,fanduel
-2021-01-01 10:50:45,1/1/21,CBB,Fairfield,100,0.51,129,17,1/1/21_CBB_Fairfield,bovada
-2021-01-01 10:50:45,1/1/21,CBB,South Alabama,100,0.43999999999999995,150,9,1/1/21_CBB_South Alabama,lowvig
-2021-01-01 10:50:45,1/1/21,CBB,Jacksonville,100,0.64,85,18,1/1/21_CBB_Jacksonville,fanduel
-2021-01-01 10:50:45,1/1/21,CBB,IUPUI,100,0.43999999999999995,154,12,1/1/21_CBB_IUPUI,betmgm
-2021-01-01 10:50:45,1/1/21,CBB,Wright St.,100,0.84,36,14,1/1/21_CBB_Wright St.,sugarhouse
-2021-01-01 10:50:45,1/1/21,CBB,Old Dominion,100,0.59,90,12,1/1/21_CBB_Old Dominion,pointsbetus
-2021-01-01 16:30:42,1/2/21,CBB,Elon,100,0.36,215,13,1/2/21_CBB_Elon,fanduel
-2021-01-01 16:30:42,1/2/21,CBB,William & Mary,100,0.16000000000000003,610,13,1/2/21_CBB_William & Mary,fanduel
-2021-01-01 16:30:42,1/2/21,CBB,East Carolina,100,0.61,90,16,1/2/21_CBB_East Carolina,fanduel
-2021-01-01 16:30:42,1/2/21,CBB,Mercer,100,0.17000000000000004,560,12,1/2/21_CBB_Mercer,fanduel
-2021-01-01 16:30:42,1/2/21,CBB,Morehead St.,100,0.13,869,26,1/2/21_CBB_Morehead St.,fanduel
-2021-01-01 16:30:42,1/2/21,CBB,Air Force,100,0.16000000000000003,730,32,1/2/21_CBB_Air Force,fanduel
-2021-01-01 16:30:42,1/2/21,CBB,Purdue,100,0.28,295,10,1/2/21_CBB_Purdue,fanduel
-2021-01-01 16:40:34,1/2/21,CBB,Denver,100,0.20999999999999996,459,17,1/2/21_CBB_Denver,fanduel
-2021-01-01 16:40:34,1/2/21,CBB,Alabama,100,0.21999999999999997,480,27,1/2/21_CBB_Alabama,fanduel
-2021-01-01 16:40:34,1/2/21,CBB,Northern Illinois,100,0.25,500,50,1/2/21_CBB_Northern Illinois,fanduel
-2021-01-01 16:46:40,1/2/21,NBA,HOU,100,0.7286672814323637,52,10,1/2/21_NBA_HOU,betonlineag
-2021-01-01 17:36:33,1/2/21,Soccer English League Two,Cheltenham Town,100,0.4723209548387236,131,9,1/2/21_Soccer English League Two_Cheltenham Town,lowvig
-2021-01-02 09:25:11,1/3/21,Soccer Barclays Premier League,Newcastle,100,0.2076447171280457,440,12,1/3/21_Soccer Barclays Premier League_Newcastle,fanduel
-2021-01-02 09:26:03,1/3/21,Soccer Italy Serie A,Cagliari,100,0.15094354938642096,625,9,1/3/21_Soccer Italy Serie A_Cagliari,sugarhouse
-2021-01-02 09:26:38,1/3/21,Soccer Spanish Primera Division,Elche,100,0.15735313924651223,650,18,1/3/21_Soccer Spanish Primera Division_Elche,bovada
-2021-01-02 09:29:28,1/2/21,CBB,Missouri,100,0.35,260,26,1/2/21_CBB_Missouri,betmgm
-2021-01-02 09:29:28,1/2/21,CBB,DePaul,100,0.41000000000000003,195,20,1/2/21_CBB_DePaul,lowvig
-2021-01-02 09:29:28,1/2/21,CBB,George Washington,100,0.25,350,12,1/2/21_CBB_George Washington,williamhill_us
-2021-01-02 09:29:28,1/2/21,CBB,Drexel,100,0.66,67,10,1/2/21_CBB_Drexel,lowvig
-2021-01-02 09:29:28,1/2/21,CBB,Idaho,100,0.45999999999999996,145,12,1/2/21_CBB_Idaho,betmgm
-2021-01-02 09:29:28,1/2/21,CBB,Rutgers,100,0.45999999999999996,145,12,1/2/21_CBB_Rutgers,gtbets
-2021-01-02 09:29:28,1/2/21,CBB,Florida,100,0.61,87,14,1/2/21_CBB_Florida,williamhill_us
-2021-01-02 09:29:28,1/2/21,CBB,Lafayette,100,0.54,100,8,1/2/21_CBB_Lafayette,bovada
-2021-01-02 09:29:28,1/2/21,CBB,Marist,100,0.58,87,8,1/2/21_CBB_Marist,draftkings
-2021-01-02 09:29:28,1/2/21,CBB,Tulsa,100,0.4,200,20,1/2/21_CBB_Tulsa,fanduel
-2021-01-02 09:29:28,1/2/21,CBB,South Alabama,100,0.57,125,28,1/2/21_CBB_South Alabama,bovada
-2021-01-02 09:29:28,1/2/21,CBB,Lipscomb,100,0.36,215,13,1/2/21_CBB_Lipscomb,fanduel
-2021-01-02 09:29:28,1/2/21,CBB,West Virginia,100,0.56,114,20,1/2/21_CBB_West Virginia,bovada
-2021-01-02 09:29:28,1/2/21,CBB,Oklahoma St.,100,0.27,340,18,1/2/21_CBB_Oklahoma St.,fanduel
-2021-01-02 09:29:28,1/2/21,CBB,Troy,100,0.33999999999999997,245,17,1/2/21_CBB_Troy,fanduel
-2021-01-02 09:29:28,1/2/21,CBB,Utah Valley,100,0.35,229,15,1/2/21_CBB_Utah Valley,bovada
-2021-01-02 09:29:28,1/2/21,CBB,Eastern Illinois,100,0.83,32,9,1/2/21_CBB_Eastern Illinois,sugarhouse
-2021-01-02 09:29:28,1/2/21,CBB,Eastern Kentucky,100,0.4,188,15,1/2/21_CBB_Eastern Kentucky,fanduel
-2021-01-02 09:29:28,1/2/21,CBB,Southern Miss,100,0.38,204,15,1/2/21_CBB_Southern Miss,williamhill_us
-2021-01-02 09:29:28,1/2/21,CBB,Fresno St.,100,0.57,90,8,1/2/21_CBB_Fresno St.,sugarhouse
-2021-01-02 09:29:28,1/2/21,CBB,Nebraska,100,0.28,359,28,1/2/21_CBB_Nebraska,fanduel
-2021-01-02 09:29:36,1/2/21,NBA,OKC,100,0.3381271909887874,265,23,1/2/21_NBA_OKC,fanduel
-2021-01-02 09:40:51,1/2/21,Soccer Scottish Premiership,Kilmarnock,100,0.3634353523146052,229,19,1/2/21_Soccer Scottish Premiership_Kilmarnock,lowvig
-2021-01-02 09:40:51,1/2/21,Soccer Scottish Premiership,Ross County,100,0.27857109056385543,305,12,1/2/21_Soccer Scottish Premiership_Ross County,williamhill_us
-2021-01-02 09:41:54,1/2/21,Soccer English League One,AFC Wimbledon,100,0.23251691052936224,365,8,1/2/21_Soccer English League One_AFC Wimbledon,bovada
-2021-01-02 09:41:54,1/2/21,Soccer English League One,Bristol Rovers,100,0.28347706190553074,295,11,1/2/21_Soccer English League One_Bristol Rovers,unibet
-2021-01-02 09:42:01,1/2/21,Soccer English League Two,Carlisle United,100,0.40814233196813543,166,8,1/2/21_Soccer English League Two_Carlisle United,bookmaker
-2021-01-02 09:42:23,1/2/21,Soccer Spanish Segunda Division,Logrones,100,0.32455346147368846,270,20,1/2/21_Soccer Spanish Segunda Division_Logrones,bovada
-2021-01-02 09:49:24,1/2/21,CFB,Oregon,100,0.41735230430000003,215,31,1/2/21_CFB_Oregon,lowvig
-2021-01-02 09:49:24,1/2/21,CFB,North Carolina,100,0.3691896962,265,34,1/2/21_CFB_North Carolina,mybookieag
-2021-01-02 10:41:17,1/2/21,CBB,Robert Morris,100,0.58,87,8,1/2/21_CBB_Robert Morris,sugarhouse
-2021-01-02 10:41:17,1/2/21,CBB,Central Arkansas,100,0.62,77,9,1/2/21_CBB_Central Arkansas,fanduel
-2021-01-02 10:53:51,1/2/21,CBB,Texas,100,0.39,185,11,1/2/21_CBB_Texas,betmgm
+12/31/20 7:07,12/31/20,NBA,ORL,100,0.487671152,129,12,12/31/20_NBA_ORL,williamhill_us
+12/31/20 7:07,12/31/20,CBB,Air Force,100,0.21,610,49,12/31/20_CBB_Air Force,fanduel
+12/31/20 7:07,12/31/20,CBB,Minnesota,100,0.26,325,10,12/31/20_CBB_Minnesota,bovada
+12/31/20 7:07,12/31/20,CBB,San Diego,100,0.14,830,30,12/31/20_CBB_San Diego,fanduel
+12/31/20 7:07,12/31/20,CBB,Utah,100,0.3,280,14,12/31/20_CBB_Utah,fanduel
+12/31/20 7:07,12/31/20,CBB,Washington,100,0.29,320,21,12/31/20_CBB_Washington,lowvig
+12/31/20 7:07,12/31/20,CBB,New Mexico,100,0.33,245,13,12/31/20_CBB_New Mexico,fanduel
+12/31/20 7:07,12/31/20,CBB,Idaho,100,0.52,140,24,12/31/20_CBB_Idaho,lowvig
+12/31/20 14:11,12/31/20,CBB,Presbyterian,100,0.36,200,8,12/31/20_CBB_Presbyterian,betmgm
+12/31/20 14:11,12/31/20,NBA,CHI,100,0.332569332,229,9,12/31/20_NBA_CHI,williamhill_us
+12/31/20 14:41,12/31/20,CFB,Army,100,0.350548944,350,57,12/31/20_CFB_Army,betmgm
+12/31/20 15:00,1/1/21,CFB,Cincinnati,100,0.379922239,229,25,1/1/21_CFB_Cincinnati,gtbets
+12/31/20 15:00,1/1/21,CFB,Auburn,100,0.54189872,165,43,1/1/21_CFB_Auburn,lowvig
+12/31/20 15:00,1/1/21,CFB,Notre Dame,100,0.169589029,840,59,1/1/21_CFB_Notre Dame,gtbets
+12/31/20 15:00,1/1/21,CFB,Ohio St.,100,0.464802913,250,62,1/1/21_CFB_Ohio St.,lowvig
+12/31/20 15:10,1/1/21,CBB,Green Bay,100,0.28,290,9,1/1/21_CBB_Green Bay,fanduel
+12/31/20 15:10,1/1/21,CBB,Long Beach St.,100,0.39,179,9,1/1/21_CBB_Long Beach St.,fanduel
+1/1/21 10:02,1/1/21,Soccer Barclays Premier League,Aston Villa,100,0.232290727,365,8,1/1/21_Soccer Barclays Premier League_Aston Villa,unibet
+1/1/21 10:12,1/2/21,Soccer German Bundesliga,Arminia Bielefeld,100,0.197840685,480,14,1/2/21_Soccer German Bundesliga_Arminia Bielefeld,lowvig
+1/1/21 10:14,1/2/21,Soccer English League Championship,Wycombe Wanderers,100,0.263567055,336,14,1/2/21_Soccer English League Championship_Wycombe Wanderers,gtbets
+1/1/21 10:18,1/2/21,Soccer Scottish Premiership,Hamilton Academical,100,0.27419258,330,17,1/2/21_Soccer Scottish Premiership_Hamilton Academical,mybookieag
+1/1/21 10:18,1/2/21,Soccer Turkey Super League,Alanyaspor,100,0.449028283,144,9,1/2/21_Soccer Turkey Super League_Alanyaspor,williamhill_us
+1/1/21 10:19,1/2/21,Soccer English League One,Gillingham,100,0.347321329,225,12,1/2/21_Soccer English League One_Gillingham,bovada
+1/1/21 10:46,1/2/21,Soccer English League Two,Salford City,100,0.431892721,156,10,1/2/21_Soccer English League Two_Salford City,lowvig
+1/1/21 10:46,1/2/21,Soccer English League Two,Mansfield Town,100,0.391914315,210,21,1/2/21_Soccer English League Two_Mansfield Town,unibet
+1/1/21 10:50,1/1/21,NBA,MEM,100,0.491163179,170,32,1/1/21_NBA_MEM,caesars
+1/1/21 10:50,1/1/21,NBA,DAL,100,0.689216762,85,27,1/1/21_NBA_DAL,fanduel
+1/1/21 10:50,1/1/21,NBA,DET,100,0.258519099,350,16,1/1/21_NBA_DET,williamhill_us
+1/1/21 10:50,1/1/21,NBA,ATL,100,0.364277246,229,20,1/1/21_NBA_ATL,fanduel
+1/1/21 10:50,1/1/21,NBA,SAS,100,0.39765808,200,19,1/1/21_NBA_SAS,bovada
+1/1/21 10:50,1/1/21,NBA,MIN,100,0.592418333,90,13,1/1/21_NBA_MIN,fanduel
+1/1/21 10:50,1/1/21,NBA,UTA,100,0.553809627,145,35,1/1/21_NBA_UTA,williamhill_us
+1/1/21 10:50,1/1/21,NBA,DEN,100,0.694132668,62,12,1/1/21_NBA_DEN,fanduel
+1/1/21 10:50,1/1/21,NBA,GSW,100,0.463251014,140,11,1/1/21_NBA_GSW,williamhill_us
+1/1/21 10:50,1/1/21,CBB,Marist,100,0.58,114,24,1/1/21_CBB_Marist,caesars
+1/1/21 10:50,1/1/21,CBB,Lipscomb,100,0.32,270,18,1/1/21_CBB_Lipscomb,williamhill_us
+1/1/21 10:50,1/1/21,CBB,Charlotte,100,0.33,250,15,1/1/21_CBB_Charlotte,fanduel
+1/1/21 10:50,1/1/21,CBB,Fairfield,100,0.51,129,17,1/1/21_CBB_Fairfield,bovada
+1/1/21 10:50,1/1/21,CBB,South Alabama,100,0.44,150,9,1/1/21_CBB_South Alabama,lowvig
+1/1/21 10:50,1/1/21,CBB,Jacksonville,100,0.64,85,18,1/1/21_CBB_Jacksonville,fanduel
+1/1/21 10:50,1/1/21,CBB,IUPUI,100,0.44,154,12,1/1/21_CBB_IUPUI,betmgm
+1/1/21 10:50,1/1/21,CBB,Wright St.,100,0.84,36,14,1/1/21_CBB_Wright St.,sugarhouse
+1/1/21 10:50,1/1/21,CBB,Old Dominion,100,0.59,90,12,1/1/21_CBB_Old Dominion,pointsbetus
+1/1/21 16:30,1/2/21,CBB,Elon,100,0.36,215,13,1/2/21_CBB_Elon,fanduel
+1/1/21 16:30,1/2/21,CBB,William & Mary,100,0.16,610,13,1/2/21_CBB_William & Mary,fanduel
+1/1/21 16:30,1/2/21,CBB,East Carolina,100,0.61,90,16,1/2/21_CBB_East Carolina,fanduel
+1/1/21 16:30,1/2/21,CBB,Mercer,100,0.17,560,12,1/2/21_CBB_Mercer,fanduel
+1/1/21 16:30,1/2/21,CBB,Morehead St.,100,0.13,869,26,1/2/21_CBB_Morehead St.,fanduel
+1/1/21 16:30,1/2/21,CBB,Air Force,100,0.16,730,32,1/2/21_CBB_Air Force,fanduel
+1/1/21 16:30,1/2/21,CBB,Purdue,100,0.28,295,10,1/2/21_CBB_Purdue,fanduel
+1/1/21 16:40,1/2/21,CBB,Denver,100,0.21,459,17,1/2/21_CBB_Denver,fanduel
+1/1/21 16:40,1/2/21,CBB,Alabama,100,0.22,480,27,1/2/21_CBB_Alabama,fanduel
+1/1/21 16:40,1/2/21,CBB,Northern Illinois,100,0.25,500,50,1/2/21_CBB_Northern Illinois,fanduel
+1/1/21 16:46,1/2/21,NBA,HOU,100,0.728667281,52,10,1/2/21_NBA_HOU,betonlineag
+1/2/21 9:25,1/3/21,Soccer Barclays Premier League,Newcastle,100,0.207644717,440,12,1/3/21_Soccer Barclays Premier League_Newcastle,fanduel
+1/2/21 9:26,1/3/21,Soccer Italy Serie A,Cagliari,100,0.150943549,625,9,1/3/21_Soccer Italy Serie A_Cagliari,sugarhouse
+1/2/21 9:26,1/3/21,Soccer Spanish Primera Division,Elche,100,0.157353139,650,18,1/3/21_Soccer Spanish Primera Division_Elche,bovada
+1/2/21 9:29,1/2/21,CBB,Missouri,100,0.35,260,26,1/2/21_CBB_Missouri,betmgm
+1/2/21 9:29,1/2/21,CBB,George Washington,100,0.25,350,12,1/2/21_CBB_George Washington,williamhill_us
+1/2/21 9:29,1/2/21,CBB,Idaho,100,0.46,145,12,1/2/21_CBB_Idaho,betmgm
+1/2/21 9:29,1/2/21,CBB,Lafayette,100,0.54,100,8,1/2/21_CBB_Lafayette,bovada
+1/2/21 9:29,1/2/21,CBB,Marist,100,0.58,87,8,1/2/21_CBB_Marist,draftkings
+1/2/21 9:29,1/2/21,CBB,Tulsa,100,0.4,200,20,1/2/21_CBB_Tulsa,fanduel
+1/2/21 9:29,1/2/21,CBB,South Alabama,100,0.57,125,28,1/2/21_CBB_South Alabama,bovada
+1/2/21 9:29,1/2/21,CBB,Lipscomb,100,0.36,215,13,1/2/21_CBB_Lipscomb,fanduel
+1/2/21 9:29,1/2/21,CBB,West Virginia,100,0.56,114,20,1/2/21_CBB_West Virginia,bovada
+1/2/21 9:29,1/2/21,CBB,Oklahoma St.,100,0.27,340,18,1/2/21_CBB_Oklahoma St.,fanduel
+1/2/21 9:29,1/2/21,CBB,Troy,100,0.34,245,17,1/2/21_CBB_Troy,fanduel
+1/2/21 9:29,1/2/21,CBB,Utah Valley,100,0.35,229,15,1/2/21_CBB_Utah Valley,bovada
+1/2/21 9:29,1/2/21,CBB,Eastern Illinois,100,0.83,32,9,1/2/21_CBB_Eastern Illinois,sugarhouse
+1/2/21 9:29,1/2/21,CBB,Eastern Kentucky,100,0.4,188,15,1/2/21_CBB_Eastern Kentucky,fanduel
+1/2/21 9:29,1/2/21,CBB,Southern Miss,100,0.38,204,15,1/2/21_CBB_Southern Miss,williamhill_us
+1/2/21 9:29,1/2/21,CBB,Fresno St.,100,0.57,90,8,1/2/21_CBB_Fresno St.,sugarhouse
+1/2/21 9:29,1/2/21,CBB,Nebraska,100,0.28,359,28,1/2/21_CBB_Nebraska,fanduel
+1/2/21 9:29,1/2/21,NBA,OKC,100,0.338127191,265,23,1/2/21_NBA_OKC,fanduel
+1/2/21 9:40,1/2/21,Soccer Scottish Premiership,Kilmarnock,100,0.363435352,229,19,1/2/21_Soccer Scottish Premiership_Kilmarnock,lowvig
+1/2/21 9:40,1/2/21,Soccer Scottish Premiership,Ross County,100,0.278571091,305,12,1/2/21_Soccer Scottish Premiership_Ross County,williamhill_us
+1/2/21 9:41,1/2/21,Soccer English League One,AFC Wimbledon,100,0.232516911,365,8,1/2/21_Soccer English League One_AFC Wimbledon,bovada
+1/2/21 9:41,1/2/21,Soccer English League One,Bristol Rovers,100,0.283477062,295,11,1/2/21_Soccer English League One_Bristol Rovers,unibet
+1/2/21 9:42,1/2/21,Soccer English League Two,Carlisle United,100,0.408142332,166,8,1/2/21_Soccer English League Two_Carlisle United,bookmaker
+1/2/21 9:42,1/2/21,Soccer Spanish Segunda Division,Logrones,100,0.324553461,270,20,1/2/21_Soccer Spanish Segunda Division_Logrones,bovada
+1/2/21 9:49,1/2/21,CFB,Oregon,100,0.417352304,215,31,1/2/21_CFB_Oregon,lowvig
+1/2/21 9:49,1/2/21,CFB,North Carolina,100,0.369189696,265,34,1/2/21_CFB_North Carolina,mybookieag
+1/2/21 10:41,1/2/21,CBB,Central Arkansas,100,0.62,77,9,1/2/21_CBB_Central Arkansas,fanduel
+1/2/21 10:53,1/2/21,CBB,Texas,100,0.39,185,11,1/2/21_CBB_Texas,betmgm
+1/2/21 15:58,1/3/21,CBB,Southern Illinois,100,0.17,660,29,1/3/21_CBB_Southern Illinois,fanduel
+1/2/21 15:59,1/3/21,NBA,MEM,100,0.313558671,476,80,1/3/21_NBA_MEM,bookmaker
+1/2/21 15:59,1/3/21,NBA,MIN,100,0.358114739,320,50,1/3/21_NBA_MIN,williamhill_us
+1/2/21 15:59,1/3/21,NBA,PHO,100,0.560118799,102,13,1/3/21_NBA_PHO,fanduel
+1/2/21 15:59,1/3/21,NBA,GSW,100,0.450827436,170,21,1/3/21_NBA_GSW,williamhill_us
+1/3/21 9:06,1/3/21,NBA,SAS,100,0.460742705,150,15,1/3/21_NBA_SAS,fanduel
+1/3/21 9:07,1/3/21,CBB,William & Mary,100,0.17,610,20,1/3/21_CBB_William & Mary,fanduel
+1/3/21 9:07,1/3/21,CBB,Albany,100,0.13,750,10,1/3/21_CBB_Albany,fanduel
+1/3/21 9:07,1/3/21,CBB,Denver,100,0.15,730,24,1/3/21_CBB_Denver,fanduel
+1/3/21 9:07,1/3/21,CBB,Northwestern,100,0.25,350,12,1/3/21_CBB_Northwestern,williamhill_us
+1/4/21 7:57,1/4/21,Soccer Barclays Premier League,Southampton,100,0.202510563,470,15,1/4/21_Soccer Barclays Premier League_Southampton,unibet
+1/4/21 8:04,1/4/21,Soccer Italy Serie B,Salernitana,100,0.358467793,210,11,1/4/21_Soccer Italy Serie B_Salernitana,unibet
+1/4/21 8:15,1/4/21,CBB,Charleston Southern,100,0.13,869,26,1/4/21_CBB_Charleston Southern,fanduel
+1/4/21 8:15,1/4/21,CBB,Hampton,100,0.34,225,10,1/4/21_CBB_Hampton,fanduel
+1/4/21 8:15,1/4/21,CBB,Delaware St.,100,0.21,420,9,1/4/21_CBB_Delaware St.,fanduel
+1/4/21 8:15,1/4/21,CBB,Alcorn St.,100,0.36,200,8,1/4/21_CBB_Alcorn St.,fanduel
+1/4/21 8:15,1/4/21,NBA,ATL,100,0.770829483,40,8,1/4/21_NBA_ATL,bookmaker
+1/4/21 8:15,1/4/21,NBA,TOR,100,0.638397946,71,9,1/4/21_NBA_TOR,betmgm
+1/4/21 8:15,1/4/21,NBA,NOP,100,0.607579217,83,11,1/4/21_NBA_NOP,williamhill_us
+1/4/21 8:15,1/4/21,NBA,HOU,100,0.602521807,87,13,1/4/21_NBA_HOU,sugarhouse
+1/4/21 8:15,1/4/21,NBA,GSW,100,0.499453003,120,9,1/4/21_NBA_GSW,williamhill_us
+1/4/21 11:11,1/4/21,NBA,ORL,100,0.713445876,53,9,1/4/21_NBA_ORL,caesars
+1/4/21 11:11,1/4/21,NBA,OKC,100,0.257153578,359,18,1/4/21_NBA_OKC,williamhill_us
+1/4/21 11:11,1/4/21,NBA,DET,100,0.078886025,1300,10,1/4/21_NBA_DET,sugarhouse
+1/4/21 11:11,1/4/21,CBB,Holy Cross,100,0.18,500,8,1/4/21_CBB_Holy Cross,mybookieag
+1/4/21 11:11,1/4/21,CBB,Alabama St.,100,0.34,220,8,1/4/21_CBB_Alabama St.,fanduel
+1/4/21 11:15,1/4/21,CBB,Montana,100,0.72,54,10,1/4/21_CBB_Montana,sugarhouse
+1/4/21 15:32,1/9/21,NFL,WSH,100,0.260356059,350,17,1/9/21_NFL_WSH,fanduel
+2021-01-04 17:02:10,1/5/21,Soccer English League Two,Salford City,100,0.415937081196637,200,24,1/5/21_Soccer English League Two_Salford City,fanduel
+2021-01-04 17:03:19,1/5/21,Soccer French Ligue 2,Toulouse,100,0.5197031532040348,120,14,1/5/21_Soccer French Ligue 2_Toulouse,sugarhouse
+2021-01-04 17:03:19,1/5/21,Soccer French Ligue 2,Amiens,100,0.3469258521795584,229,14,1/5/21_Soccer French Ligue 2_Amiens,unibet
+2021-01-05 07:27:45,1/5/21,Soccer French Ligue 2,Troyes Draw,100,0.22231822882791735,390,8,1/5/21_Soccer French Ligue 2_Troyes Draw,unibet
+2021-01-05 07:31:29,1/5/21,NBA,BRK,100,0.543289576425679,125,22,1/5/21_NBA_BRK,williamhill_us
+2021-01-05 07:31:29,1/5/21,NBA,MEM,100,0.32842140156938193,384,59,1/5/21_NBA_MEM,lowvig
+2021-01-05 07:31:29,1/5/21,NBA,MIN,100,0.1741536878630522,650,30,1/5/21_NBA_MIN,caesars
+2021-01-05 15:39:06,1/5/21,CBB,Duquesne,100,0.48875471323675335,125,9,1/5/21_CBB_Duquesne,bovada
+

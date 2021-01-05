@@ -190,8 +190,6 @@ for i in eventsAPI:
 #Matching up 538 teams with sports betting API teams
 #Performing calculations to see if expected value of winnings on a $100 dollar bet is over $10 (10% return)
 
-print(FiveThirtyEightGames)
-
 
 for i in range(len(FiveThirtyEightGames)):
         for k in range(len(AlphaAPI)):
@@ -200,8 +198,6 @@ for i in range(len(FiveThirtyEightGames)):
             if FiveThirtyEightGames[i][2].lower() == BetaAPI[k].lower():
                 FiveThirtyEightGames[i][4] = float(FiveThirtyEightGames[i][4]*.75+awayNoVig[k]*.25)
 
-
-print(FiveThirtyEightGames)
 
 teamsToBetNBA=[]
 potential_winnings=[]

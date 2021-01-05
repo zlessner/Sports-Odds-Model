@@ -850,8 +850,6 @@ for i in range(len(teams)):
         team_num_t.append(2239)
     if teams[i] == "F.B.C Unione Venezia": 
         team_num_t.append(607)
-    if teams[i] == "Frosinone":
-        team_num_t.append(8970)
     if teams[i] == "Lecce":
         team_num_t.append(1005)
     if teams[i] == "Monza":
