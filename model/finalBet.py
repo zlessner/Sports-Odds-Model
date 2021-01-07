@@ -20,6 +20,10 @@ elif sport == 'NBA':
 elif sport == 'CBB':
     from modelCBB import teamsToBetCBB, potential_winnings, winning_odds, FiveThirtyEightGamesYesterday, playedTeams, winning_book
     teamOdds(teamsToBetCBB)
+
+elif sport == 'BEL':
+    from modelEuroLeague import teamsToBetBEL, potential_winnings, winning_odds, winning_book
+    teamOdds(teamsToBetBEL)
     
 
 else:
@@ -31,7 +35,7 @@ else:
 
 today_csv(sport, winning_odds, potential_winnings, finalValues, winning_book)
 
-# yesterdayCSV(FiveThirtyEightGamesYesterday, sport, playedTeams)
+yesterdayCSV(FiveThirtyEightGamesYesterday, sport, playedTeams)
 
 # run just soccer for sport on days where not many games - only gives back 7 results but coudl be quicker than going through every individual league
 

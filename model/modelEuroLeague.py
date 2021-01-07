@@ -1,5 +1,5 @@
 from urllib.request import urlretrieve as retrieve
-from moneyline.moneylineNBA import theOddsAPIGames
+from moneyline.moneylineEuroLeague import theOddsAPIGames
 from moneyline.moneylineSoccer import stringGameDate, stringYesterdayDate 
 import csv
 import time
@@ -31,34 +31,34 @@ for game in fullList:
         FiveThirtyEightGames.append(game)
 
 
-FiveThirtyEightGamesYesterday=[]
-playedTeams = []
+# FiveThirtyEightGamesYesterday=[]
+# playedTeams = []
 
-for game in fullList:
-    if game[0] == stringYesterdayDate:
-        FiveThirtyEightGamesYesterday.append(game)
-
-
+# for game in fullList:
+#     if game[0] == stringYesterdayDate:
+#         FiveThirtyEightGamesYesterday.append(game)
 
 
 
-for i in range(len(FiveThirtyEightGamesYesterday)):
-    if len(FiveThirtyEightGamesYesterday[i][7])>0:
-        FiveThirtyEightGamesYesterday[i][7] = float(FiveThirtyEightGamesYesterday[i][7])
-        playedTeams.append(FiveThirtyEightGamesYesterday[i][1])
-        playedTeams.append(FiveThirtyEightGamesYesterday[i][2])
-
-    if len(FiveThirtyEightGamesYesterday[i][8])>0:
-        FiveThirtyEightGamesYesterday[i][8] = float(FiveThirtyEightGamesYesterday[i][8])
 
 
-for i in range(len(FiveThirtyEightGamesYesterday)):
+# for i in range(len(FiveThirtyEightGamesYesterday)):
+#     if len(FiveThirtyEightGamesYesterday[i][7])>0:
+#         FiveThirtyEightGamesYesterday[i][7] = float(FiveThirtyEightGamesYesterday[i][7])
+#         playedTeams.append(FiveThirtyEightGamesYesterday[i][1])
+#         playedTeams.append(FiveThirtyEightGamesYesterday[i][2])
 
-    if FiveThirtyEightGamesYesterday[i][7] > FiveThirtyEightGamesYesterday[i][8]:
-        FiveThirtyEightGamesYesterday[i][9] = FiveThirtyEightGamesYesterday[i][1]
+#     if len(FiveThirtyEightGamesYesterday[i][8])>0:
+#         FiveThirtyEightGamesYesterday[i][8] = float(FiveThirtyEightGamesYesterday[i][8])
 
-    elif FiveThirtyEightGamesYesterday[i][7] < FiveThirtyEightGamesYesterday[i][8]:
-        FiveThirtyEightGamesYesterday[i][9] = FiveThirtyEightGamesYesterday[i][2]
+
+# for i in range(len(FiveThirtyEightGamesYesterday)):
+
+#     if FiveThirtyEightGamesYesterday[i][7] > FiveThirtyEightGamesYesterday[i][8]:
+#         FiveThirtyEightGamesYesterday[i][9] = FiveThirtyEightGamesYesterday[i][1]
+
+#     elif FiveThirtyEightGamesYesterday[i][7] < FiveThirtyEightGamesYesterday[i][8]:
+#         FiveThirtyEightGamesYesterday[i][9] = FiveThirtyEightGamesYesterday[i][2]
 
 
 
@@ -191,47 +191,46 @@ for i in eventsAPI:
 #Performing calculations to see if expected value of winnings on a $100 dollar bet is over $10 (10% return)
 
 
-for i in range(len(FiveThirtyEightGames)):
-        for k in range(len(AlphaAPI)):
-            if FiveThirtyEightGames[i][1].lower() == AlphaAPI[k].lower():
-                FiveThirtyEightGames[i][3] = float(FiveThirtyEightGames[i][3]*.5+homeNoVig[k]*.5)
-            if FiveThirtyEightGames[i][2].lower() == BetaAPI[k].lower():
-                FiveThirtyEightGames[i][4] = float(FiveThirtyEightGames[i][4]*.5+awayNoVig[k]*.5)
+for i in range(len(AlphaAPI)):
+            FiveThirtyEightGames[i][1] = AlphaAPI[i]
+            FiveThirtyEightGames[i][2] = BetaAPI[i]
+            FiveThirtyEightGames[i][3] = float(homeNoVig[i])
+            FiveThirtyEightGames[i][4] = float(awayNoVig[i])
 
 
-teamsToBetNBA=[]
+
+teamsToBetBEL=[]
 potential_winnings=[]
 winning_odds=[]
 winning_book=[]
 
 for i in range(len(AlphaAPI)):
-    for j in range(len(FiveThirtyEightGames)):
-        try:
-            if (AlphaAPI[i]).lower() == (FiveThirtyEightGames[j][1].lower()):
-                HomeAlphaOdds = int((((Away[i])-1)*100)*(float(FiveThirtyEightGames[j][3]))-(100*(1-(float(FiveThirtyEightGames[j][3])))))
-                if (HomeAlphaOdds>7):
-                    teamsToBetNBA.append({AlphaAPI[i]: HomeAlphaOdds})
-                    potential_winnings.append(int(((Away[i])-1)*100))
-                    winning_odds.append(float(FiveThirtyEightGames[j][3]))
-                    winning_book.append(bookAway[i])
-        except KeyError:
-            continue
+    try:
+        if (AlphaAPI[i]).lower() == (FiveThirtyEightGames[i][1].lower()):
+            HomeAlphaOdds = int((((Away[i])-1)*100)*(float(FiveThirtyEightGames[i][3]))-(100*(1-(float(FiveThirtyEightGames[i][3])))))
+            if (HomeAlphaOdds>0):
+                teamsToBetBEL.append({AlphaAPI[i]: HomeAlphaOdds})
+                potential_winnings.append(int(((Away[i])-1)*100))
+                winning_odds.append(float(FiveThirtyEightGames[i][3]))
+                winning_book.append(bookAway[i])
+    except KeyError:
+        continue
 
-        try:    
-            if (BetaAPI[i]).lower() == (FiveThirtyEightGames[j][2].lower()):
-                AwayBetaOdds = int((((Home[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
-                if (AwayBetaOdds>7):
-                    teamsToBetNBA.append({BetaAPI[i]: AwayBetaOdds})
-                    potential_winnings.append(int(((Home[i])-1)*100))
-                    winning_odds.append(float(FiveThirtyEightGames[j][4]))
-                    winning_book.append(bookHome[i])
-        except KeyError:
-            continue
+    try:    
+        if (BetaAPI[i]).lower() == (FiveThirtyEightGames[i][2].lower()):
+            AwayBetaOdds = int((((Home[i])-1)*100)*(float(FiveThirtyEightGames[i][4]))-(100*(1-(float(FiveThirtyEightGames[i][4])))))
+            if (AwayBetaOdds>0):
+                teamsToBetBEL.append({BetaAPI[i]: AwayBetaOdds})
+                potential_winnings.append(int(((Home[i])-1)*100))
+                winning_odds.append(float(FiveThirtyEightGames[i][4]))
+                winning_book.append(bookHome[i])
+    except KeyError:
+        continue
 
 
  #Comment the below in if just want results for this one model   
 
-print(teamsToBetNBA)
+print(teamsToBetBEL)
 
 print(potential_winnings)
 print(winning_book)

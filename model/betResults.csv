@@ -898,3 +898,22 @@ Time Script Ran,Game Date,Sport,Team,Bet Amount,Odds of Winning,Potential Winnin
 1/4/21 8:15,1/4/21,CBB,Hampton,100,0.34,225,10.0,No Win,-100,1/4/21_CBB_Hampton,fanduel
 1/4/21 8:15,1/4/21,CBB,Delaware St.,100,0.21,420,9.0,No Win,-100,1/4/21_CBB_Delaware St.,fanduel
 1/4/21 11:11,1/4/21,CBB,Alabama St.,100,0.34,220,8.0,No Win,-100,1/4/21_CBB_Alabama St.,fanduel
+2021-01-04 17:02:10,1/5/21,Soccer English League Two,Salford City,100,0.415937081196637,200,24.0,No Win,-100,1/5/21_Soccer English League Two_Salford City,fanduel
+2021-01-04 17:03:19,1/5/21,Soccer French Ligue 2,Toulouse,100,0.5197031532040348,120,14.0,Toulouse,120,1/5/21_Soccer French Ligue 2_Toulouse,sugarhouse
+2021-01-04 17:03:19,1/5/21,Soccer French Ligue 2,Amiens,100,0.3469258521795584,229,14.0,No Win,-100,1/5/21_Soccer French Ligue 2_Amiens,unibet
+2021-01-05 07:27:45,1/5/21,Soccer French Ligue 2,Troyes Draw,100,0.22231822882791732,390,8.0,No Win,-100,1/5/21_Soccer French Ligue 2_Troyes Draw,unibet
+2021-01-05 15:39:06,1/5/21,CBB,Duquesne,100,0.4887547132367534,125,9.0,No Win,-100,1/5/21_CBB_Duquesne,bovada
+2021-01-05 07:31:29,1/5/21,NBA,BRK,100,0.543289576425679,125,22.0,BRK,125,1/5/21_NBA_BRK,williamhill_us
+2021-01-05 07:31:29,1/5/21,NBA,MEM,100,0.32842140156938193,384,59.0,No Win,-100,1/5/21_NBA_MEM,lowvig
+2021-01-05 07:31:29,1/5/21,NBA,MIN,100,0.1741536878630522,650,30.0,No Win,-100,1/5/21_NBA_MIN,caesars
+2021-01-05 15:51:04,1/6/21,Soccer Italy Serie A,Crotone,100,0.1442237261726989,650,8.0,No Win,-100,1/6/21_Soccer Italy Serie A_Crotone,sugarhouse
+2021-01-06 08:39:43,1/6/21,Soccer French Ligue 1,Strasbourg Draw,100,0.22131227367555076,400,10.0,No Win,-100,1/6/21_Soccer French Ligue 1_Strasbourg Draw,lowvig
+2021-01-06 08:39:43,1/6/21,Soccer French Ligue 1,Nimes,100,0.15854746970853828,725,30.0,No Win,-100,1/6/21_Soccer French Ligue 1_Nimes,lowvig
+2021-01-06 08:39:43,1/6/21,Soccer French Ligue 1,Lille,100,0.5838124671020567,87,9.0,No Win,-100,1/6/21_Soccer French Ligue 1_Lille,bookmaker
+2021-01-06 08:39:43,1/6/21,Soccer French Ligue 1,St Etienne,100,0.10259494157952036,1082,21.0,No Win,-100,1/6/21_Soccer French Ligue 1_St Etienne,betmgm
+2021-01-06 08:39:43,1/6/21,Soccer French Ligue 1,St Etienne Draw,100,0.16843438154738932,543,8.0,Draw,543,1/6/21_Soccer French Ligue 1_St Etienne Draw,gtbets
+2021-01-06 09:13:49,1/6/21,CBB,Minnesota,100,0.2896296296296296,280,10.0,No Win,-100,1/6/21_CBB_Minnesota,betmgm
+2021-01-06 09:13:49,1/6/21,CBB,New Mexico,100,0.11799499195135038,830,9.0,No Win,-100,1/6/21_CBB_New Mexico,fanduel
+2021-01-06 09:13:49,1/6/21,CBB,Air Force,100,0.0740049682583494,1650,29.0,No Win,-100,1/6/21_CBB_Air Force,betmgm
+2021-01-06 09:48:03,1/6/21,NBA,NYK,100,0.34610025842201964,265,26.0,NYK,265,1/6/21_NBA_NYK,fanduel
+2021-01-06 09:48:03,1/6/21,NBA,GSW,100,0.4431911255211449,165,17.0,No Win,-100,1/6/21_NBA_GSW,pointsbetus

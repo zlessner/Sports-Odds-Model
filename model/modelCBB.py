@@ -191,8 +191,8 @@ for i in eventsAPI:
 #Cleaning up API names strings so that they match KenPom names strings
         
 for i in range(len(AlphaAPIx)):
-    AlphaAPI.append(AlphaAPIx[i].replace(' Tar', '').replace(' Bald', '').replace(' Bananna', '').replace(' Big', '').replace(' Black', '').replace(' Blue', '').replace(' Great', '').replace(' River', '').replace(' Green', '').replace(' Golden', '').replace(' Yellow', '').replace(' Fighting', '').replace(' Demon', '').replace(' Red', '').replace(" Runnin'", '').replace(' Nittany', '').replace(' Scarlet', '').replace(' Horned', '').replace(' Rainbow', '').replace(" Fightin'", '').replace(' Thundering', '').replace(' Mean', '').replace(' Purple', '').replace(' Wolf', '').replace(' Mountain', '').replace(' Crimson', '').replace(' Delta', '').replace(' Fighting', '').replace(" Ragin'", '').replace("-", '').replace("Miss ", 'Mississippi ').replace(' Demons', '').replace(' Anteaters', '').replace('Arkansas-Little', 'Little').replace('ArkansasLittle', 'Little').replace('GardnerWebb', 'Gardner Webb').replace('South Carolina Upstate', 'USC Upstate').replace('NC State', 'N.C. State').replace('UConn', 'Connecticut').replace('Boston Univ.', 'Boston University').replace('Bowling', 'Bowling Green').replace('Iowa State', 'Iowa St.').replace('Kent State', 'Kent St.').replace('Miami Hurricanes', 'Miami FL')) 
-    BetaAPI.append(BetaAPIx[i].replace(' Tar', '').replace(' Bald', '').replace(' Bananna', '').replace(' Big', '').replace(' Black', '').replace(' Blue', '').replace(' Great', '').replace(' River', '').replace(' Green', '').replace(' Golden', '').replace(' Yellow', '').replace(' Fighting', '').replace(' Demon', '').replace(' Red', '').replace(" Runnin'", '').replace(' Nittany', '').replace(' Scarlet', '').replace(' Horned', '').replace(' Rainbow', '').replace(" Fightin'", '').replace(' Thundering', '').replace(' Mean', '').replace(' Purple', '').replace(' Wolf', '').replace(' Mountain', '').replace(' Crimson', '').replace(' Delta', '').replace(' Fighting', '').replace(" Ragin'", '').replace("-", '').replace("Miss ", 'Mississippi ').replace(' Demons', '').replace(' Anteaters', '').replace('Arkansas-Little', 'Little').replace('ArkansasLittle', 'Little').replace('GardnerWebb', 'Gardner Webb').replace('South Carolina Upstate', 'USC Upstate').replace('NC State', 'N.C. State').replace('UConn', 'Connecticut').replace('Boston Univ.', 'Boston University').replace('Bowling', 'Bowling Green').replace('Iowa State', 'Iowa St.').replace('Kent State', 'Kent St.').replace('Miami Hurricanes', 'Miami FL')) 
+    AlphaAPI.append(AlphaAPIx[i].replace(' Tar', '').replace(' Bald', '').replace(' Bananna', '').replace(' Big', '').replace(' Black', '').replace(' Blue', '').replace(' Great', '').replace(' River', '').replace(' Green', '').replace(' Golden', '').replace(' Yellow', '').replace(' Fighting', '').replace(' Demon', '').replace(' Red', '').replace(" Runnin'", '').replace(' Nittany', '').replace(' Scarlet', '').replace(' Horned', '').replace(' Rainbow', '').replace(" Fightin'", '').replace(' Thundering', '').replace(' Mean', '').replace(' Purple', '').replace(' Wolf', '').replace(' Mountain', '').replace(' Crimson', '').replace(' Delta', '').replace(' Fighting', '').replace(" Ragin'", '').replace("-", '').replace("Miss ", 'Mississippi ').replace(' Demons', '').replace(' Anteaters', '').replace('Arkansas-Little', 'Little').replace('ArkansasLittle', 'Little').replace('GardnerWebb', 'Gardner Webb').replace('South Carolina Upstate', 'USC Upstate').replace('NC State', 'N.C. State').replace('UConn', 'Connecticut').replace('Boston Univ.', 'Boston University').replace('Bowling', 'Bowling Green').replace('Iowa State', 'Iowa St.').replace('Kent State', 'Kent St.').replace('Miami Hurricanes', 'Miami FL').replace('St. Francis BKN', 'St. Francis NY').replace('LIU Brooklyn', 'LIU').replace('N Colorado', 'Northern Colorado').replace('Arizona St. Sun', 'Arizona St.').replace("Mt. St. Mary's", "Mount St. Mary's").replace("Central Connecticut St.", "Central Connecticut").replace("SE Missouri St.", "Southeast Missouri St.").replace("St. Francis (PA)", "St. Francis PA").replace("Idaho State", "Idaho St.").replace("TennMartin", "Tennessee Martin"))  
+    BetaAPI.append(BetaAPIx[i].replace(' Tar', '').replace(' Bald', '').replace(' Bananna', '').replace(' Big', '').replace(' Black', '').replace(' Blue', '').replace(' Great', '').replace(' River', '').replace(' Green', '').replace(' Golden', '').replace(' Yellow', '').replace(' Fighting', '').replace(' Demon', '').replace(' Red', '').replace(" Runnin'", '').replace(' Nittany', '').replace(' Scarlet', '').replace(' Horned', '').replace(' Rainbow', '').replace(" Fightin'", '').replace(' Thundering', '').replace(' Mean', '').replace(' Purple', '').replace(' Wolf', '').replace(' Mountain', '').replace(' Crimson', '').replace(' Delta', '').replace(' Fighting', '').replace(" Ragin'", '').replace("-", '').replace("Miss ", 'Mississippi ').replace(' Demons', '').replace(' Anteaters', '').replace('Arkansas-Little', 'Little').replace('ArkansasLittle', 'Little').replace('GardnerWebb', 'Gardner Webb').replace('South Carolina Upstate', 'USC Upstate').replace('NC State', 'N.C. State').replace('UConn', 'Connecticut').replace('Boston Univ.', 'Boston University').replace('Bowling', 'Bowling Green').replace('Iowa State', 'Iowa St.').replace('Kent State', 'Kent St.').replace('Miami Hurricanes', 'Miami FL').replace('St. Francis BKN', 'St. Francis NY').replace('LIU Brooklyn', 'LIU').replace('N Colorado', 'Northern Colorado').replace('Arizona St. Sun', 'Arizona St.').replace("Mt. St. Mary's", "Mount St. Mary's").replace("Central Connecticut St.", "Central Connecticut").replace("SE Missouri St.", "Southeast Missouri St.").replace("St. Francis (PA)", "St. Francis PA").replace("Idaho State", "Idaho St.").replace("TennMartin", "Tennessee Martin"))  
 
 
 
@@ -223,6 +223,16 @@ teamsToBetCBB=[]
 potential_winnings=[]
 winning_odds=[]
 winning_book=[]
+print(AlphaAPI)
+print(len(AlphaAPI))
+print(BetaAPI)
+print(len(BetaAPI))
+print(midDayWinTeam)
+print(len(midDayWinTeam))
+print(midDayLoseTeam)
+print(len(midDayLoseTeam))
+
+
 
 
 
@@ -238,7 +248,7 @@ for i in range(len(AlphaAPI)):
     for j in range(len(midDayWinTeam)):
         try:
             if (AlphaAPI[i]).lower() == (midDayWinTeam[j].lower()):
-                HomeAlphaOdds = int(((((Away[i])-1)*100)*(midDayWinProb[j])-(100*(midDayLoseProb[j]))))
+                HomeAlphaOdds = int(((((Away[i])-1)*100)*(midDayWinProb[j])-(100*((1-midDayWinProb[j])))))
                 if (HomeAlphaOdds>7):
                     teamsToBetCBB.append({AlphaAPI[i]: round(HomeAlphaOdds)})
                     potential_winnings.append(int(((Away[i])-1)*100))
@@ -249,7 +259,7 @@ for i in range(len(AlphaAPI)):
 
         try:    
             if (BetaAPI[i]).lower() == (midDayLoseTeam[j].lower()):
-                AwayBetaOdds = int(((((Home[i])-1)*100)*(midDayLoseProb[j])))-(100*(midDayWinProb[j]))
+                AwayBetaOdds = int(((((Home[i])-1)*100)*(midDayLoseProb[j])))-(100*((1-midDayLoseProb[j])))
                 if (AwayBetaOdds>7):
                     teamsToBetCBB.append({BetaAPI[i]: round(AwayBetaOdds)})
                     potential_winnings.append(int(((Home[i])-1)*100))
@@ -260,20 +270,19 @@ for i in range(len(AlphaAPI)):
 
         try:    
             if (AlphaAPI[i]).lower() == (midDayLoseTeam[j].lower()):
-                AwayAlphaOdds = int(((((Away[i])-1)*100)*(midDayLoseProb[j]))-(100*(midDayWinProb[j])))
+                AwayAlphaOdds = int(((((Away[i])-1)*100)*(midDayLoseProb[j]))-(100*((1-midDayLoseProb[j]))))
                 if (AwayAlphaOdds>7):
                     teamsToBetCBB.append({AlphaAPI[i]: round(AwayAlphaOdds)})
                     potential_winnings.append(int(((Away[i])-1)*100))
                     winning_odds.append(midDayLoseProb[j])
                     winning_book.append(bookAway[i])
-                    print(AlphaAPI[i])
         except KeyError:
             continue
 
 
         try:
             if (BetaAPI[i]).lower() == (midDayWinTeam[j].lower()):
-                HomeBetaOdds = int(((((Home[i])-1)*100)*((midDayWinProb[j])))-(100*(midDayLoseProb[j])))
+                HomeBetaOdds = int(((((Home[i])-1)*100)*((midDayWinProb[j])))-(100*((1-midDayWinProb[j]))))
                 if (HomeBetaOdds>7):
                     teamsToBetCBB.append({BetaAPI[i]: round(HomeBetaOdds)})
                     potential_winnings.append(int(((Home[i])-1)*100))
