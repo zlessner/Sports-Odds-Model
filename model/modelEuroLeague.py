@@ -1,6 +1,6 @@
 from urllib.request import urlretrieve as retrieve
 from moneyline.moneylineEuroLeague import theOddsAPIGames
-from moneyline.moneylineSoccer import stringGameDate, stringYesterdayDate 
+from moneyline.moneylineSoccer import stringGameDate, stringYesterdayDate, now
 import csv
 import time
 from datetime import datetime
@@ -102,7 +102,7 @@ for i in range(len(theOddsAPIGames)):
 
 
                 
-                eventsAPI[i] = [theOddsAPIGames[i]['sport_key']], [theOddsAPIGames[i]['commence_time']], [theOddsAPIGames[i]['teams']], [theOddsAPIGames[i]['sites'][j]['odds']], [theOddsAPIGames[i]['sites'][j]['site_key']], [theOddsAPIGames[i]['home_team']]
+                eventsAPI[i] = [theOddsAPIGames[i]['sport_key']], [theOddsAPIGames[i]['commence_time']], [theOddsAPIGames[i]['teams']], [theOddsAPIGames[i]['sites'][j]['odds']], [theOddsAPIGames[i]['sites'][j]['site_key']], [theOddsAPIGames[i]['home_team']], theOddsAPIGames[i]['sites'], theOddsAPIGames[i]['sites'][j]['last_update']
                 # break
                 if theOddsAPIGames[i]['sites'][j]['site_key'] == 'betfair':
                     if siteCount != 1:
@@ -179,17 +179,20 @@ BetaAPI=[]
 
 for i in eventsAPI:
     # if (datetime.utcfromtimestamp((eventsAPI[i][1][0])-30000).strftime('%Y-%m-%d') == stringGameDate):
-    if eventsAPI[i][2][0][1] == eventsAPI[i][5][0]:
-        AlphaAPI.append(eventsAPI[i][2][0][1])
-        BetaAPI.append(eventsAPI[i][2][0][0])
-    else:
-        BetaAPI.append(eventsAPI[i][2][0][1])
-        AlphaAPI.append(eventsAPI[i][2][0][0])
+    if (len(eventsAPI[i][6]) != 1 or eventsAPI[i][4][0] != 'betfair'):
+        if eventsAPI[i][2][0][1] == eventsAPI[i][5][0]:
+            AlphaAPI.append(eventsAPI[i][2][0][1])
+            BetaAPI.append(eventsAPI[i][2][0][0])
+            print(eventsAPI[i][7])
+            print(int(now.strftime("%s")))
+        else:
+            BetaAPI.append(eventsAPI[i][2][0][1])
+            AlphaAPI.append(eventsAPI[i][2][0][0])
 
+            
 
 #Matching up 538 teams with sports betting API teams
 #Performing calculations to see if expected value of winnings on a $100 dollar bet is over $10 (10% return)
-
 
 for i in range(len(AlphaAPI)):
             FiveThirtyEightGames[i][1] = AlphaAPI[i]
@@ -203,12 +206,14 @@ teamsToBetBEL=[]
 potential_winnings=[]
 winning_odds=[]
 winning_book=[]
+break_point=[]
 
 for i in range(len(AlphaAPI)):
     try:
         if (AlphaAPI[i]).lower() == (FiveThirtyEightGames[i][1].lower()):
             HomeAlphaOdds = int((((Away[i])-1)*100)*(float(FiveThirtyEightGames[i][3]))-(100*(1-(float(FiveThirtyEightGames[i][3])))))
             if (HomeAlphaOdds>0):
+                break_point.append((round(107/float(FiveThirtyEightGames[j][3]))-100))
                 teamsToBetBEL.append({AlphaAPI[i]: HomeAlphaOdds})
                 potential_winnings.append(int(((Away[i])-1)*100))
                 winning_odds.append(float(FiveThirtyEightGames[i][3]))
@@ -220,6 +225,7 @@ for i in range(len(AlphaAPI)):
         if (BetaAPI[i]).lower() == (FiveThirtyEightGames[i][2].lower()):
             AwayBetaOdds = int((((Home[i])-1)*100)*(float(FiveThirtyEightGames[i][4]))-(100*(1-(float(FiveThirtyEightGames[i][4])))))
             if (AwayBetaOdds>0):
+                break_point.append((round(107/float(FiveThirtyEightGames[j][4])-100)))
                 teamsToBetBEL.append({BetaAPI[i]: AwayBetaOdds})
                 potential_winnings.append(int(((Home[i])-1)*100))
                 winning_odds.append(float(FiveThirtyEightGames[i][4]))

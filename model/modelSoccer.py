@@ -270,6 +270,7 @@ teamsToBet1=[]
 potential_winnings=[]
 winning_odds=[]
 winning_book=[]
+break_point=[]
 
 def Prediction():
 
@@ -279,11 +280,13 @@ def Prediction():
                 HomeAlphaOdds = int((((Away[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
                 HomeAlphaDrawOdds = int((((draw[i])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
                 if (HomeAlphaOdds>7):
+                    break_point.append(round((107/float(FiveThirtyEightGames[j][4]))-100))
                     teamsToBet1.append({AlphaAPI[i]: HomeAlphaOdds})
                     potential_winnings.append(int(((Away[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][4]))
                     winning_book.append(bookAway[i])
                 if (HomeAlphaDrawOdds>7):
+                    break_point.append(round((107/float(FiveThirtyEightGames[j][6]))-100))
                     teamsToBet1.append({AlphaAPI[i] + " Draw": HomeAlphaDrawOdds})
                     winning_odds.append(float(FiveThirtyEightGames[j][6]))
                     potential_winnings.append(int(((draw[i])-1)*100))
@@ -293,11 +296,13 @@ def Prediction():
                 AwayBetaOdds = int((((Home[i])-1)*100)*(float(FiveThirtyEightGames[j][5]))-(100*(1-(float(FiveThirtyEightGames[j][5])))))
                 AwayAlphaDrawOdds = int((((draw[i])-1)*100)*(float(FiveThirtyEightGames[j][6]))-(100*(1-(float(FiveThirtyEightGames[j][6])))))
                 if (AwayBetaOdds>7):
+                    break_point.append(round((107/float(FiveThirtyEightGames[j][5]))-100))
                     teamsToBet1.append({BetaAPI[i]: AwayBetaOdds})
                     potential_winnings.append(int(((Home[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][5]))
                     winning_book.append(bookHome[i])
                 if (AwayAlphaDrawOdds>7):
+                    break_point.append(round((107/float(FiveThirtyEightGames[j][6]))-100))
                     teamsToBet1.append({AlphaAPI[i] + " Draw": AwayAlphaDrawOdds})
                     winning_odds.append(float(FiveThirtyEightGames[j][6]))
                     potential_winnings.append(int(((draw[i])-1)*100))

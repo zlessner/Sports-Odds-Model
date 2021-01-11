@@ -71,12 +71,12 @@ for i in range(len(theOddsAPIGames)):
                 
                 eventsAPI[i] = [theOddsAPIGames[i]['sport_key']], [theOddsAPIGames[i]['commence_time']], [theOddsAPIGames[i]['teams']], [theOddsAPIGames[i]['sites'][j]['odds']], [theOddsAPIGames[i]['sites'][j]['site_key']], [theOddsAPIGames[i]['home_team']]
                 # break
-                if theOddsAPIGames[i]['sites'][j]['site_key'] == 'betfair':
+                if theOddsAPIGames[i]['sites'][j]['site_key'] == 'betfair' or theOddsAPIGames[i]['sites'][j]['site_key'] == 'williamhill_us':
                     if siteCount != 1:
                         siteCount = siteCount - 1
 
                 #putting home team first, away team second
-                if theOddsAPIGames[i]['sites'][j]['site_key'] != 'betfair':
+                if theOddsAPIGames[i]['sites'][j]['site_key'] != 'betfair' and theOddsAPIGames[i]['sites'][j]['site_key'] != 'williamhill_us':
                     if eventsAPI[i][2][0][1] == eventsAPI[i][5][0]:
                         totalHome = totalHome + [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]
                         totalAway = totalAway + [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0]
@@ -220,10 +220,10 @@ for i in range(len(FiveThirtyEightGames)):
         for k in range(len(AlphaAPI)):
             if FiveThirtyEightGames[i][1].lower() == predictionTracker[j][0].lower() and FiveThirtyEightGames[i][1].lower() == AlphaAPI[k].lower():
                 print(AlphaAPI[k])
-                FiveThirtyEightGames[i][3] = (((float(FiveThirtyEightGames[i][3])+predictionTracker[j][2])/2)+homeNoVig[k])/2
+                FiveThirtyEightGames[i][3] = (((float(FiveThirtyEightGames[i][3])+predictionTracker[j][2])/2)*0+homeNoVig[k])/1
             if FiveThirtyEightGames[i][2].lower() == predictionTracker[j][1].lower() and FiveThirtyEightGames[i][2].lower() == BetaAPI[k].lower():
                 print(BetaAPI[k])
-                FiveThirtyEightGames[i][4] = (((float(FiveThirtyEightGames[i][4])+predictionTracker[j][3])/2)+awayNoVig[k])/2
+                FiveThirtyEightGames[i][4] = (((float(FiveThirtyEightGames[i][4])+predictionTracker[j][3])/2)*0+awayNoVig[k])/1
 
 
 print(FiveThirtyEightGames)
@@ -242,7 +242,7 @@ for i in range(len(AlphaAPI)):
         try:
             if (AlphaAPI[i]).lower() == (FiveThirtyEightGames[j][1].lower()):
                 HomeAlphaOdds = int((((Away[i])-1)*100)*(float(FiveThirtyEightGames[j][3]))-(100*(1-(float(FiveThirtyEightGames[j][3])))))
-                if (HomeAlphaOdds>7):
+                if (HomeAlphaOdds>0):
                     teamstobetNFL.append({AlphaAPI[i]: HomeAlphaOdds})
                     potential_winnings.append(int(((Away[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][3]))
@@ -253,7 +253,7 @@ for i in range(len(AlphaAPI)):
         try:    
             if (BetaAPI[i]).lower() == (FiveThirtyEightGames[j][2].lower()):
                 AwayBetaOdds = int((((Home[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
-                if (AwayBetaOdds>7):
+                if (AwayBetaOdds>0):
                     teamstobetNFL.append({BetaAPI[i]: AwayBetaOdds})
                     potential_winnings.append(int(((Home[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][4]))

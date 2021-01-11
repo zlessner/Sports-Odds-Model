@@ -44,6 +44,9 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 #soccer_norway_eliteserien
 #soccer_switzerland_superleague
 #soccer_japan_j_league
+#soccer_australia_aleague
+#soccer_fa_cup
+#icehockey_nhl
 
 
 
@@ -51,7 +54,7 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 
 soccer = False
 
-sport = "soccer_france_ligue_two"
+sport = "soccer_brazil_campeonato"
 
 querystring = {"sport":sport,"region":"us","mkt":"h2h"}
 
@@ -69,7 +72,7 @@ gameDate = datetime.date.today()
 
 gameWeek = gameDate + datetime.timedelta(6)
 
-futureGame = gameDate + datetime.timedelta(1)
+futureGame = gameDate + datetime.timedelta(0)
 
 # so that date is same format in csv and excel
 
@@ -168,12 +171,14 @@ if sport == "soccer_mexico_ligamx":
     sport = 'Soccer Mexican Primera Division Torneo Clausura'
 if sport == "soccer_spl":
     sport = 'Soccer Scottish Premiership'
+if sport == "soccer_australia_aleague":
+    sport = 'Soccer Australia A League'
     
     
     
     
 
 # Comment sport out if soccer
-sport = 'BEL'  
+sport = 'NBA'  
     
 

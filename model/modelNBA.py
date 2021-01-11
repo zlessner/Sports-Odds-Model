@@ -142,16 +142,16 @@ for i in range(len(theOddsAPIGames)):
                             bestBookAway = theOddsAPIGames[i]['sites'][j]['site_key']
 
 
-        Home.append(bestHome)
-        Away.append(bestAway)
-        bookHome.append(bestBookHome)
-        bookAway.append(bestBookAway)
-        totalHomeAvg.append((totalHome-siteCount)/siteCount)
-        totalAwayAvg.append((totalAway-siteCount)/siteCount)
-        bestHome = 0
-        bestAway = 0
-        totalHome = 0
-        totalAway = 0
+            Home.append(bestHome)
+            Away.append(bestAway)
+            bookHome.append(bestBookHome)
+            bookAway.append(bestBookAway)
+            totalHomeAvg.append((totalHome-siteCount)/siteCount)
+            totalAwayAvg.append((totalAway-siteCount)/siteCount)
+            bestHome = 0
+            bestAway = 0
+            totalHome = 0
+            totalAway = 0
 
 
 
@@ -190,12 +190,21 @@ for i in eventsAPI:
 #Matching up 538 teams with sports betting API teams
 #Performing calculations to see if expected value of winnings on a $100 dollar bet is over $10 (10% return)
 
+discrepancy = []
 
 for i in range(len(FiveThirtyEightGames)):
         for k in range(len(AlphaAPI)):
             if FiveThirtyEightGames[i][1].lower() == AlphaAPI[k].lower():
+                if abs((FiveThirtyEightGames[i][3]-homeNoVig[k])/homeNoVig[k]) > .25:
+                    # print(FiveThirtyEightGames[i][3])
+                    # print(homeNoVig[k])
+                    discrepancy.append(FiveThirtyEightGames[i][1] + " discrepancy")
                 FiveThirtyEightGames[i][3] = float(FiveThirtyEightGames[i][3]*.5+homeNoVig[k]*.5)
             if FiveThirtyEightGames[i][2].lower() == BetaAPI[k].lower():
+                if abs((FiveThirtyEightGames[i][4]-awayNoVig[k])/awayNoVig[k]) > .25:
+                    # print(FiveThirtyEightGames[i][4])
+                    # print(awayNoVig[k])
+                    discrepancy.append(FiveThirtyEightGames[i][2] + " discrepancy")
                 FiveThirtyEightGames[i][4] = float(FiveThirtyEightGames[i][4]*.5+awayNoVig[k]*.5)
 
 
@@ -203,6 +212,7 @@ teamsToBetNBA=[]
 potential_winnings=[]
 winning_odds=[]
 winning_book=[]
+break_point = []
 
 for i in range(len(AlphaAPI)):
     for j in range(len(FiveThirtyEightGames)):
@@ -210,6 +220,10 @@ for i in range(len(AlphaAPI)):
             if (AlphaAPI[i]).lower() == (FiveThirtyEightGames[j][1].lower()):
                 HomeAlphaOdds = int((((Away[i])-1)*100)*(float(FiveThirtyEightGames[j][3]))-(100*(1-(float(FiveThirtyEightGames[j][3])))))
                 if (HomeAlphaOdds>7):
+                    for n in range(len(discrepancy)):
+                        if discrepancy[n][:3] == AlphaAPI[i][:3]:
+                            print(discrepancy[n])
+                    break_point.append(round((107/float(FiveThirtyEightGames[j][3]))-100))
                     teamsToBetNBA.append({AlphaAPI[i]: HomeAlphaOdds})
                     potential_winnings.append(int(((Away[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][3]))
@@ -221,6 +235,10 @@ for i in range(len(AlphaAPI)):
             if (BetaAPI[i]).lower() == (FiveThirtyEightGames[j][2].lower()):
                 AwayBetaOdds = int((((Home[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
                 if (AwayBetaOdds>7):
+                    for n in range(len(discrepancy)):
+                        if discrepancy[n][:3] == BetaAPI[i][:3]:
+                            print(discrepancy[n])
+                    break_point.append(round((107/float(FiveThirtyEightGames[j][4]))-100))
                     teamsToBetNBA.append({BetaAPI[i]: AwayBetaOdds})
                     potential_winnings.append(int(((Home[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][4]))
