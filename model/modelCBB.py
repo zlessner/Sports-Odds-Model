@@ -154,6 +154,10 @@ for i in range(len(totalHomeAvg)):
         homeNoVig.append(totalHomeAvg[i]/(totalHomeAvg[i]+ totalAwayAvg[i]))
         awayNoVig.append(totalAwayAvg[i]/(totalHomeAvg[i]+ totalAwayAvg[i]))
 
+# for i in range(len(homeNoVig)):
+#     if homeNoVig[i] == 0:
+#         homeNoVig[i] = 0.001
+
 
 AlphaAPIx=[]
 BetaAPIx=[]
@@ -191,8 +195,8 @@ for i in eventsAPI:
 #Cleaning up API names strings so that they match KenPom names strings
         
 for i in range(len(AlphaAPIx)):
-    AlphaAPI.append(AlphaAPIx[i].replace(' Tar', '').replace(' Bald', '').replace(' Bananna', '').replace(' Big', '').replace(' Black', '').replace(' Blue', '').replace(' Great', '').replace(' River', '').replace(' Green', '').replace(' Golden', '').replace(' Yellow', '').replace(' Fighting', '').replace(' Demon', '').replace(' Red', '').replace(" Runnin'", '').replace(' Nittany', '').replace(' Scarlet', '').replace(' Horned', '').replace(' Rainbow', '').replace(" Fightin'", '').replace(' Thundering', '').replace(' Mean', '').replace(' Purple', '').replace(' Wolf', '').replace(' Mountain', '').replace(' Crimson', '').replace(' Delta', '').replace(' Fighting', '').replace(" Ragin'", '').replace("-", '').replace("Miss ", 'Mississippi ').replace(' Demons', '').replace(' Anteaters', '').replace('Arkansas-Little', 'Little').replace('ArkansasLittle', 'Little').replace('GardnerWebb', 'Gardner Webb').replace('South Carolina Upstate', 'USC Upstate').replace('NC State', 'N.C. State').replace('UConn', 'Connecticut').replace('Boston Univ.', 'Boston University').replace('Bowling', 'Bowling Green').replace('Iowa State', 'Iowa St.').replace('Kent State', 'Kent St.').replace('Miami Hurricanes', 'Miami FL').replace('St. Francis BKN', 'St. Francis NY').replace('LIU Brooklyn', 'LIU').replace('N Colorado', 'Northern Colorado').replace('Arizona St. Sun', 'Arizona St.').replace("Mt. St. Mary's", "Mount St. Mary's").replace("Central Connecticut St.", "Central Connecticut").replace("SE Missouri St.", "Southeast Missouri St.").replace("St. Francis (PA)", "St. Francis PA").replace("Idaho State", "Idaho St.").replace("TennMartin", "Tennessee Martin").replace("UCside", "UC Riverside").replace("UL Monroe", "Louisiana Monroe").replace("Fort Wayne", "Purdue Fort Wayne").replace("CSU Fullerton", "Cal St. Fullerton").replace("CSU Bakersfield", "Cal St. Bakersfield").replace("Hawai'i", "Hawaii").replace("UTArlington", "UT Arlington").replace("UIC", "Illinois Chicago").replace("Florida Int'l", "FIU").replace("Omaha", "Nebraska Omaha").replace("San José St.", "San Jose St.").replace("Utah State", "Utah St.").replace("San Diego", "UC San Diego").replace("UC San Diego St.", "San Diego St.").replace("Boise State", "Boise St.").replace("Ole Miss", "Mississippi").replace("Loyola (Chi)", "Loyola Chicago").replace("Prairie View", "Prairie View A&M"))   
-    BetaAPI.append(BetaAPIx[i].replace(' Tar', '').replace(' Bald', '').replace(' Bananna', '').replace(' Big', '').replace(' Black', '').replace(' Blue', '').replace(' Great', '').replace(' River', '').replace(' Green', '').replace(' Golden', '').replace(' Yellow', '').replace(' Fighting', '').replace(' Demon', '').replace(' Red', '').replace(" Runnin'", '').replace(' Nittany', '').replace(' Scarlet', '').replace(' Horned', '').replace(' Rainbow', '').replace(" Fightin'", '').replace(' Thundering', '').replace(' Mean', '').replace(' Purple', '').replace(' Wolf', '').replace(' Mountain', '').replace(' Crimson', '').replace(' Delta', '').replace(' Fighting', '').replace(" Ragin'", '').replace("-", '').replace("Miss ", 'Mississippi ').replace(' Demons', '').replace(' Anteaters', '').replace('Arkansas-Little', 'Little').replace('ArkansasLittle', 'Little').replace('GardnerWebb', 'Gardner Webb').replace('South Carolina Upstate', 'USC Upstate').replace('NC State', 'N.C. State').replace('UConn', 'Connecticut').replace('Boston Univ.', 'Boston University').replace('Bowling', 'Bowling Green').replace('Iowa State', 'Iowa St.').replace('Kent State', 'Kent St.').replace('Miami Hurricanes', 'Miami FL').replace('St. Francis BKN', 'St. Francis NY').replace('LIU Brooklyn', 'LIU').replace('N Colorado', 'Northern Colorado').replace('Arizona St. Sun', 'Arizona St.').replace("Mt. St. Mary's", "Mount St. Mary's").replace("Central Connecticut St.", "Central Connecticut").replace("SE Missouri St.", "Southeast Missouri St.").replace("St. Francis (PA)", "St. Francis PA").replace("Idaho State", "Idaho St.").replace("TennMartin", "Tennessee Martin").replace("UCside", "UC Riverside").replace("UL Monroe", "Louisiana Monroe").replace("Fort Wayne", "Purdue Fort Wayne").replace("CSU Fullerton", "Cal St. Fullerton").replace("CSU Bakersfield", "Cal St. Bakersfield").replace("Hawai'i", "Hawaii").replace("UTArlington", "UT Arlington").replace("UIC", "Illinois Chicago").replace("Florida Int'l", "FIU").replace("Omaha", "Nebraska Omaha").replace("San José St.", "San Jose St.").replace("Utah State", "Utah St.").replace("San Diego", "UC San Diego").replace("UC San Diego St.", "San Diego St.").replace("Boise State", "Boise St.").replace("Ole Miss", "Mississippi").replace("Loyola (Chi)", "Loyola Chicago").replace("Prairie View", "Prairie View A&M"))       
+    AlphaAPI.append(AlphaAPIx[i].replace(' Tar', '').replace(' Bald', '').replace(' Bananna', '').replace(' Big', '').replace(' Black', '').replace(' Blue', '').replace(' Great', '').replace(' River', '').replace(' Green', '').replace(' Golden', '').replace(' Yellow', '').replace(' Fighting', '').replace(' Demon', '').replace(' Red', '').replace(" Runnin'", '').replace(' Nittany', '').replace(' Scarlet', '').replace(' Horned', '').replace(' Rainbow', '').replace(" Fightin'", '').replace(' Thundering', '').replace(' Mean', '').replace(' Purple', '').replace(' Wolf', '').replace(' Mountain', '').replace(' Crimson', '').replace(' Delta', '').replace(' Fighting', '').replace(" Ragin'", '').replace("-", '').replace("Miss ", 'Mississippi ').replace(' Demons', '').replace(' Anteaters', '').replace('Arkansas-Little', 'Little').replace('ArkansasLittle', 'Little').replace('GardnerWebb', 'Gardner Webb').replace('South Carolina Upstate', 'USC Upstate').replace('NC State', 'N.C. State').replace('UConn', 'Connecticut').replace('Boston Univ.', 'Boston University').replace('Bowling', 'Bowling Green').replace('Iowa State', 'Iowa St.').replace('Kent State', 'Kent St.').replace('Miami Hurricanes', 'Miami FL').replace('St. Francis BKN', 'St. Francis NY').replace('LIU Brooklyn', 'LIU').replace('N Colorado', 'Northern Colorado').replace('Arizona St. Sun', 'Arizona St.').replace("Mt. St. Mary's", "Mount St. Mary's").replace("Central Connecticut St.", "Central Connecticut").replace("SE Missouri St.", "Southeast Missouri St.").replace("St. Francis (PA)", "St. Francis PA").replace("Idaho State", "Idaho St.").replace("TennMartin", "Tennessee Martin").replace("UCside", "UC Riverside").replace("UL Monroe", "Louisiana Monroe").replace("Fort Wayne", "Purdue Fort Wayne").replace("CSU Fullerton", "Cal St. Fullerton").replace("CSU Bakersfield", "Cal St. Bakersfield").replace("Hawai'i", "Hawaii").replace("UTArlington", "UT Arlington").replace("UIC", "Illinois Chicago").replace("Florida Int'l", "FIU").replace("Omaha", "Nebraska Omaha").replace("San José St.", "San Jose St.").replace("Utah State", "Utah St.").replace("San Diego", "UC San Diego").replace("UC San Diego St.", "San Diego St.").replace("Boise State", "Boise St.").replace("Ole Miss", "Mississippi").replace("Loyola (Chi)", "Loyola Chicago").replace("Prairie View", "Prairie View A&M").replace("SIUEdwardsville", "SIU Edwardsville").replace("Miami (OH)", "Miami OH").replace("Ball State", "Ball St.").replace("Ohio State", "Ohio St.").replace("Detroit Mercy", "Detroit").replace("CSU Northridge", "Cal St. Northridge").replace("Texas State", "Texas St.").replace("UNCsboro", "UNC Greensboro").replace("SE Louisiana", "Southeastern Louisiana").replace("Loyola (MD)", "Loyola MD").replace("ArkansasPine Bluff", "Arkansas Pine Bluff").replace("Penn State", "Penn St.").replace("Texas A&MCC", "Texas A&M Corpus Chris").replace("Weber State", "Weber St.")) 
+    BetaAPI.append(BetaAPIx[i].replace(' Tar', '').replace(' Bald', '').replace(' Bananna', '').replace(' Big', '').replace(' Black', '').replace(' Blue', '').replace(' Great', '').replace(' River', '').replace(' Green', '').replace(' Golden', '').replace(' Yellow', '').replace(' Fighting', '').replace(' Demon', '').replace(' Red', '').replace(" Runnin'", '').replace(' Nittany', '').replace(' Scarlet', '').replace(' Horned', '').replace(' Rainbow', '').replace(" Fightin'", '').replace(' Thundering', '').replace(' Mean', '').replace(' Purple', '').replace(' Wolf', '').replace(' Mountain', '').replace(' Crimson', '').replace(' Delta', '').replace(' Fighting', '').replace(" Ragin'", '').replace("-", '').replace("Miss ", 'Mississippi ').replace(' Demons', '').replace(' Anteaters', '').replace('Arkansas-Little', 'Little').replace('ArkansasLittle', 'Little').replace('GardnerWebb', 'Gardner Webb').replace('South Carolina Upstate', 'USC Upstate').replace('NC State', 'N.C. State').replace('UConn', 'Connecticut').replace('Boston Univ.', 'Boston University').replace('Bowling', 'Bowling Green').replace('Iowa State', 'Iowa St.').replace('Kent State', 'Kent St.').replace('Miami Hurricanes', 'Miami FL').replace('St. Francis BKN', 'St. Francis NY').replace('LIU Brooklyn', 'LIU').replace('N Colorado', 'Northern Colorado').replace('Arizona St. Sun', 'Arizona St.').replace("Mt. St. Mary's", "Mount St. Mary's").replace("Central Connecticut St.", "Central Connecticut").replace("SE Missouri St.", "Southeast Missouri St.").replace("St. Francis (PA)", "St. Francis PA").replace("Idaho State", "Idaho St.").replace("TennMartin", "Tennessee Martin").replace("UCside", "UC Riverside").replace("UL Monroe", "Louisiana Monroe").replace("Fort Wayne", "Purdue Fort Wayne").replace("CSU Fullerton", "Cal St. Fullerton").replace("CSU Bakersfield", "Cal St. Bakersfield").replace("Hawai'i", "Hawaii").replace("UTArlington", "UT Arlington").replace("UIC", "Illinois Chicago").replace("Florida Int'l", "FIU").replace("Omaha", "Nebraska Omaha").replace("San José St.", "San Jose St.").replace("Utah State", "Utah St.").replace("San Diego", "UC San Diego").replace("UC San Diego St.", "San Diego St.").replace("Boise State", "Boise St.").replace("Ole Miss", "Mississippi").replace("Loyola (Chi)", "Loyola Chicago").replace("Prairie View", "Prairie View A&M").replace("SIUEdwardsville", "SIU Edwardsville").replace("Miami (OH)", "Miami OH").replace("Ball State", "Ball St.").replace("Ohio State", "Ohio St.").replace("Detroit Mercy", "Detroit").replace("CSU Northridge", "Cal St. Northridge").replace("Texas State", "Texas St.").replace("UNCsboro", "UNC Greensboro").replace("SE Louisiana", "Southeastern Louisiana").replace("Loyola (MD)", "Loyola MD").replace("ArkansasPine Bluff", "Arkansas Pine Bluff").replace("Penn State", "Penn St.").replace("Texas A&MCC", "Texas A&M Corpus Chris").replace("Weber State", "Weber St."))               
 
 
 
@@ -200,19 +204,37 @@ midDayWinTeam = []
 midDayLoseTeam = []
 midDayWinProb = []
 midDayLoseProb = []
+discrepancy = []
+
 
 for i in range(len(kpWinnersProj)):
         for k in range(len(AlphaAPI)):
             if kpWinnersProj[i].lower() == AlphaAPI[k].lower():
+                if abs((kpWinProb[i]-homeNoVig[k])/homeNoVig[k]) > .25 or abs((kpWinProb[i]-homeNoVig[k])/kpWinProb[i]) > .25:
+                    # print(FiveThirtyEightGames[i][3])
+                    # print(homeNoVig[k])
+                    discrepancy.append(kpWinnersProj[i] + " discrepancy")
                 midDayWinProb.append(float(kpWinProb[i]+homeNoVig[k])/2)
                 midDayWinTeam.append(kpWinnersProj[i])
             if kpWinnersProj[i].lower() == BetaAPI[k].lower():
+                if abs((kpWinProb[i]-awayNoVig[k])/awayNoVig[k]) > .25 or abs((kpWinProb[i]-awayNoVig[k])/kpWinProb[i]) > .25:
+                    # print(FiveThirtyEightGames[i][3])
+                    # print(homeNoVig[k])
+                    discrepancy.append(kpWinnersProj[i] + " discrepancy")
                 midDayWinProb.append(float(kpWinProb[i]+awayNoVig[k])/2)
                 midDayWinTeam.append(kpWinnersProj[i])
             if kpLosersProj[i].lower() == AlphaAPI[k].lower():
+                if abs((kpLoseProb[i]-homeNoVig[k])/homeNoVig[k]) > .25 or abs((kpLoseProb[i]-homeNoVig[k])/kpLoseProb[i]) > .25:
+                    # print(FiveThirtyEightGames[i][3])
+                    # print(homeNoVig[k])
+                    discrepancy.append(kpLosersProj[i] + " discrepancy")
                 midDayLoseProb.append(float(kpLoseProb[i]+homeNoVig[k])/2)
                 midDayLoseTeam.append(kpLosersProj[i])
             if kpLosersProj[i].lower() == BetaAPI[k].lower():
+                if abs((kpLoseProb[i]-awayNoVig[k])/awayNoVig[k]) > .25 or abs((kpLoseProb[i]-awayNoVig[k])/kpLoseProb[i]) > .25:
+                    # print(FiveThirtyEightGames[i][3])
+                    # print(homeNoVig[k])
+                    discrepancy.append(kpLosersProj[i] + " discrepancy")
                 midDayLoseProb.append(float(kpLoseProb[i]+awayNoVig[k])/2)
                 midDayLoseTeam.append(kpLosersProj[i])
 
@@ -251,6 +273,9 @@ for i in range(len(AlphaAPI)):
             if (AlphaAPI[i]).lower() == (midDayWinTeam[j].lower()):
                 HomeAlphaOdds = int(((((Away[i])-1)*100)*(midDayWinProb[j])-(100*((1-midDayWinProb[j])))))
                 if (HomeAlphaOdds>7):
+                    for n in range(len(discrepancy)):
+                        if discrepancy[n].rsplit(' ', 1)[0] == AlphaAPI[i]:
+                            print(discrepancy[n])
                     break_point.append(round((107/midDayWinProb[j])-100))
                     teamsToBetCBB.append({AlphaAPI[i]: round(HomeAlphaOdds)})
                     potential_winnings.append(int(((Away[i])-1)*100))
@@ -263,6 +288,9 @@ for i in range(len(AlphaAPI)):
             if (BetaAPI[i]).lower() == (midDayLoseTeam[j].lower()):
                 AwayBetaOdds = int(((((Home[i])-1)*100)*(midDayLoseProb[j])))-(100*((1-midDayLoseProb[j])))
                 if (AwayBetaOdds>7):
+                    for n in range(len(discrepancy)):
+                        if discrepancy[n].rsplit(' ', 1)[0] == BetaAPI[i]:
+                            print(discrepancy[n])
                     break_point.append(round((107/midDayLoseProb[j])-100))
                     teamsToBetCBB.append({BetaAPI[i]: round(AwayBetaOdds)})
                     potential_winnings.append(int(((Home[i])-1)*100))
@@ -275,6 +303,9 @@ for i in range(len(AlphaAPI)):
             if (AlphaAPI[i]).lower() == (midDayLoseTeam[j].lower()):
                 AwayAlphaOdds = int(((((Away[i])-1)*100)*(midDayLoseProb[j]))-(100*((1-midDayLoseProb[j]))))
                 if (AwayAlphaOdds>7):
+                    for n in range(len(discrepancy)):
+                        if discrepancy[n].rsplit(' ', 1)[0] == AlphaAPI[i]:
+                            print(discrepancy[n])
                     break_point.append(round((107/midDayLoseProb[j])-100))
                     teamsToBetCBB.append({AlphaAPI[i]: round(AwayAlphaOdds)})
                     potential_winnings.append(int(((Away[i])-1)*100))
@@ -288,6 +319,9 @@ for i in range(len(AlphaAPI)):
             if (BetaAPI[i]).lower() == (midDayWinTeam[j].lower()):
                 HomeBetaOdds = int(((((Home[i])-1)*100)*((midDayWinProb[j])))-(100*((1-midDayWinProb[j]))))
                 if (HomeBetaOdds>7):
+                    for n in range(len(discrepancy)):
+                        if discrepancy[n].rsplit(' ', 1)[0] == BetaAPI[i]:
+                            print(discrepancy[n])
                     break_point.append(round((107/midDayWinProb[j])-100))
                     teamsToBetCBB.append({BetaAPI[i]: round(HomeBetaOdds)})
                     potential_winnings.append(int(((Home[i])-1)*100))

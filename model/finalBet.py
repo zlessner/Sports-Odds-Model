@@ -5,7 +5,7 @@ from moneyline.moneylineSoccer import sport, stringGameDate
 
 
 if sport == 'NFL':
-    from modelNFL import teamstobetNFL, potential_winnings, winning_odds, FiveThirtyEightGames, FiveThirtyEightGamesYesterday, playedTeams, winning_book
+    from modelNFL import teamstobetNFL, potential_winnings, winning_odds, FiveThirtyEightGames, FiveThirtyEightGamesYesterday, playedTeams, winning_book, break_point
     teamOdds(teamstobetNFL)
     
 
@@ -24,6 +24,10 @@ elif sport == 'CBB':
 elif sport == 'BEL':
     from modelEuroLeague import teamsToBetBEL, potential_winnings, winning_odds, winning_book, break_point
     teamOdds(teamsToBetBEL)
+
+elif sport == 'NHL':
+    from modelNHL import teamsToBetNHL, potential_winnings, winning_odds, winning_book, break_point
+    teamOdds(teamsToBetNHL)
     
 
 else:

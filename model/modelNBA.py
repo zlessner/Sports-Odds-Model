@@ -195,17 +195,17 @@ discrepancy = []
 for i in range(len(FiveThirtyEightGames)):
         for k in range(len(AlphaAPI)):
             if FiveThirtyEightGames[i][1].lower() == AlphaAPI[k].lower():
-                if abs((FiveThirtyEightGames[i][3]-homeNoVig[k])/homeNoVig[k]) > .25:
+                if abs((FiveThirtyEightGames[i][3]-homeNoVig[k])/homeNoVig[k]) > .25 or abs((FiveThirtyEightGames[i][3]-homeNoVig[k])/FiveThirtyEightGames[i][3]) > .25:
                     # print(FiveThirtyEightGames[i][3])
                     # print(homeNoVig[k])
                     discrepancy.append(FiveThirtyEightGames[i][1] + " discrepancy")
-                FiveThirtyEightGames[i][3] = float(FiveThirtyEightGames[i][3]*.5+homeNoVig[k]*.5)
+                FiveThirtyEightGames[i][3] = float(FiveThirtyEightGames[i][3]*.75+homeNoVig[k]*.25)
             if FiveThirtyEightGames[i][2].lower() == BetaAPI[k].lower():
-                if abs((FiveThirtyEightGames[i][4]-awayNoVig[k])/awayNoVig[k]) > .25:
+                if abs((FiveThirtyEightGames[i][4]-awayNoVig[k])/awayNoVig[k]) > .25 or abs((FiveThirtyEightGames[i][4]-awayNoVig[k])/FiveThirtyEightGames[i][4]) > .25:
                     # print(FiveThirtyEightGames[i][4])
                     # print(awayNoVig[k])
                     discrepancy.append(FiveThirtyEightGames[i][2] + " discrepancy")
-                FiveThirtyEightGames[i][4] = float(FiveThirtyEightGames[i][4]*.5+awayNoVig[k]*.5)
+                FiveThirtyEightGames[i][4] = float(FiveThirtyEightGames[i][4]*.75+awayNoVig[k]*.25)
 
 
 teamsToBetNBA=[]
@@ -221,7 +221,7 @@ for i in range(len(AlphaAPI)):
                 HomeAlphaOdds = int((((Away[i])-1)*100)*(float(FiveThirtyEightGames[j][3]))-(100*(1-(float(FiveThirtyEightGames[j][3])))))
                 if (HomeAlphaOdds>7):
                     for n in range(len(discrepancy)):
-                        if discrepancy[n][:3] == AlphaAPI[i][:3]:
+                        if discrepancy[n].rsplit(' ', 1)[0] == AlphaAPI[i]:
                             print(discrepancy[n])
                     break_point.append(round((107/float(FiveThirtyEightGames[j][3]))-100))
                     teamsToBetNBA.append({AlphaAPI[i]: HomeAlphaOdds})
@@ -236,7 +236,7 @@ for i in range(len(AlphaAPI)):
                 AwayBetaOdds = int((((Home[i])-1)*100)*(float(FiveThirtyEightGames[j][4]))-(100*(1-(float(FiveThirtyEightGames[j][4])))))
                 if (AwayBetaOdds>7):
                     for n in range(len(discrepancy)):
-                        if discrepancy[n][:3] == BetaAPI[i][:3]:
+                        if discrepancy[n].rsplit(' ', 1)[0] == BetaAPI[i]:
                             print(discrepancy[n])
                     break_point.append(round((107/float(FiveThirtyEightGames[j][4]))-100))
                     teamsToBetNBA.append({BetaAPI[i]: AwayBetaOdds})

@@ -77,7 +77,7 @@ def teamOdds(teamsToBet1):
 
 # f = open("bets.csv", "w")
 # writer = csv.DictWriter(
-#     f, fieldnames=['Time Script Ran', 'Game Date', 'Sport', 'Team', 'Bet Amount', 'Odds of Winning', 'Potential Winnings', 'Expected Value', 'Row_Key', 'Book', 'Break_Point'] )
+#     f, fieldnames=['Time Script Ran', 'Game Date', 'Sport', 'Team', 'Bet Amount', 'Odds of Winning', 'Potential Winnings with Best Book', 'Expected Value', 'Row_Key', 'Best Book', 'Minimum Odds to Bet'] )
 # writer.writeheader()
 # f.close()
 
@@ -91,7 +91,7 @@ def today_csv(sport, winning_odds, potential_winnings, finalValues, winning_book
             # in order for bet to be recorded, row_key must not already be in bets table
             if (not dfToday['Row_Key'].isin([(stringGameDateMDY + "_" + sport + "_" + finalTeams[i])]).any()):
                 writer = csv.writer(file)
-                writer.writerow([nowTime, stringGameDateMDY, sport, finalTeams[i], 100, winning_odds[i], potential_winnings[i], finalValues[i], (stringGameDateMDY + "_" + sport + "_" + finalTeams[i]), winning_book[i], break_point[i]])
+                writer.writerow([nowTime, stringGameDateMDY, sport, finalTeams[i], 100, winning_odds[i], winning_book[i], potential_winnings[i], finalValues[i], (stringGameDateMDY + "_" + sport + "_" + finalTeams[i]), break_point[i]])
 
 #or not dfToday['Sport'].isin([teamSport[i]]).any()
 # today_csv(sport)
@@ -107,7 +107,7 @@ dfToday = pd.read_csv('bets.csv')
 
 # f = open("betResults.csv", "w")
 # writer = csv.DictWriter(
-#     f, fieldnames=['Time Script Ran', 'Game Date', 'Sport', 'Team', 'Bet Amount', 'Odds of Winning', 'Potential Winnings', 'Expected Value', "Winner", "Bet Winnings", "Row_Key", "Book"])
+#     f, fieldnames=['Time Script Ran', 'Game Date', 'Sport', 'Team', 'Bet Amount', 'Odds of Winning', 'Potential Winnings with Best Book', 'Expected Value', "Winner", "Bet Winnings", "Row_Key", "Best Book", "Minimum Odds to Bet"])
 # writer.writeheader()
 # f.close()
 
@@ -125,19 +125,19 @@ def yesterdayCSV(yesterdayTeam, sports, playedTeams):
                 if sport != 'CBB':           
                     if dfToday['Team'][i] == yesterdayTeam[j][9]:
                         winnersTable = dfToday['Team'][i]
-                        betWinnings = dfToday['Potential Winnings'][i]
+                        betWinnings = dfToday['Potential Winnings with Best Book'][i]
                         break
 
                     if dfToday['Team'][i][-4:] == 'Draw' and dfToday['Team'][i][-4:] == yesterdayTeam[j][9] and (yesterdayTeam[j][3] == dfToday['Team'][i][:-5] or yesterdayTeam[j][2] == dfToday['Team'][i][:-5]):
                         winnersTable = dfToday['Team'][i][-4:]
-                        betWinnings = dfToday['Potential Winnings'][i]
+                        betWinnings = dfToday['Potential Winnings with Best Book'][i]
                         break
 
 
                 else:
                     if dfToday['Team'][i] == yesterdayTeam[j]:
                         winnersTable = dfToday['Team'][i]
-                        betWinnings = dfToday['Potential Winnings'][i]
+                        betWinnings = dfToday['Potential Winnings with Best Book'][i]
                         break
 
                     
@@ -149,7 +149,7 @@ def yesterdayCSV(yesterdayTeam, sports, playedTeams):
 
             if dfToday['Game Date'][i] == stringYesterdayDateMDY and dfToday['Sport'][i][:3] == sports[:3] and any(item == dfToday['Team'][i] for item in playedTeams) and (not dfResults['Row_Key'].isin([dfToday['Row_Key'][i]]).any()):
                 writer = csv.writer(file)
-                writer.writerow([dfToday['Time Script Ran'][i], dfToday['Game Date'][i], dfToday['Sport'][i], dfToday['Team'][i], dfToday['Bet Amount'][i], dfToday['Odds of Winning'][i], dfToday['Potential Winnings'][i], dfToday['Expected Value'][i], winnersTable, betWinnings, dfToday['Row_Key'][i], dfToday['Book'][i], dfToday['Break_Point'][i]])
+                writer.writerow([dfToday['Time Script Ran'][i], dfToday['Game Date'][i], dfToday['Sport'][i], dfToday['Team'][i], dfToday['Bet Amount'][i], dfToday['Odds of Winning'][i], dfToday['Best Book'][i], dfToday['Potential Winnings with Best Book'][i], dfToday['Expected Value'][i], winnersTable, betWinnings, dfToday['Row_Key'][i], dfToday['Minimum Odds to Bet'][i]])
 
 
 #dfToday['Sport'][i] == yesterdayTeam[j][1]

@@ -1,5 +1,5 @@
 from urllib.request import urlretrieve as retrieve
-from moneyline.moneylineEuroLeague import theOddsAPIGames
+from moneyline.moneylineNHL import theOddsAPIGames
 from moneyline.moneylineSoccer import stringGameDate, stringYesterdayDate, now, manyGamesDate
 import csv
 import time
@@ -104,12 +104,12 @@ for i in range(len(theOddsAPIGames)):
                 
                 eventsAPI[i] = [theOddsAPIGames[i]['sport_key']], [theOddsAPIGames[i]['commence_time']], [theOddsAPIGames[i]['teams']], [theOddsAPIGames[i]['sites'][j]['odds']], [theOddsAPIGames[i]['sites'][j]['site_key']], [theOddsAPIGames[i]['home_team']], theOddsAPIGames[i]['sites'], theOddsAPIGames[i]['sites'][j]['last_update']
                 # break
-                if theOddsAPIGames[i]['sites'][j]['site_key'] == 'betfair':
+                if theOddsAPIGames[i]['sites'][j]['site_key'] == 'betfair' or theOddsAPIGames[i]['sites'][j]['site_key'] == 'unibet':
                     if siteCount != 1:
                         siteCount = siteCount - 1
 
                 #putting home team Home, away team Away
-                if theOddsAPIGames[i]['sites'][j]['site_key'] != 'betfair':
+                if theOddsAPIGames[i]['sites'][j]['site_key'] != 'betfair' and theOddsAPIGames[i]['sites'][j]['site_key'] != 'unibet':
                     if eventsAPI[i][2][0][1] == eventsAPI[i][5][0]:
                         totalHome = totalHome + [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][1]][0]
                         totalAway = totalAway + [theOddsAPIGames[i]['sites'][j]['odds']['h2h'][0]][0]
@@ -202,13 +202,11 @@ for i in range(len(AlphaAPI)):
 
 
 
-teamsToBetBEL=[]
+teamsToBetNHL=[]
 potential_winnings=[]
 winning_odds=[]
 winning_book=[]
 break_point=[]
-
-
 
 for i in range(len(AlphaAPI)):
     try:
@@ -216,7 +214,7 @@ for i in range(len(AlphaAPI)):
             HomeAlphaOdds = int((((Away[i])-1)*100)*(float(FiveThirtyEightGames[i][3]))-(100*(1-(float(FiveThirtyEightGames[i][3])))))
             if (HomeAlphaOdds>0):
                 break_point.append((round(100/float(FiveThirtyEightGames[i][3]))-100))
-                teamsToBetBEL.append({AlphaAPI[i]: HomeAlphaOdds})
+                teamsToBetNHL.append({AlphaAPI[i]: HomeAlphaOdds})
                 potential_winnings.append(int(((Away[i])-1)*100))
                 winning_odds.append(float(FiveThirtyEightGames[i][3]))
                 winning_book.append(bookAway[i])
@@ -228,7 +226,7 @@ for i in range(len(AlphaAPI)):
             AwayBetaOdds = int((((Home[i])-1)*100)*(float(FiveThirtyEightGames[i][4]))-(100*(1-(float(FiveThirtyEightGames[i][4])))))
             if (AwayBetaOdds>0):
                 break_point.append((round(100/float(FiveThirtyEightGames[i][4])-100)))
-                teamsToBetBEL.append({BetaAPI[i]: AwayBetaOdds})
+                teamsToBetNHL.append({BetaAPI[i]: AwayBetaOdds})
                 potential_winnings.append(int(((Home[i])-1)*100))
                 winning_odds.append(float(FiveThirtyEightGames[i][4]))
                 winning_book.append(bookHome[i])
@@ -238,7 +236,7 @@ for i in range(len(AlphaAPI)):
 
  #Comment the below in if just want results for this one model   
 
-print(teamsToBetBEL)
+print(teamsToBetNHL)
 
 print(potential_winnings)
 print(winning_book)
