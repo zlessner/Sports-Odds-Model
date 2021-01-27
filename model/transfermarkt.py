@@ -186,7 +186,7 @@ for i in range(len(team_num_t)):
 
     
 
-    if team_value_injured > .09:
+    if team_value_injured > .12:
         injuredTeams.append(team_num)
 
 # print(injuredTeams)

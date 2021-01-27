@@ -8,6 +8,7 @@ from moneyline.moneylineSoccer import sport, datetime, nowTime, stringGameDate, 
 goneTeams= []
 goneValues = []
 goneOdds = []
+goneBooks = []
 
 
 
@@ -24,6 +25,7 @@ if sport[:6] == 'Soccer':
                 goneTeams.append(teamsToBet1[i])
                 goneValues.append(potential_winnings[i])
                 goneOdds.append(winning_odds[i])
+                goneBooks.append(winning_book[i])
 
             i+=1
 
@@ -44,6 +46,11 @@ if sport[:6] == 'Soccer':
             if j in goneOdds:
                 winning_odds.remove(j)
                 goneOdds.remove(j)
+
+        for j in winning_book[:]:
+            if j in goneBooks:
+                winning_book.remove(j)
+                goneBooks.remove(j)
             
 
     removeInjuredTeams(team_num_t)
