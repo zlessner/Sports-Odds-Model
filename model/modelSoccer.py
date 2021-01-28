@@ -297,7 +297,10 @@ def Prediction():
                     for n in range(len(discrepancy)):
                         if discrepancy[n].rsplit(' ', 1)[0] == AlphaAPI[i]:
                             print(discrepancy[n])
-                    break_point.append(round((107/float(FiveThirtyEightGames[j][4]))-100))
+                    if round((107/float(FiveThirtyEightGames[j][4]))-100) >= .95*int(((Away[i])-1)*100):
+                        break_point.append(round((107/float(FiveThirtyEightGames[j][4]))-100))
+                    else:
+                        break_point.append(round(.95*int(((Away[i])-1)*100)))
                     teamsToBet1.append({AlphaAPI[i]: HomeAlphaOdds})
                     potential_winnings.append(int(((Away[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][4]))
@@ -306,7 +309,10 @@ def Prediction():
                     for n in range(len(discrepancy)):
                         if discrepancy[n].rsplit(' ', 1)[0] == AlphaAPI[i]:
                             print(discrepancy[n])
-                    break_point.append(round((107/float(FiveThirtyEightGames[j][6]))-100))
+                    if round((107/float(FiveThirtyEightGames[j][6]))-100) >= .95*int(((draw[i])-1)*100):
+                        break_point.append(round((107/float(FiveThirtyEightGames[j][6]))-100))
+                    else:
+                        break_point.append(round(.95*int(((draw[i])-1)*100)))
                     teamsToBet1.append({AlphaAPI[i] + " Draw": HomeAlphaDrawOdds})
                     winning_odds.append(float(FiveThirtyEightGames[j][6]))
                     potential_winnings.append(int(((draw[i])-1)*100))
@@ -319,7 +325,10 @@ def Prediction():
                     for n in range(len(discrepancy)):
                         if discrepancy[n].rsplit(' ', 1)[0] == BetaAPI[i]:
                             print(discrepancy[n])
-                    break_point.append(round((107/float(FiveThirtyEightGames[j][5]))-100))
+                    if round((107/float(FiveThirtyEightGames[j][5]))-100) >= .95*int(((Home[i])-1)*100):
+                        break_point.append(round((107/float(FiveThirtyEightGames[j][5]))-100))
+                    else:
+                        break_point.append(round(.95*int(((Home[i])-1)*100)))
                     teamsToBet1.append({BetaAPI[i]: AwayBetaOdds})
                     potential_winnings.append(int(((Home[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][5]))
@@ -328,7 +337,10 @@ def Prediction():
                     for n in range(len(discrepancy)):
                         if discrepancy[n].rsplit(' ', 1)[0] == BetaAPI[i]:
                             print(discrepancy[n])
-                    break_point.append(round((107/float(FiveThirtyEightGames[j][6]))-100))
+                    if round((107/float(FiveThirtyEightGames[j][6]))-100) >= .95*int(((draw[i])-1)*100):
+                        break_point.append(round((107/float(FiveThirtyEightGames[j][6]))-100))
+                    else:
+                        break_point.append(round(.95*int(((draw[i])-1)*100)))
                     teamsToBet1.append({AlphaAPI[i] + " Draw": AwayAlphaDrawOdds})
                     winning_odds.append(float(FiveThirtyEightGames[j][6]))
                     potential_winnings.append(int(((draw[i])-1)*100))

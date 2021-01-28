@@ -54,7 +54,7 @@ url = "https://odds.p.rapidapi.com/v1/odds"
 
 soccer = False
 
-sport = "soccer_england_league2"
+sport = "soccer_brazil_campeonato"
 
 querystring = {"sport":sport,"region":"us","mkt":"h2h"}
 
@@ -80,7 +80,7 @@ futureGameMDY = (futureGame.strftime("%-m/%-d/%y"))
 
 yesterdayGame = gameDate + datetime.timedelta(-1)
 
-manyGames = datetime.date(2020, 12, 23)
+manyGames = datetime.date(2020, 8, 9)
 
 yesterdayGameMDY = (yesterdayGame.strftime("%-m/%-d/%y"))
 
@@ -183,6 +183,6 @@ if sport == "soccer_australia_aleague":
     
 
 # Comment sport out if soccer
-sport = 'NBA'  
+sport = 'CBB'  
     
 

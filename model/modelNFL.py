@@ -257,7 +257,10 @@ for i in range(len(AlphaAPI)):
                     # for n in range(len(discrepancy)):
                     #     if discrepancy[n].rsplit(' ', 1)[0] == AlphaAPI[i]:
                     #         print(discrepancy[n])
-                    break_point.append(round((107/float(FiveThirtyEightGames[j][3]))-100))
+                    if round((107/float(FiveThirtyEightGames[j][3]))-100) >= .95*int(((Away[i])-1)*100):
+                        break_point.append(round((107/float(FiveThirtyEightGames[j][3]))-100))
+                    else:
+                        break_point.append(round(.95*int(((Away[i])-1)*100)))
                     teamstobetNFL.append({AlphaAPI[i]: HomeAlphaOdds})
                     potential_winnings.append(int(((Away[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][3]))
@@ -274,7 +277,10 @@ for i in range(len(AlphaAPI)):
                     #     # print(BetaAPI[i])
                     #     if discrepancy[n].rsplit(' ', 1)[0] == BetaAPI[i]:
                     #         # print(discrepancy[n])
-                    break_point.append(round((107/float(FiveThirtyEightGames[j][4]))-100))
+                    if round((107/float(FiveThirtyEightGames[j][4]))-100) >= .95*int(((Home[i])-1)*100):
+                        break_point.append(round((107/float(FiveThirtyEightGames[j][4]))-100))
+                    else:
+                        break_point.append(round(.95*int(((Home[i])-1)*100)))
                     teamstobetNFL.append({BetaAPI[i]: AwayBetaOdds})
                     potential_winnings.append(int(((Home[i])-1)*100))
                     winning_odds.append(float(FiveThirtyEightGames[j][4]))

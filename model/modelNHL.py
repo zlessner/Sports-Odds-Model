@@ -6,7 +6,7 @@ import time
 from datetime import datetime
 
 
-url = 'https://projects.fivethirtyeight.com/nba-model/nba_elo_latest.csv'
+url = 'https://projects.fivethirtyeight.com/mlb-api/mlb_elo_latest.csv'
 
 retrieve(url,'nba.csv')
 
@@ -213,7 +213,10 @@ for i in range(len(AlphaAPI)):
         if (AlphaAPI[i]).lower() == (FiveThirtyEightGames[i][1].lower()):
             HomeAlphaOdds = int((((Away[i])-1)*100)*(float(FiveThirtyEightGames[i][3]))-(100*(1-(float(FiveThirtyEightGames[i][3])))))
             if (HomeAlphaOdds>0):
-                break_point.append((round(100/float(FiveThirtyEightGames[i][3]))-100))
+                if round(100/float(FiveThirtyEightGames[i][3]))-100 >= .95*int(((Away[i])-1)*100):
+                        break_point.append(round(100/float(FiveThirtyEightGames[i][3]))-100)
+                else:
+                    break_point.append(round(.95*int(((Away[i])-1)*100)))
                 teamsToBetNHL.append({AlphaAPI[i]: HomeAlphaOdds})
                 potential_winnings.append(int(((Away[i])-1)*100))
                 winning_odds.append(float(FiveThirtyEightGames[i][3]))
@@ -225,7 +228,10 @@ for i in range(len(AlphaAPI)):
         if (BetaAPI[i]).lower() == (FiveThirtyEightGames[i][2].lower()):
             AwayBetaOdds = int((((Home[i])-1)*100)*(float(FiveThirtyEightGames[i][4]))-(100*(1-(float(FiveThirtyEightGames[i][4])))))
             if (AwayBetaOdds>0):
-                break_point.append((round(100/float(FiveThirtyEightGames[i][4])-100)))
+                if round(100/float(FiveThirtyEightGames[i][4]))-100 >= .95*int(((Home[i])-1)*100):
+                        break_point.append(round(100/float(FiveThirtyEightGames[i][4]))-100)
+                else:
+                    break_point.append(round(.95*int(((Home[i])-1)*100)))
                 teamsToBetNHL.append({BetaAPI[i]: AwayBetaOdds})
                 potential_winnings.append(int(((Home[i])-1)*100))
                 winning_odds.append(float(FiveThirtyEightGames[i][4]))
